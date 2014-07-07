@@ -3,4 +3,7 @@ Manifest.txt
 README.md
 Rakefile
 lib/factbook.rb
+lib/factbook/page.rb
 lib/factbook/version.rb
+test/helper.rb
+test/test_page.rb

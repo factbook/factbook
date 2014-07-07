@@ -17,6 +17,7 @@ require 'fetcher'
 # our own code
 
 require 'factbook/version' # let it always go first
+require 'factbook/page'
 
 
 module Factbook
