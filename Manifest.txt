@@ -1,0 +1,6 @@
+HISTORY.md
+Manifest.txt
+README.md
+Rakefile
+lib/factbook.rb
+lib/factbook/version.rb
