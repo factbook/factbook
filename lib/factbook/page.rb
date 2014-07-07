@@ -12,6 +12,32 @@ module Factbook
       @code = code
     end
 
+    def doc
+      @doc ||= Nokogiri::HTML( html )
+    end
+
+    def html
+      
+      ### try simple template!!!!
+      ## check link template_mx ???
+      
+      ### remove everything up to  !!!!
+      ##   <div id="countryInfo" style="display: none;">
+      
+      ## remove everything starting w/ footer
+      
+      
+      ### todo: cleanup
+      ## remove inline <script></script> in body
+      ## remove inline <link> in body
+      ## etc.
+      ## remove head !!!
+      ## in body remove header n footer
+
+      @html ||= fetch()
+    end
+
+  private
     def fetch
       uri_string = "#{SITE_BASE}/#{@code}.html"
 

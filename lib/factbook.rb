@@ -13,6 +13,8 @@ require 'pp'
 
 require 'logutils'
 require 'fetcher'
+require 'nokogiri'
+
 
 # our own code
 
