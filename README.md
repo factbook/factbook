@@ -7,9 +7,20 @@
 * forum :: [groups.google.com/group/openmundi](https://groups.google.com/group/openmundi)
 
 
+
+## What's the World Factbook?
+
+The World Factbook published by the Central Intelligence Agency (CIA)
+offers free country profiles in the public domain (that is, no copyright(s), no rights reserved).
+
+- [1] [The World Factbook](https://www.cia.gov/library/publications/the-world-factbook/)
+- [2] Wikipedia Article: [The World Factbook](http://en.wikipedia.org/wiki/The_World_Factbook)
+
+
 ## Usage
 
 TBD
+
 
 ## Install
 
@@ -18,9 +29,10 @@ Just install the gem:
     $ gem install factbook
 
 
+
 ## Alternatives
 
-TBD
+- [worldfactbook gem](https://github.com/sayem/worldfactbook) by sayem (aka Sayem Khan); fetches data from its own mirror, that is, rubyworldfactbook.com (last updated 2011?)
 
 
 ## License

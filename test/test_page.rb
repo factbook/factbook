@@ -6,7 +6,7 @@ require 'helper'
 
 class TestPage < MiniTest::Unit::TestCase
 
-  def test_mx
+  def xxx_test_mx
     page = Factbook::Page.new( 'mx' )
     
     ## print first 600 chars
@@ -71,6 +71,70 @@ class TestPage < MiniTest::Unit::TestCase
 #      puts "[#{i+1}]: ========================="
 #      puts ">>#{c.text()}<<"
 #    end
+
+  end
+
+  def test_mx
+    page = Factbook::Page.new( 'mx' )
+    
+    ## print first 600 chars
+    pp page.html[0..600]
+    
+    ## save for debuging
+    
+    puts "saving a copy to mx.html for debugging"
+    File.open( 'mx.html', 'w') do |f|
+      f.write( page.html )
+    end
+
+    doc   = page.doc
+    sects = page.sects
+
+    panels    = doc.css( '.CollapsiblePanel' )
+    questions = doc.css( '.question' )
+    answers   = doc.css( '.answer' )
+
+    puts "panels.size:    #{panels.size}"
+    puts "questions.size: #{questions.size}"
+    puts "answers.size:   #{answers.size}"
+
+    rows_total = 0
+    panels.each_with_index do |panel,i|
+      rows = panel.css( 'table tr' )
+      puts "  [#{i}] rows.size:  #{rows.size}"
+      rows_total += rows.size
+    end
+
+    puts "rows_total: #{rows_total}"
+
+
+    stats( doc)
+    
+    sects.each_with_index do |sect,i|
+      puts "#### stats sect #{i}:"
+      stats( sect )
+    end
+  end
+
+
+  def stats( doc )
+    rows  = doc.css( 'table tr' )
+    puts "rows.size:    #{rows.size}"
+    
+    ## check rows
+    rows.each_with_index do |row,i|
+      next if i > 14   ## skip after xx for debugging for now
+
+      cats      = row.css( '.category' )
+      cats_data = row.css( '.category_data' )
+      field_ids = row.css( '#field' )    ## check - use div#field.category -- possible?
+
+      puts "[#{i}] cats:   #{cats.size},    field_ids: #{field_ids.size},    cats_data: #{cats_data.size}"
+      
+      if cats.size > 1
+        ## puts row.to_s
+      end
+   end # each row
 
   end
 
