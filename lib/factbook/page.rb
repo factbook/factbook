@@ -65,12 +65,12 @@ module Factbook
           @sects << Nokogiri::HTML( html[ from..to ] )
           
           if i==0 || i==1
-            puts "debug sect #{i}:"
-            puts ">>>|||#{html[ from..to ]}|||<<<"
+            # puts "debug sect #{i}:"
+            # puts ">>>|||#{html[ from..to ]}|||<<<"
           end
         end
       end
-      
+
       @sects
     end
 
@@ -89,7 +89,6 @@ module Factbook
         ## remove inline script
         @html = @html.gsub( /<script[^>]*>.*?<\/script>/m ) do |m|
           puts "remove script:"
-          ## puts m.class.name   => String
           puts "#{m}"
           ''
         end
@@ -97,23 +96,80 @@ module Factbook
         ## remove inline style
         @html = @html.gsub( /<style[^>]*>.*?<\/style>/m ) do |m|
           puts "remove style:"
-          ## puts m.class.name   => String
           puts "#{m}"
           ''
         end
 
         ## remove link
-        @html = @html.gsub( /<link[^>]+>/ ) do |m|
+        link_regex = /<link[^>]+>/
+        @html = @html.gsub( link_regex ) do |m|
           puts "remove link:"
-          ## puts m.class.name   => String
           puts "#{m}"
           ''
         end
 
+        div_country_info_regex = /<div id="countryInfo"\s*>/
         ## remove everything before <div id="countryInfo" >
-        pos = @html.index( /<div id="countryInfo"\s*>/ )
+        pos = @html.index( div_country_info_regex )
         if pos  # not nil, false
           @html = @html[pos..-1]
+        end
+
+        ## remove country comparison
+        ## e.g.  <span class="category" >country comparison to the world:</span>
+        ##       <span class="category_data">
+        ##  <a href="../rankorder/2147rank.html?countryname=Brazil&countrycode=br&regionCode=soa&rank=5#br" onMouseDown=""  title="Country comparison to the world" alt="Country comparison to the world">
+        ##    5
+        ##  </a>
+        ##  </span>
+        
+        ##
+        ##
+        ## <span class="category" style="padding-left:7px;">country comparison to the world:</span> <span class="category_data">
+        ##  <a href="../rankorder/2147rank.html?countryname=Brazil&countrycode=br&regionCode=soa&rank=5#br" onMouseDown=""  title="Country comparison to the world" alt="Country comparison to the world"> 5 </a> </span>
+        ##
+
+        country_comparison_regex = /
+         <span \s class="category"[^>]*>
+           country \s comparison \s to \s the \s world:
+         <\/span>
+          \s*
+         <span \s class="category_data"[^>]*>
+          \s*
+            <a \s [^>]+>
+             .+?
+            <\/a>
+          \s*
+         <\/span>
+        /xm
+
+        @html = @html.gsub( country_comparison_regex ) do |m|
+          puts "remove country comparison:"
+          puts "#{m}"
+          ''
+        end
+        
+        style_attr_regex = /\s*style="[^"]+"/
+        @html = @html.gsub( style_attr_regex ) do |m|
+          puts "remove style attr:"
+          puts "#{m}"
+          ''
+        end
+        
+        ## <tr height="22">
+        ##   <td class="category_data"></td>
+        ##   </tr>
+        tr_empty_regex = /
+           <tr[^>]*>
+             \s*
+              <td[^>]*> \s* <\/td>
+             \s*
+           <\/tr>
+        /xm
+        @html = @html.gsub( tr_empty_regex ) do |m|
+          puts "remove tr emtpy:"
+          puts "#{m}"
+          ''
         end
 
       end

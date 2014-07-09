@@ -7,3 +7,4 @@ lib/factbook/page.rb
 lib/factbook/version.rb
 test/helper.rb
 test/test_page.rb
+test/test_strip.rb
