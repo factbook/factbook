@@ -122,7 +122,7 @@ class TestPage < MiniTest::Unit::TestCase
   def stats( doc )
     rows  = doc.css( 'table tr' )
     puts "rows.size:    #{rows.size}"
-    
+ 
     ## check rows
     rows.each_with_index do |row,i|
       ## next if i > 14   ## skip after xx for debugging for now
@@ -130,6 +130,7 @@ class TestPage < MiniTest::Unit::TestCase
       cats      = row.css( '.category' )
       cats_data = row.css( '.category_data' )
       field_ids = row.css( '#field' )    ## check - use div#field.category -- possible?
+      data_ids  = row.css( '#data' )
 
 
       ## check for subcategory
@@ -137,14 +138,56 @@ class TestPage < MiniTest::Unit::TestCase
 
       if cats.size == 1 && field_ids.size == 1 && cats_data.size == 0 && cats.first.name == 'div'
         text = cats.first.text.strip   # remove/strip leading and trailing spaces
-        puts "  [#{i}] subcategory: >>#{text}<<"
+        puts "  [#{i}] category: >>#{text}<<"
       elsif field_ids.size == 1
-        puts "**** !!! warn/err - found element w/ field id  (no match for subsection!!! - check)"
-      elsif cats.size == 0 && cats_data.size == 1   ## check for cats_data.first.name == 'div' too
+        puts "**** !!!!!! warn/err - found element w/ field id  (no match for subsection!!! - check)"
+      elsif cats.size == 0 && cats_data.size == 1   ## check for cats_data.first.name == 'div' too ???
         text = cats_data.first.text.strip   # remove/strip leading and trailing spaces
         puts "       - [#{i}] data: >>#{text}<<"
+      elsif cats.size == 0 && cats_data.size > 1   ## check for cats_data.first.name == 'div' too ???
+        ary = []
+        cats_data.each do |cat_data|
+          ary << cat_data.text.strip
+        end
+        text = ary.join( '; ' )
+        puts "       - [#{i}] data#{cats_data.size}: >>#{text}<<"
+      elsif cats.size > 0  ## check for data = 1 ????
+        if data_ids.size != 1
+          puts "**** !!!!! [#{i}] cats:   #{cats.size},  cats_data: #{cats_data.size}, data_ids: #{data_ids.size}"
+        else
+          puts "     [#{i}] cats:   #{cats.size},  cats_data: #{cats_data.size}, data_ids: #{data_ids.size}"
+        end
+        
+        cats.each_with_index do |cat,j|  # note: use index - j (for inner loop)
+          ## get text from direct child / children
+          ##  do NOT included text from  nested span - how? possible?
+          ## text = cat.css( ':not( .category_data )' ).text.strip  ## will it include text node(s)??
+          ## text = cat.text.strip  ## will it include text node(s)??
+          ## text =  cat.css( '*:not(.category_data)' ).text.strip
+          # Find the content of all child text nodes and join them together
+          text = cat.xpath('text()').text.strip
+          n  = cat.css( '.category_data' )
+          ## or use
+          ## text = cat.children.first.text ??
+          puts "     -- [#{j}] subcategory: >>#{text}<<  cats_data: #{n.size}"
+          ## pp cat.css( '*:not(.category_data)' )
+          ## pp cat.css( "*:not(*[@class='category_data'])" )   # *[@class='someclass']
+          ## pp cat
+          ## check if is div - if not issue warn
+          if cat.name == 'div'
+            ## check if includes one or more category_data nodes
+            if n.size == 0
+              puts "         ****** !!! no category_data inside"
+            end
+            if n.size > 1
+              puts "         ****** !!! multiple category_data's inside - #{n.size}"
+            end
+          else
+            puts "         ****** !!!! no div - is >>#{cat.name}<<"
+          end
+        end
       else
-        puts "**** !!! [#{i}] cats:   #{cats.size},  cats_data: #{cats_data.size}"
+        puts "**** !!!!!!! [#{i}] cats:   #{cats.size},  cats_data: #{cats_data.size}, data_ids: #{data_ids.size}"
       end
 
 

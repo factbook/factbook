@@ -14,7 +14,7 @@ The World Factbook published by the Central Intelligence Agency (CIA)
 offers free country profiles in the public domain (that is, no copyright(s), no rights reserved).
 
 - [1] [The World Factbook](https://www.cia.gov/library/publications/the-world-factbook/)
-- [2] Wikipedia Article: [The World Factbook](http://en.wikipedia.org/wiki/The_World_Factbook)
+- [2] [Wikipedia Article: The World Factbook](http://en.wikipedia.org/wiki/The_World_Factbook)
 
 
 ## Usage
