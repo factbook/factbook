@@ -108,9 +108,11 @@ class TestPage < MiniTest::Unit::TestCase
     puts "rows_total: #{rows_total}"
 
 
-    stats( doc)
-    
+    ## stats( doc )
+
     sects.each_with_index do |sect,i|
+      puts ''
+      puts "############################"
       puts "#### stats sect #{i}:"
       stats( sect )
     end
@@ -123,14 +125,29 @@ class TestPage < MiniTest::Unit::TestCase
     
     ## check rows
     rows.each_with_index do |row,i|
-      next if i > 14   ## skip after xx for debugging for now
+      ## next if i > 14   ## skip after xx for debugging for now
 
       cats      = row.css( '.category' )
       cats_data = row.css( '.category_data' )
       field_ids = row.css( '#field' )    ## check - use div#field.category -- possible?
 
-      puts "[#{i}] cats:   #{cats.size},    field_ids: #{field_ids.size},    cats_data: #{cats_data.size}"
-      
+
+      ## check for subcategory
+      ##   must be div w/ id field and class category
+
+      if cats.size == 1 && field_ids.size == 1 && cats_data.size == 0 && cats.first.name == 'div'
+        text = cats.first.text.strip   # remove/strip leading and trailing spaces
+        puts "  [#{i}] subcategory: >>#{text}<<"
+      elsif field_ids.size == 1
+        puts "**** !!! warn/err - found element w/ field id  (no match for subsection!!! - check)"
+      elsif cats.size == 0 && cats_data.size == 1   ## check for cats_data.first.name == 'div' too
+        text = cats_data.first.text.strip   # remove/strip leading and trailing spaces
+        puts "       - [#{i}] data: >>#{text}<<"
+      else
+        puts "**** !!! [#{i}] cats:   #{cats.size},  cats_data: #{cats_data.size}"
+      end
+
+
       if cats.size > 1
         ## puts row.to_s
       end
