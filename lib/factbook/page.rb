@@ -172,6 +172,25 @@ module Factbook
           ''
         end
 
+        ##  remove world leader website promo
+        ##  <span class="category">(For more information visit the
+        ##     <a href="/library/publications/world-leaders-1/index.html" target="_blank">World Leaders website</a>&nbsp;
+        ##       <img src="../graphics/soa_newwindow.gif" alt="Opens in New Window" title="Opens in New Window" border="0"/>)
+        ##  </span>
+        world_leaders_website_regex = /
+         <span \s class="category"[^>]*>
+           \(
+           For \s more \s information \s
+            .+?       ## non-greedy (smallest possible match
+           \)
+         <\/span>
+        /xm
+        @html = @html.gsub( world_leaders_website_regex ) do |m|
+          puts "remove world leader website promo:"
+          puts "#{m}"
+          ''
+        end
+
       end
       @html
     end

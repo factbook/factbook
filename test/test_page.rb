@@ -107,6 +107,33 @@ class TestPage < MiniTest::Unit::TestCase
 
     puts "rows_total: #{rows_total}"
 
+    rows      = doc.css( 'table tr' )
+    field_ids = rows.css( '#field' )    ## check - use div#field.category -- possible?
+    data_ids  = rows.css( '#data' )
+
+    puts "rows.size:    #{rows.size}  (field_ids.size: #{field_ids.size} / data_ids.size: #{data_ids.size})"
+
+    cats      = rows.css( '.category' )
+    cats_div  = rows.css( 'div.category' )
+    cats_span = rows.css( 'span.category' )
+    cats_other_size = cats.size - cats_div.size - cats_span.size
+
+    cats_data      = rows.css( '.category_data' )
+    cats_div_data  = rows.css( 'div.category_data' )
+    cats_span_data = rows.css( 'span.category_data' )
+    cats_other_data_size = cats_data.size - cats_div_data.size - cats_span_data.size
+
+    puts "cats.size:  #{cats.size} (cats_div.size #{cats_div.size} / cats_span.size #{cats_span.size} / cats_other.size #{cats_other_size})"
+    puts "cats_data.size:  #{cats_data.size} (cats_div_data.size #{cats_div_data.size} / cats_span_data.size #{cats_span_data.size} / cats_other_data.size #{cats_other_data_size})"
+
+    ## some check for structure
+    if cats_other_size > 0
+        puts " ****!!!! category other (not div/span) found - #{cats_other_size}"
+    end
+ 
+    if cats_other_data_size > 0
+        puts " ****!!!! category_data other (not div/span) found - #{cats_other_data_size}"
+    end
 
     ## stats( doc )
 
@@ -121,80 +148,140 @@ class TestPage < MiniTest::Unit::TestCase
 
   def stats( doc )
     rows  = doc.css( 'table tr' )
-    puts "rows.size:    #{rows.size}"
- 
+    cells = doc.css( 'table tr td' )
+    field_ids = rows.css( '#field' )    ## check - use div#field.category -- possible?
+    data_ids  = rows.css( '#data' )
+
+    puts "rows.size:    #{rows.size}  (cells.size: #{cells.size} / field_ids.size: #{field_ids.size} / data_ids.size: #{data_ids.size})"
+
+
     ## check rows
-    rows.each_with_index do |row,i|
+    ## todo/fix:
+    ##  loop over td's !!!
+  
+    cells.each_with_index do |cell,i|
       ## next if i > 14   ## skip after xx for debugging for now
 
-      cats      = row.css( '.category' )
-      cats_data = row.css( '.category_data' )
-      field_ids = row.css( '#field' )    ## check - use div#field.category -- possible?
-      data_ids  = row.css( '#data' )
+      cats      = cell.css( 'div.category' )   ## note: ignore all .category not using div (issue warn/err if found!!) etc.
+      cats_data = cell.css( 'div.category_data,span.category_data' )  ## note: ignore a.category_data etc.
+      cats_div_data  =  cell.css( 'div.category_data' )
+      cats_span_data =  cell.css( 'span.category_data' )
 
+      field_ids = cell.css( '#field' )    ##  td div.field  check - use div#field.category -- possible?
+      
+      ### fix: split into #field and #data
+      ##   field has no category-data no sub/multiple categories etc.
+      
+      ## td#data
+      # quick hack: use parent() - fix!! check id for element if present and is data how?? e.g. cell['id'] == 'data' ???
+      data_ids  = cell.parent.css( '#data' )  ## will include self? e.g. td id='data' ???
+      
+      ids_size = field_ids.size + data_ids.size
+
+      if ids_size == 0
+         puts " ****!!!! no ids (field/data) found"
+      end
+      
+      if ids_size > 1
+         puts "  ***!!! more than one id (field/data) found - #{ids_size}"
+      end
+      
 
       ## check for subcategory
       ##   must be div w/ id field and class category
 
-      if cats.size == 1 && field_ids.size == 1 && cats_data.size == 0 && cats.first.name == 'div'
-        text = cats.first.text.strip   # remove/strip leading and trailing spaces
-        puts "  [#{i}] category: >>#{text}<<"
-      elsif field_ids.size == 1
-        puts "**** !!!!!! warn/err - found element w/ field id  (no match for subsection!!! - check)"
-      elsif cats.size == 0 && cats_data.size == 1   ## check for cats_data.first.name == 'div' too ???
-        text = cats_data.first.text.strip   # remove/strip leading and trailing spaces
-        puts "       - [#{i}] data: >>#{text}<<"
-      elsif cats.size == 0 && cats_data.size > 1   ## check for cats_data.first.name == 'div' too ???
-        ary = []
-        cats_data.each do |cat_data|
-          ary << cat_data.text.strip
-        end
-        text = ary.join( '; ' )
-        puts "       - [#{i}] data#{cats_data.size}: >>#{text}<<"
-      elsif cats.size > 0  ## check for data = 1 ????
-        if data_ids.size != 1
-          puts "**** !!!!! [#{i}] cats:   #{cats.size},  cats_data: #{cats_data.size}, data_ids: #{data_ids.size}"
+      if field_ids.size == 1    ## assume category
+
+        if cats.size == 1 && cats_data.size == 0 && cats.first.name == 'div'
+          text = cats.first.text.strip   # remove/strip leading and trailing spaces
+          puts "  [#{i}] category: >>#{text}<<"
         else
-          puts "     [#{i}] cats:   #{cats.size},  cats_data: #{cats_data.size}, data_ids: #{data_ids.size}"
+          puts "**** !!!!!! warn/err - found element w/ field id  (no match for subsection!!! - check)"
         end
-        
-        cats.each_with_index do |cat,j|  # note: use index - j (for inner loop)
-          ## get text from direct child / children
-          ##  do NOT included text from  nested span - how? possible?
-          ## text = cat.css( ':not( .category_data )' ).text.strip  ## will it include text node(s)??
-          ## text = cat.text.strip  ## will it include text node(s)??
-          ## text =  cat.css( '*:not(.category_data)' ).text.strip
-          # Find the content of all child text nodes and join them together
-          text = cat.xpath('text()').text.strip
-          n  = cat.css( '.category_data' )
-          ## or use
-          ## text = cat.children.first.text ??
-          puts "     -- [#{j}] subcategory: >>#{text}<<  cats_data: #{n.size}"
-          ## pp cat.css( '*:not(.category_data)' )
-          ## pp cat.css( "*:not(*[@class='category_data'])" )   # *[@class='someclass']
-          ## pp cat
-          ## check if is div - if not issue warn
-          if cat.name == 'div'
-            ## check if includes one or more category_data nodes
-            if n.size == 0
-              puts "         ****** !!! no category_data inside"
+
+      elsif data_ids.size == 1
+
+        if cats.size == 0
+          if cats_data.size == 1    ## check for cats_data.first.name == 'div' too ???
+            text = cats_data.first.text.strip   # remove/strip leading and trailing spaces
+            puts "       - [#{i}] data: >>#{text}<<"          
+          elsif cats_data.size > 1  ## check for cats_data.first.name == 'div' too ???
+            ary = []
+            cats_data.each do |cat_data|
+              ary << cat_data.text.strip
             end
-            if n.size > 1
-              puts "         ****** !!! multiple category_data's inside - #{n.size}"
-            end
+            text = ary.join( '; ' )
+            puts "       - [#{i}] data#{cats_data.size}: >>#{text}<<"
           else
-            puts "         ****** !!!! no div - is >>#{cat.name}<<"
+            # should not happen
+            puts "*** !!!! warn/err - skip empty data cell (no cats/no cats_data)"
           end
+        elsif cats.size > 0
+          puts "     [#{i}] cats: #{cats.size}, cats_data: #{cats_data.size} (cats_div_data: #{cats_div_data.size}/ cats_span_data: #{cats_span_data.size})"
+        
+        
+          ## check for "free standing" data blocks (not assigned to category/key)
+          if cats_div_data.size > 1
+            if cats_div_data.size == 1    #
+              # check if first or last entry (if first entry use key *text*; otherwise use key *notes*)
+            else   ## multiple (more than one) data divs
+              if cats.size == 1  
+                # always assume text for now (not *notes*)
+              else
+                # multiple cats and multiple data divs (e.g. drinking water source:)
+                #   to be done - for now use one all-in-one text blob
+              end
+            end
+          end
+        
+          cats.each_with_index do |cat,j|  # note: use index - j (for inner loop)
+            ## get text from direct child / children
+            ##  do NOT included text from  nested span - how? possible?
+            ## text = cat.css( ':not( .category_data )' ).text.strip  ## will it include text node(s)??
+            ## text = cat.text.strip  ## will it include text node(s)??
+            ## text =  cat.css( '*:not(.category_data)' ).text.strip
+            # Find the content of all child text nodes and join them together
+            
+            ## collect text for category; exclude element w/ class.category_data
+            text = ""
+            cat.children.each do |child|
+              text << child.text.strip     unless child.element? && child['class'] == 'category_data'
+            end
+            
+            ## text = cat.xpath('text()').text.strip
+            
+            n  = cat.css( '.category_data' )
+            ## or use
+            ## text = cat.children.first.text ??
+            puts "     -- [#{j}] subcategory: >>#{text}<<  cats_data: #{n.size}"
+            ## pp cat.css( '*:not(.category_data)' )
+            ## pp cat.css( "*:not(*[@class='category_data'])" )   # *[@class='someclass']
+            ## pp cat
+            ## check if is div - if not issue warn
+            if cat.name == 'div'
+              ## check if includes one or more category_data nodes
+              if n.size == 0
+                puts "         ****** !!! no category_data inside"
+              end
+              if n.size > 1
+                puts "         ****** !!! multiple category_data's inside - #{n.size}"
+              end
+            else
+              puts "         ****** !!!! no div - is >>#{cat.name}<<"
+            end
+          end
+        else
+          puts "**** !!!!!! warn/err - found element w/ data id (no cats, no cats-data) [#{i}] cats:   #{cats.size},  cats_data: #{cats_data.size}, data_ids: #{data_ids.size}"
         end
       else
-        puts "**** !!!!!!! [#{i}] cats:   #{cats.size},  cats_data: #{cats_data.size}, data_ids: #{data_ids.size}"
+        puts "**** !!!!!!! [#{i}] cats:   #{cats.size}, cats_data: #{cats_data.size}, field_ids: #{field_ids.size}, data_ids: #{data_ids.size}"
       end
 
 
       if cats.size > 1
-        ## puts row.to_s
+        ## puts cell.to_s
       end
-   end # each row
+   end # each cell
 
   end
 
