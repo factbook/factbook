@@ -21,6 +21,15 @@ module Factbook
       @doc ||= Nokogiri::HTML( html )
     end
 
+    def to_json( opts={} )
+      ## convenience helper for data.to_json
+      if opts[:pretty] || opts[:pp]
+        JSON.pretty_generate( data )
+      else
+        data.to_json
+      end
+    end
+
     def data
       if @data.nil?
         titles = [
@@ -263,7 +272,7 @@ module Factbook
     key = key.gsub( '(s)', 's' )
     key = key.gsub( ':', '' )    # trailing :
     ## remove special chars ()-/,'
-    key = key.gsub( /[()\-\/,]'/, ' ')
+    key = key.gsub( /['()\-\/,]/, ' ' )
     key = key.strip
     key = key.gsub( /[ ]+/, '_' )
     key
