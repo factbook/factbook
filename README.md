@@ -19,7 +19,17 @@ offers free country profiles in the public domain (that is, no copyright(s), no 
 
 ## Usage
 
-TBD
+### Get page as a hash (that is, structured data e.g. nested key/values)
+
+    page = Factbook::Page.new( 'br' )
+    pp page.data                      # pretty print hash
+
+### Save to disk as JSON
+
+    page = Factbook::Page.new( 'br' )
+    File.open( 'br.json', 'w') do |f|
+      f.write( JSON.pretty_generate( page.data ) )
+    end
 
 
 ## Install

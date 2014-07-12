@@ -6,7 +6,40 @@ require 'helper'
 
 class TestPage < MiniTest::Unit::TestCase
 
+  def setup
+    Dir.mkdir( 'tmp' )  unless Dir.exists?( 'tmp' )
+  end
+
   def test_br
+    page = Factbook::Page.new( 'br' )
+    
+    page.html = File.read( "#{Factbook.root}/test/data/countrytemplate_br.html" )
+
+    ## print first 600 chars
+    pp page.html[0..600]
+    
+    ## save for debuging
+    
+    puts "saving a copy to br.html for debugging"
+    File.open( 'tmp/br.html', 'w') do |f|
+      f.write( page.html )
+    end
+
+    doc   = page.doc
+    sects = page.sects
+
+    h = page.data
+    pp h
+    
+    ### save to json
+    puts "saving a copy to br.json for debugging"
+    File.open( 'tmp/br.json', 'w') do |f|
+      f.write( JSON.pretty_generate( h ) )
+    end
+  end
+
+
+  def xxx_test_br
     page = Factbook::Page.new( 'br' )
     
     ## print first 600 chars

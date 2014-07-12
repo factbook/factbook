@@ -5,6 +5,12 @@ Rakefile
 lib/factbook.rb
 lib/factbook/page.rb
 lib/factbook/version.rb
+test/data/countrytemplate_au.html
+test/data/countrytemplate_be.html
+test/data/countrytemplate_br.html
+test/data/countrytemplate_mx.html
 test/helper.rb
+test/test_json.rb
 test/test_page.rb
+test/test_page_old.rb
 test/test_strip.rb

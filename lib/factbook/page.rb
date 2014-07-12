@@ -21,6 +21,32 @@ module Factbook
       @doc ||= Nokogiri::HTML( html )
     end
 
+    def data
+      if @data.nil?
+        titles = [
+         'intro',
+         'geo',
+         'people',
+         'govt',
+         'econ',
+         'energy',
+         'comm',
+         'trans',
+         'military',
+         'issues' ]
+
+        @data = {}
+
+        sects.each_with_index do |sect,i|
+          logger.debug "############################"
+          logger.debug "###  stats sect #{i}:"
+
+          @data[ titles[i] ] = sect_to_hash( sect )
+        end
+      end
+      @data
+    end
+
 
     def sects
       ## split html into sections
@@ -74,11 +100,15 @@ module Factbook
       @sects
     end
 
+    def html=(html)
+      ## for debugging n testing
+      ## lets you set html (no need to fetch via net)
+      @html = html
+    end
 
     def html
       if @html.nil?
-        ## @html = fetch()
-        @html = File.read( "#{Factbook.root}/test/data/countrytemplate_br.html" )
+        @html = fetch()
 
       ### remove everything up to 
       ##   <div id="countryInfo" style="display: none;">
@@ -195,7 +225,7 @@ module Factbook
       @html
     end
 
-##  private
+  private
     def fetch
       uri_string = SITE_BASE.gsub( '{code}', @code )
 
@@ -226,6 +256,19 @@ module Factbook
     end
 
 
+  def cleanup_key( key )
+    ## to lower case
+    key = key.downcase
+    ## seaport(s)  => seaports
+    key = key.gsub( '(s)', 's' )
+    key = key.gsub( ':', '' )    # trailing :
+    ## remove special chars ()-/,'
+    key = key.gsub( /[()\-\/,]'/, ' ')
+    key = key.strip
+    key = key.gsub( /[ ]+/, '_' )
+    key
+  end
+
 
   def sect_to_hash( sect )
 
@@ -253,7 +296,7 @@ module Factbook
 
         cats  = cell.css( 'div.category' )   ## note: ignore all .category not using div (issue warn/err if found!!) etc.
         if cats.size == 1
-          text = cats.first.text.strip   # remove/strip leading and trailing spaces
+          text = cleanup_key( cats.first.text.strip )   # remove/strip leading and trailing spaces
           last_cat = text
           logger.debug "  [#{i}] category: >>#{text}<<"
         else
@@ -295,7 +338,8 @@ module Factbook
               child.children.each do |subchild|
                 text << subchild.text.strip     unless subchild.element? && subchild['class'] == 'category_data'
               end
-              
+              text = cleanup_key( text )
+
               value = child.css('span.category_data').text.strip
 
               logger.debug "        -- category >>#{text}<<"
@@ -325,7 +369,11 @@ module Factbook
                   last_pair[1] += " #{text}"    ## append w/o separator
                 end
               else
-                last_pair[1] += "; #{text}"   ## append with separator 
+                if last_cat == 'demographic_profile'  ## special case (use space a sep)
+                  last_pair[1] += " #{text}"   ## append with separator
+                else
+                  last_pair[1] += "; #{text}"   ## append with separator
+                end
               end
               last_pair_data_count += 1
               

@@ -6,6 +6,7 @@ require 'net/http'
 require 'uri'
 require 'cgi'
 require 'pp'
+require 'json'
 
 
 ## 3rd party gems/libs
