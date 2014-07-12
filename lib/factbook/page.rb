@@ -78,7 +78,7 @@ module Factbook
     def html
       if @html.nil?
         ## @html = fetch()
-        @html = File.read( "#{Factbook.root}/countrytemplate_br.html" )
+        @html = File.read( "#{Factbook.root}/test/data/countrytemplate_br.html" )
 
       ### remove everything up to 
       ##   <div id="countryInfo" style="display: none;">

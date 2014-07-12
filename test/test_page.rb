@@ -82,8 +82,9 @@ class TestPage < MiniTest::Unit::TestCase
     
     ## save for debuging
     
+    Dir.mkdir( 'tmp' )  unless Dir.exists?( 'tmp' )
     puts "saving a copy to mx.html for debugging"
-    File.open( 'mx.html', 'w') do |f|
+    File.open( 'tmp/mx.html', 'w') do |f|
       f.write( page.html )
     end
 
