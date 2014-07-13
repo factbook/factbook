@@ -32,88 +32,15 @@ Hoe.spec 'factbook' do
 end
 
 
-=begin
-# errors to fix:
-saving a copy to europe/li-liechtenstein.html for debugging
-  found section 0 @ 38
-  found section 1 @ 1882
-  found section 2 @ 13160
-  found section 3 @ 29355
-  found section 4 @ 46010
-*** error: section not found -- <div id="CollapsiblePanel1_Energy"
-  found section 6 @ 64725
-
-aving a copy to europe/mc-monaco.html for debugging
-  found section 0 @ 38
-  found section 1 @ 1446
-  found section 2 @ 12736
-  found section 3 @ 31192
-  found section 4 @ 47762
-*** error: section not found -- <div id="CollapsiblePanel1_Energy"
-
-saving a copy to europe/sm-san-marino.html for debugging
-  found section 0 @ 38
-  found section 1 @ 1379
-  found section 2 @ 12243
-  found section 3 @ 27349
-  found section 4 @ 46949
-*** error: section not found -- <div id="CollapsiblePanel1_Energy"
-
-saving a copy to europe/va-vatican-city.html for debugging
-  found section 0 @ 38
-  found section 1 @ 2000
-  found section 2 @ 13093
-  found section 3 @ 19912
-  found section 4 @ 37264
-*** error: section not found -- <div id="CollapsiblePanel1_Energy"
-  found section 6 @ 44353
-*** error: section not found -- <div id="CollapsiblePanel1_Trans"
-
-saving a copy to pacific/mh-marshall-islands.html for debugging
-  found section 0 @ 38
-  found section 1 @ 1414
-  found section 2 @ 13404
-  found section 3 @ 34854
-  found section 4 @ 52734
-*** error: section not found -- <div id="CollapsiblePanel1_Energy"
-
-saving a copy to pacific/pw-palau.html for debugging
-  found section 0 @ 38
-  found section 1 @ 1338
-  found section 2 @ 12729
-  found section 3 @ 34145
-  found section 4 @ 51005
-*** error: section not found -- <div id="CollapsiblePanel1_Energy"
-
-saving a copy to pacific/tv-tuvalu.html for debugging
-  found section 0 @ 38
-  found section 1 @ 1391
-  found section 2 @ 13580
-  found section 3 @ 33729
-  found section 4 @ 50390
-*** error: section not found -- <div id="CollapsiblePanel1_Energy"
-
-saving a copy to africa/ss-south-sudan.html for debugging
-  found section 0 @ 38
-  found section 1 @ 2560
-  found section 2 @ 11342
-  found section 3 @ 26234
-  found section 4 @ 42271
-*** error: section not found -- <div id="CollapsiblePanel1_Energy"
-
-
-=end
-
-
 
 desc 'generate json for factbook.json repo'
 task :genjson do
   require 'factbook'
 
   countries = [
-=begin
      ['xx', 'world' ],     ## special code for the world
 
+=begin
      ['ee', 'europe/eu-european-union'],  ## special code for the european union
      ['al', 'europe/al-albania' ],
      ['an', 'europe/ad-andorra' ],
@@ -140,13 +67,13 @@ task :genjson do
      ['ei', 'europe/ie-ireland' ],
      ['it', 'europe/it-italy' ],
      ['lg',   'europe/lv-latvia' ],
-#     ['ls',   'europe/li-liechtenstein' ],
+     ['ls',   'europe/li-liechtenstein' ],
      ['lh',   'europe/lt-lithuania' ],
      ['lu',   'europe/lu-luxembourg' ],
      ['mk',   'europe/mk-macedonia' ],
      ['mt',   'europe/mt-malta' ],
      ['md',   'europe/md-moldova' ],
-#     ['mn',   'europe/mc-monaco' ],
+     ['mn',   'europe/mc-monaco' ],
      ['mj',   'europe/me-montenegro' ],
      ['nl',   'europe/nl-netherlands' ],
      ['no',   'europe/no-norway' ],
@@ -154,7 +81,7 @@ task :genjson do
      ['po',   'europe/pt-portugal' ],
      ['ro',   'europe/ro-romania' ],
      ['rs',   'europe/ru-russia' ],
-#     ['sm',   'europe/sm-san-marino' ],
+     ['sm',   'europe/sm-san-marino' ],
      ['ri',   'europe/rs-serbia' ],
      ['lo',   'europe/sk-slovakia' ],
      ['si',   'europe/si-slovenia' ],
@@ -163,7 +90,7 @@ task :genjson do
      ['sz',   'europe/ch-switzerland' ],
      ['tu',   'europe/tr-turkey' ],
      ['up',   'europe/ua-ukraine' ],
-#     ['vt',   'europe/va-vatican-city' ],
+     ['vt',   'europe/va-vatican-city' ],
 
      ['ca',   'north-america/ca-canada' ],
      ['us',   'north-america/us-united-states' ],
@@ -249,7 +176,7 @@ task :genjson do
      ['sl',   'africa/sl-sierra-leone' ],
      ['so',   'africa/so-somalia' ],
      ['sf',   'africa/za-south-africa' ],
-#     ['od',   'africa/ss-south-sudan' ],
+     ['od',   'africa/ss-south-sudan' ],
      ['su',   'africa/sd-sudan' ],
      ['wz',   'africa/sz-swaziland' ],
      ['tz',   'africa/tz-tanzania' ],
@@ -308,25 +235,19 @@ task :genjson do
      ['as',   'pacific/au-australia' ],
      ['fj',   'pacific/fj-fiji' ],
      ['kr',   'pacific/ki-kiribati' ],
-#     ['rm',   'pacific/mh-marshall-islands' ],
+     ['rm',   'pacific/mh-marshall-islands' ],
      ['fm',   'pacific/fm-micronesia' ],
      ['nr',   'pacific/nr-nauru' ],
      ['nz',   'pacific/nz-new-zealand' ],
-#     ['ps',   'pacific/pw-palau' ],
+     ['ps',   'pacific/pw-palau' ],
      ['pp',   'pacific/pg-papua-new-guinea' ],
      ['ws',   'pacific/ws-samoa' ],
      ['bp',   'pacific/sb-solomon-islands' ],
      ['tn',   'pacific/to-tonga' ],
-#     ['tv',   'pacific/tv-tuvalu' ],
+     ['tv',   'pacific/tv-tuvalu' ],
      ['nh',   'pacific/vu-vanuatu' ],
-
 =end
 
-
-
-=begin
-     ['',   'africa/' ],
-=end
   ]
 
   countries.each do |country|
