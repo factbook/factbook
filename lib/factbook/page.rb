@@ -2,8 +2,8 @@
 
 module Factbook
 
-  class Page
 
+  class Page
     include LogUtils::Logging
  
     ## standard version
@@ -14,7 +14,15 @@ module Factbook
     SITE_BASE = 'https://www.cia.gov/library/publications/the-world-factbook/geos/countrytemplate_{code}.html'
                  
     def initialize( code )
-      @code = code
+      ## note: requires factbook country code
+      #   e.g. austria is au
+      #        germany is gm  and so on
+      @code  = code
+
+      @html  = nil
+      @doc   = nil
+      @sects = nil
+      @data  = nil
     end
 
     def doc
@@ -32,25 +40,13 @@ module Factbook
 
     def data
       if @data.nil?
-        titles = [
-         'intro',
-         'geo',
-         'people',
-         'govt',
-         'econ',
-         'energy',
-         'comm',
-         'trans',
-         'military',
-         'issues' ]
-
         @data = {}
 
         sects.each_with_index do |sect,i|
           logger.debug "############################"
-          logger.debug "###  stats sect #{i}:"
+          logger.debug "###  [#{i}] stats sect >#{sect.title}<: "
 
-          @data[ titles[i] ] = sect_to_hash( sect )
+          @data[ sect.title ] = sect.data
         end
       end
       @data
@@ -58,51 +54,60 @@ module Factbook
 
 
     def sects
-      ## split html into sections
-      ##   to avoid errors w/ nested tags
-      
-      divs = [
-        '<div id="CollapsiblePanel1_Intro"',
-        '<div id="CollapsiblePanel1_Geo"',
-        '<div id="CollapsiblePanel1_People"',
-        '<div id="CollapsiblePanel1_Govt"',
-        '<div id="CollapsiblePanel1_Econ"',
-        '<div id="CollapsiblePanel1_Energy"',
-        '<div id="CollapsiblePanel1_Comm"',
-        '<div id="CollapsiblePanel1_Trans"',
-        '<div id="CollapsiblePanel1_Military"',
-        '<div id="CollapsiblePanel1_Issues"' ]
-      
       if @sects.nil?
-        @sects = []
+        ## split html into sections
+        ##   lets us avoids errors w/ (wrongly) nested tags
 
-        @pos = []
-        divs.each_with_index do |div,i|
+        divs = [
+          [ 'intro',    '<div id="CollapsiblePanel1_Intro"'   ],
+          [ 'geo',      '<div id="CollapsiblePanel1_Geo"'     ],
+          [ 'people',   '<div id="CollapsiblePanel1_People"'  ],
+          [ 'govt',     '<div id="CollapsiblePanel1_Govt"'    ],
+          [ 'econ',     '<div id="CollapsiblePanel1_Econ"'    ],
+          [ 'energy',   '<div id="CollapsiblePanel1_Energy"'  ],
+          [ 'comm',     '<div id="CollapsiblePanel1_Comm"'    ],
+          [ 'trans',    '<div id="CollapsiblePanel1_Trans"'   ],
+          [ 'military', '<div id="CollapsiblePanel1_Military"'],
+          [ 'issues',   '<div id="CollapsiblePanel1_Issues"'  ]
+        ]
+
+        indexes = []
+
+        ## note:
+        ##   skip missing sections (w/ warning)
+        ##   e.g. Vatican (Holy See), Liechtenstein etc. have no Energy section, for example
+
+        divs.each_with_index do |rec,i|
+          title = rec[0]
+          div   = rec[1]
           p = html.index( div )
           if p.nil?
-            ## issue error: if not found
-            puts "*** error: section not found -- #{div}"
+            ## issue warning: if not found
+            logger.warn "***!!! section not found -- #{div} --; skipping"
           else
-            puts "  found section #{i} @ #{p}"
+            logger.debug "  found section #{i} @ #{p}"
+            indexes <<  [title,p]
           end
-          
-          @pos <<  p
         end
-        @pos << -1   ## note: last entry add -1 for until the end of document
-        
-        divs.each_with_index do |div,i|
-          from = @pos[i] 
-          to   = @pos[i+1]
-          to -= 1  unless to == -1 ## note: sub one (-1) unless end-of-string (-1)
+
+        @sects = []
+
+        indexes.each_with_index do |rec,i|
+          title = rec[0]
+          from  = rec[1]
+
+          # is last entry? if yes use -1 otherewise pos
+          #   note: subtract one (-1) from pos unless end-of-string (-1)
+          to    = indexes[i+1].nil? ? -1 : indexes[i+1][1]-1
 
           ## todo: check that from is smaller than to
-          puts "   cut section #{i} [#{from}..#{to}]"
-          @sects << Nokogiri::HTML( html[ from..to ] )
-          
-          if i==0 || i==1
-            # puts "debug sect #{i}:"
-            # puts ">>>|||#{html[ from..to ]}|||<<<"
-          end
+          logger.debug "   cut section #{i} [#{from}..#{to}]"
+          @sects << Sect.new( title, html[ from..to ] )
+
+          ##if i==0 || i==1
+            ## puts "debug sect #{i}:"
+            ## puts ">>>|||#{html[ from..to ]}|||<<<"
+          ##end
         end
       end
 
@@ -263,154 +268,6 @@ module Factbook
         nil
       end
     end
-
-
-  def cleanup_key( key )
-    ## to lower case
-    key = key.downcase
-    ## seaport(s)  => seaports
-    key = key.gsub( '(s)', 's' )
-    key = key.gsub( ':', '' )    # trailing :
-    ## remove special chars ()-/,'
-    key = key.gsub( /['()\-\/,]/, ' ' )
-    key = key.strip
-    key = key.gsub( /[ ]+/, '_' )
-    key
-  end
-
-
-  def sect_to_hash( sect )
-
-    rows  = sect.css( 'table tr' )
-    cells = sect.css( 'table tr td' )
-    field_ids = rows.css( '#field' )    ## check - use div#field.category -- possible?
-    data_ids  = rows.css( '#data' )
-
-    logger.debug "rows.size:    #{rows.size}  (cells.size: #{cells.size} / field_ids.size: #{field_ids.size} / data_ids.size: #{data_ids.size})"
-
-    hash = {}
-    last_cat = nil
-
-    cells.each_with_index do |cell,i|
-      ## next if i > 14   ## skip after xx for debugging for now
-
-      # check if field or data id
-      # check for (nested) div#field in td
-      has_field_id  =  cell.css( '#field' ).size == 1 ? true : false
-
-      # check for td#data
-      has_data_id =  cell['id'] == 'data' ? true : false
-
-      if has_field_id
-
-        cats  = cell.css( 'div.category' )   ## note: ignore all .category not using div (issue warn/err if found!!) etc.
-        if cats.size == 1
-          text = cleanup_key( cats.first.text.strip )   # remove/strip leading and trailing spaces
-          last_cat = text
-          logger.debug "  [#{i}] category: >>#{text}<<"
-        else
-          logger.warn "**** !!!!!! warn/err - found element w/ field id  (no match for subsection!!! - check)"
-          logger.warn cell.to_s
-        end
-
-      elsif has_data_id
-
-        cats      = cell.css( 'div.category' )   ## note: ignore all .category not using div (issue warn/err if found!!) etc.
-        cats_data = cell.css( 'div.category_data,span.category_data' )  ## note: ignore a.category_data etc.
-        cats_div_data  =  cell.css( 'div.category_data' )
-        cats_span_data =  cell.css( 'span.category_data' )
-
-        logger.debug "    - [#{i}] data cell - cats: #{cats.size}, cats_data: #{cats_data.size} (cats_div_data: #{cats_div_data.size} / cats_span_data: #{cats_span_data.size})"
-
-        pairs = []
-        last_pair = nil
-        last_pair_data_count = 0
-
-        ## loop over div blocks (might be .category or .category_data)
-        cell.children.each_with_index do |child,j|
-           unless child.element?
-             ## puts "   **** !!!! skipping non-element type >#{child.type}<:"
-             ## puts child.to_s
-             next
-           end
-           unless child.name == 'div'
-             logger.warn "   **** !!! skipping non-div >#{child.name}<:"
-             logger.warn child.to_s
-             next
-           end
-
-           ### check if .category or .category_data
-           if child['class'] == 'category'
-             
-              ## collect text for category; exclude element w/ class.category_data
-              text = ""
-              child.children.each do |subchild|
-                text << subchild.text.strip     unless subchild.element? && subchild['class'] == 'category_data'
-              end
-              text = cleanup_key( text )
-
-              value = child.css('span.category_data').text.strip
-
-              logger.debug "        -- category >>#{text}<<"
-
-              ## start new pair
-              last_pair = [ text, value ]
-              last_pair_data_count = 0
-              pairs << last_pair
-
-           elsif child['class'] == 'category_data'
-              logger.debug "        -- category_data"
-
-              text = child.text.strip
-
-              if last_pair.nil?
-                ## assume its the very first entry; use implied/auto-created category
-                last_pair = [ 'text', '' ]
-                last_pair_data_count = 0
-                pairs << last_pair
-              end
-
-              ### first category_data element?
-              if last_pair_data_count == 0
-                if last_pair[1] == ''
-                  last_pair[1] = text
-                else
-                  last_pair[1] += " #{text}"    ## append w/o separator
-                end
-              else
-                if last_cat == 'demographic_profile'  ## special case (use space a sep)
-                  last_pair[1] += " #{text}"   ## append with separator
-                else
-                  last_pair[1] += "; #{text}"   ## append with separator
-                end
-              end
-              last_pair_data_count += 1
-              
-           else
-              logger.warn "  **** !!! skipping div w/o category or category_data class:"
-              logger.warn child.to_s
-           end
-        end
-
-        ## pp pairs
-        
-        ## pairs to hash
-        pairs_hash = {}
-        pairs.each do |pair|
-          pairs_hash[ pair[0] ] = pair[1]
-        end
-
-        hash[ last_cat ] = pairs_hash
-
-      else
-        logger.warn "#### !!!!  unknown cell type (no field or data id found):"
-        logger.warn cell.to_s
-      end
-    end # each cell
-    
-    hash  # return hash
-
-  end # method sect_to_hash
 
   end # class Page
 

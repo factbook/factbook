@@ -77,6 +77,31 @@ saving a copy to pacific/mh-marshall-islands.html for debugging
   found section 4 @ 52734
 *** error: section not found -- <div id="CollapsiblePanel1_Energy"
 
+saving a copy to pacific/pw-palau.html for debugging
+  found section 0 @ 38
+  found section 1 @ 1338
+  found section 2 @ 12729
+  found section 3 @ 34145
+  found section 4 @ 51005
+*** error: section not found -- <div id="CollapsiblePanel1_Energy"
+
+saving a copy to pacific/tv-tuvalu.html for debugging
+  found section 0 @ 38
+  found section 1 @ 1391
+  found section 2 @ 13580
+  found section 3 @ 33729
+  found section 4 @ 50390
+*** error: section not found -- <div id="CollapsiblePanel1_Energy"
+
+saving a copy to africa/ss-south-sudan.html for debugging
+  found section 0 @ 38
+  found section 1 @ 2560
+  found section 2 @ 11342
+  found section 3 @ 26234
+  found section 4 @ 42271
+*** error: section not found -- <div id="CollapsiblePanel1_Energy"
+
+
 =end
 
 
@@ -84,11 +109,11 @@ saving a copy to pacific/mh-marshall-islands.html for debugging
 desc 'generate json for factbook.json repo'
 task :genjson do
   require 'factbook'
-  require 'fileutils'
 
   countries = [
 =begin
      ['xx', 'world' ],     ## special code for the world
+
      ['ee', 'europe/eu-european-union'],  ## special code for the european union
      ['al', 'europe/al-albania' ],
      ['an', 'europe/ad-andorra' ],
@@ -140,30 +165,9 @@ task :genjson do
      ['up',   'europe/ua-ukraine' ],
 #     ['vt',   'europe/va-vatican-city' ],
 
+     ['ca',   'north-america/ca-canada' ],
      ['us',   'north-america/us-united-states' ],
      ['mx',   'north-america/mx-mexico' ],
-     ['ca',   'north-america/ca-canada' ],
-
-     ['bh',   'central-america/bz-belize' ],
-     ['cs',   'central-america/cr-costa-rica' ],
-     ['es',   'central-america/sv-el-salvador' ],
-     ['gt',   'central-america/gt-guatemala' ],
-     ['ho',   'central-america/hn-honduras' ],
-     ['nu',   'central-america/ni-nicaragua' ],
-     ['pm',   'central-america/pa-panama' ],
-
-     ['ar',   'south-america/ar-argentina' ],
-     ['bl',   'south-america/bo-bolivia' ],
-     ['br', 'south-america/br-brazil' ],
-     ['ci',   'south-america/cl-chile' ],
-     ['co',   'south-america/co-colombia' ],
-     ['ec',   'south-america/ec-ecuador' ],
-     ['gy',   'south-america/gy-guyana' ],
-     ['pa',   'south-america/py-paraguay' ],
-     ['pe',   'south-america/pe-peru' ],
-     ['ns',   'south-america/sr-suriname' ],
-     ['uy',   'south-america/uy-uruguay' ],
-     ['ve',   'south-america/ve-venezuela' ],
 
      ['ac',   'caribbean/ag-antigua-n-barbuda' ],
      ['bf',   'caribbean/bs-bahamas' ],
@@ -179,16 +183,96 @@ task :genjson do
      ['vc',   'caribbean/vc-saint-vincent-n-the-grenadines' ],
      ['td',   'caribbean/tt-trinidad-n-tobago' ],
 
+     ['bh',   'central-america/bz-belize' ],
+     ['cs',   'central-america/cr-costa-rica' ],
+     ['es',   'central-america/sv-el-salvador' ],
+     ['gt',   'central-america/gt-guatemala' ],
+     ['ho',   'central-america/hn-honduras' ],
+     ['nu',   'central-america/ni-nicaragua' ],
+     ['pm',   'central-america/pa-panama' ],
+
+     ['ar',   'south-america/ar-argentina' ],
+     ['bl',   'south-america/bo-bolivia' ],
+     ['br',   'south-america/br-brazil' ],
+     ['ci',   'south-america/cl-chile' ],
+     ['co',   'south-america/co-colombia' ],
+     ['ec',   'south-america/ec-ecuador' ],
+     ['gy',   'south-america/gy-guyana' ],
+     ['pa',   'south-america/py-paraguay' ],
+     ['pe',   'south-america/pe-peru' ],
+     ['ns',   'south-america/sr-suriname' ],
+     ['uy',   'south-america/uy-uruguay' ],
+     ['ve',   'south-america/ve-venezuela' ],
+
      ['ag',   'africa/dz-algeria' ],
      ['ao',   'africa/ao-angola' ],
      ['bn',   'africa/bj-benin' ],
      ['bc',   'africa/bw-botswana' ],
+     ['uv',   'africa/bf-burkina-faso' ],
+     ['by',   'africa/bi-burundi' ],
+     ['cm',   'africa/cm-cameroon' ],
+     ['cv',   'africa/cv-cape-verde' ],
+     ['ct',   'africa/cf-central-african-republic' ],
+     ['cd',   'africa/td-chad' ],
+     ['cn',   'africa/km-comoros' ],
+     ['cf',   'africa/cg-congo' ],
+     ['cg',   'africa/cd-congo-dr' ],
+     ['iv',   'africa/ci-cote-d-ivoire' ],
+     ['dj',   'africa/dj-djibouti' ],
+     ['eg',   'africa/eg-egypt' ],
+     ['ek',   'africa/gq-equatorial-guinea' ],
+     ['er',   'africa/er-eritrea' ],
+     ['et',   'africa/et-ethiopia' ],
+     ['gb',   'africa/ga-gabon' ],
+     ['ga',   'africa/gm-gambia' ],
+     ['gh',   'africa/gh-ghana' ],
+     ['gv',   'africa/gn-guinea' ],
+     ['pu',   'africa/gw-guinea-bissau' ],
+     ['ke',   'africa/ke-kenya' ],
+     ['lt',   'africa/ls-lesotho' ],
+     ['li',   'africa/lr-liberia' ],
+     ['ly',   'africa/ly-libya' ],
+     ['ma',   'africa/mg-madagascar' ],
+     ['mi',   'africa/mw-malawi' ],
+     ['ml',   'africa/ml-mali' ],
+     ['mr',   'africa/mr-mauritania' ],
+     ['mp',   'africa/mu-mauritius' ],
+     ['mo',   'africa/ma-morocco' ],
+     ['mz',   'africa/mz-mozambique' ],
+     ['wa',   'africa/na-namibia' ],
+     ['ng',   'africa/ne-niger' ],
+     ['ni',   'africa/ng-nigeria' ],
+     ['rw',   'africa/rw-rwanda' ],
+     ['tp',   'africa/st-st-sao-tome-n-principe' ],
+     ['sg',   'africa/sn-senegal' ],
+     ['se',   'africa/sc-seychelles' ],
+     ['sl',   'africa/sl-sierra-leone' ],
+     ['so',   'africa/so-somalia' ],
+     ['sf',   'africa/za-south-africa' ],
+#     ['od',   'africa/ss-south-sudan' ],
+     ['su',   'africa/sd-sudan' ],
+     ['wz',   'africa/sz-swaziland' ],
+     ['tz',   'africa/tz-tanzania' ],
+     ['to',   'africa/tg-togo' ],
+     ['ts',   'africa/tn-tunisia' ],
+     ['ug',   'africa/ug-uganda' ],
+     ['za',   'africa/zm-zambia' ],
+     ['zi',   'africa/zw-zimbabwe' ],
 
      ['ba',   'middle-east/bh-bahrain' ],
      ['ir',   'middle-east/ir-iran' ],
      ['iz',   'middle-east/iq-iraq' ],
      ['is',   'middle-east/il-israel' ],
      ['jo',   'middle-east/jo-jordan' ],
+     ['ku',   'middle-east/kw-kuwait' ],
+     ['le',   'middle-east/lb-lebanon' ],
+     ['mu',   'middle-east/om-oman' ],
+###  ['??',   'middle-east/ps-palestine' ],  -- incl. gaza strip n west bank 
+     ['qa',   'middle-east/qa-qatar' ],
+     ['sa',   'middle-east/sa-saudi-arabia' ],
+     ['sy',   'middle-east/sy-syria' ],
+     ['ae',   'middle-east/ae-united-arab-emirates' ],
+     ['ym',   'middle-east/ye-yemen' ],
 
      ['af',   'asia/af-afghanistan' ],
      ['bg',   'asia/bd-bangladesh' ],
@@ -197,18 +281,51 @@ task :genjson do
      ['cb',   'asia/kh-cambodia' ],
      ['ch',   'asia/cn-china' ],
      ['in',   'asia/in-india' ],
+     ['id',   'asia/id-indonesia' ],
+     ['ja',   'asia/jp-japan' ],
+     ['kz',   'asia/kz-kazakhstan' ],
+     ['kg',   'asia/kg-kyrgyzstan' ],
+     ['la',   'asia/la-laos' ],
+     ['my',   'asia/my-malaysia' ],
+     ['mv',   'asia/mv-maldives' ],
+     ['mg',   'asia/mn-mongolia' ],
+     ['bm',   'asia/mm-myanmar' ],     ## still using Burma
+     ['np',   'asia/np-nepal' ],
+     ['kn',   'asia/kp-north-korea' ],
+     ['pk',   'asia/pk-pakistan' ],
+     ['rp',   'asia/ph-philippines' ],
+     ['sn',   'asia/sg-singapore' ],
+     ['ks',   'asia/kr-south-korea' ],
+     ['ce',   'asia/lk-sri-lanka' ],
+     ['tw',   'asia/tw-taiwan' ],
+     ['ti',   'asia/tj-tajikistan' ],
+     ['th',   'asia/th-thailand' ],
+     ['tt',   'asia/tl-timor-leste' ],
+     ['tx',   'asia/tm-turkmenistan' ],
+     ['uz',   'asia/uz-uzbekistan' ],
+     ['vm',   'asia/vn-vietnam' ],
 
      ['as',   'pacific/au-australia' ],
      ['fj',   'pacific/fj-fiji' ],
      ['kr',   'pacific/ki-kiribati' ],
 #     ['rm',   'pacific/mh-marshall-islands' ],
-=end
-
      ['fm',   'pacific/fm-micronesia' ],
      ['nr',   'pacific/nr-nauru' ],
      ['nz',   'pacific/nz-new-zealand' ],
+#     ['ps',   'pacific/pw-palau' ],
+     ['pp',   'pacific/pg-papua-new-guinea' ],
+     ['ws',   'pacific/ws-samoa' ],
+     ['bp',   'pacific/sb-solomon-islands' ],
+     ['tn',   'pacific/to-tonga' ],
+#     ['tv',   'pacific/tv-tuvalu' ],
+     ['nh',   'pacific/vu-vanuatu' ],
+
+=end
+
+
 
 =begin
+     ['',   'africa/' ],
 =end
   ]
 

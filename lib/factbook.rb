@@ -7,6 +7,7 @@ require 'uri'
 require 'cgi'
 require 'pp'
 require 'json'
+require 'fileutils'
 
 
 ## 3rd party gems/libs
@@ -21,6 +22,7 @@ require 'nokogiri'
 
 require 'factbook/version' # let it always go first
 require 'factbook/page'
+require 'factbook/sect'
 
 
 module Factbook
