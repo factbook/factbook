@@ -1,6 +1,13 @@
-## The World Factbook Summary (267 Entries) - 195 Sovereign Countries / 2 Others / 58 Dependencies / 6 Miscellaneous / 5 Oceans / 1 World
 
-The World Factbook includes 267 entries:
+## The World Factbook Summary (267 Entries)
+
+The World Factbook includes 267 entries -
+195 sovereign countries /
+2 others /
+58 dependencies /
+6 miscellaneous /
+5 oceans /
+1 world:
 
 
 ### Sovereign Countries (195)
@@ -233,76 +240,76 @@ The World Factbook includes 267 entries:
 
 ### Dependencies (58)
 
-- Australia (6):
-  `at` Ashmore and Cartier Islands,
-  `kt` Christmas Island,
-  `ck` Cocos (Keeling) Islands,
-  `cr` Coral Sea Islands,
-  `hm` Heard Island and McDonald Islands,
-  `nf` Norfolk Island
+Australia (6):
+`at` Ashmore and Cartier Islands,
+`kt` Christmas Island,
+`ck` Cocos (Keeling) Islands,
+`cr` Coral Sea Islands,
+`hm` Heard Island and McDonald Islands,
+`nf` Norfolk Island
 
-- China (2):
-  `hk` Hong Kong,
-  `mc` Macau
+China (2):
+`hk` Hong Kong,
+`mc` Macau
 
-- Denmark (2):
-  `fo` Faroe Islands,
-  `gl` Greenland
+Denmark (2):
+`fo` Faroe Islands,
+`gl` Greenland
 
-- France (8):
-  `ip` Clipperton Island,
-  `fp` French Polynesia,
-  `fs` French Southern and Antarctic Lands,
-  `nc` New Caledonia,
-  `tb` Saint Barthelemy,
-  `rn` Saint Martin,
-  `sb` Saint Pierre and Miquelon,
-  `wf` Wallis and Futuna
+France (8):
+`ip` Clipperton Island,
+`fp` French Polynesia,
+`fs` French Southern and Antarctic Lands,
+`nc` New Caledonia,
+`tb` Saint Barthelemy,
+`rn` Saint Martin,
+`sb` Saint Pierre and Miquelon,
+`wf` Wallis and Futuna
 
-- Netherlands (3):
-  `aa` Aruba,
-  `uc` Curacao,
-  `nn` Sint Maarten
+Netherlands (3):
+`aa` Aruba,
+`uc` Curacao,
+`nn` Sint Maarten
 
-- New Zealand (3):
-  `cw` Cook Islands,
-  `ne` Niue,
-  `tl` Tokelau
+New Zealand (3):
+`cw` Cook Islands,
+`ne` Niue,
+`tl` Tokelau
 
-- Norway (3):
-  `bv` Bouvet Island,
-  `jn` Jan Mayen,
-  `sv` Svalbard
+Norway (3):
+`bv` Bouvet Island,
+`jn` Jan Mayen,
+`sv` Svalbard
 
-- Great Britain (17):
-  `ax` Akrotiri (Sovereign Base),
-  `av` Anguilla,
-  `bd` Bermuda,
-  `io` British Indian Ocean Territory,
-  `vi` British Virgin Islands,
-  `cj` Cayman Islands,
-  `dx` Dhekelia (Sovereign Base),
-  `fk` Falkland Islands,
-  `gi` Gibraltar,
-  `gk` Guernsey,
-  `je` Jersey,
-  `im` Isle of Man,
-  `mh` Montserrat,
-  `pc` Pitcairn Islands,
-  `sh` Saint Helena,
-  `sx` South Georgia and the South Sandwich Islands,
-  `tk` Turks and Caicos Islands
+Great Britain (17):
+`ax` Akrotiri (Sovereign Base),
+`av` Anguilla,
+`bd` Bermuda,
+`io` British Indian Ocean Territory,
+`vi` British Virgin Islands,
+`cj` Cayman Islands,
+`dx` Dhekelia (Sovereign Base),
+`fk` Falkland Islands,
+`gi` Gibraltar,
+`gk` Guernsey,
+`je` Jersey,
+`im` Isle of Man,
+`mh` Montserrat,
+`pc` Pitcairn Islands,
+`sh` Saint Helena,
+`sx` South Georgia and the South Sandwich Islands,
+`tk` Turks and Caicos Islands
 
-- United States (14):
-  `aq` American Samoa,
-  `gq` Guam,
-  `bq` Navassa Island,
-  `cq` Northern Mariana Islands,
-  `rq` Puerto Rico,
-  `vq` US Virgin Islands,
-  `wq` Wake Island,
-  `um` US Pacific Island Wildlife Refuges
-  (Baker Island, Howland Island, Jarvis Island, Johnston Atoll, Kingman Reef, Midway Islands, Palmyra Atoll)
+United States (14):
+`aq` American Samoa,
+`gq` Guam,
+`bq` Navassa Island,
+`cq` Northern Mariana Islands,
+`rq` Puerto Rico,
+`vq` US Virgin Islands,
+`wq` Wake Island,
+`um` US Pacific Island Wildlife Refuges
+(Baker Island, Howland Island, Jarvis Island, Johnston Atoll, Kingman Reef, Midway Islands, Palmyra Atoll)
 
 
 ### Miscellaneous (6)
@@ -325,3 +332,5 @@ The World Factbook includes 267 entries:
 ### World (1)
 
 `xx` World
+
+
