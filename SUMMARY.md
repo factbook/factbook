@@ -69,7 +69,7 @@ The World Factbook includes 267 entries:
 `en` Estonia,
 `et` Ethiopia
 **F**
-`fj Fiji,
+`fj` Fiji,
 `fi` Finland,
 `fr` France
 **G**
