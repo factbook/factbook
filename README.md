@@ -40,8 +40,135 @@ end
 ```
 
 
-## Summary
+## Summary - 267 Entries - 195 Sovereign States / 2 Others / 58 Dependencies / 6 Miscellaneous / 5 Oceans / 1 World
 
+The World Factbook includes 267 entries:
+
+### Sovereign States (195)
+
+**A** Afghanistan, Albania, Algeria, Andorra, Angola, Antigua and Barbuda, Argentina, Armenia, Australia, Austria, Azerbaijan,
+**B** The Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgium, Belize, Benin, Bhutan, Bolivia, Bosnia and Herzegovina, Botswana, Brazil, Brunei, Bulgaria, Burkina Faso, Burma, Burundi,
+**C** Cambodia,Cameroon, Canada, Cape Verde, Central African Republic, Chad, Chile, China, Colombia, Comoros, Democratic Republic of the Congo, Republic of the Congo, Costa Rica, Cote d'Ivoire, Croatia, Cuba, Cyprus, Czech Republic,
+**D** Denmark, Djibouti, Dominica, Dominican Republic,
+**E** Ecuador, Egypt, El Salvador, Equatorial Guinea, Eritrea, Estonia, Ethiopia,
+**F** Fiji, Finland, France,
+**G** Gabon, The Gambia, Georgia, Germany, Ghana, Greece, Grenada, Guatemala, Guinea, Guinea-Bissau, Guyana,
+**H** Haiti, Holy See, Honduras, Hungary,
+**I** Iceland, India, Indonesia, Iran, Iraq, Ireland, Israel, Italy,
+**J** Jamaica, Japan, Jordan,
+**K** Kazakhstan, Kenya, Kiribati, North Korea, South Korea, Kosovo, Kuwait, Kyrgyzstan,
+**L** Laos, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Lithuania, Luxembourg,
+**M** Macedonia, Madagascar, Malawi, Malaysia, Maldives, Mali, Malta, Marshall Islands, Mauritania, Mauritius, Mexico, Federated States of Micronesia, Moldova, Monaco, Mongolia, Montenegro, Morocco, Mozambique,
+**N** Namibia, Nauru, Nepal, Netherlands, NZ, Nicaragua, Niger, Nigeria, Norway,
+**O** Oman,
+**P** Pakistan, Palau, Panama, Papua New Guinea, Paraguay, Peru, Philippines, Poland, Portugal,
+**Q** Qatar,
+**R** Romania, Russia, Rwanda,
+**S** Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, Samoa, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Slovakia, Slovenia, Solomon Islands, Somalia, South Africa, South Sudan, Spain, Sri Lanka, Sudan, Suriname, Swaziland, Sweden, Switzerland, Syria,
+**T** Tajikistan, Tanzania, Thailand, Timor-Leste, Togo, Tonga, Trinidad and Tobago, Tunisia, Turkey, Turkmenistan, Tuvalu,
+**U** Uganda, Ukraine, UAE, UK, US, Uruguay, Uzbekistan,
+**V** Vanuatu, Venezuela, Vietnam,
+**Y** Yemen,
+**Z** Zambia, Zimbabwe
+
+
+### Other (2)
+
+Taiwan, European Union
+
+### Dependencies (58)
+
+- 6 Australia:
+  Ashmore and Cartier Islands,
+  Christmas Island,
+  Cocos (Keeling) Islands,
+  Coral Sea Islands,
+  Heard Island and McDonald Islands,
+  Norfolk Island
+
+- 2 China:
+  Hong Kong,
+  Macau
+
+- 2 Denmark:
+  Faroe Islands,
+  Greenland
+
+- 8 France:
+  Clipperton Island,
+  French Polynesia,
+  French Southern and Antarctic Lands,
+  New Caledonia,
+  Saint Barthelemy,
+  Saint Martin,
+  Saint Pierre and Miquelon,
+  Wallis and Futuna
+
+- 3 Netherlands:
+  Aruba,
+  Curacao,
+  Sint Maarten
+
+- 3 New Zealand:
+  Cook Islands,
+  Niue,
+  Tokelau
+
+- 3 Norway:
+  Bouvet Island,
+  Jan Mayen,
+  Svalbard
+
+- 17 Great Britain:
+  Akrotiri,
+  Anguilla, Bermuda,
+  British Indian Ocean Territory,
+  British Virgin Islands,
+  Cayman Islands,
+  Dhekelia,
+  Falkland Islands,
+  Gibraltar,
+  Guernsey,
+  Jersey,
+  Isle of Man,
+  Montserrat,
+  Pitcairn Islands,
+  Saint Helena,
+  South Georgia and the South Sandwich Islands,
+  Turks and Caicos Islands
+
+- 14 United States:
+  American Samoa,
+  Guam,
+  Navassa Island,
+  Northern Mariana Islands,
+  Palmyra Atoll,
+  Puerto Rico,
+  Virgin Islands,
+  Wake Island,
+  US Pacific Island Wildlife Refuges
+  (Baker Island, Howland Island, Jarvis Island, Johnston Atoll, Kingman Reef, Midway Islands, Palmyra Atoll)
+
+### Miscellaneous (6)
+
+Antarctica,
+Gaza Strip,
+Paracel Islands,
+Spratly Islands,
+West Bank,
+Western Sahara
+
+### Oceans (5)
+
+Arctic Ocean,
+Atlantic Ocean,
+Indian Ocean,
+Pacific Ocean,
+Southern Ocean
+
+### World (1)
+
+`xx` World
 
 
 
@@ -67,7 +194,7 @@ Ruby
 
 - [the_country_identity gem](https://github.com/p1nox/the_country_identity)
   by Raul Pino (aka p1nox);
-  fetches data from an [RDF Turtle endpoint](http://wifo5-03.informatik.uni-mannheim.de/factbook)
+  fetches data from an [RDF Turtle endpoint](http://wifo5-03.informatik.uni-mannheim.de/factbook/)
   hosted by the Research Group Data and Web Science at the University of Mannheim, Germany
 
 JavaScript
