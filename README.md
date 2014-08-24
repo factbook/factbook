@@ -41,7 +41,7 @@ end
 
 ### Options - Header, "Long" Category / Field Names
 
-#### Option - Include Header - `header: true`
+#### Include Header Option - `header: true`
 
 ```ruby
 page = Factbook::Page.new( 'br', header: true )
@@ -60,7 +60,7 @@ will include a leading header section. Example:
 }
 ```
 
-#### Option - "Long" Category / Field Names - `fields: 'long'`
+#### "Long" Category / Field Names Option - `fields: 'long'`
 
 ```ruby
 page = Factbook::Page.new( 'br', fields: 'long')
@@ -93,7 +93,7 @@ or
 ```ruby
 opts = {
   header: true,
-  fields: 'long
+  fields: 'long'
 }
 page = Factbook::Page.new( 'br', opts )
 ```
