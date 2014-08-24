@@ -7,11 +7,12 @@ module Factbook
 
     attr_reader :title, :html
 
-    def initialize( title, html )
+    def initialize( title, html, opts={} )
       ## todo: passing a ref to the parent page - why? why not??
       @title = title
       @html  = html
-      
+      @opts  = opts    # fields:  full|long|keep|std|???  -- find a good name for the option keeping field names as is
+
       @doc   = nil
       @data  = nil
     end
@@ -28,15 +29,31 @@ module Factbook
 private
 
   def cleanup_key( key )
-    ## to lower case
-    key = key.downcase
-    ## seaport(s)  => seaports
-    key = key.gsub( '(s)', 's' )
-    key = key.gsub( ':', '' )    # trailing :
-    ## remove special chars ()-/,'
-    key = key.gsub( /['()\-\/,]/, ' ' )
-    key = key.strip
-    key = key.gsub( /[ ]+/, '_' )
+    
+    if @opts[:fields]    #  if set assume full|long|keep for now
+      ### kepe field names as is
+      ##  e.g.
+      ##   GDP - composition, by sector of origin:
+      ##   Budget surplus (+) or deficit (-):
+      ##  becomes:
+      ##   GDP - composition, by sector of origin
+      ##   Budget surplus (+) or deficit (-) 
+      key = key.strip
+      key = key.gsub( /[ ]{2,}/, ' ' )   # fold two plus spaces into one  -- check if exists?
+      key = key.gsub( /:\z/, '' )    # remove trailing : if present
+      key = key.strip
+    else
+      ## to lower case
+      key = key.downcase
+      ## seaport(s)  => seaports
+      key = key.gsub( '(s)', 's' )
+      key = key.gsub( ':', '' )    # trailing :  ## fix: use regex /:$/ w/ anchor??
+      ## remove special chars ()+-/,'
+      key = key.gsub( /['()+\-\/,]/, ' ' )
+      key = key.strip
+      key = key.gsub( /[ ]+/, '_' )
+    end
+
     key
   end
 
@@ -140,7 +157,7 @@ private
                   last_pair[1] += " #{text}"    ## append w/o separator
                 end
               else
-                if last_cat == 'demographic_profile'  ## special case (use space a sep)
+                if last_cat == 'demographic_profile' || last_cat == 'Demographic profile'  ## special case (use space a sep)
                   last_pair[1] += " #{text}"   ## append with separator
                 else
                   last_pair[1] += "; #{text}"   ## append with separator

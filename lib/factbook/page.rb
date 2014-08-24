@@ -13,11 +13,14 @@ module Factbook
     ## e.g. www.cia.gov/library/publications/the-world-factbook/geos/countrytemplate_br.html
     SITE_BASE = 'https://www.cia.gov/library/publications/the-world-factbook/geos/countrytemplate_{code}.html'
                  
-    def initialize( code )
+    def initialize( code, opts={} )
       ## note: requires factbook country code
       #   e.g. austria is au
       #        germany is gm  and so on
       @code  = code
+      
+      ### rename fields to format option?? why? why not? e.g. :format => 'long' ??
+      @opts  = opts   # fields:  full|long|keep|std|??  -- find a good name for the option keeping field names as is
 
       @html  = nil
       @doc   = nil
@@ -38,9 +41,34 @@ module Factbook
       end
     end
 
+
+    def [](key)  ### convenience shortcut
+      # lets you use
+      #   page['geo']
+      #   instead of
+      #   page.data['geo']
+
+      ##  fix: use delegate data, [] from forwardable lib - why?? why not??
+
+      data[key]
+    end
+
+
     def data
       if @data.nil?
         @data = {}
+
+        if @opts[:header]   ## include (leading) header section ??
+          
+          header_key =     @opts[:fields] ? 'Header' : 'header'
+          last_built_key = @opts[:fields] ? 'last built' : 'last_built'
+
+          @data[header_key] = {
+            'code' => @code,
+            'generator' => "factbook/#{VERSION}",
+            last_built_key => "#{Time.now}",
+          }
+        end
 
         sects.each_with_index do |sect,i|
           logger.debug "############################"
@@ -58,17 +86,18 @@ module Factbook
         ## split html into sections
         ##   lets us avoids errors w/ (wrongly) nested tags
 
+        ## check opts for using long or short category/field names
         divs = [
-          [ 'intro',    '<div id="CollapsiblePanel1_Intro"'   ],
-          [ 'geo',      '<div id="CollapsiblePanel1_Geo"'     ],
-          [ 'people',   '<div id="CollapsiblePanel1_People"'  ],
-          [ 'govt',     '<div id="CollapsiblePanel1_Govt"'    ],
-          [ 'econ',     '<div id="CollapsiblePanel1_Econ"'    ],
-          [ 'energy',   '<div id="CollapsiblePanel1_Energy"'  ],
-          [ 'comm',     '<div id="CollapsiblePanel1_Comm"'    ],
-          [ 'trans',    '<div id="CollapsiblePanel1_Trans"'   ],
-          [ 'military', '<div id="CollapsiblePanel1_Military"'],
-          [ 'issues',   '<div id="CollapsiblePanel1_Issues"'  ]
+          [ @opts[:fields] ? 'Introduction'        : 'intro',    '<div id="CollapsiblePanel1_Intro"'   ],
+          [ @opts[:fields] ? 'Geography'           : 'geo',      '<div id="CollapsiblePanel1_Geo"'     ],
+          [ @opts[:fields] ? 'People and Society'  : 'people',   '<div id="CollapsiblePanel1_People"'  ],
+          [ @opts[:fields] ? 'Government'          : 'govt',     '<div id="CollapsiblePanel1_Govt"'    ],
+          [ @opts[:fields] ? 'Economy'             : 'econ',     '<div id="CollapsiblePanel1_Econ"'    ],
+          [ @opts[:fields] ? 'Energy'              : 'energy',   '<div id="CollapsiblePanel1_Energy"'  ],
+          [ @opts[:fields] ? 'Communications'      : 'comm',     '<div id="CollapsiblePanel1_Comm"'    ],
+          [ @opts[:fields] ? 'Transportation'      : 'trans',    '<div id="CollapsiblePanel1_Trans"'   ],
+          [ @opts[:fields] ? 'Military'            : 'military', '<div id="CollapsiblePanel1_Military"'],
+          [ @opts[:fields] ? 'Transnational Issues': 'issues',   '<div id="CollapsiblePanel1_Issues"'  ]
         ]
 
         indexes = []
@@ -102,7 +131,7 @@ module Factbook
 
           ## todo: check that from is smaller than to
           logger.debug "   cut section #{i} [#{from}..#{to}]"
-          @sects << Sect.new( title, html[ from..to ] )
+          @sects << Sect.new( title, html[ from..to ], @opts )
 
           ##if i==0 || i==1
             ## puts "debug sect #{i}:"

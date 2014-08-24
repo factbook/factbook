@@ -1,7 +1,6 @@
 
 # Ideas, Suggestions
 
-
 ###  field ids
 
 Each field has its own ID. ID gets included in the JSON output. Benefits: 
@@ -30,6 +29,15 @@ to make the entries more descriptive / self-contained (to be located at the top,
    "fips" : "at"
 }
 ~~~
+
+The header, if included, should contain
+
+- name of the territory in question, e.g. Virgin Islands
+- name of parent region, e.g. Central America and Caribbean
+- dependency, e.g (territory of the US)
+- date of last update, e.g Page last updated on June 20, 2014
+- fips code, e.g., VQ
+- date & time when the json file was produced
 
 
 ### Thanks

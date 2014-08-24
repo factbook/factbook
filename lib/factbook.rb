@@ -25,17 +25,6 @@ require 'factbook/page'
 require 'factbook/sect'
 
 
-module Factbook
-
-  def self.banner
-    "factbook/#{VERSION} on Ruby #{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) [#{RUBY_PLATFORM}]"
-  end
-
-  def self.root
-    "#{File.expand_path( File.dirname(File.dirname(__FILE__)) )}"
-  end
-
-end # module Factbook
 
 
 puts Factbook.banner
