@@ -257,7 +257,6 @@ end
 
 
 def gen_json_for( country )
-
   country_code = country[0]
   country_path = country[1]
 
