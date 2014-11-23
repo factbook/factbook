@@ -17,9 +17,3 @@ require 'nokogiri'
 require 'factbook/version' # let it always go first
 require 'factbook/page'
 require 'factbook/sect'
-
-
-
-
-puts Factbook.banner
-

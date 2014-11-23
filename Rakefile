@@ -267,26 +267,14 @@ def gen_json_for( country )
   FileUtils.mkdir_p( File.dirname( path_html ) )
   FileUtils.mkdir_p( File.dirname( path_json ) )
 
-
   page = Factbook::Page.new( country_code )
 
-  ## print first 600 chars
-  pp page.html[0..600]
-
-  ## save for debuging
-  
-  puts "saving a copy to #{country_path}.html for debugging"
   File.open( path_html, 'w') do |f|
       f.write( page.html )
   end
 
   h = page.data
-  ## pp h
-
-  ### save to json
-  puts "saving a copy to #{country_path}.json for debugging"
   File.open( path_json, 'w') do |f|
     f.write( JSON.pretty_generate( h ) )
   end
 end
-
