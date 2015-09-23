@@ -464,6 +464,11 @@ JavaScript
   by Richard Marr (aka richmarr); fetches data using Node.js
   (last updated 2013)
 
+Python
+
+- [openfactbook datasets & tools](https://github.com/openfactbook)
+  by Eckhard Licher; uses official (offline) download archive (last updated 2014); incl. flags, maps, and more
+
 Others
 
 TBD
