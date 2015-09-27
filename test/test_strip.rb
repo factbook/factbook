@@ -4,7 +4,7 @@
 require 'helper'
 
 
-class TestStrip < MiniTest::Unit::TestCase
+class TestStrip < MiniTest::Test
 
   def test_country_comparison
 

@@ -2,7 +2,9 @@ HISTORY.md
 Manifest.txt
 README.md
 Rakefile
+data/codes.csv
 lib/factbook.rb
+lib/factbook/codes.rb
 lib/factbook/page.rb
 lib/factbook/sect.rb
 lib/factbook/version.rb
@@ -15,6 +17,7 @@ test/data/countrytemplate_mx.html
 test/data/countrytemplate_vt.html
 test/data/countrytemplate_xx.html
 test/helper.rb
+test/test_codes.rb
 test/test_fields.rb
 test/test_json.rb
 test/test_page.rb

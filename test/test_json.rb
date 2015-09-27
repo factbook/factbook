@@ -4,7 +4,7 @@
 require 'helper'
 
 
-class TestJson < MiniTest::Unit::TestCase
+class TestJson < MiniTest::Test
 
 
   def test_json

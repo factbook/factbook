@@ -4,7 +4,7 @@
 require 'helper'
 
 
-class TestPageOld < MiniTest::Unit::TestCase
+class TestPageOld < MiniTest::Test
 
 
   def xxx_test_br

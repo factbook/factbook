@@ -4,7 +4,7 @@
 require 'helper'
 
 
-class TestPage < MiniTest::Unit::TestCase
+class TestPage < MiniTest::Test
 
 
   def test_sects

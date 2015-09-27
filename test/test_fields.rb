@@ -4,7 +4,7 @@
 require 'helper'
 
 
-class TestFields < MiniTest::Unit::TestCase
+class TestFields < MiniTest::Test
 
   def read_test_page( code )
     File.read( "#{Factbook.root}/test/data/countrytemplate_#{code}.html" )
