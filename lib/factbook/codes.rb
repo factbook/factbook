@@ -66,18 +66,31 @@ class Codes
   ##  def all()  self.to_a; end    ## note: alias for to_a - use - why? why not??
 
   ## "pre-defined" convenience shortcuts
-  def countries()       category( 'Countries' );     end
-  def world()           category( 'World' );         end
-  def oceans()          category( 'Oceans' );        end
-  def misc()            category( 'Miscellaneous' ); end
-  def others()          category( 'Other' );         end
-  def dependencies()    category( 'Dependencies' );  end
-  def dependencies_us() category( 'Dependencies (United States)' ); end
+  def countries()       category 'Countries';     end
+  def world()           category 'World';         end
+  def oceans()          category 'Oceans';        end
+  def misc()            category 'Miscellaneous'; end
+  def others()          category 'Other';         end
+  def dependencies()    category 'Dependencies';  end
+  def dependencies_us() category 'Dependencies (United States)'; end
+## fix/todo: add all dependencies  uk (or gb?), fr,cn,au,nz,no,dk,etc.
 
-  def europe()          region( 'Europe' ); end
+  def europe()               region 'Europe';            end
+  def south_asia()           region 'South Asia';        end
+  def central_asia()         region 'Central Asia';      end
+  def east_n_souteast_asia() region 'East & Southeast Asia'; end
+  def middle_east()          region 'Middle East';       end
+  def africa()               region 'Africa';            end
+  def north_america()        region 'North America';     end
+  def central_america_n_caribbean() region 'Central America and Caribbean'; end
+  def south_america()        region 'South America';     end
+  def australia_oceania()    region 'Australia-Oceania'; end
+  def antartica()            region 'Antarctica';        end
 
-  ###
-  ##  todo: fix add region e.g. Europe,Asia,Oceans, etc.
+  ## note: regions oceans and world - same as category oceans and world
+  ##     use oceans_ii or world_ii or something ??
+  ##   use category('World')  n region('World')
+  ##   use category('Oceans') n region('Oceans')
 
 
   def category( query )
