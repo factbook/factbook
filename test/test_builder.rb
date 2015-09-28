@@ -14,22 +14,17 @@ require 'helper'
 
 class TestBuilder < MiniTest::Test
 
-  INPUT_DIR = "#{Factbook.root}/test/data/src"
+  def test_build
+    
+    ['au','be'].each do |cc|
+       ## use/fix: ASCII-8BIT (e.g.keep as is) -???
+       ## fix/todo: use ASCII8BIT/binary reader ??
+      b = Factbook::Builder.from_file( "#{Factbook.root}/test/data/src/#{cc}.html" )
 
-  def test_au
-    cc = 'au'
-    b = Factbook::Builder.from_file( cc, input_dir: INPUT_DIR )
-
-    File.open( "./tmp/#{cc}.debug.html", 'w' ) do |f|
-      f.write b.html_debug
+      File.open( "./tmp/#{cc}.debug.html", 'w' ) do |f|
+        f.write b.html_debug
+      end
     end
-
-    assert true    ## assume everthing ok
-  end
-
-  def xxx_test_be
-    cc = 'be'
-    b = Factbook::Builder.from_file( cc, input_dir: INPUT_DIR )
 
     assert true    ## assume everthing ok
   end

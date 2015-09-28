@@ -64,7 +64,7 @@ end
 
 
 
-COUNTRY_INFO_REGEX = /
+PAGE_INFO_REGEX = /
              regioncode=(?<q1>"|')(?<region_code>.+?)\k<q1>
                \s+
              countrycode=(?<q2>"|')(?<country_code>.+?)\k<q2>       ## is k<3> backref
@@ -78,28 +78,20 @@ COUNTRY_INFO_REGEX = /
               region=(?<q5>"|')(?<region>.+?)\k<q5>    ## check world - might be empty ?? or for ocean ??
            /imx
 
-CountryInfo = Struct.new( :country_code,
-                          :country_name,
-                          :country_affiliation,
-                          :region_code,
-                          :region_name )
 
-def find_country_info( html )
-  m = COUNTRY_INFO_REGEX.match( html )
+def find_page_info( html )
+  m = PAGE_INFO_REGEX.match( html )
   if m
     pp m
-    rec = CountryInfo.new
 
-    rec.country_code        = m[:country_code]
-    rec.country_name        = m[:country]
-    rec.country_affiliation = m[:affiliation]
-    rec.region_code         = m[:region_code]
-    rec.region_name         = m[:region]
+    h = { country_code:        m[:country_code],
+          country_name:        m[:country],
+          country_affiliation: m[:affiliation],
+          region_code:         m[:region_code],
+          region_name:         m[:region] }
     
-    puts "** bingo - region_code >#{rec.region_code}<, region_name >#{rec.region_name}<, " +
-                   "country_code >#{rec.country_code}<, country_name >#{rec.country_name}<, " +
-                   "country_affiliation >#{rec.country_affiliation}<"
-    rec
+    puts "** bingo - #{h.inspect}"
+    h    ## return hash w/ name-value pairs
   else
     nil   ## or return empty struct with nils/empty strings - why?? why not??
   end

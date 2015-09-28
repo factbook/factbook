@@ -4,42 +4,41 @@ module Factbook
 
 class Builder
   include LogUtils::Logging
-  include Utils     ## pulls in encode_utf8, ...
 
-def self.from_file( cc, opts={} )
+
+=begin
+def self.from_cc( cc, opts={} )  ## rename to from_file_for_country() or from_file_for_cc() or something - why?? why not??
+  ## check/todo: rename input_dir to just dir or to include ?
+  ##   (there's no output_dir)?? - why? why not?
   input_dir = opts[:input_dir] || '.'
-  html_ascii = File.read( "#{input_dir}/#{cc}.html" )    ## fix/todo: use ASCII8BIT/binary reader
-  self.new( cc, html_ascii )
+  self.from_file( "#{input_dir}/#{cc}.html" )
+end
+=end
+
+
+def self.from_file( path )
+  html_ascii = File.read( path )    ## fix/todo: use ASCII8BIT/binary reader !!!!!
+  self.new( html_ascii )
 end
 
 
-attr_reader :cc,
-            :html_ascii,     ## full "original" 1:1 page in "original/ascii8/binary" encoding
+attr_reader :html_ascii,     ## full "original" 1:1 page in "original/ascii8/binary" encoding
             :html,           ## utf-8 encoded profile
-            :errors,     ## encoding erros etc.
-            :last_updated,
-            :country_info,
-            :html_debug       ## html w/ mapping markers - rename to html_markers - why? why not?
+            :html_debug,     ## html w/ mapping markers - rename to html_markers - why? why not?
+            :page_info,      ## incl. country_name, region_name, last_updated etc.
+            :errors          ## encoding erros etc.
 
 
-def initialize( cc, html_ascii )
-  @cc         = cc
+def initialize( html_ascii )
   @html_ascii = html_ascii
-
-  html_profile_ascii = find_country_profile( @html_ascii )    ## cut-off headers, footers, scripts, etc.
     
-  @html, @errors = encode_utf8( html_profile_ascii )  ## change encoding to utf-8  (from binary/ascii8bit)
-
-  @html = sanitize( @html )
-  
-  @last_updated = find_page_last_updated( @html_ascii )
-  @country_info = find_country_info( @html_ascii )
+  ## todo/fix: use/assume windows 12xx?? encoding - change encoding to utf-8  (from binary/ascii8bit)
+  @html, @page_info, @errors = Sanitizer.new.sanitize( @html_ascii )
 
   @html_debug = map_sects( @html )
   @html_debug = map_subsects( @html_debug )
 
   pp split_sects( @html_debug )
-
 end
 
 

@@ -1,7 +1,49 @@
 # encoding: utf-8
 
 module Factbook
-  module Utils
+
+PageInfo = Struct.new( :country_code,
+                       :country_name,
+                       :country_affiliation,
+                       :region_code,
+                       :region_name,
+                       :last_updated )
+
+class Sanitizer
+  include LogUtils::Logging
+  include Utils     ## pulls in encode_utf8, ...
+
+
+def sanitize( html_ascii )
+  ## todo: add option for (html source) encoding - why?? why not??
+    
+  ## note:
+  ##   returns 1) html profile withouth headers, footers, scripts,etc.
+  ##           2) page (meta) info e.g. country_name, country_code, last_updated, etc.
+  ##           3) errors e.g. list of errors e.g. endcoding errors (invalid byte sequence etc.)
+
+  page_info = PageInfo.new
+    
+  h = find_page_info( html_ascii )
+  page_info.country_code        = h[:country_code]
+  page_info.country_name        = h[:country_name]
+  page_info.country_affiliation = h[:country_affiliation]
+  page_info.region_code         = h[:region_code]
+  page_info.region_name         = h[:region_name]
+
+  page_info.last_updated        = find_page_last_updated( html_ascii )
+
+
+  html_profile_ascii = find_country_profile( html_ascii )    ## cut-off headers, footers, scripts, etc.
+  
+  ## todo/fix: assume windows 12xx encoding!!!! for factbook - try 
+  html, errors = encode_utf8( html_profile_ascii )  ## change encoding to utf-8  (from binary/ascii8bit)
+
+  html = sanitize_profile( html )
+  
+  [html, page_info, errors]
+end
+
 
 
 BEGIN_FACTS_REGEX = /<ul\s+
@@ -13,6 +55,38 @@ END_FACTS_REGEX = /<\/li>\s*
                    <\/tbody>\s*
                    <\/table>
                   /xim      ## ignore case; multi-line
+
+
+def find_country_profile( html )
+  ####
+  ## remove header (everything before)
+  ##   <ul class="expandcollapse">
+
+  pos = html.index( BEGIN_FACTS_REGEX )
+  fail "*** no begin facts marker found for page"  if pos.nil?
+
+  puts "  bingo - found BEGIN_FACTS on pos #{pos}"
+  html = html[pos..-1]
+
+  pp html[0..100]
+
+  ###
+  ## remove footer
+  ##  assume everthings after (last list item in unorder list inside a table body)
+  ##    </li>
+  ##    </ul>
+  ##    </tbody></table>
+
+  pos = html.index( END_FACTS_REGEX )
+  fail "*** no end facts marker found for page"  if pos.nil?
+    
+  puts "  bingo - found END_FACTS on pos #{pos}"
+  html = html[0...pos] + "</li></ul>\n"        ## note: use ... (not .. to cut-off pos)
+
+  pp html[-200..-1]
+  html
+end
+
 
 
 STYLE_ATTR_REGEX = /\s*
@@ -68,42 +142,7 @@ AUDIO_PLAYER_REGEX = /
         <\/div>
          /xim
 
-
-
-def find_country_profile( html )
-  ####
-  ## remove header (everything before)
-  ##   <ul class="expandcollapse">
-
-  pos = html.index( BEGIN_FACTS_REGEX )
-  fail "*** no begin facts marker found for page"  if pos.nil?
-
-  puts "  bingo - found BEGIN_FACTS on pos #{pos}"
-  html = html[pos..-1]
-
-  pp html[0..100]
-
-  ###
-  ## remove footer
-  ##  assume everthings after (last list item in unorder list inside a table body)
-  ##    </li>
-  ##    </ul>
-  ##    </tbody></table>
-
-  pos = html.index( END_FACTS_REGEX )
-  fail "*** no end facts marker found for page"  if pos.nil?
-    
-  puts "  bingo - found END_FACTS on pos #{pos}"
-  html = html[0...pos] + "</li></ul>\n"        ## note: use ... (not .. to cut-off pos)
-
-  pp html[-200..-1]
-  html
-end
-
-
-
-
-def sanitize( html )
+def sanitize_profile( html )
 
   html = html.gsub( STYLE_ATTR_REGEX ) do |m|
           puts "remove style attr:"
@@ -170,5 +209,6 @@ def sanitize( html )
 end
 
 
-  end   # module Utils
-end     # module Factbook
+end # class Sanitizer
+
+end # module Factbook
