@@ -22,11 +22,14 @@ require 'nokogiri'
 # our own code
 
 require 'factbook/version' # let it always go first
+require 'factbook/utils'
+require 'factbook/utils_info'
+require 'factbook/utils_page'
+require 'factbook/builder'
 require 'factbook/page'
 require 'factbook/sect'
 require 'factbook/subsect'
 require 'factbook/item'
-require 'factbook/builder'
 require 'factbook/codes'
 
 
