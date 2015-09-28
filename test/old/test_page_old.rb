@@ -4,13 +4,13 @@
 require 'helper'
 
 
-class TestPageOld < MiniTest::Test
+class TestOldPageOld < MiniTest::Test
 
 
   def xxx_test_br
     Dir.mkdir( 'tmp' )  unless Dir.exists?( 'tmp' )
 
-    page = Factbook::Page.new( 'br' )
+    page = Factbook::OldPage.new( 'br' )
     
     ## print first 600 chars
     pp page.html[0..600]
@@ -195,7 +195,7 @@ class TestPageOld < MiniTest::Test
 
 
   def yyy_test_mx
-    page = Factbook::Page.new( 'mx' )
+    page = Factbook::OldPage.new( 'mx' )
     
     ## print first 600 chars
     pp page.html[0..600]
@@ -263,7 +263,7 @@ class TestPageOld < MiniTest::Test
   end
 
   def yyy_test_mx
-    page = Factbook::Page.new( 'mx' )
+    page = Factbook::OldPage.new( 'mx' )
     
     ## print first 600 chars
     pp page.html[0..600]
@@ -475,4 +475,4 @@ class TestPageOld < MiniTest::Test
   end
 
 
-end # class TestPageOld
+end # class TestOldPageOld

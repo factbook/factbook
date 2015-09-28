@@ -3,10 +3,10 @@
 module Factbook
 
 
-class Page
+class Item
   include LogUtils::Logging
 
 
-end # class Page
+end # class Item
 
 end # module Factbook

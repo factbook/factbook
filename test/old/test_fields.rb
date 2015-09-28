@@ -4,14 +4,14 @@
 require 'helper'
 
 
-class TestFields < MiniTest::Test
+class TestOldFields < MiniTest::Test
 
   def read_test_page( code )
-    File.read( "#{Factbook.root}/test/data/countrytemplate_#{code}.html" )
+    File.read( "#{Factbook.root}/test/data/old/countrytemplate_#{code}.html" )
   end
 
   def test_fields_full_w_header
-    page = Factbook::Page.new( 'au', header: true, fields: 'full' )
+    page = Factbook::OldPage.new( 'au', header: true, fields: 'full' )
     page.html = read_test_page( 'au' )  # use builtin test page (do NOT fetch via internet)
 
     assert_equal 'au', page['Header']['code']
@@ -25,7 +25,7 @@ class TestFields < MiniTest::Test
 
 
   def test_fields_full
-    page = Factbook::Page.new( 'au', fields: 'full' )
+    page = Factbook::OldPage.new( 'au', fields: 'full' )
     page.html = read_test_page( 'au' )  # use builtin test page (do NOT fetch via internet)
 
     assert_equal '-3.1% of GDP (2012 est.)', page['Economy']['Budget surplus (+) or deficit (-)']['text']
@@ -35,7 +35,7 @@ class TestFields < MiniTest::Test
   end
 
   def test_fields_std
-    page = Factbook::Page.new( 'au' )
+    page = Factbook::OldPage.new( 'au' )
     page.html = read_test_page( 'au' )  # use builtin test page (do NOT fetch via internet)
 
     assert_equal '-3.1% of GDP (2012 est.)', page['econ']['budget_surplus_or_deficit']['text']
@@ -45,4 +45,4 @@ class TestFields < MiniTest::Test
   end
 
 
-end # class TestFields
+end # class TestOldFields

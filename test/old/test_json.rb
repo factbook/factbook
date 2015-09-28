@@ -4,7 +4,7 @@
 require 'helper'
 
 
-class TestJson < MiniTest::Test
+class TestOldJson < MiniTest::Test
 
 
   def test_json
@@ -20,8 +20,8 @@ class TestJson < MiniTest::Test
                'xx' ]
 
      codes.each do |code|
-       page = Factbook::Page.new( code )    
-       page.html = File.read( "#{Factbook.root}/test/data/countrytemplate_#{code}.html" )
+       page = Factbook::OldPage.new( code )    
+       page.html = File.read( "#{Factbook.root}/test/data/old/countrytemplate_#{code}.html" )
 
        ## print first 600 chars
        pp page.html[0..600]
@@ -44,4 +44,4 @@ class TestJson < MiniTest::Test
      end
   end
 
-end # class TestJson
+end # class TestOldJson

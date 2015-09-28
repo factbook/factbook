@@ -24,7 +24,16 @@ require 'nokogiri'
 require 'factbook/version' # let it always go first
 require 'factbook/page'
 require 'factbook/sect'
+require 'factbook/subsect'
+require 'factbook/item'
+require 'factbook/builder'
 require 'factbook/codes'
+
+
+## old version (for old pages) -- move to attic - why? why not??
+require 'factbook/old/page'    
+require 'factbook/old/sect'
+
 
 
 module Factbook

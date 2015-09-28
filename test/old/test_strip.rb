@@ -4,7 +4,7 @@
 require 'helper'
 
 
-class TestStrip < MiniTest::Test
+class TestOldStrip < MiniTest::Test
 
   def test_country_comparison
 
@@ -63,4 +63,4 @@ EOS
        assert m    # must find a match
   end
 
-end # class TestStrip
+end # class TestOldStrip

@@ -3,10 +3,15 @@
 module Factbook
 
 
-class Page
+class Builder
   include LogUtils::Logging
 
 
-end # class Page
+  def initialize( html )
+
+  end
+
+  
+end # class Builder
 
 end # module Factbook

@@ -3,10 +3,10 @@
 module Factbook
 
 
-class Page
+class Subsect
   include LogUtils::Logging
 
 
-end # class Page
+end # class Subsect
 
 end # module Factbook

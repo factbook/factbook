@@ -4,7 +4,7 @@
 require 'helper'
 
 
-class TestPage < MiniTest::Test
+class TestOldPage < MiniTest::Test
 
 
   def test_sects
@@ -22,8 +22,8 @@ class TestPage < MiniTest::Test
         code       = rec[0]
         sects_size = rec[1]
 
-        page = Factbook::Page.new( code )    
-        page.html = File.read( "#{Factbook.root}/test/data/countrytemplate_#{code}.html" )
+        page = Factbook::OldPage.new( code )    
+        page.html = File.read( "#{Factbook.root}/test/data/old/countrytemplate_#{code}.html" )
 
         ## print first 600 chars
         pp page.html[0..600]
@@ -33,4 +33,4 @@ class TestPage < MiniTest::Test
   end
 
 
-end # class TestPage
+end # class TestOldPage
