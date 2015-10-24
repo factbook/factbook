@@ -1,0 +1,75 @@
+Num,Category,Name
+2147,Geography,Area
+2119,People and Society,Population
+2002,People and Society,Population growth rate
+2054,People and Society,Birth rate
+2066,People and Society,Death rate
+2112,People and Society,Net migration rate
+2223,People and Society,Maternal mortality rate
+2091,People and Society,Infant mortality rate
+2102,People and Society,Life expectancy at birth
+2127,People and Society,Total fertility rate
+2225,People and Society,Health expenditures
+2155,People and Society,HIV/AIDS - adult prevalence rate
+2156,People and Society,HIV/AIDS - people living with HIV/AIDS
+2157,People and Society,HIV/AIDS - deaths
+2228,People and Society,Obesity - adult prevalence rate
+2224,People and Society,Children under the age of 5 years underweight
+2206,People and Society,Education expenditures
+2229,People and Society,"Unemployment, youth ages 15-24"
+2001,Economy,GDP (purchasing power parity)
+2003,Economy,GDP - real growth rate
+2004,Economy,GDP - per capita (PPP)
+2260,Economy,Gross national saving
+2089,Economy,Industrial production growth rate
+2095,Economy,Labor force
+2129,Economy,Unemployment rate
+2172,Economy,Distribution of family income - Gini index
+2221,Economy,Taxes and other revenues
+2222,Economy,Budget surplus (+) or deficit (-)
+2186,Economy,Public debt
+2092,Economy,Inflation rate (consumer prices)
+2207,Economy,Central bank discount rate
+2208,Economy,Commercial bank prime lending rate
+2214,Economy,Stock of narrow money
+2215,Economy,Stock of broad money
+2211,Economy,Stock of domestic credit
+2200,Economy,Market value of publicly traded shares
+2187,Economy,Current account balance
+2078,Economy,Exports
+2087,Economy,Imports
+2188,Economy,Reserves of foreign exchange and gold
+2079,Economy,Debt - external
+2198,Economy,Stock of direct foreign investment - at home
+2199,Economy,Stock of direct foreign investment - abroad
+2232,Energy,Electricity - production
+2233,Energy,Electricity - consumption
+2234,Energy,Electricity - exports
+2235,Energy,Electricity - imports
+2236,Energy,Electricity - installed generating capacity
+2237,Energy,Electricity - from fossil fuels
+2239,Energy,Electricity - from nuclear fuels
+2238,Energy,Electricity - from hydroelectric plants
+2240,Energy,Electricity - from other renewable sources
+2241,Energy,Crude oil - production
+2242,Energy,Crude oil - exports
+2243,Energy,Crude oil - imports
+2244,Energy,Crude oil - proved reserves
+2245,Energy,Refined petroleum products - production
+2246,Energy,Refined petroleum products - consumption
+2247,Energy,Refined petroleum products - exports
+2248,Energy,Refined petroleum products - imports
+2249,Energy,Natural gas - production
+2250,Energy,Natural gas - consumption
+2251,Energy,Natural gas - exports
+2252,Energy,Natural gas - imports
+2253,Energy,Natural gas - proved reserves
+2150,Communications,Telephones - fixed lines
+2151,Communications,Telephones - mobile cellular
+2153,Communications,Internet users
+2053,Transportation,Airports
+2121,Transportation,Railways
+2085,Transportation,Roadways
+2093,Transportation,Waterways
+2108,Transportation,Merchant marine
+2034,Military,Military expenditures

@@ -39,7 +39,7 @@ class Codes
       rec.name     = row['Name'].strip
 
       ## note: for now category and region are optional
-      rec.category = row['Category'].strip   if row ['Category']
+      rec.category = row['Category'].strip    if row['Category']
       rec.region   = row['Region'].strip      if row['Region']  
 
       pp rec

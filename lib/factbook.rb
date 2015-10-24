@@ -30,7 +30,11 @@ require 'factbook/page'
 require 'factbook/sect'
 require 'factbook/subsect'
 require 'factbook/item'
+
 require 'factbook/codes'
+require 'factbook/comparisons'
+
+require 'factbook/table'    ## e.g. TableReader
 
 
 ## old version (for old pages) -- move to attic - why? why not??
@@ -41,10 +45,12 @@ require 'factbook/old/sect'
 
 module Factbook
   
-  ##  auto-load builtin codes
-  CODES = Codes.from_csv( "#{Factbook.root}/data/codes.csv" )
+  ##  auto-load builtin codes and comparisons
+  CODES       = Codes.from_csv( "#{Factbook.root}/data/codes.csv" )
+  COMPARISONS = Comparisons.from_csv( "#{Factbook.root}/data/comparisons.csv")
 
-  def self.codes() CODES; end
+  def self.codes()       CODES; end
+  def self.comparisons() COMPARISONS; end
 
 end # module Factbook
 
