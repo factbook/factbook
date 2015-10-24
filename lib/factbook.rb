@@ -37,11 +37,6 @@ require 'factbook/comparisons'
 require 'factbook/table'    ## e.g. TableReader
 
 
-## old version (for old pages) -- move to attic - why? why not??
-require 'factbook/old/page'    
-require 'factbook/old/sect'
-
-
 
 module Factbook
   
