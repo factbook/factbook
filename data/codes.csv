@@ -10,7 +10,7 @@ am,Armenia,Countries,Middle East
 as,Australia,Countries,Australia-Oceania
 au,Austria,Countries,Europe
 aj,Azerbaijan,Countries,Middle East
-bf,"Bahamas, The",Countries,Central America and Caribbean
+bf,The Bahamas,Countries,Central America and Caribbean
 ba,Bahrain,Countries,Middle East
 bg,Bangladesh,Countries,South Asia
 bb,Barbados,Countries,Central America and Caribbean
@@ -38,8 +38,8 @@ ci,Chile,Countries,South America
 ch,China,Countries,East & Southeast Asia
 co,Colombia,Countries,South America
 cn,Comoros,Countries,Africa
-cg,"Congo, Democratic Republic of the",Countries,Africa
-cf,"Congo, Republic of the",Countries,Africa
+cg,Congo DR,Countries,Africa
+cf,Congo,Countries,Africa
 cs,Costa Rica,Countries,Central America and Caribbean
 iv,Cote d'Ivoire,Countries,Africa
 hr,Croatia,Countries,Europe
@@ -61,7 +61,7 @@ fj,Fiji,Countries,Australia-Oceania
 fi,Finland,Countries,Europe
 fr,France,Countries,Europe
 gb,Gabon,Countries,Africa
-ga,"Gambia, The",Countries,Africa
+ga,The Gambia,Countries,Africa
 gg,Georgia,Countries,Middle East
 gm,Germany,Countries,Europe
 gh,Ghana,Countries,Africa
@@ -88,8 +88,8 @@ jo,Jordan,Countries,Middle East
 kz,Kazakhstan,Countries,Central Asia
 ke,Kenya,Countries,Africa
 kr,Kiribati,Countries,Australia-Oceania
-kn,"Korea, North",Countries,East & Southeast Asia
-ks,"Korea, South",Countries,East & Southeast Asia
+kn,North Korea,Countries,East & Southeast Asia
+ks,South Korea,Countries,East & Southeast Asia
 kv,Kosovo,Countries,Europe
 ku,Kuwait,Countries,Middle East
 kg,Kyrgyzstan,Countries,Central Asia
@@ -113,7 +113,7 @@ rm,Marshall Islands,Countries,Australia-Oceania
 mr,Mauritania,Countries,Africa
 mp,Mauritius,Countries,Africa
 mx,Mexico,Countries,North America
-fm,"Micronesia, Federated States of",Countries,Australia-Oceania
+fm,Micronesia,Countries,Australia-Oceania
 md,Moldova,Countries,Europe
 mn,Monaco,Countries,Europe
 mg,Mongolia,Countries,East & Southeast Asia
@@ -188,7 +188,7 @@ us,United States,Countries,North America
 uy,Uruguay,Countries,South America
 uz,Uzbekistan,Countries,Central Asia
 nh,Vanuatu,Countries,Australia-Oceania
-vt,Holy See (Vatican City),Countries,Europe
+vt,Vatican City (Holy See),Countries,Europe
 ve,Venezuela,Countries,South America
 vm,Vietnam,Countries,East & Southeast Asia
 ym,Yemen,Countries,Middle East
@@ -223,31 +223,31 @@ tl,Tokelau,Dependencies (New Zealand),Australia-Oceania
 bv,Bouvet Island,Dependencies (Norway),Antarctica
 jn,Jan Mayen,Dependencies (Norway),Europe
 sv,Svalbard,Dependencies (Norway),Europe
-ax,Akrotiri,Dependencies (Great Britain),Europe
+ax,Akrotiri (Sovereign Base),Dependencies (Great Britain),Europe
 av,Anguilla,Dependencies (Great Britain),Central America and Caribbean
 bd,Bermuda,Dependencies (Great Britain),North America
 io,British Indian Ocean Territory,Dependencies (Great Britain),South Asia
 vi,British Virgin Islands,Dependencies (Great Britain),Central America and Caribbean
 cj,Cayman Islands,Dependencies (Great Britain),Central America and Caribbean
-dx,Dhekelia,Dependencies (Great Britain),Europe
-fk,Falkland Islands (Islas Malvinas),Dependencies (Great Britain),South America
+dx,Dhekelia (Sovereign Base),Dependencies (Great Britain),Europe
+fk,Falkland Islands,Dependencies (Great Britain),South America
 gi,Gibraltar,Dependencies (Great Britain),Europe
 gk,Guernsey,Dependencies (Great Britain),Europe
 je,Jersey,Dependencies (Great Britain),Europe
 im,Isle of Man,Dependencies (Great Britain),Europe
 mh,Montserrat,Dependencies (Great Britain),Central America and Caribbean
 pc,Pitcairn Islands,Dependencies (Great Britain),Australia-Oceania
-sh,"Saint Helena, Ascension, and Tristan da Cunha",Dependencies (Great Britain),Africa
-sx,South Georgia and South Sandwich Islands,Dependencies (Great Britain),South America
+sh,Saint Helena,Dependencies (Great Britain),Africa
+sx,South Georgia and the South Sandwich Islands,Dependencies (Great Britain),South America
 tk,Turks and Caicos Islands,Dependencies (Great Britain),Central America and Caribbean
 aq,American Samoa,Dependencies (United States),Australia-Oceania
 gq,Guam,Dependencies (United States),Australia-Oceania
 bq,Navassa Island,Dependencies (United States),Central America and Caribbean
 cq,Northern Mariana Islands,Dependencies (United States),Australia-Oceania
 rq,Puerto Rico,Dependencies (United States),Central America and Caribbean
-vq,Virgin Islands,Dependencies (United States),Central America and Caribbean
+vq,US Virgin Islands,Dependencies (United States),Central America and Caribbean
 wq,Wake Island,Dependencies (United States),Australia-Oceania
-um,United States Pacific Island Wildlife Refuges,Dependencies (United States),Australia-Oceania
+um,US Pacific Island Wildlife Refuges,Dependencies (United States),Australia-Oceania
 ay,Antarctica,Miscellaneous,Antarctica
 gz,Gaza Strip,Miscellaneous,Middle East
 pf,Paracel Islands,Miscellaneous,East & Southeast Asia
