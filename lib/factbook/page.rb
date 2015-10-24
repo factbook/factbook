@@ -28,6 +28,14 @@ module Factbook
 class Page
   include LogUtils::Logging
 
+  attr_accessor :sects
+  
+  def initialize
+    @sects = []
+  end
+
+
+
 =begin
 def self.from_url( cc, cn )
   html_ascii = PageFetcher.new.fetch( cc )

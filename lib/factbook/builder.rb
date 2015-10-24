@@ -26,8 +26,8 @@ attr_reader :html_ascii,     ## full "original" 1:1 page in "original/ascii8/bin
             :html,           ## utf-8 encoded profile
             :html_debug,     ## html w/ mapping markers - rename to html_markers - why? why not?
             :page_info,      ## incl. country_name, region_name, last_updated etc.
-            :errors          ## encoding erros etc.
-
+            :errors,          ## encoding erros etc.
+            :page
 
 def initialize( html_ascii )
   @html_ascii = html_ascii
@@ -38,8 +38,52 @@ def initialize( html_ascii )
   @html_debug = map_sects( @html )
   @html_debug = map_subsects( @html_debug )
 
-  pp split_sects( @html_debug )
+  html_sects = split_sects( @html_debug )
+  pp html_sects
+
+
+  page = Page.new
+  sects = []
+  html_sects.each do |html_sect|
+    html_sect_head = html_sect[0]
+    html_subsects  = html_sect[1]
+    puts html_sect_head
+    puts html_subsects.size
+    
+    ## get section title
+    ##  @SECTION{Economy}  => Economy
+    if html_sect_head =~ /@SECTION{(.+?)}/
+      puts $1
+      sect = Sect.new
+      sect.title = $1
+      ## get subsections
+      subsects = []
+      html_subsects.each do |html_subsect|
+        html_subsect_head = html_subsect[0]
+        html_subsect_body = html_subsect[1]
+        if html_subsect_head =~ /@SUBSECTION{(.+?)}/
+          puts $1
+          subsect = Subsect.new
+          subsect.title = $1     ## todo/fix: cut off trailing colon (:)
+          subsects << subsect
+        else
+          ## warn/fix: no subsection title found
+        end
+      end
+      sect.subsects = subsects
+      sects << sect
+    else
+      ## warn/fix:  no section title found
+    end   
+  end
+  page.sects = sects
+  @page = page
+
+  pp page
+  
+  self  ## return self -- needed?? default (standard) anyway?? check and remove
 end
+
 
 
 def map_sects( html )
