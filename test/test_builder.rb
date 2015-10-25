@@ -21,6 +21,9 @@ class TestBuilder < MiniTest::Test
        ## fix/todo: use ASCII8BIT/binary reader ??
       b = Factbook::Builder.from_file( "#{Factbook.root}/test/data/src/#{cc}.html" )
 
+      pp b.page
+      pp b.page.data
+
       File.open( "./tmp/#{cc}.debug.html", 'w' ) do |f|
         f.write b.html_debug
       end

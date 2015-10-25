@@ -34,7 +34,16 @@ class Page
     @sects = []
   end
 
-
+  def data
+    ## convert sects to hash
+    @data = {}
+    
+    sects.each_with_index do |sect,i|
+      @data[ sect.title ] = sect.data
+    end
+    @data
+  end
+    
 
 =begin
 def self.from_url( cc, cn )

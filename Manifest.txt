@@ -8,7 +8,6 @@ lib/factbook.rb
 lib/factbook/builder.rb
 lib/factbook/codes.rb
 lib/factbook/comparisons.rb
-lib/factbook/item.rb
 lib/factbook/page.rb
 lib/factbook/sanitizer.rb
 lib/factbook/sect.rb
@@ -24,10 +23,11 @@ test/data/be.yml
 test/data/src/au.html
 test/data/src/be.html
 test/helper.rb
-test/old/test_fields.rb
-test/old/test_json.rb
-test/old/test_page.rb
 test/test_builder.rb
 test/test_codes.rb
 test/test_comparisons.rb
+test/test_fields.rb
+test/test_item_builder.rb
+test/test_json.rb
+test/test_page.rb
 test/test_sanitizer.rb

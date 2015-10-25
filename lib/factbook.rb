@@ -29,7 +29,6 @@ require 'factbook/builder'
 require 'factbook/page'
 require 'factbook/sect'
 require 'factbook/subsect'
-require 'factbook/item'
 
 require 'factbook/codes'
 require 'factbook/comparisons'
