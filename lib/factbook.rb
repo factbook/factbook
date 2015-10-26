@@ -25,6 +25,7 @@ require 'factbook/version' # let it always go first
 require 'factbook/utils'
 require 'factbook/utils_info'
 require 'factbook/sanitizer'
+require 'factbook/builder_item'
 require 'factbook/builder'
 require 'factbook/page'
 require 'factbook/sect'

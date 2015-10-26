@@ -8,7 +8,7 @@ Hoe.spec 'factbook' do
   self.summary = 'factbook - scripts for the world factbook (get open structured data e.g JSON etc.)'
   self.description = summary
 
-  self.urls = ['https://github.com/worlddb/factbook.ruby']
+  self.urls = ['https://github.com/worlddb/factbook']
 
   self.author = 'Gerald Bauer'
   self.email = 'openmundi@googlegroups.com'

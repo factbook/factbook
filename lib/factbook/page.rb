@@ -34,12 +34,27 @@ class Page
     @sects = []
   end
 
+  def [](key)  ### convenience shortcut
+    # lets you use
+    #   page['geo']
+    #   instead of
+    #   page.data['geo']
+
+    ##  fix: use delegate data, [] from forwardable lib - why?? why not??
+
+    data[key]
+  end
+
+
   def data
-    ## convert sects to hash
-    @data = {}
+    ## note: cache data hash on first build for now
+    if @data.nil?
+      ## convert sects to hash
+      @data = {}
     
-    sects.each_with_index do |sect,i|
-      @data[ sect.title ] = sect.data
+      sects.each_with_index do |sect,i|
+        @data[ sect.title ] = sect.data
+      end
     end
     @data
   end

@@ -6,6 +6,7 @@ data/codes.csv
 data/comparisons.csv
 lib/factbook.rb
 lib/factbook/builder.rb
+lib/factbook/builder_item.rb
 lib/factbook/codes.rb
 lib/factbook/comparisons.rb
 lib/factbook/page.rb

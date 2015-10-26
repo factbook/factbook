@@ -1,7 +1,7 @@
 # factbook - scripts for the world factbook (get open structured data e.g JSON etc.)
 
-* home  :: [github.com/worlddb/factbook.ruby](https://github.com/worlddb/factbook.ruby)
-* bugs  :: [github.com/worlddb/factbook.ruby/issues](https://github.com/worlddb/factbook.ruby/issues)
+* home  :: [github.com/worlddb/factbook](https://github.com/worlddb/factbook)
+* bugs  :: [github.com/worlddb/factbook/issues](https://github.com/worlddb/factbook/issues)
 * gem   :: [rubygems.org/gems/factbook](https://rubygems.org/gems/factbook)
 * rdoc  :: [rubydoc.info/gems/factbook](http://rubydoc.info/gems/factbook)
 * forum :: [groups.google.com/group/openmundi](https://groups.google.com/group/openmundi)
@@ -438,7 +438,7 @@ United States (14):
 
 ## Ready-To-Use Public Domain Factbook Datasets
 
-[openmundi/factbook.json](https://github.com/openmundi/factbook.json) - open (public domain)
+[factbook/factbook.json](https://github.com/factbook/factbook.json) - open (public domain)
 factbook country profiles in JSON for all the world's countries (using internet domain names
 for country codes e.g. Austria is `at.json` not `au.json`, Germany is `de.json` not `gm.json` and so on)
 
