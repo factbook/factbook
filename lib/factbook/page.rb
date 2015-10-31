@@ -80,6 +80,49 @@ class Page
     data[key]
   end
 
+  ## add convenience (shortcut) accessors / attributes / fields / getters
+
+  ATTRIBUTES = {
+   'Introduction' => [[:background, 'Background' ]],
+   'Geography'    => [[:area,             'Area', 'total'],    ## convert to number -- why? why not??
+                      [:area_land,        'Area', 'land' ],
+                      [:area_water,       'Area', 'water'],
+                      [:area_note,        'Area', 'note' ],
+                      [:area_comparative, 'Area - comparative'],
+                      [:climate,          'Climate'],
+                      [:terrain,          'Terrain'],
+                      [:elevation_lowest, 'Elevation extremes', 'lowest point'],
+                      [:elevation_highest,'Elevation extremes', 'highest point'],
+                      [:resources,        'Natural resources']],
+  'People and Society' => [[:languages,         'Languages' ],
+                           [:religions,         'Religions' ],
+                           [:population,        'Population' ],
+                           [:population_growth, 'Population growth rate' ],
+                           [:birth_rate,        'Birth rate' ],
+                           [:death_rate,        'Death rate' ],
+                           [:migration_rate,    'Net migration rate' ],
+                           [:major_cities,      'Major urban areas - population' ]],
+  }
+  
+  ATTRIBUTES.each do |section_title, attribs|
+    attribs.each do |attrib|
+      ## e.g.
+      ##    def background()  data['Introduction']['Background']['text']; end  
+      ##    def location()    data['Geography']['Location']['text'];      end
+      ##    etc.
+      if attrib.size == 2
+        define_method attrib[0] do
+          @data[section_title][attrib[1]]['text']
+        end
+      else  ## assume size 3 for now
+        define_method attrib[0] do
+          @data[section_title][attrib[1]][attrib[2]]['text']
+        end
+      end
+    end
+  end   
+
+
 private
   def fetch_page( url_string )
 
