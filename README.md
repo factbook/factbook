@@ -44,7 +44,7 @@ resulting in:
      "water"=>{"text"=>"157,630 sq km"},
      "note"=>
       {"text"=>
-        "includes Arquipelago de Fernando de Noronha, Atol das Rocas, Ilha da Trindade, ..."}},
+        "includes Arquipelago de Fernando de Noronha, Atol das Rocas, ..."}},
    "Area - comparative"=>
     {"text"=>"slightly smaller than the US"},
    "Land boundaries"=>
