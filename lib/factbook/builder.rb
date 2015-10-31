@@ -18,6 +18,10 @@ end
 
 def self.from_file( path )
   html_ascii = File.read( path )    ## fix/todo: use ASCII8BIT/binary reader !!!!!
+  self.from_string( html_ascii )
+end
+
+def self.from_string( html_ascii )   ## note: expects ASCII-7BIT/BINARY encoding
   self.new( html_ascii )
 end
 
@@ -27,7 +31,8 @@ attr_reader :html_ascii,     ## full "original" 1:1 page in "original/ascii8/bin
             :html_debug,     ## html w/ mapping markers - rename to html_markers - why? why not?
             :page_info,      ## incl. country_name, region_name, last_updated etc.
             :errors,          ## encoding erros etc.
-            :page
+            :sects
+
 
 def initialize( html_ascii )
   @html_ascii = html_ascii
@@ -42,8 +47,7 @@ def initialize( html_ascii )
   pp html_sects
 
 
-  page = Page.new
-  sects = []
+  @sects = []
   html_sects.each do |html_sect|
     html_sect_head = html_sect[0]
     html_subsects  = html_sect[1]
@@ -81,15 +85,11 @@ def initialize( html_ascii )
         end
       end
       sect.subsects = subsects
-      sects << sect
+      @sects << sect
     else
       ## warn/fix:  no section title found
     end   
   end
-  page.sects = sects
-  @page = page
-
-  pp page
   
   self  ## return self -- needed?? default (standard) anyway?? check and remove
 end

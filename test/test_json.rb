@@ -26,9 +26,8 @@ class TestJson < MiniTest::Test
 
      codes.each do |code|
        
-       b = Factbook::Builder.from_file( "#{Factbook.root}/test/data/src/#{code}.html" )
-
-       page = b.page    
+       html = File.read( "#{Factbook.root}/test/data/src/#{code}.html" ) 
+       page = Factbook::Page.new( code, html: html )    
        
        h = page.data
        pp h
@@ -36,9 +35,10 @@ class TestJson < MiniTest::Test
        ### save to json
        puts "saving a copy to #{code}.json for debugging"
        File.open( "tmp/#{code}.json", 'w' ) do |f|
-        f.write JSON.pretty_generate( h )
+         f.write JSON.pretty_generate( h )
+         ## f.write page.to_json
       end
      end
   end
 
-end # class TestOldJson
+end # class TestJson

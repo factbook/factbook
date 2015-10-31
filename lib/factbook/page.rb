@@ -28,11 +28,46 @@ module Factbook
 class Page
   include LogUtils::Logging
 
-  attr_accessor :sects
-  
-  def initialize
-    @sects = []
+  attr_reader :sects    ## "structured" access e.g. sects/subsects/etc.
+  attr_reader :data     ## "plain" access with vanilla hash
+
+
+  ## standard version  (note: requires https)
+  SITE_BASE = 'https://www.cia.gov/library/publications/the-world-factbook/geos/{code}.html'
+
+  def initialize( code, opts={} )
+    ### keep code - why? why not??  (use page_info/info e.g. info.country_code??)
+    
+    if opts[:html]    ## note: expects ASCII-7BIT/BINARY encoding
+       ## for debugging and testing allow "custom" passed-in html page
+      html = opts[:html]
+    else
+      url_string =  SITE_BASE.gsub( '{code}', code )
+      ## note: expects ASCII-7BIT/BINARY encoding
+      html = fetch_page( url_string )   ## use PageFetcher class - why?? why not??
+    end
+    
+    b = Builder.from_string( html )
+    @sects = b.sects
+
+    @data = {}    
+    @sects.each do |sect|
+      @data[ sect.title ] = sect.data
+    end
+
+    self  ## return self (check - not needed??)
   end
+
+
+  def to_json( opts={} )  ## convenience helper for data.to_json; note: pretty print by default!
+    if opts[:minify]
+      data.to_json
+    else
+      ## was: -- opts[:pretty] || opts[:pp] 
+      JSON.pretty_generate( data )   ## note: pretty print by default!
+    end
+  end
+
 
   def [](key)  ### convenience shortcut
     # lets you use
@@ -45,20 +80,30 @@ class Page
     data[key]
   end
 
+private
+  def fetch_page( url_string )
 
-  def data
-    ## note: cache data hash on first build for now
-    if @data.nil?
-      ## convert sects to hash
-      @data = {}
-    
-      sects.each_with_index do |sect,i|
-        @data[ sect.title ] = sect.data
-      end
+    worker = Fetcher::Worker.new
+    response = worker.get_response( url_string )
+
+    if response.code == '200'
+      t = response.body
+      ###
+      # NB: Net::HTTP will NOT set encoding UTF-8 etc.
+      # will mostly be ASCII
+       # - try to change encoding to UTF-8 ourselves
+      logger.debug "t.encoding.name (before): #{t.encoding.name}"
+      #####
+      # NB: ASCII-8BIT == BINARY == Encoding Unknown; Raw Bytes Here
+      t
+    else
+      logger.error "fetch HTTP - #{response.code} #{response.message}"
+      ## todo/fix: raise http exception (see fetcher)  -- why? why not??
+      fail "fetch HTTP - #{response.code} #{response.message}"
+      nil
     end
-    @data
   end
-    
+
 
 =begin
 def self.from_url( cc, cn )

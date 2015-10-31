@@ -10,8 +10,9 @@ require 'helper'
 class TestFields < MiniTest::Test
 
   def read_test_page( code )
-    b = Factbook::Builder.from_file( "#{Factbook.root}/test/data/src/#{code}.html" )
-    b.page    
+    html = File.read( "#{Factbook.root}/test/data/src/#{code}.html" )
+    page = Factbook::Page.new( code, html: html )
+    page    
   end
 
   def test_fields_full

@@ -16,15 +16,13 @@ class TestBuilder < MiniTest::Test
 
   def test_build
     
-    ['au','be'].each do |cc|
+    ['au','be'].each do |code|
        ## use/fix: ASCII-8BIT (e.g.keep as is) -???
        ## fix/todo: use ASCII8BIT/binary reader ??
-      b = Factbook::Builder.from_file( "#{Factbook.root}/test/data/src/#{cc}.html" )
+      b = Factbook::Builder.from_file( "#{Factbook.root}/test/data/src/#{code}.html" )
+      pp b.sects
 
-      pp b.page
-      pp b.page.data
-
-      File.open( "./tmp/#{cc}.debug.html", 'w' ) do |f|
+      File.open( "./tmp/#{code}.debug.html", 'w' ) do |f|
         f.write b.html_debug
       end
     end

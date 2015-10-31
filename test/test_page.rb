@@ -27,15 +27,9 @@ class TestPage < MiniTest::Test
         code       = rec[0]
         sects_size = rec[1]
 
-        b = Factbook::Builder.from_file( "#{Factbook.root}/test/data/src/#{code}.html" )
-        page = b.page
+        html = File.read( "#{Factbook.root}/test/data/src/#{code}.html" )
+        page = Factbook::Page.new( code, html: html )
        
-        ##  page = Factbook::OldPage.new( code )    
-        ## page.html = File.read( "#{Factbook.root}/test/data/old/countrytemplate_#{code}.html" )
-
-        ## print first 600 chars
-        ## pp page.html[0..600]
-
         assert_equal sects_size, page.sects.size
     end
   end
