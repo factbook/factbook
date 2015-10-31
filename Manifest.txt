@@ -28,6 +28,7 @@ test/data/be.yml
 test/data/src/au.html
 test/data/src/be.html
 test/helper.rb
+test/test_attribs.rb
 test/test_builder.rb
 test/test_codes.rb
 test/test_comparisons.rb

@@ -112,11 +112,11 @@ class Page
       ##    etc.
       if attrib.size == 2
         define_method attrib[0] do
-          @data[section_title][attrib[1]]['text']
+          @data.fetch( section_title, {} ).fetch( attrib[1], {} )['text']
         end
       else  ## assume size 3 for now
         define_method attrib[0] do
-          @data[section_title][attrib[1]][attrib[2]]['text']
+          @data.fetch( section_title, {} ).fetch( attrib[1], {} ).fetch( attrib[2], {} )['text']
         end
       end
     end
