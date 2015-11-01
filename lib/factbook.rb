@@ -3,6 +3,7 @@
 ## stdlibs
 
 require 'net/http'
+require 'net/https'     ## note: cia factbook requires https
 require 'uri'
 require 'cgi'
 require 'pp'
@@ -17,6 +18,8 @@ require 'fileutils'
 require 'logutils'
 require 'fetcher'
 require 'nokogiri'
+
+require 'active_record'     ## add activerecord/db support (NOT optional for now) 
 
 
 # our own code
@@ -35,6 +38,10 @@ require 'factbook/codes'
 require 'factbook/comparisons'
 
 require 'factbook/table'    ## e.g. TableReader
+
+require 'factbook/db/schema'   ## database (sql tables) support
+require 'factbook/db/models'
+require 'factbook/db/importer'
 
 
 

@@ -11,6 +11,9 @@ lib/factbook/builder.rb
 lib/factbook/builder_item.rb
 lib/factbook/codes.rb
 lib/factbook/comparisons.rb
+lib/factbook/db/importer.rb
+lib/factbook/db/models.rb
+lib/factbook/db/schema.rb
 lib/factbook/page.rb
 lib/factbook/sanitizer.rb
 lib/factbook/sect.rb
@@ -32,7 +35,9 @@ test/test_attribs.rb
 test/test_builder.rb
 test/test_codes.rb
 test/test_comparisons.rb
+test/test_convert.rb
 test/test_fields.rb
+test/test_importer.rb
 test/test_item_builder.rb
 test/test_json.rb
 test/test_page.rb

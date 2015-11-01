@@ -29,6 +29,7 @@ class Page
   include LogUtils::Logging
 
   attr_reader :sects    ## "structured" access e.g. sects/subsects/etc.
+  attr_reader :info     ##  meta info e.g. country_code, country_name, region_name, last_updated, etc.
   attr_reader :data     ## "plain" access with vanilla hash
 
 
@@ -49,6 +50,7 @@ class Page
     
     b = Builder.from_string( html )
     @sects = b.sects
+    @info  = b.page_info    ## todo: change b.page_info to info too - why? why not??
 
     @data = {}    
     @sects.each do |sect|

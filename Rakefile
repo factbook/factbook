@@ -20,7 +20,8 @@ Hoe.spec 'factbook' do
   self.extra_deps = [
     ['logutils' ],
     ['fetcher'],
-    ['nokogiri']
+    ['nokogiri'],
+    ['activerecord']  # NB: will include activesupport,etc.
   ]
 
   self.licenses = ['Public Domain']
