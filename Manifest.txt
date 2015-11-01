@@ -22,6 +22,7 @@ lib/factbook/table.rb
 lib/factbook/utils.rb
 lib/factbook/utils_info.rb
 lib/factbook/version.rb
+script/build.rb
 script/testbr.rb
 script/testcodes.rb
 test/data/au.html
