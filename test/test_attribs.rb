@@ -46,6 +46,18 @@ class TestAttribs < MiniTest::Test
     assert_equal page.migration_rate,    "5.56 migrant(s)/1,000 population (2015 est.)"
     assert_equal page.major_cities,      "VIENNA (capital) 1.753 million (2015)"
 
+
+    ####################
+    ## Economy
+    assert_equal page.economy_overview,   "Austria, with its well-developed market economy, skilled labor force, and high standard of living, is closely tied to other EU economies, especially Germany's. Its economy features a large service sector, a relatively sound industrial sector, and a small, but highly developed agricultural sector. Economic growth was anemic at less than 0.5% in 2013 and 2014, and growth in 2015 is not expected to exceed 0.5%. Austria’s 5.6% unemployment rate, while low by European standards, is at an historic high for Austria. Without extensive vocational training programs and generous early retirement, the unemployment rate would be even higher. Public finances have not stabilized even after a 2012 austerity package of expenditure cuts and new revenues. On the contrary, in 2014, the government created a “bad bank” for the troubled nationalized “Hypo Alpe Adria” bank, pushing the budget deficit up by 0.9% of GDP to 2.4% and public debt to 84.5% of the GDP. Although Austria's fiscal position compares favorably with other euro-zone countries, it faces several external risks, such as Austrian banks' continued exposure to Central and Eastern Europe, repercussions from the Hypo Alpe Adria bank collapse, political and economic uncertainties caused by the European sovereign debt crisis, the current crisis in Russia/Ukraine, the recent appreciation of the Swiss Franc, and political developments in Hungary."
+    assert_equal page.gdp_ppp,            "$395.5 billion (2014 est.) ++ $394.1 billion (2013 est.) ++ $393.3 billion (2012 est.)"
+    assert_equal page.gdp_ppp_note,       "data are in 2014 US dollars"
+    assert_equal page.gdp,                 "$437.1 billion (2014 est.)" 
+    assert_equal page.gdp_growth,          "0.3% (2014 est.) ++ 0.2% (2013 est.) ++ 0.9% (2012 est.)" 
+    assert_equal page.gdp_ppp_capita,      "$46,400 (2014 est.) ++ $46,300 (2013 est.) ++ $46,200 (2012 est.)" 
+    assert_equal page.gdp_ppp_capita_note, "data are in 2014 US dollars" 
+    assert_equal page.saving,              "25% of GDP (2014 est.) ++ 23.9% of GDP (2013 est.) ++ 26.3% of GDP (2012 est.)"
+    
   end
 
 end # class TestAttribs
