@@ -39,6 +39,8 @@ require 'factbook/comparisons'
 
 require 'factbook/table'    ## e.g. TableReader
 
+require 'factbook/counter'
+
 require 'factbook/db/schema'   ## database (sql tables) support
 require 'factbook/db/models'
 require 'factbook/db/importer'
