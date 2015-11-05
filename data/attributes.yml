@@ -1,0 +1,20 @@
+############################
+# properties
+
+Introduction:
+  Background:              { key: background }
+
+Geography:
+  Location:                { key: location }
+  Geographic coordinates:  { key: coords }
+  Map references:          { key: map }
+  Area:
+    total:                 { key: area }
+    land:                  { key: area_land }
+    water:                 { key: area_water }
+    note:                  { key: area_note }
+  Area - comparative:      { key: area_comparative }
+  Land boundaries:
+    total:                 { key: border_land }
+    border countries:      { key: border_countries }   ## todo/fix: remove count from key e.g. border countries (8)
+
