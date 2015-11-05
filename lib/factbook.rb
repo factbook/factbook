@@ -25,6 +25,11 @@ require 'active_record'     ## add activerecord/db support (NOT optional for now
 # our own code
 
 require 'factbook/version' # let it always go first
+
+require 'factbook/codes'
+require 'factbook/comparisons'
+require 'factbook/attributes'
+
 require 'factbook/utils'
 require 'factbook/utils_info'
 require 'factbook/sanitizer'
@@ -33,9 +38,6 @@ require 'factbook/builder'
 require 'factbook/page'
 require 'factbook/sect'
 require 'factbook/subsect'
-
-require 'factbook/codes'
-require 'factbook/comparisons'
 
 require 'factbook/table'    ## e.g. TableReader
 
@@ -49,12 +51,14 @@ require 'factbook/db/importer'
 
 module Factbook
   
-  ##  auto-load builtin codes and comparisons
+  ##  auto-load builtin codes, comparisons, attributes, etc.
   CODES       = Codes.from_csv( "#{Factbook.root}/data/codes.csv" )
-  COMPARISONS = Comparisons.from_csv( "#{Factbook.root}/data/comparisons.csv")
+  COMPARISONS = Comparisons.from_csv( "#{Factbook.root}/data/comparisons.csv" )
+  ATTRIBUTES  = Attributes.from_yaml( "#{Factbook.root}/data/attributes.yml" )
 
   def self.codes()       CODES; end
   def self.comparisons() COMPARISONS; end
+  def self.attributes()  ATTRIBUTES; end
 
 end # module Factbook
 

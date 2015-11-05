@@ -1,20 +1,50 @@
 ############################
-# properties
+# attributes
 
 Introduction:
-  Background:              { key: background }
+  Background:                { name: background }
 
 Geography:
-  Location:                { key: location }
-  Geographic coordinates:  { key: coords }
-  Map references:          { key: map }
+  Location:                  { name: location }
+  Geographic coordinates:    { name: coords }      ## use geo_coords - why, why not??
+  Map references:            { name: map }         ## use map_ref - why, why not??
   Area:
-    total:                 { key: area }
-    land:                  { key: area_land }
-    water:                 { key: area_water }
-    note:                  { key: area_note }
-  Area - comparative:      { key: area_comparative }
+    total:                   { name: area }
+    land:                    { name: area_land }
+    water:                   { name: area_water }
+    note:                    { name: area_note }
+  Area - comparative:        { name: area_comparative }
   Land boundaries:
-    total:                 { key: border_land }
-    border countries:      { key: border_countries }   ## todo/fix: remove count from key e.g. border countries (8)
+    total:                   { name: border_land }
+    border countries:        { name: border_countries }   ## todo/fix: remove count from key e.g. border countries (8)
+  Coastline:                 { name: coastline }          ## use border_water  - why, why not??
+  Maritime claims:
+    territorial sea:         { name: maritime_claims_territorial_sea }
+    contiguous zone:         { name: maritime_claims_contiguous_zone }
+    exclusive economic zone: { name: maritime_claims_exclusive_economic_zone }
+    continental shelf:       { name: maritime_claims_continental_shelf }
+  Climate:                   { name: climate }
+  Terrain:                   { name: terrain }
+  Elevation extremes:
+    lowest point:            { name: elevation_lowest }
+    highest point:           { name: elevation_highest }
+  Natural resources:         { name: resources }
+  Land use:
+    agricultural land:       { name: land_use_agriculture }
+    forest:                  { name: land_use_forest }
+    other:                   { name: land_use_other }
+  Irrigated land:            { name: land_irrigated }
+  Total renewable water resources:  { name: water_renewable }
+  Freshwater withdrawal (domestic/industrial/agricultural):
+    total:                   { name: water_withdrawal }
+    per capita:              { name: water_withdrawal_capita }
+  Natural hazards:
+    name: natural_hazards        ## note: "special" attribute case with "mixed" content
+    volcanism:               { name: natural_hazards_volcanism } 
+  Environment - current issues:  { name: environment_issues }
+  Environment - international agreements:
+    party to:                    { name: environment_agreements }
+    "signed, but not ratified":  { name: environment_agreements_note }     ## use _ratified - why, why not??
+  Geography - note:        { name: location_note }      ## use geo_note or geography - why, why not??
 
+      
