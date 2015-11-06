@@ -134,3 +134,101 @@ People and Society:
     male:                                  { name: unemployment_youth_male }
     female:                                { name: unemployment_youth_female }
 
+Government:
+  Country name:
+    conventional long form:   { name: name_long }
+    conventional short form:  { name: name }
+    local long form:          { name: name_long_local } 
+    local short form:         { name: name_local }
+    note:                     { name: name_note }
+    ## add name_former ( see gm) ??  add abbreviations (see us)
+  Government type:            { name: government_type }
+  Capital:
+    name:                     { name: capital }
+    geographic coordinates:   { name: capital_coords }
+    time difference:          { name: capital_time_diff }
+    daylight saving time:     { name: capital_dst }
+  Administrative divisions:   { name: admins }
+  Independence:               { name: independence } 
+  National holiday:           { name: natinal_holiday }
+  Constitution:               { name: constitution }
+  Legal system:               { name: legal_system }
+  International law organization participation:   { name: legal_intl_orgs }
+  Suffrage:                   { name: suffrage }
+  ## note: skip Executive,Legislative,Judicial,... entries for now
+  International organization participation: { name: :intl_orgs }
+  Flag description:           { name: flag }
+  National symbol(s):         { name: national_symbols }
+  National anthem:
+    name:                     { name: national_anthem}
+    lyrics/music:             { name: national_anthem_by }
+    note:                     { name: national_anthem_note }   
+
+Economy:
+  Economy - overview:             { name: economy_overview }
+  GDP (purchasing power parity):
+    name: gdp_ppp                    ## note: "special" attribute case with "mixed" content
+    note:                         { name: gdp_ppp_note }
+  GDP (official exchange rate):   { name: gdp }
+  GDP - real growth rate:         { name: gdp_growth }
+  GDP - per capita (PPP):
+    name: gdp_ppp_capita              ## note: "special" attribute case with "mixed" content
+    note:                         { name: gdp_ppp_capita_note }
+  Gross national saving:          { name: saving }
+  "GDP - composition, by end use":
+    household consumption:         { name: consumption_household }
+    government consumption:        { name: consumption_government }
+    investment in fixed capital:   { name: investment_fixed }
+    investment in inventories:     { name: investment_inventories }
+    exports of goods and services: { name: exports_gdp_rate }
+    imports of goods and services: { name: imports_gdb_rate }
+  "GDP - composition, by sector of origin":
+    agriculture:                   { name: agriculture_gdb_rate }
+    industry:                      { name: industry_gdb_rate }
+    services:                      { name: services_gdb_rate }
+  Agriculture - products:          { name: agriculture_products }
+  Industries:                      { name: industries }
+  Industrial production growth rate: { name: industry_growth }
+  Labor force:                     { name: labor }
+  Labor force - by occupation:
+    agriculture:                   { name: labor_agriculture }
+    industry:                      { name: labor_industry }
+    services:                      { name: labor_services }
+  Unemployment rate:               { name: unemployment }
+  Population below poverty line:
+    name: poverty                    ## note: "special" attribute case with "mixed" content
+    note:                          { name: poverty_note }
+  Household income or consumption by percentage share:
+    "lowest 10%":                  { name: household_income_lowest }   ## use _poorest, _bottom ???
+    "highest 10%":                 { name: household_income_highest }  ## use _richest, _top ???
+  Distribution of family income - Gini index:  { name: gini }
+  Budget:
+    revenues:                      { name: budget_revenues }
+    expenditures:                  { name: budget_expenditures }
+  Taxes and other revenues:        { name: taxes }
+  Budget surplus (+) or deficit (-): { name: budget_balance }
+  Public debt:
+    name: public_debt               ## note: "special" attribute case with "mixed" content
+    note:                          { name: public_debt_note }
+  Fiscal year:                     { name: fiscal_year }
+  Inflation rate (consumer prices): { name: inflation }
+  Central bank discount rate:       { name: central_bank_discount_rate }  ## use discount_rate - why? why not?? 
+  Commercial bank prime lending rate: { name: prime_rate }
+  Stock of narrow money:
+    name: narrow_money               ## note: "special" attribute case with "mixed" content
+    note:                           { name: narrow_money_note }
+  Stock of broad money:             { name: broad_money }
+  Stock of domestic credit:         { name: domestic_credit }
+  Market value of publicly traded shares: { name: shares_market_value }
+  Current account balance:          { name: current_account_balance }
+  Exports:                          { name: exports }
+  Exports - commodities:            { name: exports_commodities }
+  Exports - partners:               { name: exports_partners }
+  Imports:                          { name: imports }
+  Imports - commodities:            { name: imports_commodities }
+  Imports - partners:               { name: imports_partners }
+  Reserves of foreign exchange and gold:  { name: foreign_exchange_reserves }
+  Debt - external:                  { name: debt_external }
+  Stock of direct foreign investment - at home:  { name: direct_foreign_investment_home }
+  Stock of direct foreign investment - abroad:   { name: direct_foreign_investment_abroad }
+  Exchange rates:                   { name: exchange_rates }
