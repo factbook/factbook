@@ -47,4 +47,90 @@ Geography:
     "signed, but not ratified":  { name: environment_agreements_note }     ## use _ratified - why, why not??
   Geography - note:        { name: location_note }      ## use geo_note or geography - why, why not??
 
-      
+People and Society:
+  Nationality:
+    noun:               { name: nationality }
+    adjective:          { name: nationality_adjective }
+  Ethnic groups:        { name: ethnic_groups }
+  Languages:
+    name: languages       ## note: "special" attribute case with "mixed" content
+    note:               { name: languages_note }
+  Religions:            { name: religions }
+  Demographic profile:  { name: demographic }
+  Population:           { name: population }
+  Age structure:
+    0-14 years:         { name: age_0_14yrs }
+    15-24 years:        { name: age_15_24yrs }
+    25-54 years:        { name: age_25_54yrs }
+    55-64 years:        { name: age_55_64yrs }
+    65 years and over:  { name: age_65yrs_plus }
+  Dependency ratios:
+    total:                    { name: dependency_ratio }
+    youth dependency ratio:   { name: dependency_youth_ratio }
+    elderly dependency ratio: { name: dependency_elderly_ratio }
+    potential support ratio:  { name: dependency_support_ratio }
+  Median age:
+    total:                    { name: median_age }
+    male:                     { name: median_age_male }
+    female:                   { name: median_age_female }                           
+  Population growth rate:     { name: population_growth }
+  Birth rate:                 { name: birth_rate }
+  Death rate:                 { name: death_rate }
+  Net migration rate:         { name: migration_rate }
+  Urbanization:
+    urban population:         { name: urbanization }
+    rate of urbanization:     { name: urbanization_growth }   ## use _rate - why, why not??
+  Major urban areas - population:  { name: major_cities }
+  Sex ratio:
+    at birth:                 { name: sex_ratio_birth }
+    0-14 years:               { name: sex_ratio_0_14yrs }
+    15-24 years:              { name: sex_ratio_15_24yrs }
+    25-54 years:              { name: sex_ratio_25_54yrs }
+    55-64 years:              { name: sex_ratio_55_64yrs }
+    65 years and over:        { name: sex_ratio_65yrs_plus }
+    total population:         { name: sex_ratio }
+  Infant mortality rate:
+    total:                    { name: infant_mortality }   ## add _rate - why, why not??
+    male:                     { name: infant_mortality_male }
+    female:                   { name: infant_mortality_female }
+  Life expectancy at birth:
+    total population:         { name: life_expectancy }
+    male:                     { name: life_expectancy_male }
+    female:                   { name: life_expectancy_female }
+  Total fertility rate:       { name: fertility }
+  Contraceptive prevalence rate:
+    name: contraceptive_rate    ## note: "special" attribute case with "mixed" content
+    note:                     { name: contraceptive_rate_note }
+  Health expenditures:        { name: health_expenditures }   ## todo: change to health ??
+  Physicians density:         { name: density_physicians }
+  Hospital bed density:       { name: density_hospital_bed }
+  Drinking water source:
+    improved:                 { name: drinking_water_improved }   ## todo:split into urban/rural/total ??
+    unimproved:               { name: drinking_water_unimproved }
+  Sanitation facility access:
+    improved:                 { name: sanitation_improved }   ## todo:split into urban/rural/total ??
+    unimproved:               { name: sanitation_unimproved }
+  HIV/AIDS - adult prevalence rate:        { name: aids }
+  HIV/AIDS - people living with HIV/AIDS:  { name: aids_people }
+  HIV/AIDS - deaths:                       { name: aids_deaths }
+  Obesity - adult prevalence rate:         { name: obesity }
+  Children under the age of 5 years underweight:  { name: underweight_children_under_5yrs }
+  Education expenditures:                  { name: education_expenditures }  ## change to education ??
+  Literacy:
+    definition:                            { name: literacy_def }
+    total population:                      { name: literacy }
+    male:                                  { name: literacy_male }
+    female:                                { name: literacy_female }
+  School life expectancy (primary to tertiary education):
+    total:                                 { name: school_life }
+    male:                                  { name: school_life_male }
+    female:                                { name: school_life_female }
+  Child labor - children ages 5-14:
+    total number:                          { name: child_labor }
+    percentage:                            { name: child_labor_rate }
+    note:                                  { name: child_labor_note }
+  "Unemployment, youth ages 15-24":
+    total:                                 { name: unemployment_youth }
+    male:                                  { name: unemployment_youth_male }
+    female:                                { name: unemployment_youth_female }
+
