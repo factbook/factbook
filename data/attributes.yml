@@ -232,3 +232,106 @@ Economy:
   Stock of direct foreign investment - at home:  { name: direct_foreign_investment_home }
   Stock of direct foreign investment - abroad:   { name: direct_foreign_investment_abroad }
   Exchange rates:                   { name: exchange_rates }
+
+Energy:
+  Electricity - production:  { name: electricity_production }
+  Electricity - consumption: { name: electricity_consumption }
+  Electricity - exports:     { name: electricity_exports }
+  Electricity - imports:     { name: electricity_imports }
+  Electricity - installed generating capacity: { name: electricity_capacity }
+  Electricity - from fossil fuels:   { name: electricity_fossil }
+  Electricity - from nuclear fuels:  { name: electricity_nuclear }
+  Electricity - from hydroelectric plants:  { name: electricity_hydro }
+  Electricity - from other renewable sources:  { name: electricity_other }
+  Crude oil - production:       { name: oil_production }
+  Crude oil - exports:          { name: oil_exports }
+  Crude oil - imports:          { name: oil_imports }
+  Crude oil - proved reserves:  { name: oil_reserves }
+  Refined petroleum products - production:  { name: petroleum_production }
+  Refined petroleum products - consumption: { name: petroleum_consumption }
+  Refined petroleum products - exports:     { name: petroleum_exports }
+  Refined petroleum products - imports:     { name: petroleum_imports }
+  Natural gas - production:      { name: natural_gas_production }
+  Natural gas - consumption:     { name: natural_gas_consumpiton }
+  Natural gas - exports:         { name: natural_gas_exports }
+  Natural gas - imports:         { name: natural_gas_imports }
+  Natural gas - proved reserves: { name: natural_gas_reserves }
+  Carbon dioxide emissions from consumption of energy:  { name: carbon_dioxide }
+
+Communications:
+  Telephones - fixed lines:
+    total subscriptions:                { name: telephones }
+    subscriptions per 100 inhabitants:  { name: telephones_subscriptions }
+  Telephones - mobile cellular:
+    total:                             { name: telephones_mobile }
+    subscriptions per 100 inhabitants: { name: telephones_mobile_subscriptions }
+  Telephone system:
+    general assessment:                { name: telephone_system }
+    domestic:                          { name: telephone_system_domestic }
+    international:                     { name: telephone_system_intl }
+  Broadcast media:                     { name: broadcast_media }
+  Radio broadcast stations:            { name: radio_broadcast_stations }
+  Television broadcast stations:       { name: tv_broadcast_stations }
+  Internet country code:               { name: internet }
+  Internet users:
+    total:                             { name: internet_users }
+    percent of population:             { name: internet_users_rate }
+
+Transportation:
+  Airports:                            { name: airports }
+  Airports - with paved runways:
+    total:                             { name: airports_paved }
+    "over 3,047 m":                    { name: airports_paved_over_10000ft }
+    "2,438 to 3,047 m":                { name: airports_paved_8000_10000ft }
+    "1,524 to 2,437 m":                { name: airports_paved_5000_8000ft  }
+    "914 to 1,523 m":                  { name: airports_paved_3000_5000ft  }
+    "under 914 m":                     { name: airports_paved_under_3000ft }
+  Airports - with unpaved runways:
+    total:                             { name: airports_unpaved }
+    "1,524 to 2,437 m":                { name: airports_unpaved_5000_8000ft } 
+    "914 to 1,523 m":                  { name: airports_unpaved_3000_5000ft }
+    "under 914 m":                     { name: airports_unpaved_under_3000ft }
+  Heliports:                           { name: heliports }
+  Pipelines:                           { name: pipelines }
+  Railways:
+    total:                             { name: railways }
+    standard gauge:                    { name: railways_standard_gauge }
+    narrow gauge:                      { name: railways_narrow_gauge }
+    broad gauge:                       { name: railways_broad_gauge }
+    dual gauge:                        { name: railways_dual_gauge }
+  Roadways:
+    total:                             { name: roadways }
+    paved:                             { name: roadways_paved }
+    unpaved:                           { name: roadways_unpaved }
+    note:                              { name: roadways_note }
+  Waterways:                           { name: waterways }
+  Merchant marine:
+    total:                             { name: merchant_marine }
+    by type:                           { name: merchant_marine_by_type }
+    foreign-owned:                     { name: merchant_marine_foreign }
+    registered in other countries:     { name: merchant_marine_others }
+  Ports and terminals:
+    major seaport(s):                  { name: sea_ports }
+    river port(s):                     { name: river_ports }
+
+Military:
+  Military branches:                    { name: military_branches }
+  Military service age and obligation:  { name: military_age      }
+  Manpower available for military service:
+    males age 16-49:                    { name: military_manpower_males }
+    females age 16-49:                  { name: military_manpower_females }
+  Manpower fit for military service:
+    males age 16-49:                    { name: military_manpower_males_fit }
+    females age 16-49:                  { name: military_manpower_females_fit }
+  Manpower reaching militarily significant age annually:
+    male:                               { name: military_manpower_male_annual }
+    female:                             { name: military_manpower_female_annual }
+  Military expenditures:                { name: military_expenditures }
+
+Transnational Issues:
+  Disputes - international:             { name: disputes }
+  Refugees and internally displaced persons:
+    refugees (country of origin):       { name: refugees }
+    IDPs:                               { name: refugees_idps }            
+    stateless persons:                  { name: refugess_stateless }
+  Illicit drugs:                        { name: drugs }
