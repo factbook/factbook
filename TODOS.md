@@ -1,4 +1,11 @@
 
+## strip trailing newslines from data item
+
+see ItemBuilder - strip trailing spaces/newlines ??
+
+see Algeria/Religion for an example with trailing newlines ??
+
+
 ## xx.json  - world page
 
 map reference:
@@ -20,4 +27,17 @@ instead of
   "Political Map of the World, Physical Map of the World, 
    Standard Time Zones of the World, World Oceans"
 ~~~
+
+## Newlines in Fields ?
+
+### Algeria • Al Jaza'ir 
+
+check - includes trailing newslines? - why? strip?
+
+~~~
+**Religions** Muslim (official; predominantly Sunni) 99%, other (includes Christian and Jewish) 
+
+~~~
+
+
 

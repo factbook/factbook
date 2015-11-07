@@ -10,6 +10,7 @@ require 'pp'
 require 'json'
 require 'csv'
 require 'fileutils'
+require 'erb'     ## used by Almanac class (for render)
 
 
 ## 3rd party gems/libs
@@ -55,6 +56,8 @@ require 'factbook/builder_json'
 require 'factbook/page'
 require 'factbook/sect'
 require 'factbook/subsect'
+
+require 'factbook/almanac'
 
 require 'factbook/table'    ## e.g. TableReader
 
