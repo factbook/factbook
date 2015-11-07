@@ -30,7 +30,11 @@ class Attributes
 
   def self.build_attribs( attribs, category, path, h )  
      
-     if h.has_key?( 'name' )   ## assume it's an attribute definition hash
+      ## assume it's an attribute definition hash
+      ##   note: !! exclude special cases:
+      ##      Capital           -- incl. name key itself
+      ##      National anthem
+     if h.has_key?( 'name' ) &&  ['Capital','National anthem'].include?( path[-1] ) == false
        a = Attribute.new
        a.name     = h['name']
        a.category = category

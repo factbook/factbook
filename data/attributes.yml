@@ -45,7 +45,7 @@ Geography:
   Environment - international agreements:
     party to:                    { name: environment_agreements }
     "signed, but not ratified":  { name: environment_agreements_note }     ## use _ratified - why, why not??
-  Geography - note:        { name: location_note }      ## use geo_note or geography - why, why not??
+  Geography - note:        { name: geography_note }      ## use geo_note or geography - why, why not??
 
 People and Society:
   Nationality:
@@ -156,7 +156,7 @@ Government:
   International law organization participation:   { name: legal_intl_orgs }
   Suffrage:                   { name: suffrage }
   ## note: skip Executive,Legislative,Judicial,... entries for now
-  International organization participation: { name: :intl_orgs }
+  International organization participation: { name: intl_orgs }
   Flag description:           { name: flag }
   National symbol(s):         { name: national_symbols }
   National anthem:

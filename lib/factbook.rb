@@ -26,9 +26,25 @@ require 'active_record'     ## add activerecord/db support (NOT optional for now
 
 require 'factbook/version' # let it always go first
 
+
 require 'factbook/codes'
 require 'factbook/comparisons'
 require 'factbook/attributes'
+
+module Factbook
+  
+  ##  auto-load builtin codes, comparisons, attributes, etc.
+  CODES       = Codes.from_csv( "#{Factbook.root}/data/codes.csv" )
+  COMPARISONS = Comparisons.from_csv( "#{Factbook.root}/data/comparisons.csv" )
+  ATTRIBUTES  = Attributes.from_yaml( "#{Factbook.root}/data/attributes.yml" )
+
+  def self.codes()       CODES; end
+  def self.comparisons() COMPARISONS; end
+  def self.attributes()  ATTRIBUTES; end
+
+end # module Factbook
+
+## note: make codes, comparisons, attributes available
 
 require 'factbook/utils'
 require 'factbook/utils_info'
@@ -47,20 +63,6 @@ require 'factbook/db/schema'   ## database (sql tables) support
 require 'factbook/db/models'
 require 'factbook/db/importer'
 
-
-
-module Factbook
-  
-  ##  auto-load builtin codes, comparisons, attributes, etc.
-  CODES       = Codes.from_csv( "#{Factbook.root}/data/codes.csv" )
-  COMPARISONS = Comparisons.from_csv( "#{Factbook.root}/data/comparisons.csv" )
-  ATTRIBUTES  = Attributes.from_yaml( "#{Factbook.root}/data/attributes.yml" )
-
-  def self.codes()       CODES; end
-  def self.comparisons() COMPARISONS; end
-  def self.attributes()  ATTRIBUTES; end
-
-end # module Factbook
 
 
 puts Factbook.banner     if defined?($RUBYLIBS_DEBUG) && $RUBYLIBS_DEBUG
