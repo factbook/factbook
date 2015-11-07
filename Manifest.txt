@@ -11,6 +11,7 @@ lib/factbook.rb
 lib/factbook/attributes.rb
 lib/factbook/builder.rb
 lib/factbook/builder_item.rb
+lib/factbook/builder_json.rb
 lib/factbook/codes.rb
 lib/factbook/comparisons.rb
 lib/factbook/counter.rb
@@ -34,6 +35,7 @@ test/data/au.html
 test/data/au.yml
 test/data/be.html
 test/data/be.yml
+test/data/json/au.json
 test/data/src/au.html
 test/data/src/be.html
 test/helper.rb
@@ -48,5 +50,6 @@ test/test_fields.rb
 test/test_importer.rb
 test/test_item_builder.rb
 test/test_json.rb
+test/test_json_builder.rb
 test/test_page.rb
 test/test_sanitizer.rb

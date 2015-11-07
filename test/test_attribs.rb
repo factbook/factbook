@@ -15,9 +15,27 @@ class TestAttribs < MiniTest::Test
     page    
   end
 
-  def test_au
-    page = read_test_page( 'au' )  # use builtin test page (do NOT fetch via internet)
+  def read_test_page_from_json( code )
+    json = File.read( "#{Factbook.root}/test/data/json/#{code}.json" )
+    page = Factbook::Page.new( code, json: json )
+    page    
+  end
 
+
+  def test_au_from_html
+    page = read_test_page( 'au' )  # note: use builtin test page (do NOT fetch via internet)
+    
+    assert_page_au( page )
+  end
+
+  def test_au_from_json
+    page = read_test_page_from_json( 'au' )
+    
+    assert_page_au( page )
+  end
+
+private  
+  def assert_page_au( page )
     ########
     ## Introduction
     assert_equal page.background, "Once the center of power for the large Austro-Hungarian Empire, Austria was reduced to a small republic after its defeat in World War I. Following annexation by Nazi Germany in 1938 and subsequent occupation by the victorious Allies in 1945, Austria's status remained unclear for a decade. A State Treaty signed in 1955 ended the occupation, recognized Austria's independence, and forbade unification with Germany. A constitutional law that same year declared the country's \"perpetual neutrality\" as a condition for Soviet military withdrawal. The Soviet Union's collapse in 1991 and Austria's entry into the European Union in 1995 have altered the meaning of this neutrality. A prosperous, democratic country, Austria entered the EU Economic and Monetary Union in 1999."
@@ -56,8 +74,7 @@ class TestAttribs < MiniTest::Test
     assert_equal page.gdp_growth,          "0.3% (2014 est.) ++ 0.2% (2013 est.) ++ 0.9% (2012 est.)" 
     assert_equal page.gdp_ppp_capita,      "$46,400 (2014 est.) ++ $46,300 (2013 est.) ++ $46,200 (2012 est.)" 
     assert_equal page.gdp_ppp_capita_note, "data are in 2014 US dollars" 
-    assert_equal page.saving,              "25% of GDP (2014 est.) ++ 23.9% of GDP (2013 est.) ++ 26.3% of GDP (2012 est.)"
-    
+    assert_equal page.saving,              "25% of GDP (2014 est.) ++ 23.9% of GDP (2013 est.) ++ 26.3% of GDP (2012 est.)"   
   end
 
 end # class TestAttribs

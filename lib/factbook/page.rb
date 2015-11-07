@@ -39,16 +39,21 @@ class Page
   def initialize( code, opts={} )
     ### keep code - why? why not??  (use page_info/info e.g. info.country_code??)
     
-    if opts[:html]    ## note: expects ASCII-7BIT/BINARY encoding
-       ## for debugging and testing allow "custom" passed-in html page
-      html = opts[:html]
-    else
-      url_string =  SITE_BASE.gsub( '{code}', code )
-      ## note: expects ASCII-7BIT/BINARY encoding
-      html = fetch_page( url_string )   ## use PageFetcher class - why?? why not??
+    if opts[:json]
+      json = opts[:json]    ## note: json is (still) a string/text (NOT yet parsed to structured data)
+      b = JsonBuilder.from_string( json ) 
+    else  ## assume html
+      if opts[:html]    ## note: expects ASCII-7BIT/BINARY encoding
+         ## for debugging and testing allow "custom" passed-in html page
+        html = opts[:html]
+      else
+        url_string =  SITE_BASE.gsub( '{code}', code )
+        ## note: expects ASCII-7BIT/BINARY encoding
+        html = fetch_page( url_string )   ## use PageFetcher class - why?? why not??
+      end    
+      b = Builder.from_string( html )
     end
     
-    b = Builder.from_string( html )
     @sects = b.sects
     @info  = b.page_info    ## todo: change b.page_info to info too - why? why not??
 
