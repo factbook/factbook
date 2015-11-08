@@ -4,6 +4,7 @@ module Factbook
 
 class ItemBuilder       ## renameto ItemReader, ItemParser - why? why not??
   include LogUtils::Logging
+  include NormalizeHelper    ##  e.g. normalize_category
   
 def initialize( html, name )
   @html = html
@@ -42,7 +43,7 @@ def read
             last_node['text'] += " #{text}"    ## append w/o separator
          end
       else
-        if @name == 'demographic_profile' || @name == 'Demographic profile'  ## special case (use space a sep)
+        if @name == 'Demographic profile'  ## special case (use space a sep)
             last_node['text'] += " #{text}"   ## append without (w/o) separator
         else
             last_node['text'] += " ++ #{text}"   ## append with ++ separator
@@ -60,14 +61,11 @@ def read
       ## pp spans
       
       span_key   = spans[0]  ## assume 1st entry is span.category
-      span_value = spans[1]  ## assume 2nd entry is span.category_data')
-      ## allow optional category_data for now
-      key   = span_key.text
+      span_value = spans[1]  ## assume 2nd entry is span.category_data
+      
+      key   = normalize_category( span_key.text )
 
-      key   = key.strip
-      key   = key.sub( /:\z/, '' )    # remove trailing : if present
-      key   = key.strip
-
+      ## note: allow optional category_data for now
       value = span_value ? span_value.text : nil
       
       puts "key: >#{key}<, value: >#{value}< : #{value.class.name}"
@@ -87,6 +85,7 @@ def read
   pp data
   data
 end
+
   
 end # class ItemBuilder
 

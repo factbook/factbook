@@ -7,6 +7,7 @@ module Factbook
 
 class JsonBuilder    
   include LogUtils::Logging
+  include NormalizeHelper    ##  e.g. normalize_category
 
 
 def self.from_file( path )
@@ -51,6 +52,17 @@ def initialize( text )
       
       subsect = Subsect.new
       subsect.title = subsect_title
+
+      #####
+      ## note: run data hash through normalize_category (again)
+      if subsect_data.is_a?( Hash )
+        new_subsect_data = {}
+        subsect_data.each do |k3,v3|
+          new_subsect_data[ normalize_category(k3) ] = v3
+        end
+        subsect_data = new_subsect_data
+      end  
+ 
       subsect.data  = subsect_data
       
       subsects << subsect

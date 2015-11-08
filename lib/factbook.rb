@@ -50,6 +50,7 @@ end # module Factbook
 require 'factbook/utils'
 require 'factbook/utils_info'
 require 'factbook/sanitizer'
+require 'factbook/normalize'
 require 'factbook/builder_item'
 require 'factbook/builder'
 require 'factbook/builder_json'

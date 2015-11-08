@@ -19,6 +19,7 @@ lib/factbook/counter.rb
 lib/factbook/db/importer.rb
 lib/factbook/db/models.rb
 lib/factbook/db/schema.rb
+lib/factbook/normalize.rb
 lib/factbook/page.rb
 lib/factbook/page_info.rb
 lib/factbook/reader_json.rb
@@ -56,5 +57,6 @@ test/test_importer.rb
 test/test_item_builder.rb
 test/test_json.rb
 test/test_json_builder.rb
+test/test_normalize.rb
 test/test_page.rb
 test/test_sanitizer.rb
