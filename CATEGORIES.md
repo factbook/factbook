@@ -27,23 +27,11 @@
      - top ten largest islands _(1 - xx)_
 - **Land boundaries** _(255)_
      - total _(168)_
-     - border countries (6) _(15)_
-     - border countries (4) _(25)_
-     - border countries (7) _(9 - ag hu ir ml ng pl sa su up)_
-     - border countries (2) _(30)_
-     - border countries (5) _(25)_
-     - border countries (8) _(6 - au fr ri tz tu za)_
-     - border countries (3) _(28)_
-     - border countries (10) _(1 - br)_
-     - border countries (1) _(22)_
+     - border countries _(166)_
      - note _(9 - ca cu mo od sp su us ee xx)_
-     - border countries (14) _(2 - ch rs)_
      - regional borders _(1 - ch)_
-     - border countries (9) _(2 - cg gm)_
-     - border countries _(1 - cu)_
      - border sovereign base areas _(1 - cy)_
      - metropolitan France - total _(1 - fr)_
-     - border countries (17) _(1 - ee)_
      - regional border _(1 - hk)_
      - regional border (1) _(1 - mc)_
 - **Coastline** _(259)_
@@ -62,10 +50,9 @@
 - **Terrain** _(257)_
      - metropolitan France _(1 - fr)_
 - **Elevation extremes** _(258)_
-     - lowest point _(257)_
+     - lowest point _(258)_
      - highest point _(258)_
      - note _(9 - co ec fr gt nl tx us jn xx)_
-     - Lowest point _(1 - od)_
      - top ten highest mountains (measured from sea level) _(1 - xx)_
 - **Natural resources** _(258)_
      - note _(8 - as ja ml wa rs us fs pc)_
@@ -90,9 +77,7 @@
      - note _(3 - ar mx oo)_
 - **Environment - international agreements** _(201)_
      - party to _(200)_
-     - signed, but not ratified _(192)_
-     - signed but not ratified: _(1 - ve)_
-     - signed but not ratified _(1 - ee)_
+     - signed, but not ratified _(194)_
      - note _(1 - oo)_
 - **Geography - note** _(257)_
      - note 1 _(1 - cd)_
@@ -110,14 +95,12 @@
 - **Ethnic groups** _(236)_
      - note _(30)_
 - **Languages** _(241)_
-     - note _(55)_
-     - ntoe _(1 - tl)_
+     - note _(56)_
      - note 1 _(1 - xx)_
      - note 2 _(1 - xx)_
      - note 3 _(1 - xx)_
 - **Religions** _(238)_
-     - note _(17)_
-     - notes _(1 - po)_
+     - note _(18)_
 - **Population** _(255)_
      - note _(68)_
      - top ten most populous countries (in millions) _(1 - xx)_
@@ -187,29 +170,25 @@
      - note _(2 - gz we)_
 - **Sanitation facility access** _(210)_
      - improved _(209)_
-     - unimproved _(209)_
+     - unimproved _(210)_
      - mproved _(1 - ic)_
-     - unimproved: _(1 - it)_
-     - urban: _(1 - ku)_
-     - rural: _(1 - ku)_
-     - total: _(1 - ku)_
+     - urban _(1 - ku)_
+     - rural _(1 - ku)_
+     - total _(1 - ku)_
      - note _(2 - gz we)_
 - **HIV/AIDS - adult prevalence rate** _(232)_
 - **HIV/AIDS - people living with HIV/AIDS** _(234)_
 - **HIV/AIDS - deaths** _(235)_
 - **Major infectious diseases** _(95)_
      - degree of risk _(95)_
-     - food or waterborne diseases _(88)_
-     - vectorborne disease _(27)_
+     - food or waterborne diseases _(89)_
+     - vectorborne diseases _(91)_
      - animal contact disease _(43)_
      - note _(27)_
-     - vectorborne diseases _(64)_
-     - water contact disease _(43)_
+     - water contact disease _(45)_
      - respiratory disease _(17)_
      - soil contact disease _(1 - ch)_
      - aerosolized dust or soil contact disease _(4 - gv li ni sl)_
-     - water contact diseases _(2 - ni tz)_
-     - food or waterborne disease _(1 - od)_
 - **Obesity - adult prevalence rate** _(192)_
 - **Education expenditures** _(198)_
 - **Literacy** _(162)_
@@ -217,8 +196,7 @@
      - total population _(162)_
      - male _(162)_
      - female _(162)_
-     - note _(2 - gz xx)_
-     - notes _(1 - we)_
+     - note _(3 - gz we xx)_
 - **School life expectancy (primary to tertiary education)** _(167)_
      - total _(167)_
      - male _(167)_
@@ -260,11 +238,10 @@
      - note _(2 - cy my)_
 - **Capital** _(236)_
      - name _(233)_
-     - geographic coordinates _(232)_
+     - geographic coordinates _(233)_
      - time difference _(236)_
      - daylight saving time _(80)_
      - note _(21)_
-     - geographical coordinates _(1 - rn)_
 - **Administrative divisions** _(234)_
      - note _(29)_
      - rayons _(1 - aj)_
@@ -319,13 +296,12 @@
 - **International law organization participation** _(198)_
 - **Suffrage** _(235)_
 - **Executive branch** _(240)_
-     - chief of state _(236)_
+     - chief of state _(237)_
      - head of government _(237)_
      - cabinet _(233)_
      - elections/appointments _(235)_
      - election results _(178)_
      - note _(23)_
-     - Chief of state _(1 - eg)_
      - elections _(2 - cc sk)_
 - **Legislative branch** _(234)_
      - description _(232)_
@@ -363,10 +339,10 @@
      - officially recognized _(1 - eg)_
      - not officially registered parties _(1 - ek)_
      - Coalitions and Leaders _(1 - iz)_
-     - Center-right parties: _(1 - it)_
-     - Center-left parties: _(1 - it)_
-     - Centrist parties: _(1 - it)_
-     - other coalitions and parties: _(1 - it)_
+     - Center-right parties _(1 - it)_
+     - Center-left parties _(1 - it)_
+     - Centrist parties _(1 - it)_
+     - other coalitions and parties _(1 - it)_
      - major party _(1 - kn)_
      - minor parties _(1 - kn)_
      - 14 March Coalition _(1 - le)_
@@ -475,12 +451,11 @@
 - **GDP - composition, by end use** _(202)_
      - household consumption _(199)_
      - government consumption _(199)_
-     - investment in fixed capital _(194)_
+     - investment in fixed capital _(195)_
      - investment in inventories _(195)_
      - exports of goods and services _(201)_
      - imports of goods and services _(200)_
      - investment in fixed assets _(4 - fm gq cq vq)_
-     - investment if fixed capital _(1 - aq)_
 - **GDP - composition, by sector of origin** _(231)_
      - agriculture _(230)_
      - industry _(230)_
@@ -559,11 +534,9 @@
      - highest 10% _(223)_
      - note _(3 - ch ec we)_
 - **Budget** _(234)_
-     - revenues _(232)_
-     - expenditures _(232)_
+     - revenues _(233)_
+     - expenditures _(233)_
      - note _(12)_
-     - revenues: _(1 - cy)_
-     - expenditures: _(1 - cy)_
      - Budget _(1 - cy)_
 - **Taxes and other revenues** _(222)_
      - note _(2 - kn us)_
@@ -603,9 +576,8 @@
      - note _(6 - bx ls no us we xx)_
      - Debt - external _(1 - cy)_
 - **Exchange rates** _(241)_
-     - note _(5 - bb es zi ax dx)_
+     - note _(6 - bb es kr zi ax dx)_
      - Exchange rates _(1 - cy)_
-     - note: _(1 - kr)_
      - British pounds per US dollar _(1 - us)_
      - Canadian dollars per US dollar _(1 - us)_
      - Chinese yuan per US dollar _(1 - us)_
@@ -614,11 +586,9 @@
 - **Distribution of family income - Gini index** _(145)_
      - note _(2 - ec we)_
 - **Public debt** _(175)_
-     - note _(58)_
-     - note: _(1 - bu)_
+     - note _(59)_
 - **Central bank discount rate** _(166)_
-     - note _(28)_
-     - note: _(1 - sw)_
+     - note _(29)_
 - **Stock of direct foreign investment - at home** _(143)_
 - **Stock of direct foreign investment - abroad** _(128)_
 - **Economy of the area administered by Turkish Cypriots** _(1 - cy)_
@@ -815,10 +785,9 @@
 
 - **Disputes - international** _(254)_
 - **Refugees and internally displaced persons** _(134)_
-     - refugees (country of origin) _(80)_
+     - refugees (country of origin) _(81)_
      - IDPs _(61)_
      - stateless persons _(73)_
-     - refugees (countries of origin) _(1 - hu)_
      - note _(1 - sy)_
 - **Illicit drugs** _(138)_
      - metropolitan France _(1 - fr)_
