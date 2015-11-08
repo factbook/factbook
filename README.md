@@ -92,6 +92,10 @@ pp page.resources         ## same as page['Geography'][Natural resources']['text
 ...
 ```
 
+See [`data/attributes.yml`](data/attributes.yml) for the full listing of all built-in attribute shortcut accessors.
+See [Attributes](ATTRIBUTES.md) for a quick reference listing.
+
+
 ### Save to disk as JSON
 
 ```ruby
@@ -171,6 +175,9 @@ assert_equal   1, Factbook.codes.region('World').size
 assert_equal  45, Factbook.codes.countries.europe.size
 ...
 ```
+
+See [`data/codes.csv`](data/codes.csv) for the built-in listing of all codes with categories and regions.
+
 
 
 ## The World Factbook Summary (267 Entries)
