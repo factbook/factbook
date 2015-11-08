@@ -1,6 +1,6 @@
 # encoding: utf-8
 #
-#  use to run/test:
+#  use to run:
 #   ruby -I ./lib script/almanac.rb
 
 

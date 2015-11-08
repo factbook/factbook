@@ -61,6 +61,7 @@ class Attributes
     @attribs = attribs
   end
   
+  def to_a() @attribs; end
   def size() @attribs.size; end
 
   def each

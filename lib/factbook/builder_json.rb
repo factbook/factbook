@@ -21,7 +21,7 @@ end
 
 attr_reader :text,
             :json,
-            :page_info,       ## not used yet -- incl. country_name, region_name, last_updated etc.
+            :info,            ## not used yet -- page info incl. country_name, region_name, last_updated etc.
             :errors,          ## not used yet -- encoding erros etc.
             :sects
 
@@ -31,7 +31,7 @@ def initialize( text )
     
   @json = JSON.parse( text )
 
-  @page_info = nil   ## fix/todo: sorry - for now no page info (use header in json - why? why not??)
+  @info   = nil   ## fix/todo: sorry - for now no page info (use header in json - why? why not??)
   @errors = []       ## fix/todo: sorry - for now no errors possible/tracked
 
   @sects = []

@@ -54,9 +54,11 @@ require 'factbook/builder_item'
 require 'factbook/builder'
 require 'factbook/builder_json'
 require 'factbook/page'
+require 'factbook/page_info'
 require 'factbook/sect'
 require 'factbook/subsect'
 
+require 'factbook/reader_json'
 require 'factbook/almanac'
 
 require 'factbook/table'    ## e.g. TableReader

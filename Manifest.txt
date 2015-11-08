@@ -8,6 +8,7 @@ data/codes.csv
 data/codesxref.csv
 data/comparisons.csv
 lib/factbook.rb
+lib/factbook/almanac.rb
 lib/factbook/attributes.rb
 lib/factbook/builder.rb
 lib/factbook/builder_item.rb
@@ -19,6 +20,8 @@ lib/factbook/db/importer.rb
 lib/factbook/db/models.rb
 lib/factbook/db/schema.rb
 lib/factbook/page.rb
+lib/factbook/page_info.rb
+lib/factbook/reader_json.rb
 lib/factbook/sanitizer.rb
 lib/factbook/sect.rb
 lib/factbook/subsect.rb
@@ -26,6 +29,8 @@ lib/factbook/table.rb
 lib/factbook/utils.rb
 lib/factbook/utils_info.rb
 lib/factbook/version.rb
+script/almanac.rb
+script/attributes.rb
 script/build.rb
 script/counter.rb
 script/json.rb

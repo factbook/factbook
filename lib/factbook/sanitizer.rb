@@ -2,13 +2,6 @@
 
 module Factbook
 
-PageInfo = Struct.new( :country_code,
-                       :country_name,
-                       :country_affiliation,
-                       :region_code,
-                       :region_name,
-                       :last_updated )
-
 class Sanitizer
   include LogUtils::Logging
   include Utils     ## pulls in encode_utf8, ...

@@ -55,7 +55,15 @@ class Page
     end
     
     @sects = b.sects
-    @info  = b.page_info    ## todo: change b.page_info to info too - why? why not??
+    @info  = b.info
+
+    ## todo/fix/quick hack:
+    ##  check for info opts hash entry - lets you overwrite page info
+    ##  -- use proper header to setup page info - why, why not??
+    if opts[:info]
+      info  = opts[:info]
+      @info = info
+    end
 
     @data = {}    
     @sects.each do |sect|

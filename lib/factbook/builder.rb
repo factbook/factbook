@@ -29,7 +29,7 @@ end
 attr_reader :html_ascii,     ## full "original" 1:1 page in "original/ascii8/binary" encoding
             :html,           ## utf-8 encoded profile
             :html_debug,     ## html w/ mapping markers - rename to html_markers - why? why not?
-            :page_info,      ## incl. country_name, region_name, last_updated etc.
+            :info,            ## page info incl. country_name, region_name, last_updated etc.
             :errors,          ## encoding erros etc.
             :sects
 
@@ -38,7 +38,7 @@ def initialize( html_ascii )
   @html_ascii = html_ascii
     
   ## todo/fix: use/assume windows 12xx?? encoding - change encoding to utf-8  (from binary/ascii8bit)
-  @html, @page_info, @errors = Sanitizer.new.sanitize( @html_ascii )
+  @html, @info, @errors = Sanitizer.new.sanitize( @html_ascii )
 
   @html_debug = map_sects( @html )
   @html_debug = map_subsects( @html_debug )
