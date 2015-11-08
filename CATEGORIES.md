@@ -1,807 +1,837 @@
 # Categories
 
-## Introduction __(261)__
-- **Background** __(260)__
-- **Preliminary statement** __(1)__
-- **** __(1)__
-## Geography __(261)__
-- **Location** __(259)__
-- **Geographic coordinates** __(258)__
-- **Map references** __(260)__
-- **Area** __(260)__
-     - total __(257)__
-     - land __(249)__
-     - water __(248)__
-     - note __(53)__
-- **Area - comparative** __(260)__
-     - Area comparison map __(85)__
-     - top fifteen World Factbook entities ranked by size __(1)__
-     - top ten largest water bodies __(1)__
-     - top ten largest landmasses __(1)__
-     - top ten largest islands __(1)__
-- **Land boundaries** __(255)__
-     - total __(168)__
-     - border countries (6) __(15)__
-     - border countries (4) __(25)__
-     - border countries (7) __(9)__
-     - border countries (2) __(30)__
-     - border countries (5) __(25)__
-     - border countries (8) __(6)__
-     - border countries (3) __(28)__
-     - border countries (10) __(1)__
-     - border countries (1) __(22)__
-     - note __(9)__
-     - border countries (14) __(2)__
-     - regional borders __(1)__
-     - border countries (9) __(2)__
-     - border countries __(1)__
-     - border sovereign base areas __(1)__
-     - border countries (17) __(1)__
-     - regional border __(1)__
-     - regional border (1) __(1)__
-- **Coastline** __(259)__
-     - total __(1)__
-     - note __(1)__
-- **Maritime claims** __(251)__
-     - territorial sea __(197)__
-     - continental shelf __(92)__
-     - exclusive fishing zone __(36)__
-     - contiguous zone __(84)__
-     - exclusive economic zone __(132)__
-     - note __(3)__
-- **Climate** __(260)__
-- **Terrain** __(257)__
-- **Elevation extremes** __(258)__
-     - lowest point __(257)__
-     - highest point __(258)__
-     - note __(9)__
-     - Lowest point __(1)__
-     - top ten highest mountains (measured from sea level) __(1)__
-- **Natural resources** __(258)__
-     - note __(8)__
-- **Land use** __(244)__
-     - agricultural land __(244)__
-     - forest __(243)__
-     - other __(244)__
-     - note __(2)__
-- **Irrigated land** __(243)__
-     - total __(1)__
-     - note __(1)__
-- **Total renewable water resources** __(177)__
-- **Freshwater withdrawal (domestic/industrial/agricultural)** __(168)__
-     - total __(168)__
-     - per capita __(168)__
-- **Natural hazards** __(254)__
-     - volcanism __(59)__
-     - overseas departments __(1)__
-- **Environment - current issues** __(258)__
-     - note __(3)__
-- **Environment - international agreements** __(201)__
-     - party to __(200)__
-     - signed, but not ratified __(192)__
-     - signed but not ratified: __(1)__
-     - signed but not ratified __(1)__
-     - note __(1)__
-- **Geography - note** __(257)__
-     - note 1 __(1)__
-     - note 2 __(1)__
-     - note 3 __(1)__
-- **** __(1)__
-- **Geographic overview** __(1)__
-## People and Society __(256)__
-- **Nationality** __(233)__
-     - noun __(233)__
-     - adjective __(233)__
-     - note __(3)__
-- **Ethnic groups** __(236)__
-     - note __(30)__
-     - overseas departments __(1)__
-- **Languages** __(241)__
-     - note __(55)__
-     - overseas departments __(1)__
-     - ntoe __(1)__
-     - note 1 __(1)__
-     - note 2 __(1)__
-     - note 3 __(1)__
-- **Religions** __(238)__
-     - note __(17)__
-     - notes __(1)__
-- **Population** __(255)__
-     - note __(68)__
-     - top ten most populous countries (in millions) __(1)__
-- **Age structure** __(230)__
-     - 0-14 years __(230)__
-     - 15-24 years __(230)__
-     - 25-54 years __(230)__
-     - 55-64 years __(230)__
-     - 65 years and over __(230)__
-     - population pyramid __(230)__
-- **Dependency ratios** __(198)__
-     - total dependency ratio __(198)__
-     - youth dependency ratio __(198)__
-     - elderly dependency ratio __(198)__
-     - potential support ratio __(198)__
-     - note __(4)__
-- **Median age** __(230)__
-     - total __(230)__
-     - male __(230)__
-     - female __(230)__
-- **Population growth rate** __(236)__
-     - note __(3)__
-- **Birth rate** __(228)__
-     - note __(1)__
-- **Death rate** __(227)__
-     - note __(1)__
-- **Net migration rate** __(224)__
-     - note __(9)__
-- **Urbanization** __(230)__
-     - urban population __(230)__
-     - rate of urbanization __(230)__
-     - note __(3)__
-     - ten largest urban agglomerations __(1)__
-- **Major urban areas - population** __(221)__
-     - note __(1)__
-- **Sex ratio** __(236)__
-     - at birth __(229)__
-     - 0-14 years __(229)__
-     - 15-24 years __(229)__
-     - 25-54 years __(229)__
-     - 55-64 years __(229)__
-     - 65 years and over __(229)__
-     - total population __(230)__
-     - note __(1)__
-- **Infant mortality rate** __(233)__
-     - total __(233)__
-     - male __(233)__
-     - female __(233)__
-     - note __(1)__
-- **Life expectancy at birth** __(233)__
-     - total population __(232)__
-     - male __(232)__
-     - female __(232)__
-     - total __(1)__
-     - males __(1)__
-     - females __(1)__
-- **Total fertility rate** __(234)__
-- **Contraceptive prevalence rate** __(147)__
-     - note __(25)__
-- **Health expenditures** __(190)__
-- **Physicians density** __(175)__
-- **Hospital bed density** __(194)__
-- **Drinking water source** __(210)__
-     - improved __(209)__
-     - unimproved __(210)__
-     - 97.1improved __(1)__
-     - note __(2)__
-- **Sanitation facility access** __(210)__
-     - improved __(209)__
-     - unimproved __(209)__
-     - mproved __(1)__
-     - unimproved: __(1)__
-     - urban: __(1)__
-     - rural: __(1)__
-     - total: __(1)__
-     - note __(2)__
-- **HIV/AIDS - adult prevalence rate** __(232)__
-- **HIV/AIDS - people living with HIV/AIDS** __(234)__
-- **HIV/AIDS - deaths** __(235)__
-- **Major infectious diseases** __(95)__
-     - degree of risk __(95)__
-     - food or waterborne diseases __(88)__
-     - vectorborne disease __(27)__
-     - animal contact disease __(43)__
-     - note __(27)__
-     - vectorborne diseases __(64)__
-     - water contact disease __(43)__
-     - respiratory disease __(17)__
-     - soil contact disease __(1)__
-     - aerosolized dust or soil contact disease __(4)__
-     - water contact diseases __(2)__
-     - food or waterborne disease __(1)__
-- **Obesity - adult prevalence rate** __(192)__
-- **Education expenditures** __(198)__
-- **Literacy** __(162)__
-     - definition __(162)__
-     - total population __(162)__
-     - male __(162)__
-     - female __(162)__
-     - note __(2)__
-     - notes __(1)__
-- **School life expectancy (primary to tertiary education)** __(167)__
-     - total __(167)__
-     - male __(167)__
-     - female __(167)__
-     - note __(2)__
-- **Child labor - children ages 5-14** __(101)__
-     - total number __(101)__
-     - percentage __(101)__
-     - note __(22)__
-- **Children under the age of 5 years underweight** __(128)__
-- **Unemployment, youth ages 15-24** __(134)__
-     - total __(134)__
-     - male __(126)__
-     - female __(126)__
-     - note __(2)__
-- **Demographic profile** __(19)__
-- **People - note** __(5)__
-- **** __(1)__
-## Government __(256)__
-- **Country name** __(253)__
-     - conventional long form __(251)__
-     - conventional short form __(251)__
-     - local long form __(182)__
-     - local short form __(183)__
-     - former __(104)__
-     - note __(34)__
-     - abbreviation __(28)__
-     - official long form __(1)__
-     - official short form __(1)__
-     - Dutch long form __(2)__
-     - Dutch short form __(2)__
-     - Papiamentu long form __(1)__
-     - Papiamentu short form __(1)__
-     - English long form __(1)__
-     - English short form __(1)__
-- **Government type** __(233)__
-     - note __(2)__
-- **Capital** __(236)__
-     - name __(233)__
-     - geographic coordinates __(232)__
-     - time difference __(236)__
-     - daylight saving time __(80)__
-     - note __(21)__
-     - geographical coordinates __(1)__
-- **Administrative divisions** __(234)__
-     - note __(29)__
-     - rayons __(1)__
-     - cities __(5)__
-     - regions __(4)__
-     - states __(1)__
-     - union territory __(1)__
-     - provinces __(6)__
-     - municipalities __(8)__
-     - autonomous regions __(2)__
-     - city __(1)__
-     - autonomous republics __(1)__
-     - note 1 __(3)__
-     - note 2 __(3)__
-     - counties __(2)__
-     - cities with county rights __(1)__
-     - capital city __(1)__
-     - metropolitan cities __(1)__
-     - special city __(1)__
-     - special self-governing city __(1)__
-     - raions __(1)__
-     - autonomous territorial unit __(1)__
-     - territorial unit __(1)__
-     - chartered cities __(1)__
-     - oblasts __(1)__
-     - republics __(1)__
-     - autonomous okrugs __(1)__
-     - krays __(1)__
-     - federal cities __(1)__
-     - autonomous oblast __(1)__
-     - urban municipalities __(1)__
-     - borough __(1)__
-     - ward __(1)__
-     - England __(1)__
-     - two-tier counties __(1)__
-     - London boroughs and City of London or Greater London __(1)__
-     - metropolitan districts __(1)__
-     - unitary authorities __(1)__
-     - Northern Ireland __(1)__
-     - borough councils __(1)__
-     - district councils __(1)__
-     - city councils __(1)__
-     - Scotland __(1)__
-     - council areas __(1)__
-     - Wales __(1)__
-     - special municipalities __(1)__
-- **Independence** __(234)__
-     - note __(1)__
-- **National holiday** __(234)__
-- **Constitution** __(236)__
-- **Legal system** __(249)__
-- **International law organization participation** __(198)__
-- **Suffrage** __(235)__
-- **Executive branch** __(240)__
-     - chief of state __(236)__
-     - head of government __(237)__
-     - cabinet __(233)__
-     - elections/appointments __(235)__
-     - election results __(178)__
-     - note __(23)__
-     - Chief of state __(1)__
-     - elections __(2)__
-- **Legislative branch** __(234)__
-     - description __(232)__
-     - note __(36)__
-     - elections __(229)__
-     - election results __(226)__
-     - elections (for new House of Representatives) __(1)__
-     - election results (for previous legislature) __(1)__
-- **Judicial branch** __(235)__
-     - highest court(s) __(214)__
-     - judge selection and term of office __(228)__
-     - subordinate courts __(230)__
-     - highest resident court(s) __(16)__
-     - note __(14)__
-     - judge selection and term offfice __(1)__
-     - shighest court(s) __(1)__
-     - highest court __(1)__
-     - .highest court(s) __(1)__
-     - judge selection and terms of office __(1)__
-     - highest reident court(s) __(1)__
-- **Political parties and leaders** __(234)__
-     - Alliance for Employment, Welfare, and Integration or APMI (coalition of 24 centrist and center-right parties) [Sali BERISHA] __(1)__
-     - Alliance for a European Albania or ASHE (coalition of 38 parties from far left to right wing) [Edi RAMA] __(1)__
-     - other parties __(1)__
-     - note __(36)__
-     - pro-government parties __(1)__
-     - opposition parties __(1)__
-     - Flemish parties __(1)__
-     - Francophone parties __(1)__
-     - governing parties __(1)__
-     - area under government control __(1)__
-     - area administered by Turkish Cypriots __(1)__
-     - parties in parliament __(1)__
-     - parties outside parliament __(1)__
-     - officially recognized __(1)__
-     - not officially registered parties __(1)__
-     - Coalitions and Leaders __(1)__
-     - Center-right parties: __(1)__
-     - Center-left parties: __(1)__
-     - Centrist parties: __(1)__
-     - other coalitions and parties: __(1)__
-     - major party __(1)__
-     - minor parties __(1)__
-     - 14 March Coalition __(1)__
-     - 8 March Coalition __(1)__
-     - Independent __(1)__
-     - National Front (Barisan Nasional) or BN (ruling coalition) consists of the following parties __(1)__
-     - People's Alliance (Pakatan Rakyat) or PR (opposition coalition) consists of the following parties __(1)__
-     - notable independent parties __(1)__
-     - represented in Parliament __(1)__
-     - not represented in Parliament __(1)__
-     - other __(2)__
-     - parties in the Parliament __(1)__
-     - selected parties outside the Parliament __(1)__
-     - legal parties __(1)__
-     - Kurdish parties (considered illegal) __(1)__
-     - Note __(1)__
-     - parties __(1)__
-     - others __(1)__
-     - one declared party __(1)__
-- **Political pressure groups and leaders** __(217)__
-     - other __(71)__
-     - note __(9)__
-     - Thai border __(1)__
-     - inside Burma __(1)__
-     - area administered by Turkish Cypriots __(1)__
-     - labor organizations __(1)__
-     - business organizations __(1)__
-     - groups that generally support the Islamic Republic __(1)__
-     - active pro-reform student group __(1)__
-     - opposition groups __(1)__
-     - armed political groups repressed by the government __(1)__
-     - manufacturers and merchants associations __(1)__
-     - organized farm groups __(1)__
-     - major trade union confederations __(1)__
-- **International organization participation** __(234)__
-- **Diplomatic representation in the US** __(241)__
-     - chief of mission __(190)__
-     - chancery __(188)__
-     - telephone __(191)__
-     - FAX __(190)__
-     - consulate(s) general __(124)__
-     - consulate(s) __(30)__
-     - note __(4)__
-     - trade office(s) __(1)__
-     - consul general(s) __(1)__
-     - consular agency(ies) __(1)__
-     - consulates __(1)__
-     - embassy __(1)__
-     - consulate __(1)__
-     - representative __(1)__
-     - office __(2)__
-     - Taipei Economic and Cultural Offices (branch offices) __(1)__
-     - commissioner __(1)__
-     - HKETO offices __(1)__
-- **Diplomatic representation from the US** __(243)__
-     - chief of mission __(173)__
-     - embassy __(171)__
-     - mailing address __(172)__
-     - telephone __(175)__
-     - FAX __(171)__
-     - consulate(s) general __(30)__
-     - note __(4)__
-     - branch office(s) __(2)__
-     - consulate general __(1)__
-     - consulate __(1)__
-     - consular agency __(1)__
-     - consular agency(ies) __(1)__
-     - consulate(s) __(4)__
-     - Consulate(s) General __(1)__
-     - office __(1)__
-     - other offices __(1)__
-- **Flag description** __(250)__
-     - note __(77)__
-- **National symbol(s)** __(230)__
-- **National anthem** __(238)__
-     - name __(224)__
-     - lyrics/music __(225)__
-     - note __(238)__
-- **Dependent areas** __(7)__
-     - note __(2)__
-- **Government - note** __(2)__
-- **Union name** __(1)__
-     - conventional long form __(1)__
-     - abbreviation __(1)__
-- **Political structure** __(1)__
-- **Member states** __(1)__
-     - note __(1)__
-- **Dependency status** __(52)__
-     - note on Palmyra Atoll __(1)__
-- **** __(1)__
-## Economy __(261)__
-- **Economy - overview** __(260)__
-     - Economy - overview __(1)__
-- **GDP (purchasing power parity)** __(237)__
-     - note __(205)__
-     - GDP (purchasing power parity) __(1)__
-- **GDP (official exchange rate)** __(231)__
-     - note __(4)__
-- **GDP - real growth rate** __(232)__
-     - GDP - real growth rate __(1)__
-     - note __(2)__
-- **GDP - per capita (PPP)** __(232)__
-     - note __(192)__
-- **Gross national saving** __(181)__
-- **GDP - composition, by end use** __(202)__
-     - household consumption __(199)__
-     - government consumption __(199)__
-     - investment in fixed capital __(194)__
-     - investment in inventories __(195)__
-     - exports of goods and services __(201)__
-     - imports of goods and services __(200)__
-     - investment in fixed assets __(4)__
-     - investment if fixed capital __(1)__
-- **GDP - composition, by sector of origin** __(231)__
-     - agriculture __(230)__
-     - industry __(230)__
-     - services __(230)__
-     - note __(3)__
-- **Agriculture - products** __(234)__
-     - Agriculture - products __(1)__
-     - note __(1)__
-- **Industries** __(237)__
-     - Industries __(1)__
-     - note __(1)__
-- **Industrial production growth rate** __(226)__
-     - note __(2)__
-     - Industrial production growth rate __(1)__
-- **Labor force** __(236)__
-     - note __(34)__
-     - Labor force __(1)__
-- **Labor force - by occupation** __(223)__
-     - agriculture __(206)__
-     - industry __(185)__
-     - services __(185)__
-     - construction and public works __(1)__
-     - trade __(1)__
-     - government __(1)__
-     - other __(2)__
-     - industry and services __(20)__
-     - tourism __(2)__
-     - other services __(4)__
-     - manufacturing __(5)__
-     - construction __(6)__
-     - Labor force - by occupation __(1)__
-     - agriculture and forestry __(1)__
-     - commerce __(2)__
-     - finance, insurance, and business services __(1)__
-     - transport and communications __(3)__
-     - public services __(1)__
-     - note __(18)__
-     - agriculture and fishing __(1)__
-     - construction and industry __(1)__
-     - transportation and communication __(1)__
-     - trade, restaurants, hotels __(1)__
-     - finance __(1)__
-     - manufacturing, mining, and quarrying __(1)__
-     - construction and utilities __(1)__
-     - farming, forestry, and fishing __(1)__
-     - manufacturing, extraction, transportation, and crafts __(1)__
-     - managerial, professional, and technical __(1)__
-     - sales and office __(1)__
-     - wholesale and retail trade, restaurants, and hotels __(1)__
-     - financing, insurance, and real estate __(1)__
-     - community and social services __(1)__
-     - wholesale and retail trade __(1)__
-     - restaurants and hotels __(1)__
-     - gambling __(1)__
-     - public sector __(1)__
-     - financial services __(1)__
-     - agriculture/fishing/forestry/mining __(1)__
-     - transportation and utilities __(1)__
-     - agriculture, forestry, and fishing __(1)__
-     - gas, electricity, and water __(1)__
-     - transport and communication __(1)__
-     - wholesale and retail distribution __(1)__
-     - professional and scientific services __(1)__
-     - public administration __(1)__
-     - banking and finance __(1)__
-     - entertainment and catering __(1)__
-     - miscellaneous services __(1)__
-- **Unemployment rate** __(231)__
-     - note __(27)__
-     - Unemployment rate __(1)__
-- **Population below poverty line** __(229)__
-     - note __(11)__
-     - Population below poverty line __(1)__
-- **Household income or consumption by percentage share** __(223)__
-     - lowest 10% __(223)__
-     - highest 10% __(223)__
-     - note __(3)__
-- **Budget** __(234)__
-     - revenues __(232)__
-     - expenditures __(232)__
-     - note __(12)__
-     - revenues: __(1)__
-     - expenditures: __(1)__
-     - Budget __(1)__
-- **Taxes and other revenues** __(222)__
-     - note __(2)__
-- **Budget surplus (+) or deficit (-)** __(224)__
-     - note __(1)__
-- **Fiscal year** __(230)__
-     - note __(1)__
-- **Inflation rate (consumer prices)** __(231)__
-     - note __(8)__
-- **Commercial bank prime lending rate** __(191)__
-     - note __(3)__
-- **Stock of narrow money** __(195)__
-     - note __(20)__
-- **Stock of broad money** __(195)__
-     - note __(1)__
-- **Stock of domestic credit** __(194)__
-     - note __(1)__
-- **Market value of publicly traded shares** __(187)__
-- **Current account balance** __(196)__
-- **Exports** __(234)__
-     - note __(9)__
-     - Exports __(1)__
-- **Exports - commodities** __(232)__
-     - note __(1)__
-     - top ten - share of world trade __(1)__
-- **Exports - partners** __(189)__
-- **Imports** __(234)__
-     - note __(6)__
-     - Imports __(1)__
-- **Imports - commodities** __(231)__
-     - top ten - share of world trade __(1)__
-- **Imports - partners** __(188)__
-- **Reserves of foreign exchange and gold** __(171)__
-     - Reserves of foreign exchange and gold __(1)__
-     - note __(4)__
-- **Debt - external** __(226)__
-     - note __(6)__
-     - Debt - external __(1)__
-- **Exchange rates** __(241)__
-     - note __(5)__
-     - Exchange rates __(1)__
-     - note: __(1)__
-     - British pounds per US dollar __(1)__
-     - Canadian dollars per US dollar __(1)__
-     - Chinese yuan per US dollar __(1)__
-     - euros per US dollar __(1)__
-     - Japanese yen per US dollar __(1)__
-- **Distribution of family income - Gini index** __(145)__
-     - note __(2)__
-- **Public debt** __(175)__
-     - note __(58)__
-     - note: __(1)__
-- **Central bank discount rate** __(166)__
-     - note __(28)__
-     - note: __(1)__
-- **Stock of direct foreign investment - at home** __(143)__
-- **Stock of direct foreign investment - abroad** __(128)__
-- **Economy of the area administered by Turkish Cypriots** __(1)__
-     - Economy - overview __(1)__
-     - GDP (purchasing power parity) __(1)__
-     - GDP - real growth rate __(1)__
-     - GDP - per capita __(1)__
-     - GDP - composition by sector __(1)__
-     - Labor force __(1)__
-     - Labor force - by occupation __(1)__
-     - Unemployment rate __(1)__
-     - Population below poverty line __(1)__
-     - Inflation rate __(1)__
-     - Budget __(1)__
-     - Agriculture - products __(1)__
-     - Industries __(1)__
-     - Industrial production growth rate __(1)__
-     - Electricity production __(1)__
-     - Electricity consumption __(1)__
-     - Exports __(1)__
-     - Export - commodities __(1)__
-     - Export - partners __(1)__
-     - Imports __(1)__
-     - Import - commodities __(1)__
-     - Import - partners __(1)__
-     - Reserves of foreign exchange and gold __(1)__
-     - Debt - external __(1)__
-     - Currency (code) __(1)__
-     - Exchange rates __(1)__
-- **** __(1)__
-## Energy __(223)__
-- **Electricity - production** __(220)__
-- **Electricity - consumption** __(220)__
-- **Electricity - exports** __(219)__
-- **Electricity - imports** __(220)__
-- **Electricity - installed generating capacity** __(215)__
-     - note __(2)__
-- **Electricity - from fossil fuels** __(213)__
-- **Electricity - from nuclear fuels** __(214)__
-- **Electricity - from hydroelectric plants** __(214)__
-- **Electricity - from other renewable sources** __(212)__
-     - note __(1)__
-- **Crude oil - production** __(214)__
-- **Crude oil - exports** __(213)__
-     - note __(1)__
-- **Crude oil - imports** __(213)__
-- **Crude oil - proved reserves** __(218)__
-- **Refined petroleum products - production** __(215)__
-- **Refined petroleum products - consumption** __(213)__
-- **Refined petroleum products - exports** __(212)__
-- **Refined petroleum products - imports** __(213)__
-- **Natural gas - production** __(216)__
-     - note __(1)__
-- **Natural gas - consumption** __(215)__
-- **Natural gas - exports** __(214)__
-- **Natural gas - imports** __(214)__
-     - note __(1)__
-- **Natural gas - proved reserves** __(214)__
-- **Carbon dioxide emissions from consumption of energy** __(214)__
-## Communications __(250)__
-- **Telephones - fixed lines** __(221)__
-     - total subscriptions __(214)__
-     - subscriptions per 100 inhabitants __(218)__
-     - total __(5)__
-- **Telephones - mobile cellular** __(219)__
-     - total __(218)__
-     - subscriptions per 100 inhabitants __(217)__
-- **Telephone system** __(239)__
-     - general assessment __(226)__
-     - domestic __(230)__
-     - international __(237)__
-     - overseas departments __(1)__
-- **Broadcast media** __(239)__
-- **Radio broadcast stations** __(240)__
-     - area under government control __(1)__
-     - area administered by Turkish Cypriots __(1)__
-- **Television broadcast stations** __(235)__
-     - area under government control __(1)__
-     - area administered by Turkish Cypriots __(1)__
-- **Internet country code** __(241)__
-- **Internet users** __(222)__
-     - total __(217)__
-     - percent of population __(216)__
-     - note __(1)__
-     - top ten countries by Internet usage (in millions) __(1)__
-- **Communications - note** __(5)__
-- **** __(1)__
-## Transportation __(258)__
-- **Airports** __(238)__
-     - top ten by passengers __(1)__
-     - top ten by cargo (metric tons) __(1)__
-- **Airports - with paved runways** __(233)__
-     - total __(233)__
-     - over 3,047 m __(159)__
-     - 2,438 to 3,047 m __(163)__
-     - 1,524 to 2,437 m __(185)__
-     - 914 to 1,523 m __(154)__
-     - under 914 m __(124)__
-- **Airports - with unpaved runways** __(193)__
-     - total __(193)__
-     - 2,438 to 3,047 m __(45)__
-     - 1,524 to 2,437 m __(124)__
-     - 914 to 1,523 m __(164)__
-     - under 914 m __(177)__
-     - over 3,047 m __(26)__
-     - 2,437 to 3,047 m __(1)__
-- **Heliports** __(116)__
-- **Pipelines** __(124)__
-- **Roadways** __(229)__
-     - total __(225)__
-     - paved __(185)__
-     - unpaved __(154)__
-     - note __(24)__
-     - government control __(1)__
-     - Turkish Cypriot control __(1)__
-     - highways __(1)__
-     - urban roads __(1)__
-     - private and forest roads __(1)__
-     - paved/oiled gravel __(1)__
-     - paved roads __(1)__
-- **Waterways** __(124)__
-     - top ten longest rivers __(1)__
-     - note __(1)__
-     - top ten largest natural lakes (by surface area) __(1)__
-- **Ports and terminals** __(236)__
-     - river port(s) __(42)__
-     - major seaport(s) __(196)__
-     - LNG terminal(s) (export) __(16)__
-     - container port(s) (TEUs) __(40)__
-     - LNG terminal(s) (import) __(33)__
-     - dry bulk cargo port(s) __(5)__
-     - cruise port(s) __(4)__
-     - container port(s) __(4)__
-     - note __(2)__
-     - container ports (TEUs) __(1)__
-     - oil terminal(s) __(18)__
-     - LNG terminal (export) __(2)__
-     - lake port(s) __(5)__
-     - river and lake port(s) __(1)__
-     - river or lake port(s) __(1)__
-     - cruise/ferry port(s) __(1)__
-     - container port(s) TEUs) __(2)__
-     - oil terminals __(9)__
-     - LNG terminal (import) __(3)__
-     - cargo ports (tonnage) __(1)__
-     - cruise departure ports (passengers) __(1)__
-     - major port(s) __(1)__
-     - bulk cargo port(s) __(1)__
-     - top ten container ports as measured by Twenty-Foot Equivalent Units (TEUs) throughput __(1)__
-- **Railways** __(138)__
-     - total __(138)__
-     - standard gauge __(72)__
-     - narrow gauge __(84)__
-     - broad gauge __(35)__
-     - note __(22)__
-     - dual gauge __(3)__
-     - other __(2)__
-- **Merchant marine** __(156)__
-     - total __(145)__
-     - by type __(145)__
-     - foreign-owned __(111)__
-     - registered in other countries __(104)__
-- **Transportation - note** __(22)__
-- **** __(1)__
-## Military __(256)__
-- **Military branches** __(216)__
-     - note __(1)__
-- **Military service age and obligation** __(177)__
-     - note __(1)__
-- **Manpower available for military service** __(204)__
-     - males age 16-49 __(204)__
-     - females age 16-49 __(161)__
-     - Cypriot National Guard (CNG) __(1)__
-- **Manpower fit for military service** __(225)__
-     - males age 16-49 __(225)__
-     - females age 16-49 __(225)__
-     - Cypriot National Guard (CNG) __(1)__
-- **Manpower reaching militarily significant age annually** __(224)__
-     - male __(224)__
-     - female __(224)__
-- **Military expenditures** __(142)__
-- **Military - note** __(78)__
-- **** __(1)__
-## Transnational Issues __(255)__
-- **Disputes - international** __(254)__
-- **Refugees and internally displaced persons** __(134)__
-     - refugees (country of origin) __(80)__
-     - IDPs __(61)__
-     - stateless persons __(73)__
-     - refugees (countries of origin) __(1)__
-     - note __(1)__
-- **Illicit drugs** __(138)__
-     - cocaine __(1)__
-     - opiates __(1)__
-- **Trafficking in persons** __(68)__
-     - current situation __(67)__
-     - tier rating __(67)__
-     - currrent situation __(1)__
-     - Tier 2 Watch List __(1)__
-     - Tier 3 __(1)__
-- **** __(1)__
+## Introduction _(261)_
+
+- **Background** _(260)_
+- **Preliminary statement** _(1)_
+- **** _(1)_
+
+## Geography _(261)_
+
+- **Location** _(259)_
+     - metropolitan France _(1)_
+- **Geographic coordinates** _(258)_
+     - metropolitan France _(1)_
+- **Map references** _(260)_
+     - metropolitan France _(1)_
+- **Area** _(260)_
+     - total _(257)_
+     - land _(249)_
+     - water _(248)_
+     - note _(53)_
+- **Area - comparative** _(260)_
+     - Area comparison map _(85)_
+     - top fifteen World Factbook entities ranked by size _(1)_
+     - top ten largest water bodies _(1)_
+     - top ten largest landmasses _(1)_
+     - top ten largest islands _(1)_
+- **Land boundaries** _(255)_
+     - total _(168)_
+     - border countries (6) _(15)_
+     - border countries (4) _(25)_
+     - border countries (7) _(9)_
+     - border countries (2) _(30)_
+     - border countries (5) _(25)_
+     - border countries (8) _(6)_
+     - border countries (3) _(28)_
+     - border countries (10) _(1)_
+     - border countries (1) _(22)_
+     - note _(9)_
+     - border countries (14) _(2)_
+     - regional borders _(1)_
+     - border countries (9) _(2)_
+     - border countries _(1)_
+     - border sovereign base areas _(1)_
+     - metropolitan France - total _(1)_
+     - border countries (17) _(1)_
+     - regional border _(1)_
+     - regional border (1) _(1)_
+- **Coastline** _(259)_
+     - total _(1)_
+     - metropolitan France _(1)_
+     - note _(1)_
+- **Maritime claims** _(251)_
+     - territorial sea _(197)_
+     - continental shelf _(92)_
+     - exclusive fishing zone _(36)_
+     - contiguous zone _(84)_
+     - exclusive economic zone _(132)_
+     - note _(3)_
+- **Climate** _(260)_
+     - metropolitan France _(1)_
+- **Terrain** _(257)_
+     - metropolitan France _(1)_
+- **Elevation extremes** _(258)_
+     - lowest point _(257)_
+     - highest point _(258)_
+     - note _(9)_
+     - Lowest point _(1)_
+     - top ten highest mountains (measured from sea level) _(1)_
+- **Natural resources** _(258)_
+     - note _(8)_
+     - metropolitan France _(1)_
+- **Land use** _(244)_
+     - agricultural land _(244)_
+     - forest _(243)_
+     - other _(244)_
+     - note _(2)_
+- **Irrigated land** _(243)_
+     - total _(1)_
+     - metropolitan France _(1)_
+     - note _(1)_
+- **Total renewable water resources** _(177)_
+- **Freshwater withdrawal (domestic/industrial/agricultural)** _(168)_
+     - total _(168)_
+     - per capita _(168)_
+- **Natural hazards** _(254)_
+     - volcanism _(59)_
+     - metropolitan France _(1)_
+     - overseas departments _(1)_
+- **Environment - current issues** _(258)_
+     - note _(3)_
+- **Environment - international agreements** _(201)_
+     - party to _(200)_
+     - signed, but not ratified _(192)_
+     - signed but not ratified: _(1)_
+     - signed but not ratified _(1)_
+     - note _(1)_
+- **Geography - note** _(257)_
+     - note 1 _(1)_
+     - note 2 _(1)_
+     - note 3 _(1)_
+- **** _(1)_
+- **Geographic overview** _(1)_
+
+## People and Society _(256)_
+
+- **Nationality** _(233)_
+     - noun _(233)_
+     - adjective _(233)_
+     - note _(3)_
+- **Ethnic groups** _(236)_
+     - note _(30)_
+     - overseas departments _(1)_
+- **Languages** _(241)_
+     - note _(55)_
+     - overseas departments _(1)_
+     - ntoe _(1)_
+     - note 1 _(1)_
+     - note 2 _(1)_
+     - note 3 _(1)_
+- **Religions** _(238)_
+     - note _(17)_
+     - notes _(1)_
+- **Population** _(255)_
+     - note _(68)_
+     - top ten most populous countries (in millions) _(1)_
+- **Age structure** _(230)_
+     - 0-14 years _(230)_
+     - 15-24 years _(230)_
+     - 25-54 years _(230)_
+     - 55-64 years _(230)_
+     - 65 years and over _(230)_
+     - population pyramid _(230)_
+- **Dependency ratios** _(198)_
+     - total dependency ratio _(198)_
+     - youth dependency ratio _(198)_
+     - elderly dependency ratio _(198)_
+     - potential support ratio _(198)_
+     - note _(4)_
+- **Median age** _(230)_
+     - total _(230)_
+     - male _(230)_
+     - female _(230)_
+- **Population growth rate** _(236)_
+     - note _(3)_
+- **Birth rate** _(228)_
+     - note _(1)_
+- **Death rate** _(227)_
+     - note _(1)_
+- **Net migration rate** _(224)_
+     - note _(9)_
+- **Urbanization** _(230)_
+     - urban population _(230)_
+     - rate of urbanization _(230)_
+     - note _(3)_
+     - ten largest urban agglomerations _(1)_
+- **Major urban areas - population** _(221)_
+     - note _(1)_
+- **Sex ratio** _(236)_
+     - at birth _(229)_
+     - 0-14 years _(229)_
+     - 15-24 years _(229)_
+     - 25-54 years _(229)_
+     - 55-64 years _(229)_
+     - 65 years and over _(229)_
+     - total population _(230)_
+     - note _(1)_
+- **Infant mortality rate** _(233)_
+     - total _(233)_
+     - male _(233)_
+     - female _(233)_
+     - note _(1)_
+- **Life expectancy at birth** _(233)_
+     - total population _(232)_
+     - male _(232)_
+     - female _(232)_
+     - total _(1)_
+     - males _(1)_
+     - females _(1)_
+- **Total fertility rate** _(234)_
+- **Contraceptive prevalence rate** _(147)_
+     - note _(25)_
+- **Health expenditures** _(190)_
+- **Physicians density** _(175)_
+- **Hospital bed density** _(194)_
+- **Drinking water source** _(210)_
+     - improved _(209)_
+     - unimproved _(210)_
+     - 97.1improved _(1)_
+     - note _(2)_
+- **Sanitation facility access** _(210)_
+     - improved _(209)_
+     - unimproved _(209)_
+     - mproved _(1)_
+     - unimproved: _(1)_
+     - urban: _(1)_
+     - rural: _(1)_
+     - total: _(1)_
+     - note _(2)_
+- **HIV/AIDS - adult prevalence rate** _(232)_
+- **HIV/AIDS - people living with HIV/AIDS** _(234)_
+- **HIV/AIDS - deaths** _(235)_
+- **Major infectious diseases** _(95)_
+     - degree of risk _(95)_
+     - food or waterborne diseases _(88)_
+     - vectorborne disease _(27)_
+     - animal contact disease _(43)_
+     - note _(27)_
+     - vectorborne diseases _(64)_
+     - water contact disease _(43)_
+     - respiratory disease _(17)_
+     - soil contact disease _(1)_
+     - aerosolized dust or soil contact disease _(4)_
+     - water contact diseases _(2)_
+     - food or waterborne disease _(1)_
+- **Obesity - adult prevalence rate** _(192)_
+- **Education expenditures** _(198)_
+- **Literacy** _(162)_
+     - definition _(162)_
+     - total population _(162)_
+     - male _(162)_
+     - female _(162)_
+     - note _(2)_
+     - notes _(1)_
+- **School life expectancy (primary to tertiary education)** _(167)_
+     - total _(167)_
+     - male _(167)_
+     - female _(167)_
+     - note _(2)_
+- **Child labor - children ages 5-14** _(101)_
+     - total number _(101)_
+     - percentage _(101)_
+     - note _(22)_
+- **Children under the age of 5 years underweight** _(128)_
+- **Unemployment, youth ages 15-24** _(134)_
+     - total _(134)_
+     - male _(126)_
+     - female _(126)_
+     - note _(2)_
+- **Demographic profile** _(19)_
+- **People - note** _(5)_
+- **** _(1)_
+
+## Government _(256)_
+
+- **Country name** _(253)_
+     - conventional long form _(251)_
+     - conventional short form _(251)_
+     - local long form _(182)_
+     - local short form _(183)_
+     - former _(104)_
+     - note _(34)_
+     - abbreviation _(28)_
+     - official long form _(1)_
+     - official short form _(1)_
+     - Dutch long form _(2)_
+     - Dutch short form _(2)_
+     - Papiamentu long form _(1)_
+     - Papiamentu short form _(1)_
+     - English long form _(1)_
+     - English short form _(1)_
+- **Government type** _(233)_
+     - note _(2)_
+- **Capital** _(236)_
+     - name _(233)_
+     - geographic coordinates _(232)_
+     - time difference _(236)_
+     - daylight saving time _(80)_
+     - note _(21)_
+     - geographical coordinates _(1)_
+- **Administrative divisions** _(234)_
+     - note _(29)_
+     - rayons _(1)_
+     - cities _(5)_
+     - regions _(4)_
+     - states _(1)_
+     - union territory _(1)_
+     - provinces _(6)_
+     - municipalities _(8)_
+     - autonomous regions _(2)_
+     - city _(1)_
+     - autonomous republics _(1)_
+     - note 1 _(3)_
+     - note 2 _(3)_
+     - counties _(2)_
+     - cities with county rights _(1)_
+     - capital city _(1)_
+     - metropolitan cities _(1)_
+     - special city _(1)_
+     - special self-governing city _(1)_
+     - raions _(1)_
+     - autonomous territorial unit _(1)_
+     - territorial unit _(1)_
+     - chartered cities _(1)_
+     - oblasts _(1)_
+     - republics _(1)_
+     - autonomous okrugs _(1)_
+     - krays _(1)_
+     - federal cities _(1)_
+     - autonomous oblast _(1)_
+     - urban municipalities _(1)_
+     - borough _(1)_
+     - ward _(1)_
+     - England _(1)_
+     - two-tier counties _(1)_
+     - London boroughs and City of London or Greater London _(1)_
+     - metropolitan districts _(1)_
+     - unitary authorities _(1)_
+     - Northern Ireland _(1)_
+     - borough councils _(1)_
+     - district councils _(1)_
+     - city councils _(1)_
+     - Scotland _(1)_
+     - council areas _(1)_
+     - Wales _(1)_
+     - special municipalities _(1)_
+- **Independence** _(234)_
+     - note _(1)_
+- **National holiday** _(234)_
+- **Constitution** _(236)_
+- **Legal system** _(249)_
+- **International law organization participation** _(198)_
+- **Suffrage** _(235)_
+- **Executive branch** _(240)_
+     - chief of state _(236)_
+     - head of government _(237)_
+     - cabinet _(233)_
+     - elections/appointments _(235)_
+     - election results _(178)_
+     - note _(23)_
+     - Chief of state _(1)_
+     - elections _(2)_
+- **Legislative branch** _(234)_
+     - description _(232)_
+     - note _(36)_
+     - elections _(229)_
+     - election results _(226)_
+     - elections (for new House of Representatives) _(1)_
+     - election results (for previous legislature) _(1)_
+- **Judicial branch** _(235)_
+     - highest court(s) _(214)_
+     - judge selection and term of office _(228)_
+     - subordinate courts _(230)_
+     - highest resident court(s) _(16)_
+     - note _(14)_
+     - judge selection and term offfice _(1)_
+     - shighest court(s) _(1)_
+     - highest court _(1)_
+     - .highest court(s) _(1)_
+     - judge selection and terms of office _(1)_
+     - highest reident court(s) _(1)_
+- **Political parties and leaders** _(234)_
+     - Alliance for Employment, Welfare, and Integration or APMI (coalition of 24 centrist and center-right parties) [Sali BERISHA] _(1)_
+     - Alliance for a European Albania or ASHE (coalition of 38 parties from far left to right wing) [Edi RAMA] _(1)_
+     - other parties _(1)_
+     - note _(36)_
+     - pro-government parties _(1)_
+     - opposition parties _(1)_
+     - Flemish parties _(1)_
+     - Francophone parties _(1)_
+     - governing parties _(1)_
+     - area under government control _(1)_
+     - area administered by Turkish Cypriots _(1)_
+     - parties in parliament _(1)_
+     - parties outside parliament _(1)_
+     - officially recognized _(1)_
+     - not officially registered parties _(1)_
+     - Coalitions and Leaders _(1)_
+     - Center-right parties: _(1)_
+     - Center-left parties: _(1)_
+     - Centrist parties: _(1)_
+     - other coalitions and parties: _(1)_
+     - major party _(1)_
+     - minor parties _(1)_
+     - 14 March Coalition _(1)_
+     - 8 March Coalition _(1)_
+     - Independent _(1)_
+     - National Front (Barisan Nasional) or BN (ruling coalition) consists of the following parties _(1)_
+     - People's Alliance (Pakatan Rakyat) or PR (opposition coalition) consists of the following parties _(1)_
+     - notable independent parties _(1)_
+     - represented in Parliament _(1)_
+     - not represented in Parliament _(1)_
+     - other _(2)_
+     - parties in the Parliament _(1)_
+     - selected parties outside the Parliament _(1)_
+     - legal parties _(1)_
+     - Kurdish parties (considered illegal) _(1)_
+     - Note _(1)_
+     - parties _(1)_
+     - others _(1)_
+     - one declared party _(1)_
+- **Political pressure groups and leaders** _(217)_
+     - other _(71)_
+     - note _(9)_
+     - Thai border _(1)_
+     - inside Burma _(1)_
+     - area administered by Turkish Cypriots _(1)_
+     - labor organizations _(1)_
+     - business organizations _(1)_
+     - groups that generally support the Islamic Republic _(1)_
+     - active pro-reform student group _(1)_
+     - opposition groups _(1)_
+     - armed political groups repressed by the government _(1)_
+     - manufacturers and merchants associations _(1)_
+     - organized farm groups _(1)_
+     - major trade union confederations _(1)_
+- **International organization participation** _(234)_
+- **Diplomatic representation in the US** _(241)_
+     - chief of mission _(190)_
+     - chancery _(188)_
+     - telephone _(191)_
+     - FAX _(190)_
+     - consulate(s) general _(124)_
+     - consulate(s) _(30)_
+     - note _(4)_
+     - trade office(s) _(1)_
+     - consul general(s) _(1)_
+     - consular agency(ies) _(1)_
+     - consulates _(1)_
+     - embassy _(1)_
+     - consulate _(1)_
+     - representative _(1)_
+     - office _(2)_
+     - Taipei Economic and Cultural Offices (branch offices) _(1)_
+     - commissioner _(1)_
+     - HKETO offices _(1)_
+- **Diplomatic representation from the US** _(243)_
+     - chief of mission _(173)_
+     - embassy _(171)_
+     - mailing address _(172)_
+     - telephone _(175)_
+     - FAX _(171)_
+     - consulate(s) general _(30)_
+     - note _(4)_
+     - branch office(s) _(2)_
+     - consulate general _(1)_
+     - consulate _(1)_
+     - consular agency _(1)_
+     - consular agency(ies) _(1)_
+     - consulate(s) _(4)_
+     - Consulate(s) General _(1)_
+     - office _(1)_
+     - other offices _(1)_
+- **Flag description** _(250)_
+     - note _(77)_
+- **National symbol(s)** _(230)_
+- **National anthem** _(238)_
+     - name _(224)_
+     - lyrics/music _(225)_
+     - note _(238)_
+- **Dependent areas** _(7)_
+     - note _(2)_
+- **Government - note** _(2)_
+- **Union name** _(1)_
+     - conventional long form _(1)_
+     - abbreviation _(1)_
+- **Political structure** _(1)_
+- **Member states** _(1)_
+     - note _(1)_
+- **Dependency status** _(52)_
+- **** _(1)_
+
+## Economy _(261)_
+
+- **Economy - overview** _(260)_
+     - Economy - overview _(1)_
+- **GDP (purchasing power parity)** _(237)_
+     - note _(205)_
+     - GDP (purchasing power parity) _(1)_
+- **GDP (official exchange rate)** _(231)_
+     - note _(4)_
+- **GDP - real growth rate** _(232)_
+     - GDP - real growth rate _(1)_
+     - note _(2)_
+- **GDP - per capita (PPP)** _(232)_
+     - note _(192)_
+- **Gross national saving** _(181)_
+- **GDP - composition, by end use** _(202)_
+     - household consumption _(199)_
+     - government consumption _(199)_
+     - investment in fixed capital _(194)_
+     - investment in inventories _(195)_
+     - exports of goods and services _(201)_
+     - imports of goods and services _(200)_
+     - investment in fixed assets _(4)_
+     - investment if fixed capital _(1)_
+- **GDP - composition, by sector of origin** _(231)_
+     - agriculture _(230)_
+     - industry _(230)_
+     - services _(230)_
+     - note _(3)_
+- **Agriculture - products** _(234)_
+     - Agriculture - products _(1)_
+     - note _(1)_
+- **Industries** _(237)_
+     - Industries _(1)_
+     - note _(1)_
+- **Industrial production growth rate** _(226)_
+     - note _(2)_
+     - Industrial production growth rate _(1)_
+- **Labor force** _(236)_
+     - note _(34)_
+     - Labor force _(1)_
+- **Labor force - by occupation** _(223)_
+     - agriculture _(206)_
+     - industry _(185)_
+     - services _(185)_
+     - construction and public works _(1)_
+     - trade _(1)_
+     - government _(1)_
+     - other _(2)_
+     - industry and services _(20)_
+     - tourism _(2)_
+     - other services _(4)_
+     - manufacturing _(5)_
+     - construction _(6)_
+     - Labor force - by occupation _(1)_
+     - agriculture and forestry _(1)_
+     - commerce _(2)_
+     - finance, insurance, and business services _(1)_
+     - transport and communications _(3)_
+     - public services _(1)_
+     - note _(18)_
+     - agriculture and fishing _(1)_
+     - construction and industry _(1)_
+     - transportation and communication _(1)_
+     - trade, restaurants, hotels _(1)_
+     - finance _(1)_
+     - manufacturing, mining, and quarrying _(1)_
+     - construction and utilities _(1)_
+     - farming, forestry, and fishing _(1)_
+     - manufacturing, extraction, transportation, and crafts _(1)_
+     - managerial, professional, and technical _(1)_
+     - sales and office _(1)_
+     - wholesale and retail trade, restaurants, and hotels _(1)_
+     - financing, insurance, and real estate _(1)_
+     - community and social services _(1)_
+     - wholesale and retail trade _(1)_
+     - restaurants and hotels _(1)_
+     - gambling _(1)_
+     - public sector _(1)_
+     - financial services _(1)_
+     - agriculture/fishing/forestry/mining _(1)_
+     - transportation and utilities _(1)_
+     - agriculture, forestry, and fishing _(1)_
+     - gas, electricity, and water _(1)_
+     - transport and communication _(1)_
+     - wholesale and retail distribution _(1)_
+     - professional and scientific services _(1)_
+     - public administration _(1)_
+     - banking and finance _(1)_
+     - entertainment and catering _(1)_
+     - miscellaneous services _(1)_
+- **Unemployment rate** _(231)_
+     - note _(27)_
+     - Unemployment rate _(1)_
+- **Population below poverty line** _(229)_
+     - note _(11)_
+     - Population below poverty line _(1)_
+- **Household income or consumption by percentage share** _(223)_
+     - lowest 10% _(223)_
+     - highest 10% _(223)_
+     - note _(3)_
+- **Budget** _(234)_
+     - revenues _(232)_
+     - expenditures _(232)_
+     - note _(12)_
+     - revenues: _(1)_
+     - expenditures: _(1)_
+     - Budget _(1)_
+- **Taxes and other revenues** _(222)_
+     - note _(2)_
+- **Budget surplus (+) or deficit (-)** _(224)_
+     - note _(1)_
+- **Fiscal year** _(230)_
+     - note _(1)_
+- **Inflation rate (consumer prices)** _(231)_
+     - note _(8)_
+- **Commercial bank prime lending rate** _(191)_
+     - note _(3)_
+- **Stock of narrow money** _(195)_
+     - note _(20)_
+- **Stock of broad money** _(195)_
+     - note _(1)_
+- **Stock of domestic credit** _(194)_
+     - note _(1)_
+- **Market value of publicly traded shares** _(187)_
+- **Current account balance** _(196)_
+- **Exports** _(234)_
+     - note _(9)_
+     - Exports _(1)_
+- **Exports - commodities** _(232)_
+     - note _(1)_
+     - top ten - share of world trade _(1)_
+- **Exports - partners** _(189)_
+- **Imports** _(234)_
+     - note _(6)_
+     - Imports _(1)_
+- **Imports - commodities** _(231)_
+     - top ten - share of world trade _(1)_
+- **Imports - partners** _(188)_
+- **Reserves of foreign exchange and gold** _(171)_
+     - Reserves of foreign exchange and gold _(1)_
+     - note _(4)_
+- **Debt - external** _(226)_
+     - note _(6)_
+     - Debt - external _(1)_
+- **Exchange rates** _(241)_
+     - note _(5)_
+     - Exchange rates _(1)_
+     - note: _(1)_
+     - British pounds per US dollar _(1)_
+     - Canadian dollars per US dollar _(1)_
+     - Chinese yuan per US dollar _(1)_
+     - euros per US dollar _(1)_
+     - Japanese yen per US dollar _(1)_
+- **Distribution of family income - Gini index** _(145)_
+     - note _(2)_
+- **Public debt** _(175)_
+     - note _(58)_
+     - note: _(1)_
+- **Central bank discount rate** _(166)_
+     - note _(28)_
+     - note: _(1)_
+- **Stock of direct foreign investment - at home** _(143)_
+- **Stock of direct foreign investment - abroad** _(128)_
+- **Economy of the area administered by Turkish Cypriots** _(1)_
+     - Economy - overview _(1)_
+     - GDP (purchasing power parity) _(1)_
+     - GDP - real growth rate _(1)_
+     - GDP - per capita _(1)_
+     - GDP - composition by sector _(1)_
+     - Labor force _(1)_
+     - Labor force - by occupation _(1)_
+     - Unemployment rate _(1)_
+     - Population below poverty line _(1)_
+     - Inflation rate _(1)_
+     - Budget _(1)_
+     - Agriculture - products _(1)_
+     - Industries _(1)_
+     - Industrial production growth rate _(1)_
+     - Electricity production _(1)_
+     - Electricity consumption _(1)_
+     - Exports _(1)_
+     - Export - commodities _(1)_
+     - Export - partners _(1)_
+     - Imports _(1)_
+     - Import - commodities _(1)_
+     - Import - partners _(1)_
+     - Reserves of foreign exchange and gold _(1)_
+     - Debt - external _(1)_
+     - Currency (code) _(1)_
+     - Exchange rates _(1)_
+- **** _(1)_
+
+## Energy _(223)_
+
+- **Electricity - production** _(220)_
+- **Electricity - consumption** _(220)_
+- **Electricity - exports** _(219)_
+- **Electricity - imports** _(220)_
+- **Electricity - installed generating capacity** _(215)_
+     - note _(2)_
+- **Electricity - from fossil fuels** _(213)_
+- **Electricity - from nuclear fuels** _(214)_
+- **Electricity - from hydroelectric plants** _(214)_
+- **Electricity - from other renewable sources** _(212)_
+     - note _(1)_
+- **Crude oil - production** _(214)_
+- **Crude oil - exports** _(213)_
+     - note _(1)_
+- **Crude oil - imports** _(213)_
+- **Crude oil - proved reserves** _(218)_
+- **Refined petroleum products - production** _(215)_
+- **Refined petroleum products - consumption** _(213)_
+- **Refined petroleum products - exports** _(212)_
+- **Refined petroleum products - imports** _(213)_
+- **Natural gas - production** _(216)_
+     - note _(1)_
+- **Natural gas - consumption** _(215)_
+- **Natural gas - exports** _(214)_
+- **Natural gas - imports** _(214)_
+     - note _(1)_
+- **Natural gas - proved reserves** _(214)_
+- **Carbon dioxide emissions from consumption of energy** _(214)_
+
+## Communications _(250)_
+
+- **Telephones - fixed lines** _(221)_
+     - total subscriptions _(214)_
+     - subscriptions per 100 inhabitants _(218)_
+     - total _(5)_
+- **Telephones - mobile cellular** _(219)_
+     - total _(218)_
+     - subscriptions per 100 inhabitants _(217)_
+- **Telephone system** _(239)_
+     - general assessment _(226)_
+     - domestic _(230)_
+     - international _(237)_
+     - overseas departments _(1)_
+- **Broadcast media** _(239)_
+- **Radio broadcast stations** _(240)_
+     - area under government control _(1)_
+     - area administered by Turkish Cypriots _(1)_
+- **Television broadcast stations** _(235)_
+     - area under government control _(1)_
+     - area administered by Turkish Cypriots _(1)_
+- **Internet country code** _(241)_
+- **Internet users** _(222)_
+     - total _(217)_
+     - percent of population _(216)_
+     - note _(1)_
+     - top ten countries by Internet usage (in millions) _(1)_
+- **Communications - note** _(5)_
+- **** _(1)_
+
+## Transportation _(258)_
+
+- **Airports** _(238)_
+     - top ten by passengers _(1)_
+     - top ten by cargo (metric tons) _(1)_
+- **Airports - with paved runways** _(233)_
+     - total _(233)_
+     - over 3,047 m _(159)_
+     - 2,438 to 3,047 m _(163)_
+     - 1,524 to 2,437 m _(185)_
+     - 914 to 1,523 m _(154)_
+     - under 914 m _(124)_
+- **Airports - with unpaved runways** _(193)_
+     - total _(193)_
+     - 2,438 to 3,047 m _(45)_
+     - 1,524 to 2,437 m _(124)_
+     - 914 to 1,523 m _(164)_
+     - under 914 m _(177)_
+     - over 3,047 m _(26)_
+     - 2,437 to 3,047 m _(1)_
+- **Heliports** _(116)_
+- **Pipelines** _(124)_
+- **Roadways** _(229)_
+     - total _(225)_
+     - paved _(185)_
+     - unpaved _(154)_
+     - note _(24)_
+     - government control _(1)_
+     - Turkish Cypriot control _(1)_
+     - highways _(1)_
+     - urban roads _(1)_
+     - private and forest roads _(1)_
+     - paved/oiled gravel _(1)_
+     - paved roads _(1)_
+- **Waterways** _(124)_
+     - metropolitan France _(1)_
+     - top ten longest rivers _(1)_
+     - note _(1)_
+     - top ten largest natural lakes (by surface area) _(1)_
+- **Ports and terminals** _(236)_
+     - river port(s) _(42)_
+     - major seaport(s) _(196)_
+     - LNG terminal(s) (export) _(16)_
+     - container port(s) (TEUs) _(40)_
+     - LNG terminal(s) (import) _(33)_
+     - dry bulk cargo port(s) _(5)_
+     - cruise port(s) _(4)_
+     - container port(s) _(4)_
+     - note _(2)_
+     - container ports (TEUs) _(1)_
+     - oil terminal(s) _(18)_
+     - LNG terminal (export) _(2)_
+     - lake port(s) _(5)_
+     - river and lake port(s) _(1)_
+     - river or lake port(s) _(1)_
+     - cruise/ferry port(s) _(1)_
+     - container port(s) TEUs) _(2)_
+     - oil terminals _(9)_
+     - LNG terminal (import) _(3)_
+     - cargo ports (tonnage) _(1)_
+     - cruise departure ports (passengers) _(1)_
+     - major port(s) _(1)_
+     - bulk cargo port(s) _(1)_
+     - top ten container ports as measured by Twenty-Foot Equivalent Units (TEUs) throughput _(1)_
+- **Railways** _(138)_
+     - total _(138)_
+     - standard gauge _(72)_
+     - narrow gauge _(84)_
+     - broad gauge _(35)_
+     - note _(22)_
+     - dual gauge _(3)_
+     - other _(2)_
+- **Merchant marine** _(156)_
+     - total _(145)_
+     - by type _(145)_
+     - foreign-owned _(111)_
+     - registered in other countries _(104)_
+- **Transportation - note** _(22)_
+- **** _(1)_
+
+## Military _(256)_
+
+- **Military branches** _(216)_
+     - note _(1)_
+- **Military service age and obligation** _(177)_
+     - note _(1)_
+- **Manpower available for military service** _(204)_
+     - males age 16-49 _(204)_
+     - females age 16-49 _(161)_
+     - Cypriot National Guard (CNG) _(1)_
+- **Manpower fit for military service** _(225)_
+     - males age 16-49 _(225)_
+     - females age 16-49 _(225)_
+     - Cypriot National Guard (CNG) _(1)_
+- **Manpower reaching militarily significant age annually** _(224)_
+     - male _(224)_
+     - female _(224)_
+- **Military expenditures** _(142)_
+- **Military - note** _(78)_
+- **** _(1)_
+
+## Transnational Issues _(255)_
+
+- **Disputes - international** _(254)_
+- **Refugees and internally displaced persons** _(134)_
+     - refugees (country of origin) _(80)_
+     - IDPs _(61)_
+     - stateless persons _(73)_
+     - refugees (countries of origin) _(1)_
+     - note _(1)_
+- **Illicit drugs** _(138)_
+     - metropolitan France _(1)_
+     - cocaine _(1)_
+     - opiates _(1)_
+- **Trafficking in persons** _(68)_
+     - current situation _(67)_
+     - tier rating _(67)_
+     - currrent situation _(1)_
+     - Tier 2 Watch List _(1)_
+     - Tier 3 _(1)_
+- **** _(1)_
