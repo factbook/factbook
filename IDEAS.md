@@ -40,6 +40,20 @@ The header, if included, should contain
 - date & time when the json file was produced
 
 
-### Thanks
+### Statistics
 
-Eckhard Licher
+One of the issues when using the data for statistics is not having a way to track time.
+
+ - The factbook has had varying update schedules: Yearly, monthly, weekly. 
+   A **year by year** breakdown is possible, as we have year by year back ups available dating back about 15 years. The problem is parsing the changes from each backup could be tedious.
+
+ - Although we can have a version year to year, not each section of information is updated each year. Using the **"YEAR est."** fields can help us breakdown the down dates more.
+
+ - Eventually compile printed books for source material?
+
+
+
+
+
+
+### Thanks
