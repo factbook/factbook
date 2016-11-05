@@ -22,3 +22,19 @@ Some entries divived by:
 
 
 
+
+
+## How-To Update Code for New Page Structure / Site Changes
+
+Steps to update to new page structure.
+
+What links to use? (Example - Austria (`au`))
+
+- <https://www.cia.gov/library/publications/the-world-factbook/geos/au.html>
+- Print version? <https://www.cia.gov/library/publications/the-world-factbook/geos/print_au.html> (check: is the print version up-to-date)
+
+
+### Step 1 - Try Sanitizer
+
+- [ ] add new pages to /test/data/src
+- [ ] update /test/test_sanitizer.rb  (to try new pages)

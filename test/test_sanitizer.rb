@@ -11,14 +11,15 @@ require 'helper'
 class TestSanitizer < MiniTest::Test
 
   def test_sanitize
-    
-    ['au','be'].each do |cc|
+
+    ['au-2016-11-03','be-2016-11-03'].each do |cnty|
+
       ## use/fix: ASCII-8BIT (e.g.keep as is) -???
-      html_ascii = File.read( "#{Factbook.root}/test/data/src/#{cc}.html" )     ## fix/todo: use ASCII8BIT/binary reader ??
+      html_ascii = File.read( "#{Factbook.root}/test/data/src/#{cnty}.html" )     ## fix/todo: use ASCII8BIT/binary reader ??
 
       html, info, errors = Factbook::Sanitizer.new.sanitize( html_ascii )
 
-      File.open( "./tmp/#{cc}.profile.html", 'w' ) do |f|
+      File.open( "./tmp/#{cnty}.profile.html", 'w' ) do |f|
         f.write "** info:\n"
         f.write info.inspect + "\n\n"
         f.write "** errors:\n"
@@ -32,4 +33,3 @@ class TestSanitizer < MiniTest::Test
   end
 
 end # class TestSanitizer
-

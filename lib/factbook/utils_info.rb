@@ -24,6 +24,13 @@ MONTH_EN_TO_S={
   'December'  => '12'
 }
 
+
+
+##
+#  examples (to match):
+#    Page last updated on November 03, 2016
+#    Page last updated on September 24, 2015
+
 PAGE_LAST_UPDATED_REGEX = /
                            Page \s last \s updated \s on \s
                             (?<month_en>[a-z]+) \s
@@ -39,7 +46,7 @@ def find_page_last_updated( html )
     day      = m[:day]
     year     = m[:year]
     puts "** bingo - month #{month_en}, day #{day}, year #{year}"
-    
+
     month = MONTH_EN_TO_S[ month_en ]
     date_str = "#{year}-#{month}-#{day}"
     pp date_str
@@ -51,14 +58,14 @@ def find_page_last_updated( html )
 end
 
 ##
-## e.g. regioncode="eur" 
-##      countrycode="au"  
-##      countryname="Austria" 
-##      flagsubfield="" 
+## e.g. regioncode="eur"
+##      countrycode="au"
+##      countryname="Austria"
+##      flagsubfield=""
 ##      countryaffiliation=""
-##      flagdescription="" 
-##      flagdescriptionnote="" 
-##      region="Europe" 
+##      flagdescription=""
+##      flagdescriptionnote=""
+##      region="Europe"
 ##
 ##   note: countryaffiliation may be empty
 
@@ -68,7 +75,7 @@ PAGE_INFO_REGEX = /
              regioncode=(?<q1>"|')(?<region_code>.+?)\k<q1>
                \s+
              countrycode=(?<q2>"|')(?<country_code>.+?)\k<q2>       ## is k<3> backref
-               \s+  
+               \s+
               countryname=(?<q3>"|')(?<country>.+?)\k<q3>
                \s+
                 [^>]+?  ## allow any attribs (note: non-greedy)
@@ -89,7 +96,7 @@ def find_page_info( html )
           country_affiliation: m[:affiliation],
           region_code:         m[:region_code],
           region_name:         m[:region] }
-    
+
     puts "** bingo - #{h.inspect}"
     h    ## return hash w/ name-value pairs
   else
