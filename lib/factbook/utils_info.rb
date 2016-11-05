@@ -57,6 +57,26 @@ def find_page_last_updated( html )
   end
 end
 
+
+##  fallback: find "standalone" country coude
+## e.g.
+##  ccode='au'
+
+COUNTRY_CODE_REGEX = /ccode='(?<cc>[a-z]+)'/
+
+def find_country_code( html )
+  m = COUNTRY_CODE_REGEX.match( html )
+  if m
+    pp m
+    cc = m[:cc]
+    puts "** bingo - country code #{cc}"
+    cc
+  else
+    nil
+  end
+end
+
+
 ##
 ## e.g. regioncode="eur"
 ##      countrycode="au"

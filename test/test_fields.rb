@@ -12,15 +12,15 @@ class TestFields < MiniTest::Test
   def read_test_page( code )
     html = File.read( "#{Factbook.root}/test/data/src/#{code}.html" )
     page = Factbook::Page.new( code, html: html )
-    page    
+    page
   end
 
   def test_fields_full
     ## Factbook::Page.new( 'au', fields: 'full' )
     page = read_test_page( 'au' )  # use builtin test page (do NOT fetch via internet)
 
-    assert_equal '-2.4% of GDP (2014 est.)', page['Economy']['Budget surplus (+) or deficit (-)']['text']
-    assert_equal '5.5%',  page['Economy']['Labor force - by occupation']['agriculture']['text']
+    assert_equal '-1.1% of GDP (2015 est.)', page['Economy']['Budget surplus (+) or deficit (-)']['text']
+    assert_equal '0.7%',  page['Economy']['Labor force - by occupation']['agriculture']['text']
 
     assert_equal 'Enns, Krems, Linz, Vienna (Danube)', page['Transportation']['Ports and terminals']['river port(s)']['text']
   end

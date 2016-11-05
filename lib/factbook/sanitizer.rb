@@ -29,6 +29,7 @@ def sanitize( html_ascii )
     page_info.region_code         = h[:region_code]
     page_info.region_name         = h[:region_name]
   else
+    page_info.country_code = find_country_code( html_ascii )
     ## print/warn: no page info found
   end
 
@@ -240,7 +241,7 @@ def sanitize_profile( html )
 
   ## remove/cleanup anchors (a href)
   html = html.gsub( /<a\s+[^>]+>(.+?)<\/a>/im ) do |_|   ## note: use .+? non-greedy match
-    puts " replace anchor (a) href >#{$1}<"
+    puts " replace anchor (a) >#{$1}<"
 
     inner_text = $1.dup ## keep a copy
     if inner_text =~ /<img/    ## if includes image remove
