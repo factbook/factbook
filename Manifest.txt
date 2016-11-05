@@ -42,7 +42,9 @@ test/data/au.yml
 test/data/be.html
 test/data/be.yml
 test/data/json/au.json
+test/data/src/au-2015-09-24.html
 test/data/src/au.html
+test/data/src/be-2015-09-24.html
 test/data/src/be.html
 test/helper.rb
 test/test_attribs.rb
@@ -60,3 +62,4 @@ test/test_json_builder.rb
 test/test_normalize.rb
 test/test_page.rb
 test/test_sanitizer.rb
+test/test_sanitizer_regex.rb
