@@ -31,13 +31,44 @@ and <https://www.cia.gov/library/publications/the-world-factbook/docs/history.ht
 
 ## Country Comparison Pages
 
-Country Comparison pages are presorted lists of data from selected Factbook data fields. 
-Country Comparison pages are generally given in descending order - highest to lowest - such as Population and Area. 
-The two exceptions are Unemployment Rate and Inflation Rate, which are in ascending - lowest to highest - order. 
+Country Comparison pages are presorted lists of data from selected Factbook data fields.
+Country Comparison pages are generally given in descending order - highest to lowest - such as Population and Area.
+The two exceptions are Unemployment Rate and Inflation Rate, which are in ascending - lowest to highest - order.
 
 Country Comparison pages are available for the following 79 fields in seven of the ten Factbook categories.
 
 (Source: [Guide to Country Comparisons](https://www.cia.gov/library/publications/the-world-factbook/rankorder/rankorderguide.html))
+
+
+
+## Alternatives (Libraries and Gems)
+
+Ruby
+
+- [worldfactbook gem](https://github.com/sayem/worldfactbook)
+  by Sayem Khan (aka sayem);
+  fetches data from its own mirror, that is, [rubyworldfactbook.com](http://rubyworldfactbook.com)
+  (last updated 2011?)
+
+- [the_country_identity gem](https://github.com/p1nox/the_country_identity)
+  by Raul Pino (aka p1nox);
+  fetches data from an [RDF Turtle endpoint](http://wifo5-03.informatik.uni-mannheim.de/factbook/)
+  hosted by the Research Group Data and Web Science at the University of Mannheim, Germany
+
+JavaScript
+
+- [worldfactbook-dataset](https://github.com/twigkit/worldfactbook-dataset)
+  by Richard Marr (aka richmarr); fetches data using Node.js
+  (last updated 2013)
+
+Python
+
+- [openfactbook datasets & tools](https://github.com/openfactbook)
+  by Eckhard Licher; uses official (offline) download archive (last updated 2014); incl. flags, maps, and more
+
+Others
+
+TBD
 
 
 

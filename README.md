@@ -1,7 +1,7 @@
 # factbook - scripts for the world factbook (get open structured data e.g JSON etc.)
 
-* home  :: [github.com/worlddb/factbook](https://github.com/worlddb/factbook)
-* bugs  :: [github.com/worlddb/factbook/issues](https://github.com/worlddb/factbook/issues)
+* home  :: [github.com/factbook/factbook](https://github.com/factbook/factbook)
+* bugs  :: [github.com/factbook/factbook/issues](https://github.com/factbook/factbook/issues)
 * gem   :: [rubygems.org/gems/factbook](https://rubygems.org/gems/factbook)
 * rdoc  :: [rubydoc.info/gems/factbook](http://rubydoc.info/gems/factbook)
 * forum :: [groups.google.com/group/openmundi](https://groups.google.com/group/openmundi)
@@ -78,7 +78,7 @@ pp page.area_water        ## same as page['Geography'][''Area']['water']['text']
 pp page.area_note         ## same as page['Geography'][''Area']['note']['text']
 # => "includes Arquipelago de Fernando de Noronha, Atol das Rocas, ..."
 pp page.area_comparative  ## same as page['Geography']['Area - comparative']['text']
-# => "slightly smaller than the US" 
+# => "slightly smaller than the US"
 pp page.climate           ## same as page['Geography']['Climate']['text']
 # => "mostly tropical, but temperate in south"
 pp page.terrain           ## same as page['Geography']['Terrain']['text']
@@ -146,7 +146,7 @@ and/or by region e.g. Africa, Europe, South Asia, Central America and Caribbean,
 
 ```ruby
 
-assert_equal 261, Factbook.codes.size 
+assert_equal 261, Factbook.codes.size
 
 ## categories
 assert_equal 195, Factbook.codes.countries.size
@@ -155,7 +155,7 @@ assert_equal   5, Factbook.codes.oceans.size
 assert_equal   1, Factbook.codes.world.size
 assert_equal   2, Factbook.codes.others.size
 assert_equal   6, Factbook.codes.misc.size
-    
+
 ## regions
 assert_equal  55, Factbook.codes.europe.size
 assert_equal   9, Factbook.codes.south_asia.size
@@ -519,41 +519,9 @@ United States (14):
 
 ## Ready-To-Use Public Domain Factbook Datasets
 
-[factbook/factbook.json](https://github.com/factbook/factbook.json) - open (public domain)
+[opendatajson/factbook.json](https://github.com/opendatajson/factbook.json) - open (public domain)
 factbook country profiles in JSON for all the world's countries (using internet domain names
 for country codes e.g. Austria is `at.json` not `au.json`, Germany is `de.json` not `gm.json` and so on)
-
-
-
-## Alternatives (Libraries and Gems)
-
-Ruby
-
-- [worldfactbook gem](https://github.com/sayem/worldfactbook)
-  by Sayem Khan (aka sayem);
-  fetches data from its own mirror, that is, [rubyworldfactbook.com](http://rubyworldfactbook.com)
-  (last updated 2011?)
-
-- [the_country_identity gem](https://github.com/p1nox/the_country_identity)
-  by Raul Pino (aka p1nox);
-  fetches data from an [RDF Turtle endpoint](http://wifo5-03.informatik.uni-mannheim.de/factbook/)
-  hosted by the Research Group Data and Web Science at the University of Mannheim, Germany
-
-JavaScript
-
-- [worldfactbook-dataset](https://github.com/twigkit/worldfactbook-dataset)
-  by Richard Marr (aka richmarr); fetches data using Node.js
-  (last updated 2013)
-
-Python
-
-- [openfactbook datasets & tools](https://github.com/openfactbook)
-  by Eckhard Licher; uses official (offline) download archive (last updated 2014); incl. flags, maps, and more
-
-Others
-
-TBD
-
 
 
 ## Install
