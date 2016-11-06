@@ -196,6 +196,19 @@ POP_PYRAMID_CATEGORY_REGEX = /
     (?=<div \s id='field')
   /xim
 
+## remove category => religious affiliation:
+##
+## <div class='disTable relAffiliation'>
+##  ...
+## until hitting: <div id='field'    -- e.g. next category/field (use lookahead e.g. (?=))
+
+REL_AFFILIATION_CATEGORY_REGEX = /
+      <div \s class='disTable \s relAffiliation'
+        .+?
+      (?=<div \s id='field')
+    /xim
+
+
 
 
 
@@ -204,6 +217,7 @@ def sanitize_profile( html )
   ## remove categories w/ visualizations/graphics only e.g.
   ##  - area comparions map
   ##  - population pyramid
+  ##  - religious affiliation
 
   html = html.gsub( AREA_COMP_CATEGORY_REGEX ) do |m|
           puts "remove category => area comparison map:"
@@ -217,6 +231,11 @@ def sanitize_profile( html )
           ''
         end
 
+  html = html.gsub( REL_AFFILIATION_CATEGORY_REGEX ) do |m|
+          puts "remove category => religious affiliation:"
+          puts "#{m}"
+          ''
+        end
 
   ################################################
   ## more - let's get started

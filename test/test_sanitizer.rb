@@ -12,7 +12,10 @@ class TestSanitizer < MiniTest::Test
 
   def test_sanitize
 
-    ['au','be'].each do |cnty|
+    ## austria (au)
+    ## algeria (ag)
+    ## belgium (be)
+    ['au','ag','be'].each do |cnty|
 
       ## use/fix: ASCII-8BIT (e.g.keep as is) -???
       html_ascii = File.read( "#{Factbook.root}/test/data/src/#{cnty}.html" )     ## fix/todo: use ASCII8BIT/binary reader ??

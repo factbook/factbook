@@ -13,8 +13,9 @@ class TestJson < MiniTest::Test
 
   def test_json
      Dir.mkdir( 'tmp' )  unless Dir.exists?( 'tmp' )
-     
+
      codes = [ 'au',
+               'ag',
                'be',
                #'br',
                #'mx',
@@ -25,13 +26,13 @@ class TestJson < MiniTest::Test
               ]
 
      codes.each do |code|
-       
-       html = File.read( "#{Factbook.root}/test/data/src/#{code}.html" ) 
-       page = Factbook::Page.new( code, html: html )    
-       
+
+       html = File.read( "#{Factbook.root}/test/data/src/#{code}.html" )
+       page = Factbook::Page.new( code, html: html )
+
        h = page.data
        pp h
-    
+
        ### save to json
        puts "saving a copy to #{code}.json for debugging"
        File.open( "tmp/#{code}.json", 'w' ) do |f|

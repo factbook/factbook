@@ -42,6 +42,7 @@ test/data/au.yml
 test/data/be.html
 test/data/be.yml
 test/data/json/au.json
+test/data/src/ag.html
 test/data/src/au-2015-09-24.html
 test/data/src/au.html
 test/data/src/be-2015-09-24.html
