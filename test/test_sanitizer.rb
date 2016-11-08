@@ -15,6 +15,7 @@ class TestSanitizer < MiniTest::Test
     ## austria (au)
     ## algeria (ag)
     ## belgium (be)
+    ## ['au'].each do |cnty|
     ['au','ag','be'].each do |cnty|
 
       ## use/fix: ASCII-8BIT (e.g.keep as is) -???

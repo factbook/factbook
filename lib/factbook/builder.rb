@@ -36,7 +36,7 @@ attr_reader :html_ascii,     ## full "original" 1:1 page in "original/ascii8/bin
 
 def initialize( html_ascii )
   @html_ascii = html_ascii
-    
+
   ## todo/fix: use/assume windows 12xx?? encoding - change encoding to utf-8  (from binary/ascii8bit)
   @html, @info, @errors = Sanitizer.new.sanitize( @html_ascii )
 
@@ -53,7 +53,7 @@ def initialize( html_ascii )
     html_subsects  = html_sect[1]
     puts html_sect_head
     puts html_subsects.size
-    
+
     ## get section title
     ##  @SECTION{Economy}  => Economy
     if html_sect_head =~ /@SECTION{(.+?)}/
@@ -74,7 +74,7 @@ def initialize( html_ascii )
           puts title
           subsect = Subsect.new
           subsect.title = title     ## todo/fix: cut off trailing colon (:)
- 
+
           b = Factbook::ItemBuilder.new( html_subsect_body, title )
           h = b.read
           subsect.data = h
@@ -88,32 +88,23 @@ def initialize( html_ascii )
       @sects << sect
     else
       ## warn/fix:  no section title found
-    end   
+    end
   end
-  
+
   self  ## return self -- needed?? default (standard) anyway?? check and remove
 end
 
 
 
 def map_sects( html )
-   ## convert section titles
-   ##   from  <h2>..</h2>
-   ##   to "unified" marker
+   ## convert section titles to "unified" marker
+   ## e.g.
+   ##   <h2>Introduction</h2>
 
-  ## e.g.
-  ##  <h2 sectiontitle='Introduction' ccode='au'>Introduction ::  <span class='region'>AUSTRIA </span></h2>
-  ##  <h2>Introduction</h2>
-
-  title_regex= /<h2
-                 (?:\s[^>]+)?  ## allow optional attributes in h2
-                 >      
+  title_regex= /<h2>
                  \s*
-                   ([^<>]+?)  ## note: use non-greedy; do NOT allow tags inside for now
+                   (.+?)  ## note: use non-greedy; do NOT allow tags inside for now
                  \s*
-                 (?:\s::\s
-                   .+?       ## note: use non-greedy; allows tags inside
-                 )?          ## strip optional name (e.g.  :: AUSTRIA)
                 <\/h2>
               /xim
 
@@ -121,33 +112,29 @@ def map_sects( html )
      puts "** found section >#{$1}<:"
      puts "   >|#{m}|<"
 
-     "\n\n@SECTION{#{$1}}\n\n"     
+     "\n\n@SECTION{#{$1}}\n\n"
   end
   html
 end
 
 
 def map_subsects( html )
-   ## convert subsection titles
-   ##   from  <div id='field'>..</div>
-   ##   to "unified" marker
+   ## convert subsection titles to "unified" marker
+   ## e.g.
+   ##  <h3>Disputes - international:</h3>
 
-  ## e.g.
-  ##  <div id='field' class='category'>Disputes - international:</div>
-
-  title_regex= /<div \s id='field'
-                     \s class='category'>
-                   \s*
+  title_regex= /<h3>
+                  \s*
                    (.+?)                ## note: use non-greedy; allows tags inside - why? why not
-                   \s*
-                 <\/div>
+                  \s*
+                 <\/h3>
                /xim
 
   html = html.gsub( title_regex ) do |m|
      puts "** found subsection >#{$1}<:"
      puts "   >|#{m}|<"
 
-     "\n@SUBSECTION{#{$1}}\n"     
+     "\n@SUBSECTION{#{$1}}\n"
   end
   html
 end
@@ -166,9 +153,9 @@ def split_sects( html )
   ##   String#split will include all catpure groups in the result array
 
   section_regex= /(@SECTION{.+?})/  ## note: use non-greedy -- check: need to escape {} ??
-     
+
   chunks = html.split( section_regex )
-  
+
   ## check if first item is a section or (html) prolog
   #   if prolog (remove)
   chunks.slice!(0)  unless chunks[0] =~ /@SECTION/  ## starts w/ @SECTION
@@ -195,9 +182,9 @@ def split_subsects( html )
 
   ## note: "wrap" regex in a capture group (just one)
   ##   String#split will include all catpure groups in the result array
-  
+
   subsection_regex= /(@SUBSECTION{.+?})/  ## note: use non-greedy -- check: need to escape {} ??
-     
+
   chunks = html.split( subsection_regex )
 
   ## check if first item is a section or (html) prolog

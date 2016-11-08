@@ -209,6 +209,35 @@ REL_AFFILIATION_CATEGORY_REGEX = /
     /xim
 
 
+##########################################
+## transforms / simplify
+##
+## <h2 sectiontitle='Introduction' ccode='ag'>
+##   Introduction ::  <span class='region'>ALGERIA </span>
+## </h2>
+##   becomes =>
+## <h2>Introduction</h2>
+##
+##  todo/fix: use named capture in future e.g.
+##   (?<text>.+?)  instead of  (.+?)
+##   not working for now w/ gsub (just passed in match string NOT match data)
+
+CLEANUP_SECTION_REGEX = /
+     <h2 [^>]*>
+       (.+?)
+     <\/h2>
+    /xim
+
+##
+## <div id='field' class='category'>Electricity - consumption:</div>
+##   becomes =>
+## <h3>Electricity - consumption:</h3>
+
+CLEANUP_SUBSECTION_REGEX = /
+     <div \s id='field' [^>]*>
+       (.+?)
+     <\/div>
+    /xim
 
 
 
@@ -285,7 +314,7 @@ def sanitize_profile( html )
 
           klasses = $2.split(' ')
           klasses = klasses.select do |klass|
-            if ['region', 'category', 'category_data'].include?( klass )
+            if ['category', 'category_data'].include?( klass )
               true
             else
               puts "  remove class #{klass}"
@@ -299,6 +328,33 @@ def sanitize_profile( html )
             ''   ## remove class attrib completely
           end
         end
+
+
+    ##################################################################
+    ## simplify/cleanup section and subsection headings
+
+    html = html.gsub( CLEANUP_SECTION_REGEX ) do |_|
+       puts " cleanup section (h2) heading >#{$1}<"
+
+       text = $1
+       pos = text.index( '::' )
+       if pos   ## if includes =>  :: <span> Region </span>  -- cut off
+         puts "    remove :: region/country from heading"
+         text = text[0...pos]
+       end
+       text = text.strip   # remove trailing space too
+
+       "<h2>#{text}</h2>"
+    end
+
+    html = html.gsub( CLEANUP_SUBSECTION_REGEX ) do |_|
+       puts " cleanup subsection (h3) heading >#{$1}<"
+
+       text = $1
+       text = text.strip   # remove trailing space too
+
+       "<h3>#{text}</h3>"
+    end
 
    html
 end
