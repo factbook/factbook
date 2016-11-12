@@ -53,7 +53,18 @@ One of the issues when using the data for statistics is not having a way to trac
 
 
 
+### "Normalize" fields
 
+A couple of countries in the dataset don't conform to a standard way to programmatically access their names. 
+I think it's just Curacao (`cc`) and Sint Maarten (`sk`).
+
+Their names are both stored under `["Government"]["Country name"]["Dutch short form"]`.
+Every other country uses `["Government"]["Country name"]["conventional short form"]`.
+
+I gather this is just a harvested dataset rather than a curated one, but how do you feel about this? 
+If people want to use this data programatically, it's inconvenient that something as major as the name of a country can't be reliably retrieved. (Other more complex properties, I can understand).
+
+PS: European Union (`ee`) is another file which uses a different convention.
 
 
 ### Thanks
