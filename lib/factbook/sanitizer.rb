@@ -1,4 +1,3 @@
-# encoding: utf-8
 
 module Factbook
 
@@ -37,52 +36,24 @@ def sanitize( html_ascii )
   page_info.last_updated        = find_page_last_updated( html_ascii )
 
 
-  html_profile_ascii = find_country_profile( html_ascii )    ## cut-off headers, footers, scripts, etc.
+  html = find_country_profile( html_ascii )    ## cut-off headers, footers, scripts, etc.
 
   ## todo/fix: assume windows 12xx encoding!!!! for factbook - try
-  html, errors = encode_utf8( html_profile_ascii )  ## change encoding to utf-8  (from binary/ascii8bit)
+  # html, errors = encode_utf8( html_profile_ascii )  ## change encoding to utf-8  (from binary/ascii8bit)
 
-  html = sanitize_profile( html )
+  # html = sanitize_profile( html )
 
-  [html, page_info, errors]
+  [html, page_info, []]
 end
 
 
-
-####
-# example match:
-#
-#  <ul class="expandcollapse">
-
-BEGIN_FACTS_REGEX = /<ul \s+
-                       class="expandcollapse">
-                    /xim    ## ignore case; multi-line; ignore space (use \s for space/newline!)
-
-
-####
-# example match:
-#
-# ++ 2016 Nov/3:
-#
-#  </li>
-#  </ul>
-#  <!-- end generated content -->
-#
-### todo: just use first match of </li></ul> - why? why not?
-#
-# history/changes:
-# ++ 2015 Sept/24   (for regex see attic):
-#
-#  </li>
-#  </ul>
-#  </tbody></table>
-#
-
-
-END_FACTS_REGEX = /<\/li> \s*
-                   <\/ul> \s*
-                   <!-- \s end \s generated \s content \s -->
-                  /xim      ## ignore case; multi-line; ignore space (use \s for space/newline!)
+ #
+  #  <span class="subfield-date" aria-label="Date of information: 2018">(2018)</span>
+  #
+  #  remove aria labels
+  ARIA_ATTR_REGEX = /\s*
+                       aria-label=('|").+?\1     ## note: use non-greedy match e.g. .+?
+                     /xim    ## do NOT allow multi-line - why? why not?
 
 
 def find_country_profile( html )
@@ -90,273 +61,87 @@ def find_country_profile( html )
   ## remove header (everything before)
   ##   <ul class="expandcollapse">
 
-  pos = html.index( BEGIN_FACTS_REGEX )
-  fail "*** no begin facts marker found for page"  if pos.nil?
+  doc = Nokogiri::HTML( html )
 
-  puts "  bingo - found BEGIN_FACTS on pos #{pos}"
-  html = html[pos..-1]
+  ul = doc.css( 'ul.expandcollapse' )[0]
 
-  pp html[0..100]
+  puts ul.to_html[0..100]
+
 
   ###
-  ## remove footer
-  ##  assume everthings after (last list item in unorder list inside a table body)
-  ##    </li>
-  ##    </ul>
-  ##    </tbody></table>
+  ## sanitize
 
-  pos = html.index( END_FACTS_REGEX )
-  fail "*** no end facts marker found for page"  if pos.nil?
+  ## remove link items
+  ##   assume two <li>s are a section
 
-  puts "  bingo - found END_FACTS on pos #{pos}"
-  html = html[0...pos] + "</li></ul>\n"        ## note: use ... (not .. to cut-off pos)
+  html = String.new('')
 
-  pp html[-200..-1]
-  html
-end
+  ##  filter all li's
+  ul_children = ul.children.select { |el| if el.name == 'li'
+                                             true
+                                          else
+                                            # puts "skipping #{el.name} >#{el.to_html}<"
+                                            false
+                                          end
+                                    }
+  puts "  #{ul_children.size} li(s):"
+  ul_children.each_slice(2) do |lis|
+    li  = lis[0]
+    div = li.at( 'div[sectiontitle]' )
 
-
-
-STYLE_ATTR_REGEX = /\s*
-                     style=('|").+?\1     ## note: use non-greedy match e.g. .+?
-                   /xim    ## do NOT allow multi-line - why? why not?
-
-CLASS_ATTR_REGEX =  /\s*
-                     class=('|")(.+?)\1     ## note: use non-greedy match e.g. .+?
-                   /xim    ## do NOT allow multi-line - why? why not?
-
-##
-## <div>
-##    <span class='category'>country comparison to the world:  </span>
-##    <span class='category_data'>[[191]]</span>
-## </div>
-##
-##  <span class='category'>country comparison to the world:  </span>
-##  <span class='category_data'><a href='../rankorder/2147rank.html#au'>114</a></span>
+    html << "<h2>#{div['sectiontitle']}</h2>\n"
 
 
-## todo: add enclosing div too!!!
+    li  = lis[1]
+    ## filter all div's
+    li_children = li.children.select { |el| if el.name =='div'
+                                                true
+                                            else
+                                             # puts "skipping #{el.name} >#{el.to_html}<"
+                                             false
+                                            end
+                                      }
+    puts " #{li_children.size} div(s):"
 
-COUNTRY_COMPARISON_REGEX = /
-        <div>
-         <span \s class='category'[^>]*>
-           country \s comparison \s to \s the \s world: \s*
-         <\/span>
-          \s*
-         <span \s class='category_data'[^>]*>
-          \s*
-            <a \s [^>]+>
-             .+?
-            <\/a>
-          \s*
-         <\/span>
-         <\/div>
-        /xim
+    li_children.each_slice(2) do |divs|
+      div = divs[0]
+      a = div.css('a')[0]
 
-##
-##  <div class='wrap'>
-##     <div class='audio-player'>
-##    <audio id='audio-player-1' class='my-audio-player' src='../anthems/AU.mp3' type='audio/mp3' controls='controls'>
-##    </audio>
-##  </div></div>
+      if a
+        html << "\n<h3>#{a.text}:</h3>\n"
+      else
+        puts "!! WARN: no anchor found:"
+        puts div.to_html
+      end
 
 
-AUDIO_PLAYER_REGEX = /
-        <div \s class='wrap'>
-        <div \s class='audio-player'>
-          <audio \s [^>]+>
-          <\/audio>
-        <\/div>
-        <\/div>
-         /xim
+      div = divs[1]
+      div_children = div.children.select {|el| el.name == 'div' ? true : false }
+      div_children.each do |catdiv|
+         if catdiv['class'] && catdiv['class'].index( 'category_data' )
 
-
-## remove category => Area comparison map:
-##
-##  <div class='disTable areaComp'
-##   ...
-##  until hitting: <div id='field'    -- e.g. next category/field (use lookahead e.g. (?=))
-
-AREA_COMP_CATEGORY_REGEX = /
-    <div \s class='disTable \s areaComp'
-      .+?
-    (?=<div \s id='field')
-  /xim
-
-
-## remove category => population pyramid:
-##
-## <div class='disTable popPyramid'>
-##  ...
-## until hitting: <div id='field'    -- e.g. next category/field (use lookahead e.g. (?=))
-
-POP_PYRAMID_CATEGORY_REGEX = /
-    <div \s class='disTable \s popPyramid'
-      .+?
-    (?=<div \s id='field')
-  /xim
-
-## remove category => religious affiliation:
-##
-## <div class='disTable relAffiliation'>
-##  ...
-## until hitting: <div id='field'    -- e.g. next category/field (use lookahead e.g. (?=))
-
-REL_AFFILIATION_CATEGORY_REGEX = /
-      <div \s class='disTable \s relAffiliation'
-        .+?
-      (?=<div \s id='field')
-    /xim
-
-
-##########################################
-## transforms / simplify
-##
-## <h2 sectiontitle='Introduction' ccode='ag'>
-##   Introduction ::  <span class='region'>ALGERIA </span>
-## </h2>
-##   becomes =>
-## <h2>Introduction</h2>
-##
-##  todo/fix: use named capture in future e.g.
-##   (?<text>.+?)  instead of  (.+?)
-##   not working for now w/ gsub (just passed in match string NOT match data)
-
-CLEANUP_SECTION_REGEX = /
-     <h2 [^>]*>
-       (.+?)
-     <\/h2>
-    /xim
-
-##
-## <div id='field' class='category'>Electricity - consumption:</div>
-##   becomes =>
-## <h3>Electricity - consumption:</h3>
-
-CLEANUP_SUBSECTION_REGEX = /
-     <div \s id='field' [^>]*>
-       (.+?)
-     <\/div>
-    /xim
-
-
-
-def sanitize_profile( html )
-
-  ## remove categories w/ visualizations/graphics only e.g.
-  ##  - area comparions map
-  ##  - population pyramid
-  ##  - religious affiliation
-
-  html = html.gsub( AREA_COMP_CATEGORY_REGEX ) do |m|
-          puts "remove category => area comparison map:"
-          puts "#{m}"
-          ''
-        end
-
-  html = html.gsub( POP_PYRAMID_CATEGORY_REGEX ) do |m|
-          puts "remove category => population pyramid:"
-          puts "#{m}"
-          ''
-        end
-
-  html = html.gsub( REL_AFFILIATION_CATEGORY_REGEX ) do |m|
-          puts "remove category => religious affiliation:"
-          puts "#{m}"
-          ''
-        end
-
-  ################################################
-  ## more - let's get started
-
-  html = html.gsub( STYLE_ATTR_REGEX ) do |m|
-          puts "remove style attr:"
-          puts "#{m}"
-          ''
-        end
-
-  html = html.gsub( AUDIO_PLAYER_REGEX ) do |m|
-          puts "remove audio player:"
-          puts "#{m}"
-          ''
-        end
-
-  html = html.gsub( COUNTRY_COMPARISON_REGEX ) do |m|
-          puts "remove country comparison:"
-          puts "#{m}"
-          ''
-        end
-
-  ## remove/cleanup anchors (a href)
-  html = html.gsub( /<a\s+[^>]+>(.+?)<\/a>/im ) do |_|   ## note: use .+? non-greedy match
-    puts " replace anchor (a) >#{$1}<"
-
-    inner_text = $1.dup ## keep a copy
-    if inner_text =~ /<img/    ## if includes image remove
-      puts "  remove image in anchor"
-      ''
-    else    ## keep inner text
-      inner_text
+          if catdiv['class'].index( 'attachment' )
+            ## skip attachments e.g. maps, pop pyramids, etc.
+          else
+            html << catdiv.to_html
+            html << "\n"
+          end
+         else
+          puts "!! WARN: skipping div (W/O category_data class):"
+          puts catdiv.to_html
+         end
+      end
     end
   end
 
 
-  ## remove all list e.g. ul/li
-  html = html.gsub( /<\/?(li|ul)[^>]*>/im ) do |m|
-    puts " remove list >#{m}<"
+  html = html.gsub( ARIA_ATTR_REGEX ) do |m|
+    puts "remove aria-label attr:"
+    puts "#{m}"
     ''
   end
 
-  ## clean-up class attrib e.g. remove unknown classes
-  html = html.gsub( CLASS_ATTR_REGEX ) do |m|
-          puts "cleanup class attr:"
-          puts "#{m}"
-
-          klasses = $2.split(' ')
-          klasses = klasses.select do |klass|
-            if ['category', 'category_data'].include?( klass )
-              true
-            else
-              puts "  remove class #{klass}"
-              false
-            end
-          end
-
-          if klasses.size > 0
-            " class='#{klasses.join(' ')}'"   ## note: add leading space!!
-          else
-            ''   ## remove class attrib completely
-          end
-        end
-
-
-    ##################################################################
-    ## simplify/cleanup section and subsection headings
-
-    html = html.gsub( CLEANUP_SECTION_REGEX ) do |_|
-       puts " cleanup section (h2) heading >#{$1}<"
-
-       text = $1
-       pos = text.index( '::' )
-       if pos   ## if includes =>  :: <span> Region </span>  -- cut off
-         puts "    remove :: region/country from heading"
-         text = text[0...pos]
-       end
-       text = text.strip   # remove trailing space too
-
-       "<h2>#{text}</h2>"
-    end
-
-    html = html.gsub( CLEANUP_SUBSECTION_REGEX ) do |_|
-       puts " cleanup subsection (h3) heading >#{$1}<"
-
-       text = $1
-       text = text.strip   # remove trailing space too
-
-       "<h3>#{text}</h3>"
-    end
-
-   html
+  html
 end
 
 

@@ -1,10 +1,9 @@
-# encoding: utf-8
 
 module Factbook
 
-  MAJOR = 1
-  MINOR = 2
-  PATCH = 2
+  MAJOR = 2
+  MINOR = 0
+  PATCH = 0
   VERSION = [MAJOR,MINOR,PATCH].join('.')
 
   def self.version
@@ -16,7 +15,7 @@ module Factbook
   end
 
   def self.root
-    "#{File.expand_path( File.dirname(File.dirname(File.dirname(__FILE__))) )}"
+    File.expand_path( File.dirname(File.dirname(File.dirname(__FILE__))) )
   end
 
 end

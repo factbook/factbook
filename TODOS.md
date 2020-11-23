@@ -1,3 +1,42 @@
+# Todos
+
+
+fix:
+
+```
+GET https://www.cia.gov/library/publications/the-world-factbook/geos/cc.html...
+200 OK
+[cache] saving .cache/www.cia.gov/library/publications/the-world-factbook/geos/cc.html...
+#<MatchData "ccode='cc'" cc:"cc">
+** bingo - country code cc
+#<MatchData
+ "Page last updated on March 14, 2018"
+ month_en:"March"
+ day:"14"
+ year:"2018">
+** bingo - month March, day 14, year 2018
+"2018-3-14"
+<ul class="expandcollapse">
+<li><h2 class="question cam_med" sectiontitle="Introduction" ccode="cc" s
+  18 li(s):
+factbook/factbook/lib/factbook/sanitizer.rb:92:in `block in find_country_profile': undefined method `[]' for nil:NilClass (NoMethodError)
+        from factbook/factbook/lib/factbook/sanitizer.rb:88:in `each'
+        from factbook/factbook/lib/factbook/sanitizer.rb:88:in `each_slice'
+        from factbook/factbook/lib/factbook/sanitizer.rb:88:in `find_country_profile'
+        from factbook/factbook/lib/factbook/sanitizer.rb:39:in `sanitize'
+        from factbook/factbook/lib/factbook/builder.rb:41:in `initialize'
+        from factbook/factbook/lib/factbook/builder.rb:25:in `new'
+        from factbook/factbook/lib/factbook/builder.rb:25:in `from_string'
+        from factbook/factbook/lib/factbook/page.rb:55:in `initialize'
+        from script/json.rb:10:in `new'
+        from script/json.rb:10:in `block in <main>'
+        from factbook/factbook/lib/factbook/codes.rb:59:in `block in each'
+        from factbook/factbook/lib/factbook/codes.rb:59:in `each'
+        from factbook/factbook/lib/factbook/codes.rb:59:in `each'
+        from script/json.rb:8:in `<main>'
+```
+
+
 
 ## strip trailing newslines from data item
 
@@ -52,7 +91,7 @@ http://jmatchparser.sourceforge.net/factbook/
 http://ports.gnu-darwin.org/databases/wfb2sql/work/wfb2sql-0.6/doc/wfb2sql.html
    print !!!!!!
 
-``Cyprus'' does not contain correct values for some entries since all values consist of two values: 
+``Cyprus'' does not contain correct values for some entries since all values consist of two values:
 on for the ``Greek Cypriot area'' and one for the ``Turkish Cypriot area''.
  Maybe this data should be handled manually.
 
@@ -66,7 +105,7 @@ www.dbis.informatik.uni-goettingen.de/Mondial/
 
 add
   http://wfb2sql.sourceforge.net/  !!
-wfb2sql is a Perl script that extracts information from the CIA World Factbook 
+wfb2sql is a Perl script that extracts information from the CIA World Factbook
 and creates SQL statements for IBM DB/2, PostgreSQL or MySQL.
  This data builds a perfect database for learning and teaching SQL.
   check perl script!!!
@@ -76,7 +115,7 @@ see
   add know shortcuts  e.g   page.gdp   page.pdp_ppp  etc ??
    print worldfactbook readme!!
 
-create list of 
+create list of
    section and subsections !!!
 
 create list of mappings

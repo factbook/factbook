@@ -5,88 +5,122 @@ module Factbook
 class ItemBuilder       ## renameto ItemReader, ItemParser - why? why not??
   include LogUtils::Logging
   include NormalizeHelper    ##  e.g. normalize_category
-  
+
 def initialize( html, name )
   @html = html
   @name = name     # add category/field name e.g. Area, Location, etc.
 end
-  
+
+
+
+##
+## <div class="category_data subfield text">
+## Portuguese  (official and most widely spoken language)
+##
+## </div>
+## <div class="category_data note">
+## <p><strong>note:</strong> less common languages include Spanish (border areas and schools), German, Italian, Japanese, English, and a large number of minor Amerindian languages</p>
+## </div>
+
+
 def read
   ## return hash from html snippet
   doc = Nokogiri::HTML.fragment( @html )
 
   data = {}
-  last_node = nil     ## track last hash (always use text key)
-  last_node_data_count = 0
 
   ## note:
   ##   skip whitespace text nodes (e.g. \n\n etc); just use divs
-  doc.children.filter('div').each_with_index do |child,i|
+  doc_children = doc.children.filter('div')
 
-    if child['class'] == 'category_data'
-       text = child.text    ## fix/todo: use strip
-       puts "category_data: >#{text}<"
-       
-       if last_node.nil?
-          ## assume its the very first entry; use implied/auto-created category
-          data['text'] = ''
-          last_node = data     
-          last_node_data_count = 0
-       end
+  puts "  parsing >#{@name}< - #{doc_children.size} category_data divs(s):"
 
-       ### first category_data element?
-      if last_node_data_count == 0
-         if last_node['text'] == ''
-            last_node['text'] = text
-         else   ### possible ??? if data_count is zero - not should not include any data
-            ## todo: issue warning here - why? why not??
-            last_node['text'] += " #{text}"    ## append w/o separator
-         end
-      else
-        if @name == 'Demographic profile'  ## special case (use space a sep)
-            last_node['text'] += " #{text}"   ## append without (w/o) separator
+  doc_children.each_with_index do |div,i|
+    if div['class'].index( 'note' )
+      text = squish( div.text.strip )
+      puts "category_data: >#{text}<"
+
+      data['note'] = { 'text' => text }
+    elsif div['class'].index( 'historic' )
+      ## add all historic together into one for now
+        text = squish( div.text.strip )
+        puts "category_data: >#{text}<"
+
+        if i == 0
+          data['text'] = text
         else
-            last_node['text'] += " ++ #{text}"   ## append with ++ separator
+          ## append with / for now
+          data['text'] += " / #{text}"
         end
+      elsif div.css( 'span.subfield-name').empty?
+      ## assume "implied text field"
+      ## check for index == 1 / child count == 1 - why? why not
+      text = squish( div.text.strip )    ## fix/todo: use strip
+      puts "category_data: >#{text}<"
+
+      data['text'] = text
+
+      ## must be always first node for now
+      if i != 0
+        puts "!! ERROR - 'implied' category W/O name NOT first div / node:"
+        puts @html
+        exit 1
       end
-      last_node_data_count += 1
+    elsif div['class'].index( 'grouped_subfield' )
+## split grouped subfield!!
+##   <span class="subfield-name">arable land:</span>
+## <span class="subfield-number">8.6%</span>
+## <span class="subfield-date">(2011 est.)</span>
+##  /
+## <span class="subfield-name">permanent crops:</span>
+## <span class="subfield-number">0.8%</span>
+## <span class="subfield-date">(2011 est.)</span>
+##   /
+## <span class="subfield-name">permanent pasture:</span>
+## <span class="subfield-number">23.5%</span>
+## <span class="subfield-date">(2011 est.)</span>
 
-    elsif child['class'].nil?    ## div without any class e.g. <div>..</div>
-                                 ##   assume category and category_data pair w/ spans
-      spans = child.children.filter('span')
-      if spans.size > 2
-        puts "*** warn: expected two (or one) spans; got #{spans.inspect}"
-      end
-      
-      ## pp spans
-      
-      span_key   = spans[0]  ## assume 1st entry is span.category
-      span_value = spans[1]  ## assume 2nd entry is span.category_data
-      
-      key   = normalize_category( span_key.text )
-
-      ## note: allow optional category_data for now
-      value = span_value ? span_value.text : nil
-      
-      puts "key: >#{key}<, value: >#{value}< : #{value.class.name}"
-
-      ## start new pair
-      last_node = data[key] = { 'text' => value }
-      last_node_data_count =  value ? 1 : 0    ## note: set to 1 if value present
+## join names for now - why? why not?
+##  e.g. becomes:
+##   arable land / permanent crops / permanent pasture: for key ??
+     span_names = div.css( 'span.subfield-name')
+     keys = []
+     span_names.each do |span|
+       keys << normalize_category( span.text.strip )
+       span.replace( '' )
+     end
+     key = keys.join( ' / ')
+     text = squish( div.text.strip )
+     puts "category_data key >#{key}<: >#{text}<"
+     data[ key ] = { 'text' => text }
     else
-      puts "*** warn: item builder -- unknow css class in #{child.inspect}"
+      ## get subfield name
+      span_names = div.css( 'span.subfield-name')
+      if span_names.size > 1
+        puts "!! ERROR - found more than one subfield-name:"
+        puts div.to_html
+        exit 1
+      end
+      key = normalize_category( span_names[0].text.strip )
+      span_names[0].replace( '' )
+
+      text = squish( div.text.strip )
+      puts "category_data key >#{key}<: >#{text}<"
+      data[ key ] = { 'text' => text }
     end
-    
-    ## pp child
-    ## css = child['class']
-    ## puts "[#{i}] #{child.name}  class='>#{css}< : #{css.class.name}' >#{child.text}<"
   end
-  
+
+
   pp data
   data
 end
 
-  
+
+
+def squish( str )
+  str.gsub( /[ \t\n\r]{2,}/, ' ')  ## replace multi-spaces (incl. newlines with once space)
+end
+
 end # class ItemBuilder
 
 end # module Factbook

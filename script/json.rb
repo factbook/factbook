@@ -10,8 +10,9 @@ Factbook.codes.each do |code|
   page = Factbook::Page.new( code.code )
 
   puts "Saving #{code.code}- #{code.name}..."
-  File.open( "./tmp/#{code.code}.json", 'w') do |f|
-    f.write JSON.pretty_generate( page.data )
+  File.open( "./tmp/#{code.code}.json", 'w:utf-8') do |f|
+    ## note: convert to unix newlines only
+    f.write( JSON.pretty_generate( page.data ).gsub( "\r\n", "\n" )   )
   end
 end
 

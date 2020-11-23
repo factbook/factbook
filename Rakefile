@@ -8,26 +8,26 @@ Hoe.spec 'factbook' do
   self.summary = 'factbook - scripts for the world factbook (get open structured data e.g JSON etc.)'
   self.description = summary
 
-  self.urls = ['https://github.com/factbook/factbook']
+  self.urls = { home: 'https://github.com/factbook/factbook' }
 
   self.author = 'Gerald Bauer'
-  self.email = 'openmundi@googlegroups.com'
+  self.email  = 'openmundi@googlegroups.com'
 
   # switch extension to .markdown for gihub formatting
-  self.readme_file = 'README.md'
-  self.history_file = 'HISTORY.md'
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
     ['logutils' ],
-    ['fetcher'],
+    ['webget'],
     ['nokogiri'],
-    ['activerecord']  # NB: will include activesupport,etc.
+    ['activerecord']  # note: will include activesupport,etc.
   ]
 
   self.licenses = ['Public Domain']
 
   self.spec_extras = {
-   required_ruby_version: '>= 1.9.2'
+   required_ruby_version: '>= 2.2.2'
   }
 
 end

@@ -47,6 +47,12 @@ def initialize( html_ascii )
   pp html_sects
 
 
+  ## debug
+  ## File.open( 'tmp/br.debug.html', 'w:utf-8') { |f| f.write( @html_debug ) }
+
+
+
+
   @sects = []
   html_sects.each do |html_sect|
     html_sect_head = html_sect[0]

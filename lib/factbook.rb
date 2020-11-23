@@ -1,15 +1,8 @@
-# encoding: utf-8
-
 ## stdlibs
 
-require 'net/http'
-require 'net/https'     ## note: cia factbook requires https
-require 'uri'
+
 require 'cgi'
-require 'pp'
-require 'json'
-require 'csv'
-require 'fileutils'
+require 'csv'   ## fix: use csvreader!!!!
 require 'erb'     ## used by Almanac class (for render)
 
 
@@ -17,14 +10,14 @@ require 'erb'     ## used by Almanac class (for render)
 ## require 'props'
 
 require 'logutils'
-require 'fetcher'
+require 'webget'
 require 'nokogiri'
 
-require 'active_record'     ## add activerecord/db support (NOT optional for now) 
+require 'active_record'     ## add activerecord/db support (NOT optional for now)
+
 
 
 # our own code
-
 require 'factbook/version' # let it always go first
 
 
@@ -33,7 +26,7 @@ require 'factbook/comparisons'
 require 'factbook/attributes'
 
 module Factbook
-  
+
   ##  auto-load builtin codes, comparisons, attributes, etc.
   CODES       = Codes.from_csv( "#{Factbook.root}/data/codes.csv" )
   COMPARISONS = Comparisons.from_csv( "#{Factbook.root}/data/comparisons.csv" )
@@ -72,4 +65,4 @@ require 'factbook/db/importer'
 
 
 
-puts Factbook.banner     if defined?($RUBYLIBS_DEBUG) && $RUBYLIBS_DEBUG
+puts Factbook.banner

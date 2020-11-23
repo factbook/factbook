@@ -1,4 +1,3 @@
-# encoding: utf-8
 
 module Factbook
 
@@ -38,10 +37,10 @@ class Page
 
   def initialize( code, opts={} )
     ### keep code - why? why not??  (use page_info/info e.g. info.country_code??)
-    
+
     if opts[:json]
       json = opts[:json]    ## note: json is (still) a string/text (NOT yet parsed to structured data)
-      b = JsonBuilder.from_string( json ) 
+      b = JsonBuilder.from_string( json )
     else  ## assume html
       if opts[:html]    ## note: expects ASCII-7BIT/BINARY encoding
          ## for debugging and testing allow "custom" passed-in html page
@@ -49,11 +48,13 @@ class Page
       else
         url_string =  SITE_BASE.gsub( '{code}', code )
         ## note: expects ASCII-7BIT/BINARY encoding
-        html = fetch_page( url_string )   ## use PageFetcher class - why?? why not??
-      end    
+
+        ## html = fetch_page( url_string )   ## use PageFetcher class - why?? why not??
+        html = Webcache.read( url_string )
+      end
       b = Builder.from_string( html )
     end
-    
+
     @sects = b.sects
     @info  = b.info
 
@@ -65,7 +66,7 @@ class Page
       @info = info
     end
 
-    @data = {}    
+    @data = {}
     @sects.each do |sect|
       @data[ sect.title ] = sect.data
     end
@@ -78,7 +79,7 @@ class Page
     if opts[:minify]
       data.to_json
     else
-      ## was: -- opts[:pretty] || opts[:pp] 
+      ## was: -- opts[:pretty] || opts[:pp]
       JSON.pretty_generate( data )   ## note: pretty print by default!
     end
   end
@@ -96,10 +97,10 @@ class Page
   end
 
   ## add convenience (shortcut) accessors / attributes / fields / getters
-  
+
   ATTRIBUTES.each do |attrib|
     ## e.g.
-    ##    def background()  data['Introduction']['Background']['text']; end  
+    ##    def background()  data['Introduction']['Background']['text']; end
     ##    def location()    data['Geography']['Location']['text'];      end
     ##    etc.
     if attrib.path.size == 1
@@ -114,31 +115,18 @@ class Page
               fetch( attrib.path[1], {} )['text']
       end
     end
-  end   
+  end
 
 
 private
-  def fetch_page( url_string )
+  def fetch_page( url )
+    response = Webget.page( url )
 
-    worker = Fetcher::Worker.new
-    response = worker.get_response( url_string )
+    ## note: exit on get / fetch error - do NOT continue for now - why? why not?
+    exit 1   if response.status.nok?    ## e.g.  HTTP status code != 200
 
-    if response.code == '200'
-      t = response.body
-      ###
-      # NB: Net::HTTP will NOT set encoding UTF-8 etc.
-      # will mostly be ASCII
-       # - try to change encoding to UTF-8 ourselves
-      logger.debug "t.encoding.name (before): #{t.encoding.name}"
-      #####
-      # NB: ASCII-8BIT == BINARY == Encoding Unknown; Raw Bytes Here
-      t
-    else
-      logger.error "fetch HTTP - #{response.code} #{response.message}"
-      ## todo/fix: raise http exception (see fetcher)  -- why? why not??
-      fail "fetch HTTP - #{response.code} #{response.message}"
-      nil
-    end
+
+    response.text
   end
 
 
@@ -157,29 +145,4 @@ end
 
 
 end # class Page
-
-
-=begin
-class PageFetcher
-
-def fetch( cc )
-  worker = Fetcher::Worker.new
-  factbook_base = 'https://www.cia.gov/library/publications/the-world-factbook/geos'
-
-  res = worker.get_response( "#{factbook_base}/#{cc}.html" )
-
-  # on error throw exception - why? why not??
-  if res.code != '200'
-    raise Fetcher::HttpError.new( res.code, res.message )
-  end
-
-  ###
-  # Note: Net::HTTP will NOT set encoding UTF-8 etc.
-  #   will be set to ASCII-8BIT == BINARY == Encoding Unknown; Raw Bytes Here
-  html = res.body.to_s
-end
-end # PageFetcher
-=end
-
-
 end # module Factbook
