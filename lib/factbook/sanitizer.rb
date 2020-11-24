@@ -68,6 +68,27 @@ def find_country_profile( html )
   puts ul.to_html[0..100]
 
 
+
+  ## note: special case cc uses h2 instead of div block
+  ##  <h2 class="question cam_med" sectiontitle="Introduction" ccode="cc"
+  ##         style="border-bottom: 2px solid white; cursor: pointer;">
+  ##         Introduction ::  <span class="region">CURACAO </span>
+  ##   </h2>
+  ##   is old format !!!!
+  ##   cc - CURACAO
+  ##  http headers says - last-modified: Wed, 14 Nov 2018 14:09:28 GMT
+  ##   page says - PAGE LAST UPDATED ON MARCH 14, 2018
+  ##    wait for new version to be generated / pushed!!!
+
+  ## check for old format if h2 are present
+  h2s = ul.css( 'h2' )
+  if h2s.size > 0
+    puts "  !! WARN: found #{h2s.size} h2(s) - assume old format - sorry - must wait for update!!!"
+    ## return empty html string - why? why not?
+    return  ''
+  end
+
+
   ###
   ## sanitize
 
@@ -88,8 +109,15 @@ def find_country_profile( html )
   ul_children.each_slice(2) do |lis|
     li  = lis[0]
     div = li.at( 'div[sectiontitle]' )
+    if div.nil?
+      puts "!! ERROR: no section title found in div:"
+      puts li.to_html
+      exit 1
+    end
 
-    html << "<h2>#{div['sectiontitle']}</h2>\n"
+    section_title = div['sectiontitle'].to_s
+
+    html << "<h2>#{section_title}</h2>\n"
 
 
     li  = lis[1]

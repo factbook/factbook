@@ -100,7 +100,7 @@ See [Attributes](ATTRIBUTES.md) for a quick reference listing.
 
 ```ruby
 page = Factbook::Page.new( 'br' )
-File.open( 'br.json', 'w') do |f|
+File.open( 'br.json', 'w:utf-8') do |f|
   f.write page.to_json
 end
 ```
@@ -116,27 +116,27 @@ end
 
 resulting in:
 
-```ruby
+```
 #<struct Factbook::Codes::Code
- code="af",
- name="Afghanistan",
+ code    ="af",
+ name    ="Afghanistan",
  category="Countries",
- region="South Asia">
+ region  ="South Asia">
 #<struct Factbook::Codes::Code
- code="al",
- name="Albania",
+ code    ="al",
+ name    ="Albania",
  category="Countries",
- region="Europe">
+ region  ="Europe">
 #<struct Factbook::Codes::Code
- code="ag",
- name="Algeria",
+ code    ="ag",
+ name    ="Algeria",
  category="Countries",
- region="Africa">
+ region  ="Africa">
 #<struct Factbook::Codes::Code
- code="an",
- name="Andorra",
+ code    ="an",
+ name    ="Andorra",
  category="Countries",
- region="Europe">
+ region  ="Europe">
 ...
 ```
 
@@ -519,16 +519,21 @@ United States (14):
 
 ## Ready-To-Use Public Domain Factbook Datasets
 
-[opendatajson/factbook.json](https://github.com/opendatajson/factbook.json) - open (public domain)
+[factbook/factbook.json](https://github.com/factbook/factbook.json) - open (public domain)
 factbook country profiles in JSON for all the world's countries (using internet domain names
 for country codes e.g. Austria is `at.json` not `au.json`, Germany is `de.json` not `gm.json` and so on)
 
 
 ## Install
 
-Just install the gem:
+Use
 
-    $ gem install factbook
+    gem install factbook
+
+or add to your Gemfile
+
+    gem 'factbook'
+
 
 
 ## License

@@ -1,0 +1,119 @@
+# encoding: utf-8
+
+
+##
+#  todo: add update html pages (for factbook.github.io) ??
+
+
+$RUBYLIBS_DEBUG = true
+
+
+# 3rd party libs/gems
+require 'textutils'    ## for File.read_utf8 etc. ???
+require 'factbook'
+
+
+# our own code
+require './settings'
+
+
+def read_html( code )
+  html = File.read( "./build/src/#{code}.html" )  ## use/fix: ASCII-8BIT (e.g.keep as is)
+  html
+end
+
+def read_page( code )
+  html  = read_html( code )
+  page = Factbook::Page.new( code, html: html )
+
+  ## json_path = "./build/json/#{code}.json"
+  ### save to json
+  ## File.open( json_path, 'w' ) do |f|
+  ##   f.write JSON.pretty_generate( page.data )
+  ## end
+
+  ## page.save( output_dir: './build' )
+  ## page.save_errors( output_dir: './build' )
+end
+
+
+
+
+
+## todo: move fetch_page to factbook gem for (re)use - how? why? why not?
+##  add   get_url, url_from_code or  code_to_url or something ???
+##
+##  use Factbook::Factbook ??
+##    Factbook::Factbook.fetch_page( code )  ??
+##                      .url_for_code( code )  ??
+##
+##    or use Fetcher.fetch_page( code )  ??
+
+SITE_BASE = 'https://www.cia.gov/library/publications/the-world-factbook/geos/{code}.html'
+
+def fetch_page( code )
+  url_string =  SITE_BASE.gsub( '{code}', code )
+
+  worker = Fetcher::Worker.new
+  response = worker.get_response( url_string )
+
+  if response.code == '200'
+    text = response.body
+    text
+  else
+    fail "fetch HTTP - #{response.code} #{response.message}"
+  end
+end
+
+
+
+task :fetch do
+  codes = Factbook.codes
+
+#  codes.countries
+#  codes.dependencies
+#  codes.dependencies_us
+#  codes.oceans
+#  codes.world
+#  codes.others
+#  codes.misc
+
+
+  out_dir   = "./build/src"
+  FileUtils.mkdir_p( out_dir ) unless Dir.exists?( out_dir )   ## make sure folders exist
+
+
+  i=0
+  codes.each do |code|
+    i+=1
+    ### next if i > 3    ## for debuging
+    html = fetch_page( code.code )
+
+    ## todo/fix: check that build/src path exists!!!
+
+    ## todo: save to ascii
+    File.open( "#{out_dir}/#{code.code}.html", "w") do |f|    ## use/fix: ASCII-8BIT (e.g.keep as is)
+      f.write html
+    end
+  end
+end
+
+
+def debug?
+  debug_value = ENV['DEBUG']
+  if debug_value &&  ['true', 't', 'yes', 'y'].include?( debug_value.downcase )
+    true
+  else
+    false
+  end
+end
+
+
+############################################
+# add more tasks (keep build script modular)
+
+Dir.glob('./tasks/**/*.rake').each do |r|
+  puts " importing task >#{r}<..."
+  import r
+  # see blog.smartlogicsolutions.com/2009/05/26/including-external-rake-files-in-your-projects-rakefile-keep-your-rake-tasks-organized/
+end

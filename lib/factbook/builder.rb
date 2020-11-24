@@ -40,17 +40,22 @@ def initialize( html_ascii )
   ## todo/fix: use/assume windows 12xx?? encoding - change encoding to utf-8  (from binary/ascii8bit)
   @html, @info, @errors = Sanitizer.new.sanitize( @html_ascii )
 
-  @html_debug = map_sects( @html )
-  @html_debug = map_subsects( @html_debug )
 
-  html_sects = split_sects( @html_debug )
+  html_sects =  if @html.empty?
+                   ## note: support "empty" pages - old format waiting for update!!!
+                   ##    cannot parse for now
+                   []  ## return empty (no) sections for now - sorry (its just one page with code cc anyway!!)
+                else
+                   @html_debug = map_sects( @html )
+                   @html_debug = map_subsects( @html_debug )
+
+                   split_sects( @html_debug )
+                end
+
   pp html_sects
-
 
   ## debug
   ## File.open( 'tmp/br.debug.html', 'w:utf-8') { |f| f.write( @html_debug ) }
-
-
 
 
   @sects = []

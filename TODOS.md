@@ -1,40 +1,13 @@
 # Todos
 
-
-fix:
+- [ ] unfancy quotes in text e.g.
 
 ```
-GET https://www.cia.gov/library/publications/the-world-factbook/geos/cc.html...
-200 OK
-[cache] saving .cache/www.cia.gov/library/publications/the-world-factbook/geos/cc.html...
-#<MatchData "ccode='cc'" cc:"cc">
-** bingo - country code cc
-#<MatchData
- "Page last updated on March 14, 2018"
- month_en:"March"
- day:"14"
- year:"2018">
-** bingo - month March, day 14, year 2018
-"2018-3-14"
-<ul class="expandcollapse">
-<li><h2 class="question cam_med" sectiontitle="Introduction" ccode="cc" s
-  18 li(s):
-factbook/factbook/lib/factbook/sanitizer.rb:92:in `block in find_country_profile': undefined method `[]' for nil:NilClass (NoMethodError)
-        from factbook/factbook/lib/factbook/sanitizer.rb:88:in `each'
-        from factbook/factbook/lib/factbook/sanitizer.rb:88:in `each_slice'
-        from factbook/factbook/lib/factbook/sanitizer.rb:88:in `find_country_profile'
-        from factbook/factbook/lib/factbook/sanitizer.rb:39:in `sanitize'
-        from factbook/factbook/lib/factbook/builder.rb:41:in `initialize'
-        from factbook/factbook/lib/factbook/builder.rb:25:in `new'
-        from factbook/factbook/lib/factbook/builder.rb:25:in `from_string'
-        from factbook/factbook/lib/factbook/page.rb:55:in `initialize'
-        from script/json.rb:10:in `new'
-        from script/json.rb:10:in `block in <main>'
-        from factbook/factbook/lib/factbook/codes.rb:59:in `block in each'
-        from factbook/factbook/lib/factbook/codes.rb:59:in `each'
-        from factbook/factbook/lib/factbook/codes.rb:59:in `each'
-        from script/json.rb:8:in `<main>'
+Following Britain’s victory
+=>
+Following Britain's victory
 ```
+
 
 
 
