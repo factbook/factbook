@@ -19,6 +19,7 @@ Hoe.spec 'factbook' do
 
   self.extra_deps = [
     ['logutils' ],
+    ['csvreader'],
     ['webget'],
     ['nokogiri'],
     ['activerecord']  # note: will include activesupport,etc.
