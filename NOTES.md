@@ -1,5 +1,12 @@
 # Notes
 
+
+## Wikipedia
+
+- [The_World_Factbook](https://en.wikipedia.org/wiki/The_World_Factbook)
+- [List_of_entities_and_changes_in_The_World_Factbook](https://en.wikipedia.org/wiki/List_of_entities_and_changes_in_The_World_Factbook)   - changes over time
+
+
 ## Country (Processing/Parsing/Reading Notes)
 
 ### France

@@ -1,5 +1,0 @@
-source 'https://rubygems.org'
-
-gem 'factbook'
-gem 'textutils'   ### fix: add textutils as dep to factbook!!!
-gem 'activesupport', '~>4.2'

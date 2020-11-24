@@ -1,18 +1,28 @@
+###
+#  (re)generate "chrome-less" html pages from (cached) pages
+#
+#
+#
+#  use to run:
+#   ruby -I ./lib update/genhtml.rb
 
 
-desc 'generate html pages for factbook.github.io repo (_profiles)'
-task :html do
 
-  ##  todo: add DEBUG flag to use ./build flag with limit - why? why not?
+OUT_ROOT = './tmp/html'
+## OUT_ROOT = 'c:/sites/factbook/factbook.github.io'
 
-  out_root = debug? ? './build' : FACTBOOK_SITE_PATH
 
-  i=0
-  Factbook.codes.each do |code|
-     i += 1
-     ### next if i > 3    ## for debuging
 
-     puts "(#{i}) Reading page #{code.code}- #{code.name}..."
+require 'factbook'
+
+
+codes = Factbook.codes
+
+i = 0
+codes.each do |code|
+     ## next if i > 3    ## for debuging
+
+     puts "[#{i+1}/#{codes.size}] reading page #{code.code}- #{code.name}..."
 
      puts "code:"
      pp code
@@ -22,24 +32,24 @@ task :html do
 # category="Countries",
 # region="Africa">
 
-     html_ascii = read_html( code.code )
-     ## use/fix: ASCII-8BIT (e.g.keep as is) -???
-     html, info, errors = Factbook::Sanitizer.new.sanitize( html_ascii )
+     url = "https://www.cia.gov/library/publications/the-world-factbook/geos/#{code.code}.html"
+
+     html = Webcache.read( url )
+
+     html, info, errors = Factbook::Sanitizer.new.sanitize( html )
 
      puts "errors:"
      pp errors
      puts "info:"
      pp info
 
-     path = "#{out_root}/_profiles/#{code.code}.html"
+     path = "#{OUT_ROOT}/_profiles/#{code.code}.html"
 
-     ## make sure path exist
-     FileUtils.mkdir_p( File.dirname( path ) )
+     FileUtils.mkdir_p( File.dirname( path ) )  ## make sure path exist
 
 
      ## note:
      ##  use double quotes for country name - may include commas e.g Korea, Republic etc.
-
      header =<<EOS
 ---
 layout:       country
@@ -62,11 +72,15 @@ EOS
 #         info.country_name (instead of code.name)
 
 
-     ### save to html  - add save as utf-8 - why? why not???
-     puts "  saving a copy to >#{path}<..."
-     File.open( path, 'w') do |f|
-       f.write header
-       f.write html
-     end
+  puts "  saving a copy to >#{path}<..."
+  File.open( path, 'w:utf-8' ) do |f|
+    f.write( header )
+    f.write( html )
   end
+
+  i += 1
 end
+
+
+puts "bye"
+

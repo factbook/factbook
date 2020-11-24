@@ -1,9 +1,13 @@
 # Notes
 
 
-## Todos
 
-bn - Benin //  invalidbyte sequence in UTF-8 
+
+##  Anno 2018
+
+Todos - (historic) character encoding errors (in year 2018 pages)
+
+bn - Benin //  invalidbyte sequence in UTF-8
 
 ```
 [debug] fetch - copy src: https://www.cia.gov/library/publications/the-world-factbook/geos/bn.html into utf8 string
@@ -107,16 +111,4 @@ encoding errors:
 [ee] 2015-09-26 13:10:55 +0200 - invalid char on pos 35729 around: > is the EC�s external<
 ```
 
-
-## Wikipedia
-
-- [The_World_Factbook](https://en.wikipedia.org/wiki/The_World_Factbook)
-- [List_of_entities_and_changes_in_The_World_Factbook](https://en.wikipedia.org/wiki/List_of_entities_and_changes_in_The_World_Factbook)   - changes over time
-
-Number of entities
-- total - ??
-- countries - ??
-- dependencies - ??
-- other  - ??
-- oceans - ??
 

@@ -1,49 +1,37 @@
-# factbook Scripts
+# factbook Update Scripts
 
 
 ## Usage
 
-### Fetch all pages
-
-```
-$ rake fetch         # fetch all pages and save copies to ./build/src
-```
-
 
 ### Generate all .json documents
 
-Read all pages from `./build/src` and generate all .json documents
+Read all pages from (local web) cache and generate all .json documents
 
 ```
-$ rake json
+$ ruby -I ./lib update/genjson.rb
 ```
-
 
 Note:
 
-For "local" builds e.g. saving the .json documents to the `./build/factbook.json`
-use the debug flag e.g.:
-
-```
-$ rake json DEBUG=t
-```
+For "local" builds e.g. saving the .json documents to the `./tmp`
+change the OUT_ROOT in the script.
 
 
 ### Generate all .html profile pages
 
 
-Read all pages from `./build/src` and generate all .html documents
+Read all pages from (local web) cache and generate all "chrome-less" .html documents
+
 
 ```
-$ rake html
+$ ruby -I ./lib update/genhtml.rb
 ```
 
 
 Note:
 
-For "local" builds e.g. saving the .html documents to the `./build/_profiles`
-use the debug flag e.g.:
+For "local" builds e.g. saving the .html documents to the `./tmp`
+change the OUT_ROOT in the script.
 
-```
-$ rake html DEBUG=t
-```
+

@@ -4,7 +4,7 @@
 #
 #
 #  use to run:
-#   ruby -I ./lib update/script/genjson.rb
+#   ruby -I ./lib update/genjson.rb
 
 
 
