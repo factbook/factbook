@@ -35,10 +35,62 @@ def read
 
   puts "  parsing >#{@name}< - #{doc_children.size} category_data divs(s):"
 
+  ## hanlde special case for
+  ##  multiple 'grouped_subfield' first
+  ##  e.g. used in
+  ##   - Drinking water source:
+  ##   - Sanitation facility access:
+
+  grouped_children = []
+  other_children   = []
+
+  doc_children.each do |div|
+     if div['class'].index( 'grouped_subfield' )
+        grouped_children << div
+     else
+        other_children << div
+     end
+  end
+
+
+  ## note: only use special rule if more than one div marked grouped_
+  if grouped_children.size > 1
+    ## continue processing the rest as usual
+    doc_children =  other_children
+
+    key = nil
+    grouped_children.each do |div|
+       if !div.css( 'span.subfield-group').empty?
+         # start a new group
+         span_group = div.at( 'span.subfield-group')
+         key  = normalize_category( span_group.text.strip )
+         span_group.replace( '' )
+
+         text = squish( div.text.strip )
+         puts "new group - category_data key >#{key}<: >#{text}<"
+         data[ key ] = { 'text' => text }
+       else
+         ## append to (last) group
+         text = squish( div.text.strip )
+         puts "add group - category_data key >#{key}<: >#{text}<"
+         data[ key ]['text'] += " / #{text}"
+       end
+    end
+  end
+
+
   doc_children.each_with_index do |div,i|
     if div['class'].index( 'note' )
       text = squish( div.text.strip )
       puts "category_data: >#{text}<"
+
+      ## note: for now only allow one note per subsection/field data block
+      if data['note']
+        puts "!! ERROR: note already taken:"
+        puts data['note']
+        puts  div.to_html
+        exit 1
+      end
 
       data['note'] = { 'text' => text }
     elsif div['class'].index( 'historic' )
@@ -46,26 +98,32 @@ def read
         text = squish( div.text.strip )
         puts "category_data: >#{text}<"
 
-        if i == 0
-          data['text'] = text
-        else
+        if data['text']
           ## append with / for now
           data['text'] += " / #{text}"
+        else
+          data['text'] = text
+          ## check if history is first node
+          if i != 0
+            puts "!! ERROR: expected first historic node to be first node but it is #{i+1}:"
+            puts div.to_html
+            exit 1
+          end
         end
       elsif div.css( 'span.subfield-name').empty?
-      ## assume "implied text field"
-      ## check for index == 1 / child count == 1 - why? why not
-      text = squish( div.text.strip )    ## fix/todo: use strip
-      puts "category_data: >#{text}<"
+        ## assume "implied text field"
+        ## check for index == 1 / child count == 1 - why? why not
+        text = squish( div.text.strip )    ## fix/todo: use strip
+        puts "category_data: >#{text}<"
 
-      data['text'] = text
+        data['text'] = text
 
-      ## must be always first node for now
-      if i != 0
-        puts "!! ERROR - 'implied' category W/O name NOT first div / node:"
-        puts @html
-        exit 1
-      end
+        ## must be always first node for now
+        if i != 0
+          puts "!! ERROR - 'implied' category W/O name NOT first div / node:"
+          puts div.to_html
+          exit 1
+        end
     elsif div['class'].index( 'grouped_subfield' )
 ## split grouped subfield!!
 ##   <span class="subfield-name">arable land:</span>
@@ -114,6 +172,7 @@ def read
   pp data
   data
 end
+
 
 
 

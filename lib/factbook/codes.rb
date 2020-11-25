@@ -28,7 +28,7 @@ class Codes
     #        Code, Name, Category, Region, ...
 
     rows = CSV.read( path, headers: true )
-    
+
     pp rows
 
     recs = []
@@ -40,7 +40,7 @@ class Codes
 
       ## note: for now category and region are optional
       rec.category = row['Category'].strip    if row['Category']
-      rec.region   = row['Region'].strip      if row['Region']  
+      rec.region   = row['Region'].strip      if row['Region']
 
       pp rec
       recs << rec
@@ -52,12 +52,15 @@ class Codes
   def initialize( codes )
     @codes = codes
   end
-  
+
   def size() @codes.size; end
 
-  def each
-    @codes.each {|code| yield( code ) }
+  def each( &blk ) @codes.each( &blk ); end
+  def select( &blk )
+    codes = @codes.select( &blk )
+    Codes.new( codes )   ## return (again) new Codes obj for easy-chaining - why? why not?
   end
+
 
   def to_a
     @codes.collect {|code| code.code }   ## return array of codes

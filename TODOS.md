@@ -1,14 +1,21 @@
 # Todos
 
-- [ ] unfancy quotes in text e.g.
+
+in france (fr) check with `++` is inside of strong tab and not before/outside ???
+
+```
+<div class="category_data note">
+      <strong>note: </strong>applies to metropolitan France only; for its overseas regions the time difference is UTC-4 for Guadeloupe and Martinique, UTC-3 for French Guiana, UTC+3 for Mayotte, and UTC+4 for Reunion<strong> ++ etymology: </strong>nam
+```
+
+
+- [x] unfancy quotes in text e.g.
 
 ```
 Following Britain’s victory
 =>
 Following Britain's victory
 ```
-
-
 
 
 ## strip trailing newslines from data item

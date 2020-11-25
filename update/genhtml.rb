@@ -8,15 +8,19 @@
 
 
 
-OUT_ROOT = './tmp/html'
-## OUT_ROOT = 'c:/sites/factbook/factbook.github.io'
+## OUT_ROOT = './tmp/html'
+OUT_ROOT = 'c:/sites/factbook/factbook.github.io'
 
 
 
 require 'factbook'
 
 
+## for debugging select some codes
+# codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
+
 codes = Factbook.codes
+
 
 i = 0
 codes.each do |code|

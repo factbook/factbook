@@ -27,6 +27,8 @@ def region_to_slug( text )
 end
 
 
+## for debugging select some codes
+# codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
 
 codes = Factbook.codes
 
