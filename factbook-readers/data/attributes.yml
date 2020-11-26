@@ -1,0 +1,337 @@
+############################
+# attributes
+
+Introduction:
+  Background:                { name: background }
+
+Geography:
+  Location:                  { name: location }
+  Geographic coordinates:    { name: coords }      ## use geo_coords - why, why not??
+  Map references:            { name: map }         ## use map_ref - why, why not??
+  Area:
+    total:                   { name: area }
+    land:                    { name: area_land }
+    water:                   { name: area_water }
+    note:                    { name: area_note }
+  Area - comparative:        { name: area_comparative }
+  Land boundaries:
+    total:                   { name: border_land }
+    border countries:        { name: border_countries }   ## todo/fix: remove count from key e.g. border countries (8)
+  Coastline:                 { name: coastline }          ## use border_water  - why, why not??
+  Maritime claims:
+    territorial sea:         { name: maritime_claims_territorial_sea }
+    contiguous zone:         { name: maritime_claims_contiguous_zone }
+    exclusive economic zone: { name: maritime_claims_exclusive_economic_zone }
+    continental shelf:       { name: maritime_claims_continental_shelf }
+  Climate:                   { name: climate }
+  Terrain:                   { name: terrain }
+  Elevation extremes:
+    lowest point:            { name: elevation_lowest }
+    highest point:           { name: elevation_highest }
+  Natural resources:         { name: resources }
+  Land use:
+    agricultural land:       { name: land_use_agriculture }
+    forest:                  { name: land_use_forest }
+    other:                   { name: land_use_other }
+  Irrigated land:            { name: land_irrigated }
+  Total renewable water resources:  { name: water_renewable }
+  Freshwater withdrawal (domestic/industrial/agricultural):
+    total:                   { name: water_withdrawal }
+    per capita:              { name: water_withdrawal_capita }
+  Natural hazards:
+    name: natural_hazards        ## note: "special" attribute case with "mixed" content
+    volcanism:               { name: natural_hazards_volcanism } 
+  Environment - current issues:  { name: environment_issues }
+  Environment - international agreements:
+    party to:                    { name: environment_agreements }
+    "signed, but not ratified":  { name: environment_agreements_note }     ## use _ratified - why, why not??
+  Geography - note:        { name: geography_note }      ## use geo_note or geography - why, why not??
+
+People and Society:
+  Nationality:
+    noun:               { name: nationality }
+    adjective:          { name: nationality_adjective }
+  Ethnic groups:        { name: ethnic_groups }
+  Languages:
+    name: languages       ## note: "special" attribute case with "mixed" content
+    note:               { name: languages_note }
+  Religions:            { name: religions }
+  Demographic profile:  { name: demographic }
+  Population:           { name: population }
+  Age structure:
+    0-14 years:         { name: age_0_14yrs }
+    15-24 years:        { name: age_15_24yrs }
+    25-54 years:        { name: age_25_54yrs }
+    55-64 years:        { name: age_55_64yrs }
+    65 years and over:  { name: age_65yrs_plus }
+  Dependency ratios:
+    total:                    { name: dependency_ratio }
+    youth dependency ratio:   { name: dependency_youth_ratio }
+    elderly dependency ratio: { name: dependency_elderly_ratio }
+    potential support ratio:  { name: dependency_support_ratio }
+  Median age:
+    total:                    { name: median_age }
+    male:                     { name: median_age_male }
+    female:                   { name: median_age_female }                           
+  Population growth rate:     { name: population_growth }
+  Birth rate:                 { name: birth_rate }
+  Death rate:                 { name: death_rate }
+  Net migration rate:         { name: migration_rate }
+  Urbanization:
+    urban population:         { name: urbanization }
+    rate of urbanization:     { name: urbanization_growth }   ## use _rate - why, why not??
+  Major urban areas - population:  { name: major_cities }
+  Sex ratio:
+    at birth:                 { name: sex_ratio_birth }
+    0-14 years:               { name: sex_ratio_0_14yrs }
+    15-24 years:              { name: sex_ratio_15_24yrs }
+    25-54 years:              { name: sex_ratio_25_54yrs }
+    55-64 years:              { name: sex_ratio_55_64yrs }
+    65 years and over:        { name: sex_ratio_65yrs_plus }
+    total population:         { name: sex_ratio }
+  Infant mortality rate:
+    total:                    { name: infant_mortality }   ## add _rate - why, why not??
+    male:                     { name: infant_mortality_male }
+    female:                   { name: infant_mortality_female }
+  Life expectancy at birth:
+    total population:         { name: life_expectancy }
+    male:                     { name: life_expectancy_male }
+    female:                   { name: life_expectancy_female }
+  Total fertility rate:       { name: fertility }
+  Contraceptive prevalence rate:
+    name: contraceptive_rate    ## note: "special" attribute case with "mixed" content
+    note:                     { name: contraceptive_rate_note }
+  Health expenditures:        { name: health_expenditures }   ## todo: change to health ??
+  Physicians density:         { name: density_physicians }
+  Hospital bed density:       { name: density_hospital_bed }
+  Drinking water source:
+    improved:                 { name: drinking_water_improved }   ## todo:split into urban/rural/total ??
+    unimproved:               { name: drinking_water_unimproved }
+  Sanitation facility access:
+    improved:                 { name: sanitation_improved }   ## todo:split into urban/rural/total ??
+    unimproved:               { name: sanitation_unimproved }
+  HIV/AIDS - adult prevalence rate:        { name: aids }
+  HIV/AIDS - people living with HIV/AIDS:  { name: aids_people }
+  HIV/AIDS - deaths:                       { name: aids_deaths }
+  Obesity - adult prevalence rate:         { name: obesity }
+  Children under the age of 5 years underweight:  { name: underweight_children_under_5yrs }
+  Education expenditures:                  { name: education_expenditures }  ## change to education ??
+  Literacy:
+    definition:                            { name: literacy_def }
+    total population:                      { name: literacy }
+    male:                                  { name: literacy_male }
+    female:                                { name: literacy_female }
+  School life expectancy (primary to tertiary education):
+    total:                                 { name: school_life }
+    male:                                  { name: school_life_male }
+    female:                                { name: school_life_female }
+  Child labor - children ages 5-14:
+    total number:                          { name: child_labor }
+    percentage:                            { name: child_labor_rate }
+    note:                                  { name: child_labor_note }
+  "Unemployment, youth ages 15-24":
+    total:                                 { name: unemployment_youth }
+    male:                                  { name: unemployment_youth_male }
+    female:                                { name: unemployment_youth_female }
+
+Government:
+  Country name:
+    conventional long form:   { name: name_long }
+    conventional short form:  { name: name }
+    local long form:          { name: name_long_local } 
+    local short form:         { name: name_local }
+    note:                     { name: name_note }
+    ## add name_former ( see gm) ??  add abbreviations (see us)
+  Government type:            { name: government_type }
+  Capital:
+    name:                     { name: capital }
+    geographic coordinates:   { name: capital_coords }
+    time difference:          { name: capital_time_diff }
+    daylight saving time:     { name: capital_dst }
+  Administrative divisions:   { name: admins }
+  Independence:               { name: independence } 
+  National holiday:           { name: natinal_holiday }
+  Constitution:               { name: constitution }
+  Legal system:               { name: legal_system }
+  International law organization participation:   { name: legal_intl_orgs }
+  Suffrage:                   { name: suffrage }
+  ## note: skip Executive,Legislative,Judicial,... entries for now
+  International organization participation: { name: intl_orgs }
+  Flag description:           { name: flag }
+  National symbol(s):         { name: national_symbols }
+  National anthem:
+    name:                     { name: national_anthem}
+    lyrics/music:             { name: national_anthem_by }
+    note:                     { name: national_anthem_note }   
+
+Economy:
+  Economy - overview:             { name: economy_overview }
+  GDP (purchasing power parity):
+    name: gdp_ppp                    ## note: "special" attribute case with "mixed" content
+    note:                         { name: gdp_ppp_note }
+  GDP (official exchange rate):   { name: gdp }
+  GDP - real growth rate:         { name: gdp_growth }
+  GDP - per capita (PPP):
+    name: gdp_ppp_capita              ## note: "special" attribute case with "mixed" content
+    note:                         { name: gdp_ppp_capita_note }
+  Gross national saving:          { name: saving }
+  "GDP - composition, by end use":
+    household consumption:         { name: consumption_household }
+    government consumption:        { name: consumption_government }
+    investment in fixed capital:   { name: investment_fixed }
+    investment in inventories:     { name: investment_inventories }
+    exports of goods and services: { name: exports_gdp_rate }
+    imports of goods and services: { name: imports_gdb_rate }
+  "GDP - composition, by sector of origin":
+    agriculture:                   { name: agriculture_gdb_rate }
+    industry:                      { name: industry_gdb_rate }
+    services:                      { name: services_gdb_rate }
+  Agriculture - products:          { name: agriculture_products }
+  Industries:                      { name: industries }
+  Industrial production growth rate: { name: industry_growth }
+  Labor force:                     { name: labor }
+  Labor force - by occupation:
+    agriculture:                   { name: labor_agriculture }
+    industry:                      { name: labor_industry }
+    services:                      { name: labor_services }
+  Unemployment rate:               { name: unemployment }
+  Population below poverty line:
+    name: poverty                    ## note: "special" attribute case with "mixed" content
+    note:                          { name: poverty_note }
+  Household income or consumption by percentage share:
+    "lowest 10%":                  { name: household_income_lowest }   ## use _poorest, _bottom ???
+    "highest 10%":                 { name: household_income_highest }  ## use _richest, _top ???
+  Distribution of family income - Gini index:  { name: gini }
+  Budget:
+    revenues:                      { name: budget_revenues }
+    expenditures:                  { name: budget_expenditures }
+  Taxes and other revenues:        { name: taxes }
+  Budget surplus (+) or deficit (-): { name: budget_balance }
+  Public debt:
+    name: public_debt               ## note: "special" attribute case with "mixed" content
+    note:                          { name: public_debt_note }
+  Fiscal year:                     { name: fiscal_year }
+  Inflation rate (consumer prices): { name: inflation }
+  Central bank discount rate:       { name: central_bank_discount_rate }  ## use discount_rate - why? why not?? 
+  Commercial bank prime lending rate: { name: prime_rate }
+  Stock of narrow money:
+    name: narrow_money               ## note: "special" attribute case with "mixed" content
+    note:                           { name: narrow_money_note }
+  Stock of broad money:             { name: broad_money }
+  Stock of domestic credit:         { name: domestic_credit }
+  Market value of publicly traded shares: { name: shares_market_value }
+  Current account balance:          { name: current_account_balance }
+  Exports:                          { name: exports }
+  Exports - commodities:            { name: exports_commodities }
+  Exports - partners:               { name: exports_partners }
+  Imports:                          { name: imports }
+  Imports - commodities:            { name: imports_commodities }
+  Imports - partners:               { name: imports_partners }
+  Reserves of foreign exchange and gold:  { name: foreign_exchange_reserves }
+  Debt - external:                  { name: debt_external }
+  Stock of direct foreign investment - at home:  { name: direct_foreign_investment_home }
+  Stock of direct foreign investment - abroad:   { name: direct_foreign_investment_abroad }
+  Exchange rates:                   { name: exchange_rates }
+
+Energy:
+  Electricity - production:  { name: electricity_production }
+  Electricity - consumption: { name: electricity_consumption }
+  Electricity - exports:     { name: electricity_exports }
+  Electricity - imports:     { name: electricity_imports }
+  Electricity - installed generating capacity: { name: electricity_capacity }
+  Electricity - from fossil fuels:   { name: electricity_fossil }
+  Electricity - from nuclear fuels:  { name: electricity_nuclear }
+  Electricity - from hydroelectric plants:  { name: electricity_hydro }
+  Electricity - from other renewable sources:  { name: electricity_other }
+  Crude oil - production:       { name: oil_production }
+  Crude oil - exports:          { name: oil_exports }
+  Crude oil - imports:          { name: oil_imports }
+  Crude oil - proved reserves:  { name: oil_reserves }
+  Refined petroleum products - production:  { name: petroleum_production }
+  Refined petroleum products - consumption: { name: petroleum_consumption }
+  Refined petroleum products - exports:     { name: petroleum_exports }
+  Refined petroleum products - imports:     { name: petroleum_imports }
+  Natural gas - production:      { name: natural_gas_production }
+  Natural gas - consumption:     { name: natural_gas_consumpiton }
+  Natural gas - exports:         { name: natural_gas_exports }
+  Natural gas - imports:         { name: natural_gas_imports }
+  Natural gas - proved reserves: { name: natural_gas_reserves }
+  Carbon dioxide emissions from consumption of energy:  { name: carbon_dioxide }
+
+Communications:
+  Telephones - fixed lines:
+    total subscriptions:                { name: telephones }
+    subscriptions per 100 inhabitants:  { name: telephones_subscriptions }
+  Telephones - mobile cellular:
+    total:                             { name: telephones_mobile }
+    subscriptions per 100 inhabitants: { name: telephones_mobile_subscriptions }
+  Telephone system:
+    general assessment:                { name: telephone_system }
+    domestic:                          { name: telephone_system_domestic }
+    international:                     { name: telephone_system_intl }
+  Broadcast media:                     { name: broadcast_media }
+  Radio broadcast stations:            { name: radio_broadcast_stations }
+  Television broadcast stations:       { name: tv_broadcast_stations }
+  Internet country code:               { name: internet }
+  Internet users:
+    total:                             { name: internet_users }
+    percent of population:             { name: internet_users_rate }
+
+Transportation:
+  Airports:                            { name: airports }
+  Airports - with paved runways:
+    total:                             { name: airports_paved }
+    "over 3,047 m":                    { name: airports_paved_over_10000ft }
+    "2,438 to 3,047 m":                { name: airports_paved_8000_10000ft }
+    "1,524 to 2,437 m":                { name: airports_paved_5000_8000ft  }
+    "914 to 1,523 m":                  { name: airports_paved_3000_5000ft  }
+    "under 914 m":                     { name: airports_paved_under_3000ft }
+  Airports - with unpaved runways:
+    total:                             { name: airports_unpaved }
+    "1,524 to 2,437 m":                { name: airports_unpaved_5000_8000ft } 
+    "914 to 1,523 m":                  { name: airports_unpaved_3000_5000ft }
+    "under 914 m":                     { name: airports_unpaved_under_3000ft }
+  Heliports:                           { name: heliports }
+  Pipelines:                           { name: pipelines }
+  Railways:
+    total:                             { name: railways }
+    standard gauge:                    { name: railways_standard_gauge }
+    narrow gauge:                      { name: railways_narrow_gauge }
+    broad gauge:                       { name: railways_broad_gauge }
+    dual gauge:                        { name: railways_dual_gauge }
+  Roadways:
+    total:                             { name: roadways }
+    paved:                             { name: roadways_paved }
+    unpaved:                           { name: roadways_unpaved }
+    note:                              { name: roadways_note }
+  Waterways:                           { name: waterways }
+  Merchant marine:
+    total:                             { name: merchant_marine }
+    by type:                           { name: merchant_marine_by_type }
+    foreign-owned:                     { name: merchant_marine_foreign }
+    registered in other countries:     { name: merchant_marine_others }
+  Ports and terminals:
+    major seaport(s):                  { name: sea_ports }
+    river port(s):                     { name: river_ports }
+
+Military:
+  Military branches:                    { name: military_branches }
+  Military service age and obligation:  { name: military_age      }
+  Manpower available for military service:
+    males age 16-49:                    { name: military_manpower_males }
+    females age 16-49:                  { name: military_manpower_females }
+  Manpower fit for military service:
+    males age 16-49:                    { name: military_manpower_males_fit }
+    females age 16-49:                  { name: military_manpower_females_fit }
+  Manpower reaching militarily significant age annually:
+    male:                               { name: military_manpower_male_annual }
+    female:                             { name: military_manpower_female_annual }
+  Military expenditures:                { name: military_expenditures }
+
+Transnational Issues:
+  Disputes - international:             { name: disputes }
+  Refugees and internally displaced persons:
+    refugees (country of origin):       { name: refugees }
+    IDPs:                               { name: refugees_idps }            
+    stateless persons:                  { name: refugess_stateless }
+  Illicit drugs:                        { name: drugs }

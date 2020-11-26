@@ -1,0 +1,34 @@
+require 'hoe'
+require './lib/factbook-readers/version.rb'
+
+Hoe.spec 'factbook-readers' do
+
+  self.version = Factbook::Module::Readers::VERSION
+
+  self.summary = 'factbook-readers - turn thee world factbook country profile pages into open structured data e.g JSON'
+  self.description = summary
+
+  self.urls = { home: 'https://github.com/factbook/factbook' }
+
+  self.author = 'Gerald Bauer'
+  self.email  = 'openmundi@googlegroups.com'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.extra_deps = [
+    ['logutils' ],
+    ['csvreader'],
+    ['webget'],
+    ['nokogiri'],
+    ## ['activerecord']  # note: will include activesupport,etc.
+  ]
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+   required_ruby_version: '>= 2.2.2'
+  }
+
+end

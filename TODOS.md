@@ -1,6 +1,14 @@
 # Todos
 
 
+- [ ]  use Factbook terminology  - why? why not?
+       - change subsection to field!!
+       - change categories.csv to fields.csv (keep name as it is field name now not wrongly category name)
+       - change structs too!! - use Section => Category, Subsection => Field
+
+
+
+
 in france (fr) check with `++` is inside of strong tab and not before/outside ???
 
 ```
