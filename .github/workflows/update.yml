@@ -40,5 +40,11 @@ jobs:
     - name: Run download
       run:  yo -r ./workflow/download.rb -f ./workflow/Flowfile.rb download
 
+    - name: Run generate json
+      run:  yo -r ./workflow/genjson.rb -f ./workflow/Flowfile.rb json
+
+    - name: Run generate html
+      run:  yo -r ./workflow/genhtml.rb -f ./workflow/Flowfile.rb html
+
     - name: Run ssh_push
       run:  yo -f ./workflow/Flowfile.rb push
