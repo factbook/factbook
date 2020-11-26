@@ -1,6 +1,15 @@
 # Notes
 
 
+## Country Code Changes!!!
+
+in 2019 (?) Curacao changed the country code from `cc` to `uc`
+note: the old webpage is still available in the old format
+with "PAGE LAST UPDATED ON MARCH 14, 2018",
+see <https://www.cia.gov/library/publications/the-world-factbook/geos/cc.html>.
+
+
+
 ## Wikipedia
 
 - [The_World_Factbook](https://en.wikipedia.org/wiki/The_World_Factbook)
@@ -45,37 +54,6 @@ The two exceptions are Unemployment Rate and Inflation Rate, which are in ascend
 Country Comparison pages are available for the following 79 fields in seven of the ten Factbook categories.
 
 (Source: [Guide to Country Comparisons](https://www.cia.gov/library/publications/the-world-factbook/rankorder/rankorderguide.html))
-
-
-
-## Alternatives (Libraries and Gems)
-
-Ruby
-
-- [worldfactbook gem](https://github.com/sayem/worldfactbook)
-  by Sayem Khan (aka sayem);
-  fetches data from its own mirror, that is, [rubyworldfactbook.com](http://rubyworldfactbook.com)
-  (last updated 2011?)
-
-- [the_country_identity gem](https://github.com/p1nox/the_country_identity)
-  by Raul Pino (aka p1nox);
-  fetches data from an [RDF Turtle endpoint](http://wifo5-03.informatik.uni-mannheim.de/factbook/)
-  hosted by the Research Group Data and Web Science at the University of Mannheim, Germany
-
-JavaScript
-
-- [worldfactbook-dataset](https://github.com/twigkit/worldfactbook-dataset)
-  by Richard Marr (aka richmarr); fetches data using Node.js
-  (last updated 2013)
-
-Python
-
-- [openfactbook datasets & tools](https://github.com/openfactbook)
-  by Eckhard Licher; uses official (offline) download archive (last updated 2014); incl. flags, maps, and more
-
-Others
-
-TBD
 
 
 
