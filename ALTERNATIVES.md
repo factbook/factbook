@@ -35,7 +35,7 @@ Articles
   by Eckhard Licher; uses official (offline) download archive (last updated 2014); incl. flags, maps, and more
 
 - [cia-world-factbook-parser](https://github.com/rupenp/cia-world-factbook-parser)
-  by Rupen Paul; parser for CIA World Factbook - creates structured JSON objects
+  by Rupinder Paul Khandpur (aka Rupen Paul); parser for CIA World Factbook - creates structured JSON objects
 
 ## Ruby
 
