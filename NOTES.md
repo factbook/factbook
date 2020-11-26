@@ -3,10 +3,13 @@
 
 ## Country Code Changes!!!
 
-in 2019 (?) Curacao changed the country code from `cc` to `uc`
-note: the old webpage is still available in the old format
+in 2018 / 2019 (?) Curacao changed the country code from `cc` to `uc`
+and Sint Maarten from `sk` to `nn`
+note: the old webpages are still available in the old format
 with "PAGE LAST UPDATED ON MARCH 14, 2018",
 see <https://www.cia.gov/library/publications/the-world-factbook/geos/cc.html>.
+and "PAGE LAST UPDATED ON MARCH 15, 2018",
+see <https://www.cia.gov/library/publications/the-world-factbook/geos/sk.html>
 
 
 
