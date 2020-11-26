@@ -1,8 +1,9 @@
 $LOAD_PATH.unshift( './lib' )
-require 'factbook'
+require 'factbook/readers'
 
-page = Factbook::Page.new( 'cc' )
+page = Factbook::Page.new( 'be' )
 pp page.data                        # pretty print hash
+
 
 
 __END__

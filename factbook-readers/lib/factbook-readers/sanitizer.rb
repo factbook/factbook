@@ -3,7 +3,7 @@ module Factbook
 
 class Sanitizer
   include LogUtils::Logging
-
+  include Utils   ## e.g. find_page_info etc.
 
 def sanitize( html )
   ## todo: add option for (html source) encoding - why?? why not??
