@@ -4,26 +4,31 @@
 #
 #
 #  use to run:
-#   ruby -I ./lib update/genhtml.rb
+#   yo -r ./workflow/genhtml.rb -f workflow/Flowfile.rb html
+#    -or
+#   yo -r ./workflow/genhtml.rb -f workflow/Flowfile.rb html DEBUG=t
 
 
 
-OUT_ROOT = './tmp/html'
-## OUT_ROOT = 'c:/sites/factbook/factbook.github.io'
+require_relative 'boot'
 
 
 
-require 'factbook/readers'
+def gen_html
+  out_root =  if debug?
+                './tmp/html'
+              else
+                Mononame.real_path( 'factbook.github.io@factbook' )
+              end
 
 
-## for debugging select some codes
-codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
+  ## for debugging select some codes
+  codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
 
-# codes = Factbook.codes
+  # codes = Factbook.codes
 
-
-i = 0
-codes.each do |code|
+  i = 0
+  codes.each do |code|
      ## next if i > 3    ## for debuging
 
      puts "[#{i+1}/#{codes.size}] reading page #{code.code}- #{code.name}..."
@@ -47,7 +52,7 @@ codes.each do |code|
      puts "info:"
      pp info
 
-     path = "#{OUT_ROOT}/_profiles/#{code.code}.html"
+     path = "#{out_root}/_profiles/#{code.code}.html"
 
      FileUtils.mkdir_p( File.dirname( path ) )  ## make sure path exist
 
@@ -76,15 +81,14 @@ EOS
 #         info.country_name (instead of code.name)
 
 
-  puts "  saving a copy to >#{path}<..."
-  File.open( path, 'w:utf-8' ) do |f|
-    f.write( header )
-    f.write( html )
+    puts "  saving a copy to >#{path}<..."
+    File.open( path, 'w:utf-8' ) do |f|
+      f.write( header )
+      f.write( html )
+    end
+
+    i += 1
   end
-
-  i += 1
+  puts "bye"
 end
-
-
-puts "bye"
 

@@ -1,0 +1,44 @@
+name:  Update Factbook (Download Pages & Generate JSON/HTML)
+
+on:
+  schedule:
+    # note: * is a special character in YAML so you have to quote this string
+    #  see cron guru for more examples / help on syntax
+    #    ->  https://crontab.guru/examples.html
+    - cron:  '0 22 1,15 * *'       #  every 1 & 15 of the month at 22:00 (utc?)
+  workflow_dispatch:
+    ### for testing / debugging allow "manual" start
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.6' # Version range or exact version of a Ruby version to use, using semvers version range syntax.
+
+    - name: Run install / adduser
+      env:
+        SSH_KEY: ${{ secrets.SSH_KEY }}
+      run: |
+        gem install nokogiri --no-document
+        # fix:  require nokogiri on demand only (nokogiri NOT used by apis only pages for now!!!)
+        bundle install --gemfile=./workflow/Gemfile
+        yo -f ./workflow/Flowfile.rb adduser
+
+    - name: Run ssh_clone
+      run:  yo -f ./workflow/Flowfile.rb clone
+
+    - name: Run download
+      run:  yo -r ./workflow/download.rb -f ./workflow/Flowfile.rb download
+
+    - name: Run ssh_push
+      run:  yo -f ./workflow/Flowfile.rb push
