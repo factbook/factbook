@@ -1,0 +1,8 @@
+tmp
+tmp/
+temp
+temp/
+
+#########
+#  exclude factbook database for testing
+factbook.db

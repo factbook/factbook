@@ -4,16 +4,16 @@
 #
 #
 #  use to run:
-#   ruby -I ./lib update/genjson.rb
+#   ruby -I ./factbook-readers/lib update/genjson.rb
 
 
 
-## OUT_ROOT = './tmp/json'
-OUT_ROOT = 'c:/sites/factbook/factbook.json'
+OUT_ROOT = './tmp/json'
+## OUT_ROOT = 'c:/sites/factbook/factbook.json'
 
 
 
-require 'factbook'
+require 'factbook/readers'
 
 ##
 ##  todo: mae region_to_slug into a utility method for (re)use - how, why? why not??
@@ -28,9 +28,9 @@ end
 
 
 ## for debugging select some codes
-# codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
+codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
 
-codes = Factbook.codes
+# codes = Factbook.codes
 
 i = 0
 codes.each do |code|

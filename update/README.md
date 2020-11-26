@@ -9,7 +9,7 @@
 Read all pages from (local web) cache and generate all .json documents
 
 ```
-$ ruby -I ./lib update/genjson.rb
+$ ruby -I ./factbook-readers/lib update/genjson.rb
 ```
 
 Note:
@@ -25,7 +25,7 @@ Read all pages from (local web) cache and generate all "chrome-less" .html docum
 
 
 ```
-$ ruby -I ./lib update/genhtml.rb
+$ ruby -I ./factbook-readers/lib update/genhtml.rb
 ```
 
 
