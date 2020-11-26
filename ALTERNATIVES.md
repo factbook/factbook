@@ -23,11 +23,19 @@ Articles
   (last updated 2013)
 
 
+## C-Sharp / .NET
+
+- [The-CIA-World-Factbook-Parser](https://github.com/sekhargullapalli/The-CIA-World-Factbook-Parser)
+  by Vijaya Sekhar Gullapalli; data contained in the CIA world factbook is collected are parsed into JSON format; 
+  the data collected is extracted from The CIA World Factbook 2018 archive (around 1.6 GiG)
+
 ## Python
 
 - [openfactbook datasets & tools](https://github.com/openfactbook)
   by Eckhard Licher; uses official (offline) download archive (last updated 2014); incl. flags, maps, and more
 
+- [cia-world-factbook-parser](https://github.com/rupenp/cia-world-factbook-parser)
+  by Rupen Paul; parser for CIA World Factbook - creates structured JSON objects
 
 ## Ruby
 
