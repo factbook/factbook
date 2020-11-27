@@ -2,28 +2,6 @@
 module Factbook
 
 
-## note:
-##   some factbook pages with chrome (headers, footers, etc.)
-##     are NOT valid utf-8, thus,
-##     treat page as is (e.g. ASCII8BIT)
-#
-#   only convert to utf8 when header and footer got stripped
-
-##
-## be/benin:
-##   Key Force or FC [Lazare S?xx?HOU?xx?TO]     -- two invalid byte code chars in Political parties and leaders:
-#
-##   in Western/Windows-1252  leads to  FC [Lazare SÈHOUÉTO];
-#       Lazare Sèhouéto
-#
-#   looks good - use (assume) Windows-1252 ????
-
-##
-#   check for is ascii 7-bit ???  if yes -noworries
-#     if not, log number of chars not using ascii 7-bit
-
-
-
 class Page
   include LogUtils::Logging
 
@@ -35,52 +13,85 @@ class Page
   ## standard version  (note: requires https)
   SITE_BASE = 'https://www.cia.gov/library/publications/the-world-factbook/geos/{code}.html'
 
-  def initialize( code, opts={} )
-    ### keep code - why? why not??  (use page_info/info e.g. info.country_code??)
 
-    if opts[:json]
-      json = opts[:json]    ## note: json is (still) a string/text (NOT yet parsed to structured data)
-      b = JsonBuilder.from_string( json )
+  def self.parse( html )   ## parse html from string
+    new( html: html )
+  end
+
+  def self.read( path )
+    html = File.open( path, 'r:utf-8' ) { |f| f.read }
+    new( html: html )
+  end
+
+  def self.parse_json( json )  ## parse json from string
+    new( json: json )
+  end
+
+  def self.read_json( path )
+    json = File.open( path, 'r:utf-8' ) { |f| f.read }
+    new( json: json )
+  end
+
+  def self.download( code, cache: false )
+    new( code, cache: cache )
+  end
+
+  ## some convenience alias(es)
+  class << self
+    alias_method :read_html,  :read
+    alias_method :parse_html, :parse
+  end
+
+
+  def initialize( code=nil,
+                  json: nil,
+                  html: nil,
+                  cache: false,
+                  info: nil )
+    if json
+       ## note: assumes json is (still) a string/text
+       ##        (NOT yet parsed to structured data)
+      b = JsonBuilder.new( json )
     else  ## assume html
-      if opts[:html]    ## note: expects ASCII-7BIT/BINARY encoding
-         ## for debugging and testing allow "custom" passed-in html page
-        html = opts[:html]
+      if html
+        ## for debugging and testing allow "custom" passed-in html page
       else
-        url_string =  SITE_BASE.gsub( '{code}', code )
-        ## note: expects ASCII-7BIT/BINARY encoding
+        ## allow passing in code struct too - just use/pluck two-letter code from struct !!!
+        code = code.code   if code.is_a?( Codes::Code )
 
-        ## html = fetch_page( url_string )   ## use PageFetcher class - why?? why not??
-        html = Webcache.read( url_string )
+        raise ArgumentError, "two letter code (e.g. au) required to download page & build page url"   if code.nil?
+        url = SITE_BASE.sub( '{code}', code )
+
+        html = if cache && Webcache.exist?( url )
+                   Webcache.read( url )  ## for debugging - read from cache
+               else
+                   download_page( url )
+               end
       end
-      b = Builder.from_string( html )
+      b = Builder.new( html )
     end
 
     @sects = b.sects
     @info  = b.info
 
     ## todo/fix/quick hack:
-    ##  check for info opts hash entry - lets you overwrite page info
+    ##  check for info opts - lets you overwrite page info
     ##  -- use proper header to setup page info - why, why not??
-    if opts[:info]
-      info  = opts[:info]
-      @info = info
-    end
+    @info = info    if info
+
 
     @data = {}
     @sects.each do |sect|
       @data[ sect.title ] = sect.data
     end
-
-    self  ## return self (check - not needed??)
   end
 
 
-  def to_json( opts={} )  ## convenience helper for data.to_json; note: pretty print by default!
-    if opts[:minify]
+  def to_json( minify: false )  ## convenience helper for data.to_json; note: pretty print by default!
+    if minify
       data.to_json
-    else
-      ## was: -- opts[:pretty] || opts[:pp]
-      JSON.pretty_generate( data )   ## note: pretty print by default!
+    else ## note: pretty print by default!
+      JSON.pretty_generate( data )
     end
   end
 
@@ -96,30 +107,9 @@ class Page
     data[key]
   end
 
-  ## add convenience (shortcut) accessors / attributes / fields / getters
-
-  ATTRIBUTES.each do |attrib|
-    ## e.g.
-    ##    def background()  data['Introduction']['Background']['text']; end
-    ##    def location()    data['Geography']['Location']['text'];      end
-    ##    etc.
-    if attrib.path.size == 1
-      define_method attrib.name.to_sym do
-        @data.fetch( attrib.category, {} ).
-              fetch( attrib.path[0], {} )['text']
-      end
-    else  ## assume size 2 for now
-      define_method attrib.name.to_sym do
-        @data.fetch( attrib.category, {} ).
-              fetch( attrib.path[0], {} ).
-              fetch( attrib.path[1], {} )['text']
-      end
-    end
-  end
-
 
 private
-  def fetch_page( url )
+  def download_page( url )
     response = Webget.page( url )
 
     ## note: exit on get / fetch error - do NOT continue for now - why? why not?
@@ -128,21 +118,5 @@ private
 
     response.text
   end
-
-
-=begin
-def self.from_url( cc, cn )
-  html_ascii = PageFetcher.new.fetch( cc )
-  self.new( cc, cn, html_ascii )
-end
-
-def self.from_file( cc, cn, opts={} )
-  input_dir = opts[:input_dir] || '.'
-  html_ascii = File.read( "#{input_dir}/#{cc}.html" )    ## fix/todo: use ASCII8BIT/binary reader
-  self.new( cc, cn, html_ascii )
-end
-=end
-
-
 end # class Page
 end # module Factbook

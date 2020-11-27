@@ -1,49 +1,29 @@
-# encoding: utf-8
 
 module Factbook
 
-class Builder     ## todo: change to PageBuilder ???
+class Builder     ## todo: change to HtmlBuilder or PageBuilder ???
   include LogUtils::Logging
 
 
-=begin
-def self.from_cc( cc, opts={} )  ## rename to from_file_for_country() or from_file_for_cc() or something - why?? why not??
-  ## check/todo: rename input_dir to just dir or to include ?
-  ##   (there's no output_dir)?? - why? why not?
-  input_dir = opts[:input_dir] || '.'
-  self.from_file( "#{input_dir}/#{cc}.html" )
-end
-=end
 
-
-def self.from_file( path )
-  html_ascii = File.read( path )    ## fix/todo: use ASCII8BIT/binary reader !!!!!
-  self.from_string( html_ascii )
-end
-
-def self.from_string( html_ascii )   ## note: expects ASCII-7BIT/BINARY encoding
-  self.new( html_ascii )
-end
-
-
-attr_reader :html_ascii,     ## full "original" 1:1 page in "original/ascii8/binary" encoding
-            :html,           ## utf-8 encoded profile
-            :html_debug,     ## html w/ mapping markers - rename to html_markers - why? why not?
+attr_reader :html_original,    ## full "original" 1:1 page
+            :html,             ## cut-out and sanitized profile
+            :html_debug,      ## html w/ mapping markers - rename to html_markers - why? why not?
             :info,            ## page info incl. country_name, region_name, last_updated etc.
             :errors,          ## encoding erros etc.
             :sects
 
 
-def initialize( html_ascii )
-  @html_ascii = html_ascii
+def initialize( html_original )
+  @html_original = html_original
 
-  ## todo/fix: use/assume windows 12xx?? encoding - change encoding to utf-8  (from binary/ascii8bit)
-  @html, @info, @errors = Sanitizer.new.sanitize( @html_ascii )
+  @html, @info, @errors = Sanitizer.new.sanitize( @html_original )
 
 
   html_sects =  if @html.empty?
                    ## note: support "empty" pages - old format waiting for update!!!
                    ##    cannot parse for now
+                   @html_debug = ''
                    []  ## return empty (no) sections for now - sorry (its just one page with code cc anyway!!)
                 else
                    @html_debug = map_sects( @html )
@@ -55,7 +35,7 @@ def initialize( html_ascii )
   pp html_sects
 
   ## debug
-  ## File.open( 'tmp/br.debug.html', 'w:utf-8') { |f| f.write( @html_debug ) }
+  ##   File.open( 'tmp/br.debug.html', 'w:utf-8') { |f| f.write( @html_debug ) }
 
 
   @sects = []
@@ -101,25 +81,22 @@ def initialize( html_ascii )
       ## warn/fix:  no section title found
     end
   end
-
-  self  ## return self -- needed?? default (standard) anyway?? check and remove
 end
 
 
+H2_RE = /<h2>
+          \s*
+         (.+?)  ## note: use non-greedy; do NOT allow tags inside for now
+          \s*
+         <\/h2>
+        /xim
 
 def map_sects( html )
    ## convert section titles to "unified" marker
    ## e.g.
    ##   <h2>Introduction</h2>
 
-  title_regex= /<h2>
-                 \s*
-                   (.+?)  ## note: use non-greedy; do NOT allow tags inside for now
-                 \s*
-                <\/h2>
-              /xim
-
-  html = html.gsub( title_regex ) do |m|
+  html = html.gsub( H2_RE ) do |m|
      puts "** found section >#{$1}<:"
      puts "   >|#{m}|<"
 
@@ -129,19 +106,19 @@ def map_sects( html )
 end
 
 
+H3_RE = /<h3>
+          \s*
+         (.+?)                ## note: use non-greedy; allows tags inside - why? why not
+          \s*
+        <\/h3>
+       /xim
+
 def map_subsects( html )
    ## convert subsection titles to "unified" marker
    ## e.g.
    ##  <h3>Disputes - international:</h3>
 
-  title_regex= /<h3>
-                  \s*
-                   (.+?)                ## note: use non-greedy; allows tags inside - why? why not
-                  \s*
-                 <\/h3>
-               /xim
-
-  html = html.gsub( title_regex ) do |m|
+  html = html.gsub( H3_RE ) do |m|
      puts "** found subsection >#{$1}<:"
      puts "   >|#{m}|<"
 
@@ -163,9 +140,8 @@ def split_sects( html )
   ## note: "wrap" regex in a capture group (just one)
   ##   String#split will include all catpure groups in the result array
 
-  section_regex= /(@SECTION{.+?})/  ## note: use non-greedy -- check: need to escape {} ??
-
-  chunks = html.split( section_regex )
+  ## note: use non-greedy -- check: need to escape {} ??
+  chunks = html.split( /(@SECTION{.+?})/ )
 
   ## check if first item is a section or (html) prolog
   #   if prolog (remove)
@@ -194,9 +170,8 @@ def split_subsects( html )
   ## note: "wrap" regex in a capture group (just one)
   ##   String#split will include all catpure groups in the result array
 
-  subsection_regex= /(@SUBSECTION{.+?})/  ## note: use non-greedy -- check: need to escape {} ??
-
-  chunks = html.split( subsection_regex )
+  ## note: use non-greedy -- check: need to escape {} ??
+  chunks = html.split( /(@SUBSECTION{.+?})/ )
 
   ## check if first item is a section or (html) prolog
   #   if prolog (remove)

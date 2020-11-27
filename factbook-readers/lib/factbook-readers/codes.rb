@@ -16,7 +16,7 @@ class Codes
                      :region,    ## e.g. Europe, Oceans, etc.
                     )
 
-  def self.from_csv( path )
+  def self.read_csv( path )
     ###
     #  note:
     #   if you use quotes - NO leading spaces allowed e.g.
@@ -46,8 +46,9 @@ class Codes
       recs << rec
     end
 
-    self.new( recs )
+    new( recs )
   end
+
 
   def initialize( codes )
     @codes = codes

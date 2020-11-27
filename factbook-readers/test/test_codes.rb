@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 ###
 #  to run use
 #     ruby -I ./lib -I ./test test/test_codes.rb
@@ -12,9 +10,7 @@ class TestCodes < MiniTest::Test
 
 
   def test_codes
-    
-    assert_equal 261, Factbook::CODES.size
-    assert_equal 261, Factbook.codes.size 
+    assert_equal 261, Factbook.codes.size
     assert_equal 261, Factbook.codes.to_a.size
 
 
@@ -27,7 +23,7 @@ class TestCodes < MiniTest::Test
 
     assert_equal   8, Factbook.codes.dependencies_us.size
 
-    
+
     assert_equal  55, Factbook.codes.europe.size
     assert_equal   9, Factbook.codes.south_asia.size
     assert_equal   6, Factbook.codes.central_asia.size
@@ -43,11 +39,11 @@ class TestCodes < MiniTest::Test
     assert_equal   1, Factbook.codes.region('World').size
 
     assert_equal  45, Factbook.codes.countries.europe.size
-    
+
     assert_equal  Factbook.codes.category('Oceans').size, Factbook.codes.region('Oceans').size
     assert_equal  Factbook.codes.category('World').size,  Factbook.codes.region('World').size
 
-    
+
     assert_equal 261, Factbook.codes.countries.size +
                       Factbook.codes.others.size +
                       Factbook.codes.dependencies.size +
@@ -68,7 +64,7 @@ class TestCodes < MiniTest::Test
                       Factbook.codes.antartica.size +
                       Factbook.codes.region('Oceans').size +
                       Factbook.codes.region('World').size
-                    
+
   end
 
 end # class TestCodes

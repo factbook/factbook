@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 ###
 #  to run use
 #     ruby -I ./lib -I ./test test/test_page.rb
@@ -22,14 +20,14 @@ class TestPage < MiniTest::Test
 #      [ 'ls', 9  ],
 #      [ 'vt', 8  ],
       ]
-    
+
     pages.each do |rec|
         code       = rec[0]
         sects_size = rec[1]
 
         html = File.read( "#{Factbook.root}/test/data/src/#{code}.html" )
         page = Factbook::Page.new( code, html: html )
-       
+
         assert_equal sects_size, page.sects.size
     end
   end

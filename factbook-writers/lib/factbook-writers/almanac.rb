@@ -1,12 +1,11 @@
-# encoding: utf-8
 
 module Factbook
 
 
 class Almanac
 
-  ## convenience helper ("factory") 
-  def self.from_json( codes, json_dir: '.' )
+  ## convenience helper ("factory")
+  def self.read_json( codes, json_dir: '.' )
     pages = JsonPageReader.new( json_dir ).read_pages( codes )
     self.new( pages )
   end

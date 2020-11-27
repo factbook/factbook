@@ -1,23 +1,12 @@
-# encoding: utf-8
 
 module Factbook
 
 ######
 # json builder -- lets us rebuild a page from "dumped" json (instead of parsing html page)
 
-class JsonBuilder    
+class JsonBuilder
   include LogUtils::Logging
   include NormalizeHelper    ##  e.g. normalize_category
-
-
-def self.from_file( path )
-  text = File.read( path )     ## fix: use File.read_utf8  from textutils
-  self.from_string( text )
-end
-
-def self.from_string( text )
-  self.new( text )
-end
 
 
 attr_reader :text,
@@ -29,7 +18,7 @@ attr_reader :text,
 
 def initialize( text )
   @text = text
-    
+
   @json = JSON.parse( text )
 
   @info   = nil   ## fix/todo: sorry - for now no page info (use header in json - why? why not??)
@@ -40,16 +29,16 @@ def initialize( text )
   @json.each do |k1,v1|
     sect_title    = k1
     sect_subsects = v1
-    
+
     sect = Sect.new
     sect.title = sect_title
-    
+
     ## get subsections
     subsects = []
     sect_subsects.each do |k2,v2|
       subsect_title = k2
       subsect_data  = v2
-      
+
       subsect = Subsect.new
       subsect.title = subsect_title
 
@@ -61,13 +50,13 @@ def initialize( text )
           new_subsect_data[ normalize_category(k3) ] = v3
         end
         subsect_data = new_subsect_data
-      end  
- 
+      end
+
       subsect.data  = subsect_data
-      
+
       subsects << subsect
     end
-    
+
     sect.subsects = subsects
     @sects << sect
   end

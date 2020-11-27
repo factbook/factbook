@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 ###
 #  to run use
 #     ruby -I ./lib -I ./test test/test_sanitizer.rb
@@ -18,10 +16,9 @@ class TestSanitizer < MiniTest::Test
     ## ['au'].each do |cnty|
     ['au','ag','be'].each do |cnty|
 
-      ## use/fix: ASCII-8BIT (e.g.keep as is) -???
-      html_ascii = File.read( "#{Factbook.root}/test/data/src/#{cnty}.html" )     ## fix/todo: use ASCII8BIT/binary reader ??
+      html_original = File.read( "#{Factbook.root}/test/data/src/#{cnty}.html", 'r:utf-8' ) { |f| r.read }
 
-      html, info, errors = Factbook::Sanitizer.new.sanitize( html_ascii )
+      html, info, errors = Factbook::Sanitizer.new.sanitize( html_original )
 
       File.open( "./tmp/#{cnty}.profile.html", 'w' ) do |f|
         f.write "** info:\n"

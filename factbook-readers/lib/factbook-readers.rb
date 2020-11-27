@@ -17,22 +17,21 @@ require 'factbook-readers/version' # let it always go first
 
 require 'factbook-readers/codes'
 require 'factbook-readers/comparisons'
-require 'factbook-readers/attributes'
 
+
+## note: make codes, comparisons available
 module Factbook
-
-  ##  auto-load builtin codes, comparisons, attributes, etc.
-  CODES       = Codes.from_csv( "#{Factbook::Module::Readers.root}/data/codes.csv" )
-  COMPARISONS = Comparisons.from_csv( "#{Factbook::Module::Readers.root}/data/comparisons.csv" )
-  ATTRIBUTES  = Attributes.from_yaml( "#{Factbook::Module::Readers.root}/data/attributes.yml" )
-
-  def self.codes()       CODES; end
-  def self.comparisons() COMPARISONS; end
-  def self.attributes()  ATTRIBUTES; end
-
+  ##  note: load on demand only builtin codes, comparisons, etc.
+  ##          for now
+  def self.codes
+    @@codes       ||= Codes.read_csv( "#{Factbook::Module::Readers.root}/data/codes.csv" );
+  end
+  def self.comparisons
+    @@comparisons ||= Comparisons.read_csv( "#{Factbook::Module::Readers.root}/data/comparisons.csv" )
+  end
 end # module Factbook
 
-## note: make codes, comparisons, attributes available
+
 
 require 'factbook-readers/utils'
 require 'factbook-readers/utils_info'

@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 ###
 #  to run use
 #     ruby -I ./lib -I ./test test/test_item_builder.rb
@@ -15,10 +13,10 @@ class TestItemBuilder < MiniTest::Test
 html =<<EOS
 <div class=category_data>Central Europe, north of Italy and Slovenia</div>
 EOS
-   
+
     b = Factbook::ItemBuilder.new( html, 'Location' )
     b.read
-    
+
     assert true    ## assume everthing ok
   end
 
@@ -31,7 +29,7 @@ EOS
 
     b = Factbook::ItemBuilder.new( html, 'Area' )
     b.read
-    
+
     assert true    ## assume everthing ok
   end
 
@@ -45,7 +43,7 @@ EOS
 
     b = Factbook::ItemBuilder.new( html, 'Land use' )
     b.read
-    
+
     assert true    ## assume everthing ok
   end
 
@@ -57,7 +55,7 @@ EOS
 
     b = Factbook::ItemBuilder.new( html, 'Contraceptive Prevalence Rate' )
     b.read
-    
+
     assert true    ## assume everthing ok
   end
 
@@ -75,7 +73,7 @@ EOS
 
     b = Factbook::ItemBuilder.new( html, 'Drinking Water Source' )
     b.read
-    
+
     assert true    ## assume everthing ok
   end
 
@@ -91,7 +89,7 @@ EOS
 
     b = Factbook::ItemBuilder.new( html, 'Political pressure groups and leaders' )
     b.read
-    
+
     assert true    ## assume everthing ok
   end
 

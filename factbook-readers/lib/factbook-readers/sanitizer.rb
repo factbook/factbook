@@ -64,12 +64,6 @@ def find_country_profile( html )
   end
 
 
-  ## note: replace all non-breaking spaces with spaces for now
-  ##  see fr (france) in political parties section for example
-  html = html.gsub( "&nbsp;", ' ' )
-
-
-
   doc = Nokogiri::HTML( html )
 
   ul = doc.css( 'ul.expandcollapse' )[0]
@@ -77,30 +71,8 @@ def find_country_profile( html )
   puts ul.to_html[0..100]
 
 
-
-  ## note: special case cc uses h2 instead of div block
-  ##  <h2 class="question cam_med" sectiontitle="Introduction" ccode="cc"
-  ##         style="border-bottom: 2px solid white; cursor: pointer;">
-  ##         Introduction ::  <span class="region">CURACAO </span>
-  ##   </h2>
-  ##   is old format !!!!
-  ##   cc - CURACAO
-  ##  http headers says - last-modified: Wed, 14 Nov 2018 14:09:28 GMT
-  ##   page says - PAGE LAST UPDATED ON MARCH 14, 2018
-  ##    wait for new version to be generated / pushed!!!
-
-  ## check for old format if h2 are present
-  h2s = ul.css( 'h2' )
-  if h2s.size > 0
-    puts "  !! WARN: found #{h2s.size} h2(s) - assume old format - sorry - must wait for update!!!"
-    ## return empty html string - why? why not?
-    return  ''
-  end
-
-
   ###
   ## sanitize
-
   ## remove link items
   ##   assume two <li>s are a section
 
@@ -204,12 +176,12 @@ end
 #  <span class="subfield-date" aria-label="Date of information: 2018">(2018)</span>
 #
 #  remove aria labels
-ARIA_ATTR_REGEX = /\s*
+ARIA_ATTR_RE = /\s*
                      aria-label=('|").+?\1     ## note: use non-greedy match e.g. .+?
                   /xim    ## do NOT allow multi-line - why? why not?
 
 ## find double breaks e.g. <br><br>
-BR_BR_REGEX = /(<br> \s* <br>)
+BR_BR_RE = /(<br> \s* <br>)
               /xim   ## do NOT allow multi-line - why? why not?
 
 
@@ -252,6 +224,12 @@ def sanitize_data( el, title: )
   ## note: keep container div!! just replace inner html!!!
   ##  note: right strip all trailing spaces/newlines for now
   ##        plus add back a single one for pretty printing
+
+  ## note: replace all non-breaking spaces with spaces for now
+  ##  see fr (france) in political parties section for example
+  ##  todo/check/fix:  check if we need to use unicode char!! and NOT html entity
+  inner_html = inner_html.gsub( "&nbsp;", ' ' )
+
   el.inner_html = inner_html.rstrip + "\n"
 
   # finally - convert back to html (string)
@@ -259,14 +237,14 @@ def sanitize_data( el, title: )
 
 
 
-  html = html.gsub( ARIA_ATTR_REGEX ) do |m|
+  html = html.gsub( ARIA_ATTR_RE ) do |m|
     ## do not report / keep silent for now
     ## puts "in >#{title}< remove aria-label attr:"
     ## puts "#{m}"
     ''
   end
 
-  html = html.gsub( BR_BR_REGEX ) do |m|
+  html = html.gsub( BR_BR_RE ) do |m|
     puts "in >#{title}< squish two <br>s into one:"
     puts "#{m}"
     '<br>'
@@ -280,11 +258,12 @@ def sanitize_data( el, title: )
 
   ## cleanup/remove ++   before subfield e.g.
   ##  of: ++   => of:    or such
+  ##
+  ##  todo/fix: add negative lookahead e.g. not another + to be more specific!!
   html = html.gsub( %r{
                        (?<=([a-z]:)|(:</span>))  # note: use zero-length positive lookbehind
                           \s+
-                          \+{2}
-                          \s+}xim ) do |m|
+                          \+{2}}xim ) do |m|
      puts "in >#{title} remove ++ before <field>: marker:"
      puts "#{m}"
     ' '

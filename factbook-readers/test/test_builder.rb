@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 ###
 #  to run use
 #     ruby -I ./lib -I ./test test/test_builder.rb
@@ -8,14 +6,11 @@
 require 'helper'
 
 
-##
-## use/fix: ASCII-8BIT (e.g.keep as is)
-
 
 class TestBuilder < MiniTest::Test
 
   def test_build
-    
+
     ['au','be'].each do |code|
        ## use/fix: ASCII-8BIT (e.g.keep as is) -???
        ## fix/todo: use ASCII8BIT/binary reader ??

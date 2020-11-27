@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 ###
 #  to run use
 #     ruby -I ./lib -I ./test test/test_json.rb
@@ -35,7 +33,7 @@ class TestJson < MiniTest::Test
 
        ### save to json
        puts "saving a copy to #{code}.json for debugging"
-       File.open( "tmp/#{code}.json", 'w' ) do |f|
+       File.open( "tmp/#{code}.json", 'w:utf-8' ) do |f|
          f.write JSON.pretty_generate( h )
          ## f.write page.to_json
       end

@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 ###
 #  to run use
 #     ruby -I ./lib -I ./test test/test_counter.rb
@@ -16,16 +14,16 @@ class TestCounter < MiniTest::Test
 
   def test_counter
     c = Factbook::Counter.new
- 
+
     codes = %w(au be)
     codes.each do |code|
       c.count( read_test_page( code ))  # use builtin test page (do NOT fetch via internet)
     end
-    
+
     h = c.data
     pp h
-    
-    assert true    ## assume everything ok if we get here    
+
+    assert true    ## assume everything ok if we get here
   end
 
 end # class TestCounter

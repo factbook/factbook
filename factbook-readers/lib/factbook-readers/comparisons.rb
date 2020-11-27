@@ -9,7 +9,7 @@ class Comparisons
                            :name,
                           )
 
-  def self.from_csv( path )
+  def self.read_csv( path )
 
     rows = CsvHash.read( path )
 
@@ -27,7 +27,7 @@ class Comparisons
       recs << rec
     end
 
-    self.new( recs )
+    new( recs )
   end
 
   def initialize( comps )
