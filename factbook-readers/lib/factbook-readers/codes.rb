@@ -1,5 +1,3 @@
-# encoding: utf-8
-
 ##
 # note:
 #   the factbook category/region for world is other entities (on FAQ) and oceans in page

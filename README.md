@@ -358,12 +358,12 @@ United States (14):
 
 
 
-## Ready-To-Use Public Domain Factbook Datasets
+## Ready-To-Use Public Domain (Free) Factbook Datasets
 
 [factbook/factbook.json](https://github.com/factbook/factbook.json) - open (public domain)
-factbook country profiles in JSON for all the world's countries (using internet domain names
-for country codes e.g. Austria is `at.json` not `au.json`, Germany is `de.json` not `gm.json` and so on)
-
+factbook country profiles in JSON for all the world's countries (note: using the original
+/ official two-letter GEC (formerly FIPS) codes and NOT the ISO codes - you might be used to for country codes e.g. Austria is `au.json` and NOT `at.json`,
+Germany is `gm.json` and NOT `de.json` so on)
 
 
 

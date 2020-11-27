@@ -8,6 +8,158 @@
 
 
 
+## Add 4(?) attachment (blocks) too?
+
+- Audio -   in ??  / National anthem
+- PDF - total population growth rate v. urban population growth rate in  ?? / ??
+- JPG - population pyramid in ?? / ??
+- JPG - Area comparison map   in ?? / ??
+
+<!-- break -->
+
+Audio   in  ??  / National anthem
+
+```
+      <div class="category_data attachment">
+          <audio type="audio/mp3"
+                  controls="controls"
+                  alt="National Anthem audio file for Austria"
+                  src="../attachments/audios/original/AU.mp3?1538604749">
+         </audio>
+      </div>
+```
+
+PDF - total population growth rate v. urban population growth rate
+in  ?? / ??
+
+```
+    <div class="category_data attachment">
+          <span class="subfield-name">
+            total population growth rate v. urban population growth rate, 2000-2030:
+         </span>
+
+          <a style="display: inline-block; margin-left: 5px; vertical-align: middle" target="_blank" aria-hidden="true"
+            href="../attachments/docs/original/urban_AU.pdf?1602698564">
+             <img style="height:22px;opacity:.5" src="../images/adobe.png" alt="Adobe" />
+         </a>
+          <a style="display: inline-block; margin-left: 5px; vertical-align: middle" target="_blank" class="sr-only"
+            href="../attachments/docs/original/urban_AU.pdf?1602698564">PDF
+         </a>
+      </div>
+```
+
+
+JPG - population pyramid in ?? / ??
+
+```
+      <div class="category_data attachment">
+          <span class="subfield-name">population pyramid:</span>
+          <a data-toggle="modal" href="#imageModal5161" class='category_image_link'>
+            <img alt="population pyramid" src="../attachments/images/thumb/AU_popgraph2020.JPG?1584126705" />
+          </a>
+          <div class="modal fade cntryModal" id="imageModal5161" role="dialog"
+     aria-label='modal dialog used to display image(s) associated with a field'
+     aria-labelledby='imageModalLabel'>
+  <div class="wfb-modal-dialog">
+    <div class="modal-content">
+      <div class="wfb-modal-header">
+	<span class="modal-title wfb-title">The World Factbook</span>
+        <span class='sr-only' id='imageModalLabel'>Field Image Modal</span>
+	<span style="float: right; margin-top: -4px;">
+	  <button type="button" class="close" title="close" data-dismiss="modal">×</button>
+	</span>
+      </div>
+      <div class="wfb-modal-body">
+	<div class="region1 geos_title eur_dark">
+   	    Europe <strong>::</strong>
+	  <span class="region_name1 countryName">Austria</span>
+          <span class="btn-print">
+            <a href="../attachments/images/original/AU_popgraph2020.JPG?1584126705">
+              <i class="fa fa-print" aria-hidden='true'></i>
+              <span class='sr-only'>Print</span>
+            </a>
+          </span>
+	</div>
+	<div class="eur_bkgrnd">
+	  <div class="modalImageBox">
+	    <img class="eur_lgflagborder"
+		 src="../attachments/images/original/AU_popgraph2020.JPG?1584126705" alt="population pyramid">
+	  </div>
+	  <div class="modalImageDesc">
+	    <div class="header"
+		 style="background-image: url(../images/eur_medium.jpg)">
+	      Image Description
+	    </div>
+	    <div class="photogallery_captiontext">
+	      This is the population pyramid for Austria. A population pyramid illustrates the age and sex structure of a country's population and may provide insights about political and social stability, as well as economic development. The population is distributed along the horizontal axis, with males shown on the left and females on the right. The male and female populations are broken down into 5-year age groups represented as horizontal bars along the vertical axis, with the youngest age groups at the bottom and the oldest at the top. The shape of the population pyramid gradually evolves over time based on fertility, mortality, and international migration trends. <br/><br/>For additional information, please see the entry for Population pyramid on the Definitions and Notes page under the References tab.
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+
+JPG - Area comparison map   in ?? / ??
+
+```
+      <div class="category_data attachment">
+          <span class="subfield-name">Area comparison map:</span>
+          <a data-toggle="modal" href="#imageModal3974" class='category_image_link'>
+            <img alt="Area comparison map" src="../attachments/images/thumb/AU_area.jpg?1548765584" />
+          </a>
+          <div class="modal fade cntryModal" id="imageModal3974" role="dialog"
+     aria-label='modal dialog used to display image(s) associated with a field'
+     aria-labelledby='imageModalLabel'>
+  <div class="wfb-modal-dialog">
+    <div class="modal-content">
+      <div class="wfb-modal-header">
+	<span class="modal-title wfb-title">The World Factbook</span>
+        <span class='sr-only' id='imageModalLabel'>Field Image Modal</span>
+	<span style="float: right; margin-top: -4px;">
+	  <button type="button" class="close" title="close" data-dismiss="modal">×</button>
+	</span>
+      </div>
+      <div class="wfb-modal-body">
+	<div class="region1 geos_title eur_dark">
+   	    Europe <strong>::</strong>
+	  <span class="region_name1 countryName">Austria</span>
+          <span class="btn-print">
+            <a href="../attachments/images/original/AU_area.jpg?1548765584">
+              <i class="fa fa-print" aria-hidden='true'></i>
+              <span class='sr-only'>Print</span>
+            </a>
+          </span>
+	</div>
+	<div class="eur_bkgrnd">
+	  <div class="modalImageBox">
+	    <img class="eur_lgflagborder"
+		 src="../attachments/images/original/AU_area.jpg?1548765584" alt="Area comparison map">
+	  </div>
+	  <div class="modalImageDesc">
+	    <div class="header"
+		 style="background-image: url(../images/eur_medium.jpg)">
+	      Image Description
+	    </div>
+	    <div class="photogallery_captiontext">
+	      <p>about the size of South Carolina; slightly more than two-thirds the size of Pennsylvania</p>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+## More
+
 
 in france (fr) check with `++` is inside of strong tab and not before/outside ???
 

@@ -1,4 +1,3 @@
-# encoding: utf-8
 
 module Factbook
 
@@ -45,7 +44,7 @@ def read
   other_children   = []
 
   doc_children.each do |div|
-     if div['class'].index( 'grouped_subfield' )
+     if div['class'] && div['class'].index( 'grouped_subfield' )
         grouped_children << div
      else
         other_children << div
@@ -79,7 +78,8 @@ def read
   end
 
 
-  doc_children.each_with_index do |div,i|
+doc_children.each_with_index do |div,i|
+  if div['class'] && div['class'].index( 'category_data' )
     if div['class'].index( 'note' )
       text = squish( div.text.strip )
       puts "category_data: >#{text}<"
@@ -92,7 +92,8 @@ def read
         exit 1
       end
 
-      data['note'] = { 'text' => text }
+      ## note: add note directly (that is, W/O extra hash and text node/key)
+      data['note'] = text
     elsif div['class'].index( 'historic' )
       ## add all historic together into one for now
         text = squish( div.text.strip )
@@ -166,7 +167,22 @@ def read
       puts "category_data key >#{key}<: >#{text}<"
       data[ key ] = { 'text' => text }
     end
+  else
+      text = squish( div.text.strip )
+      if text =~ /country\s+
+                  comparison\s+
+                  to\s+
+                  the\s+
+                  world:\s+
+                  ([0-9]+)/xim
+        data[ 'country comparison to the world' ] = $1.to_i
+      else
+        puts "!! ERROR: div (W/O category_data class):"
+        puts div.to_html
+        exit 1
+      end
   end
+end
 
 
   pp data

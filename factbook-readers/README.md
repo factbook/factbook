@@ -33,20 +33,18 @@ resulting in:
     {"total"=>{"text"=>"8,515,770 sq km"},
      "land"=>{"text"=>"8,358,140 sq km"},
      "water"=>{"text"=>"157,630 sq km"},
-     "note"=>
-      {"text"=>
-        "includes Arquipelago de Fernando de Noronha, Atol das Rocas, ..."}},
+     "note"=> "includes Arquipelago de Fernando de Noronha, Atol das Rocas, ..."},
    "Area - comparative"=>
     {"text"=>"slightly smaller than the US"},
    "Land boundaries"=>
     {"total"=>{"text"=>"16,145 km"},
-     "border countries (10)"=>
+     "border countries"=>
       {"text"=>
         "Argentina 1,263 km, Bolivia 3,403 km, Colombia 1,790 km,
         French Guiana 649 km, Guyana 1,308 km, Paraguay 1,371 km, Peru 2,659 km,
         Suriname 515 km, Uruguay 1,050 km, Venezuela 2,137 km"}},
    "Climate"=>{"text"=>"mostly tropical, but temperate in south"},
-   "Elevation extremes"=>
+   "Elevation"=>
     {"lowest point"=>{"text"=>"Atlantic Ocean 0 m"},
      "highest point"=>{"text"=>"Pico da Neblina 2,994 m"}},
    "Natural resources"=>
@@ -66,7 +64,7 @@ pp page['Geography']['Area']['land']['text']
 # => "8,358,140 sq km"
 pp page['Geography']['Area']['water']['text']
 # => "157,630 sq km"
-pp page['Geography']['Area']['note']['text']
+pp page['Geography']['Area']['note']
 # => "includes Arquipelago de Fernando de Noronha, Atol das Rocas, ..."
 pp page['Geography']['Area - comparative']['text']
 # => "slightly smaller than the US"
@@ -74,9 +72,9 @@ pp page['Geography']['Climate']['text']
 # => "mostly tropical, but temperate in south"
 pp page['Geography']['Terrain']['text']
 # => "mostly flat to rolling lowlands in north; ..."
-pp page['Geography']['Elevation extremes']['lowest point']['text']
+pp page['Geography']['Elevation']['lowest point']['text']
 # => "Atlantic Ocean 0 m"
-pp page['Geography']['Elevation extremes']['highest point']['text']
+pp page['Geography']['Elevation']['highest point']['text']
 # => "Pico da Neblina 2,994 m"
 pp page['Geography']['Natural resources']['text']
 # => "bauxite, gold, iron ore, manganese, nickel, phosphates, ..."

@@ -1,4 +1,3 @@
-# encoding: utf-8
 
 module Factbook
 
@@ -12,7 +11,7 @@ def read_page( code )
   path = "#{@json_dir}/#{region_to_slug(code.region)}/#{code.code}.json"
 
   puts "reading #{code.code} #{code.name} (#{code.region}) [#{path}]..."
-  json = File.read( path )
+  json = File.read( path, 'r:utf-8' ) { |f| f.read }
 
 ## todo/fix/quick hack: for now until we have a proper header/meta/info section in json
 #    add some page info from code struct
@@ -21,7 +20,7 @@ def read_page( code )
   info.country_code = code.code
   info.country_name = code.name
   info.region_name  = code.region
-  
+
   page = Page.new( code.code, json: json, info: info )
   page
 end
@@ -31,8 +30,8 @@ def read_pages( codes, limit: nil )
   i=0
   codes.each do |code|
     next if limit && i > limit   ## for debugging just process first x entries
-    
-    pages << read_page( code )  
+
+    pages << read_page( code )
   end
   pages
 end

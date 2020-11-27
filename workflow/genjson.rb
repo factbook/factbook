@@ -32,9 +32,7 @@ def gen_json
               end
 
   ## for debugging select some codes
-  # codes = Factbook.codes.select {|code| ['xx',
-  #                                       'au'
-  #                                      ].include?(code.code) }
+  ## codes = Factbook.codes.select {|code| ['us','au'].include?(code.code) }
 
   codes = Factbook.codes
 

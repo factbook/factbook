@@ -1,6 +1,5 @@
-# encoding: utf-8
 
-module Factbook  
+module Factbook
   module NormalizeHelper
 
 
@@ -17,7 +16,7 @@ def normalize_category( text )
 
   ##   typos e.g ntoe => use note
   text = 'note'                         if text == 'ntoe'
-  text = 'investment in fixed capital'  if text == 'investment if fixed capital'  
+  text = 'investment in fixed capital'  if text == 'investment if fixed capital'
 
   ##  downcase
   text = 'lowest point'    if text == 'Lowest point'
@@ -34,7 +33,7 @@ def normalize_category( text )
 
   ##    border countries (8):   -- remove (x) counter
   text = 'border countries'   if text.start_with?( 'border countries')
-    
+
   text
 end
 

@@ -1,6 +1,5 @@
 # Notes
 
-
 ## Country Code Changes!!!
 
 in 2018 / 2019 (?) Curacao changed the country code from `cc` to `uc`

@@ -203,7 +203,19 @@ def find_country_profile( html )
           end
          else
             if catdiv.to_html.index( 'country comparison to the world' )
-              ## silently skip for now country comparision
+              ## simplify/unlinkify country comparision
+              ## <div>
+              ##  <span class='category'>country comparison to the world:</span>
+              ##  <span class='category_data'>
+              ##    <a href="../fields/335rank.html#AU">97</a>
+              ##  </span>
+              ## </div>
+              ##  e.g. to =>
+              ##  <div>
+              ##    country comparison to the world: 97
+              ##  </div>
+              html << "<div>\n  #{squish( catdiv.text.strip )}\n</div>"
+              html << "\n"
             else
               puts "!! ERROR: div (W/O category_data class) in >#{subsection_title}<:"
               puts catdiv.to_html
@@ -329,6 +341,9 @@ def sanitize_data( el, title: )
   html
 end
 
+def squish( str )
+  str.gsub( /[ \t\n\r]{2,}/, ' ' )  ## replace multi-spaces (incl. newlines with once space)
+end
 
 
 end # class Sanitizer
