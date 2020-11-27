@@ -7,6 +7,11 @@
 * forum :: [groups.google.com/group/openmundi](https://groups.google.com/group/openmundi)
 
 
+## What's the World Factbook?
+
+See [factbook/factbook.json »](https://github.com/factbook/factbook.json)
+
+
 
 ## Usage
 
@@ -166,6 +171,15 @@ assert_equal  45, Factbook.codes.countries.europe.size
 
 See [`data/codes.csv`](data/codes.csv) for the built-in listing of all codes with categories and regions.
 
+
+
+
+## Ready-To-Use Public Domain (Free) Factbook Datasets
+
+[factbook/factbook.json](https://github.com/factbook/factbook.json) - open (public domain)
+factbook country profiles in JSON for all the world's countries (note: using the original
+/ official two-letter GEC (formerly FIPS) codes and NOT the ISO codes - you might be used to for country codes e.g. Austria is `au.json` and NOT `at.json`,
+Germany is `gm.json` and NOT `de.json` so on)
 
 
 

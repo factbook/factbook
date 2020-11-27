@@ -1,0 +1,29 @@
+require 'hoe'
+
+Hoe.spec 'factbook' do
+
+  ## note: add version inline for now
+  self.version = '2.0.1'
+
+  self.summary = "factbook - umbrella - all together incl. factbook readers, writers 'n' importers"
+  self.description = summary
+
+  self.urls = { home: 'https://github.com/factbook/factbook' }
+
+  self.author = 'Gerald Bauer'
+  self.email  = 'openmundi@googlegroups.com'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.extra_deps = [
+    ['factbook-readers' ],
+  ]
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+   required_ruby_version: '>= 2.2.2'
+  }
+end
