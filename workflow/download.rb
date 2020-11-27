@@ -16,9 +16,9 @@ Webget.config.sleep = 1
 def download
 
   ## for debugging select some codes
-  codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
+  ## codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
 
-  # codes = Factbook.codes
+  codes = Factbook.codes
 
   i = 0
   codes.each do |code|

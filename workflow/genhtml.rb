@@ -23,9 +23,9 @@ def gen_html
 
 
   ## for debugging select some codes
-  codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
+  ## codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
 
-  # codes = Factbook.codes
+  codes = Factbook.codes
 
   i = 0
   codes.each do |code|
@@ -82,7 +82,8 @@ EOS
 
 
     puts "  saving a copy to >#{path}<..."
-    File.open( path, 'w:utf-8' ) do |f|
+    ## note: (auto-)convert to unix newlines only => e.g. universal (e.g. gsub( "\r\n", "\n" ))
+    File.open( path, 'w:utf-8', :newline => :universal ) do |f|
       f.write( header )
       f.write( html )
     end

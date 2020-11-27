@@ -114,18 +114,64 @@ def find_country_profile( html )
                                       }
     puts " #{li_children.size} div(s) in >#{section_title}<:"
 
+
+    ## check special case in world  Geographic overview:
+#    <div class="category oce_light" style="padding-left:5px;"
+#       id="field-anchor-geography-geographic-overview">
+#           Geographic overview:
+#       <span class="field-listing-link">
+#            <a href="../fields/275.html#XX">
+#              <img alt="Geographic overview field listing"
+#                   title="Geographic overview field listing"
+#                   src="../images/field_listing.gif" /></a>
+#         </span>
+#</div>
+# vs regular
+#
+# <div class="category oce_light" style="padding-left:5px;"
+#       id="field-anchor-geography-area-comparative">
+#      <span class="btn-tooltip definition" role="tooltip" aria-hidden='true'>
+ #       <a aria-label="Use this link to access a description of the Area - comparative field"
+ #            href="../docs/notesanddefs.html#280">
+ #            Area - comparative
+ #         </a>:
+ #       <span class="tooltip-content">
+ #           This entry provides an area comparison based on total area equivalents. Most entities are compared with the entire US or one of the 50 states based on area measurements (1990 revised) provided by the US Bureau of the Census. The smaller entities are compared with Washington, DC (178 sq km, 69 sq mi) or The Mall in Washington, DC (0.59 sq km, 0.23 sq mi, 146 acres).
+ #       </span>
+ #     </span>
+  #    <span class="field-listing-link">
+  #        <a href="../fields/280.html#XX"><img alt="Area - comparative field listing" title="Area - comparative field listing" src="../images/field_listing.gif" /></a>
+  #    </span>
+  # </div>
+
     li_children.each_slice(2) do |divs|
       div = divs[0]
-      a = div.css('a')[0]
 
-      if a
-        subsection_title = a.text   ## todo/check/rename: use field_name or such - why? why not?
-        html << "\n<h3>#{subsection_title}:</h3>\n"
-      else
-        subsection_title = '???'
-        puts "!! WARN: no anchor found:"
-        puts div.to_html
+      ## try new way - try clean-up / rm first
+      span_tooltip_content = div.at( 'span.tooltip-content' )
+      if span_tooltip_content
+        span_tooltip_content.inner_html = ''
+        span_tooltip_content.replace( '' )  ## check for how to delete/remove - why? why not!!
       end
+
+      span_field_listing_link = div.at( 'span.field-listing-link' )
+      if span_field_listing_link
+        span_field_listing_link.inner_html = ''
+        span_field_listing_link.replace( '' )
+      end
+
+      subsection_title = div.text.strip
+      html << "\n<h3>#{subsection_title}</h3>\n"
+
+      # a = div.css('a')[0]
+      # if a
+      #  subsection_title = a.text   ## todo/check/rename: use field_name or such - why? why not?
+      #  html << "\n<h3>#{subsection_title}:</h3>\n"
+      # else
+      #  subsection_title = '???'
+      #  puts "!! WARN: no anchor found:"
+      #  puts div.to_html
+      # end
 
 
       div = divs[1]
@@ -229,6 +275,9 @@ def sanitize_data( el, title: )
   ##  see fr (france) in political parties section for example
   ##  todo/check/fix:  check if we need to use unicode char!! and NOT html entity
   inner_html = inner_html.gsub( "&nbsp;", ' ' )
+  ## Unicode Character 'NO-BREAK SPACE' (U+00A0)
+  inner_html = inner_html.gsub( "\u00A0", ' ' )  ## use unicode char
+
 
   el.inner_html = inner_html.rstrip + "\n"
 
@@ -272,9 +321,10 @@ def sanitize_data( el, title: )
   #####
   # "unfancy" smart quotes to ascii - why? why not?
   # e.g.
-  # Following Britain’s victory => Following Britain's victory
+  #   Following Britain’s victory => Following Britain's victory
   html = html.tr( "’", "'" )
-
+  #   “full floor” House vote     => "full floor" House vote
+  html = html.tr( "“”", '""' )
 
   html
 end

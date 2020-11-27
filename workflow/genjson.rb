@@ -32,8 +32,11 @@ def gen_json
               end
 
   ## for debugging select some codes
-  codes = Factbook.codes.select {|code| ['us', 'au'].include?(code.code) }
-  # codes = Factbook.codes
+  # codes = Factbook.codes.select {|code| ['xx',
+  #                                       'au'
+  #                                      ].include?(code.code) }
+
+  codes = Factbook.codes
 
   i = 0
   codes.each do |code|
@@ -43,7 +46,7 @@ def gen_json
     url = "https://www.cia.gov/library/publications/the-world-factbook/geos/#{code.code}.html"
 
     html = Webcache.read( url )
-    page = Factbook::Page.new( code.code, html: html )
+    page = Factbook::Page.parse( html )
 
     region_slug = region_to_slug( code.region )
     path = "#{out_root}/#{region_slug}/#{code.code}.json"
@@ -52,9 +55,9 @@ def gen_json
 
 
     puts "Saving #{code.code}- #{code.name} to >#{path}<..."
-    File.open( path, 'w:utf-8' ) do |f|
-      ## note: convert to unix newlines only
-      f.write( JSON.pretty_generate( page.data ).gsub( "\r\n", "\n" ))
+    ## note: (auto-)convert to unix newlines only => e.g. universal (e.g. gsub( "\r\n", "\n" ))
+    File.open( path, 'w:utf-8', :newline => :universal ) do |f|
+      f.write( JSON.pretty_generate( page.data ) )
     end
 
     i += 1
