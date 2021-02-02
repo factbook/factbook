@@ -1,5 +1,20 @@
 # JSON Format in 2020
 
+Marshall Brady writes:
+
+Any reason you don't use the json data already available on the site? 
+
+<https://www.cia.gov/the-world-factbook/geos/ag.json>
+
+Before the site changed, you could put .json on any of the pages to get the json version of the page.
+
+It looks like you can still use these links too.
+
+<https://www.cia.gov/the-world-factbook/fields/279.json>,
+<https://www.cia.gov/the-world-factbook/fields/279rank.json>
+
+---
+
 before big bang reorg using "old" page scraper to reconstruct structured data
 
 
