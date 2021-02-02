@@ -1,0 +1,1020 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "France today is one of the most modern countries in the world and is a leader among European nations. It plays an influential global role as a permanent member of the United Nations Security Council, NATO, the G-7, the G-20, the EU, and other multilateral organizations. France rejoined NATO's integrated military command structure in 2009, reversing DE GAULLE's 1966 decision to withdraw French forces from NATO. Since 1958, it has constructed a hybrid presidential-parliamentary governing system resistant to the instabilities experienced in earlier, more purely parliamentary administrations. In recent decades, its reconciliation and cooperation with Germany have proved central to the economic integration of Europe, including the introduction of a common currency, the euro, in January 1999. In the early 21st century, five French overseas entities - French Guiana, Guadeloupe, Martinique, Mayotte, and Reunion - became French regions and were made part of France proper."
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "metropolitan France: Western Europe, bordering the Bay of Biscay and English Channel, between Belgium and Spain, southeast of the UK; bordering the Mediterranean Sea, between Italy and Spain; ++ French Guiana: Northern South America, bordering the North Atlantic Ocean, between Brazil and Suriname; ++ Guadeloupe: Caribbean, islands between the Caribbean Sea and the North Atlantic Ocean, southeast of Puerto Rico; ++ Martinique: Caribbean, island between the Caribbean Sea and North Atlantic Ocean, north of Trinidad and Tobago; ++ Mayotte: Southern Indian Ocean, island in the Mozambique Channel, about halfway between northern Madagascar and northern Mozambique; ++ Reunion: Southern Africa, island in the Indian Ocean, east of Madagascar"
+    },
+    "Geographic coordinates": {
+      "text": "metropolitan France: 46 00 N, 2 00 E; ++ French Guiana: 4 00 N, 53 00 W; ++ Guadeloupe: 16 15 N, 61 35 W; ++ Martinique: 14 40 N, 61 00 W; ++ Mayotte: 12 50 S, 45 10 E; ++ Reunion: 21 06 S, 55 36 E"
+    },
+    "Map references": {
+      "text": "metropolitan France: Europe; ++ French Guiana: South America; ++ Guadeloupe: Central America and the Caribbean; ++ Martinique: Central America and the Caribbean; ++ Mayotte: Africa; ++ Reunion: World"
+    },
+    "Area": {
+      "total": {
+        "text": "643,801 sq km ; 551,500 sq km (metropolitan France)"
+      },
+      "land": {
+        "text": "640,427 sq km ; 549,970 sq km (metropolitan France)"
+      },
+      "water": {
+        "text": "3,374 sq km ; 1,530 sq km (metropolitan France)"
+      },
+      "note": "note: the first numbers include the overseas regions of French Guiana, Guadeloupe, Martinique, Mayotte, and Reunion",
+      "country comparison to the world": 44
+    },
+    "Area - comparative": {
+      "text": "slightly more than four times the size of Georgia; slightly less than the size of Texas"
+    },
+    "Land boundaries": {
+      "border countries": {
+        "text": "Andorra 55 km, Belgium 556 km, Germany 418 km, Italy 476 km, Luxembourg 69 km, Monaco 6 km, Spain 646 km, Switzerland 525 km"
+      },
+      "metropolitan France - total": {
+        "text": "2751"
+      },
+      "French Guiana - total": {
+        "text": "1205"
+      }
+    },
+    "Coastline": {
+      "text": "4,853 km",
+      "note": "metropolitan France: 3,427 km"
+    },
+    "Maritime claims": {
+      "territorial sea": {
+        "text": "12 nm"
+      },
+      "exclusive economic zone": {
+        "text": "200 nm (does not apply to the Mediterranean Sea)"
+      },
+      "contiguous zone": {
+        "text": "24 nm"
+      },
+      "continental shelf": {
+        "text": "200-m depth or to the depth of exploitation"
+      }
+    },
+    "Climate": {
+      "text": "metropolitan France: generally cool winters and mild summers, but mild winters and hot summers along the Mediterranean; occasional strong, cold, dry, north-to-northwesterly wind known as the mistral; ++ French Guiana: tropical; hot, humid; little seasonal temperature variation; ++ Guadeloupe and Martinique: subtropical tempered by trade winds; moderately high humidity; rainy season (June to October); vulnerable to devastating cyclones (hurricanes) every eight years on average; ++ Mayotte: tropical; marine; hot, humid, rainy season during northeastern monsoon (November to May); dry season is cooler (May to November); ++ Reunion: tropical, but temperature moderates with elevation; cool and dry (May to November), hot and rainy (November to April)"
+    },
+    "Terrain": {
+      "text": "metropolitan France: mostly flat plains or gently rolling hills in north and west; remainder is mountainous, especially Pyrenees in south, Alps in east; ++ French Guiana: low-lying coastal plains rising to hills and small mountains; ++ Guadeloupe: Basse-Terre is volcanic in origin with interior mountains; Grande-Terre is low limestone formation; most of the seven other islands are volcanic in origin; ++ Martinique: mountainous with indented coastline; dormant volcano; ++ Mayotte: generally undulating, with deep ravines and ancient volcanic peaks; ++ Reunion: mostly rugged and mountainous; fertile lowlands along coast"
+    },
+    "Elevation": {
+      "mean elevation": {
+        "text": "375 m"
+      },
+      "lowest point": {
+        "text": "Rhone River delta -2 m"
+      },
+      "highest point": {
+        "text": "Mont Blanc 4,810"
+      },
+      "note": "note: to assess the possible effects of climate change on the ice and snow cap of Mont Blanc, its surface and peak have been extensively measured in recent years; these new peak measurements have exceeded the traditional height of 4,807 m and have varied between 4,808 m and 4,811 m; the actual rock summit is 4,792 m and is 40 m away from the ice-covered summit"
+    },
+    "Natural resources": {
+      "text": "metropolitan France: coal, iron ore, bauxite, zinc, uranium, antimony, arsenic, potash, feldspar, fluorspar, gypsum, timber, arable land, fish, French Guiana, gold deposits, petroleum, kaolin, niobium, tantalum, clay"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "52.7% (2011 est.)"
+      },
+      "arable land / permanent crops / permanent pasture": {
+        "text": "33.4% (2011 est.) / 1.8% (2011 est.) / 17.5% (2011 est.)"
+      },
+      "forest": {
+        "text": "29.2% (2011 est.)"
+      },
+      "other": {
+        "text": "18.1% (2011 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "26,420 sq km 26,950 sq km (2012)",
+      "note": "metropolitan France: 26,000 sq km (2012)"
+    },
+    "Population distribution": {
+      "text": "much of the population is concentrated in the north and southeast; although there are many urban agglomerations throughout the country, Paris is by far the largest city, with Lyon ranked a distant second"
+    },
+    "Natural hazards": {
+      "text": "metropolitan France: flooding; avalanches; midwinter windstorms; drought; forest fires in south near the Mediterranean; ++ overseas departments: hurricanes (cyclones); flooding; ++ volcanism: Montagne Pelee (1,394 m) on the island of Martinique in the Caribbean is the most active volcano of the Lesser Antilles arc, it last erupted in 1932; a catastrophic eruption in May 1902 destroyed the city of St. Pierre, killing an estimated 30,000 people;; La Soufriere (1,467 m) on the island of Guadeloupe in the Caribbean last erupted from July 1976 to March 1977;; these volcanoes are part of the volcanic island arc of the Lesser Antilles that extends from Saba in the north to Grenada in the south"
+    },
+    "Environment - current issues": {
+      "text": "some forest damage from acid rain; air pollution from industrial and vehicle emissions; water pollution from urban wastes, agricultural runoff"
+    },
+    "Environment - international agreements": {
+      "party to": {
+        "text": "Air Pollution, Air Pollution-Nitrogen Oxides, Air Pollution-Persistent Organic Pollutants, Air Pollution-Sulfur 85, Air Pollution-Sulfur 94, Air Pollution-Volatile Organic Compounds, Antarctic-Environmental Protocol, Antarctic-Marine Living Resources, Antarctic Seals, Antarctic Treaty, Biodiversity, Climate Change, Climate Change-Kyoto Protocol, Desertification, Endangered Species, Hazardous Wastes, Law of the Sea, Marine Dumping, Marine Life Conservation, Ozone Layer Protection, Ship Pollution, Tropical Timber 83, Tropical Timber 94, Wetlands, Whaling"
+      },
+      "signed, but not ratified": {
+        "text": "none of the selected agreements"
+      }
+    },
+    "Geography - note": {
+      "text": "largest West European nation; most major French rivers - the Meuse, Seine, Loire, Charente, Dordogne, and Garonne - flow northward or westward into the Atlantic Ocean, only the Rhone flows southward into the Mediterranean Sea"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "67,848,156 (July 2020 est.)",
+      "note": "note: the above figure is for metropolitan France and five overseas regions; the metropolitan France population is 62,814,233",
+      "country comparison to the world": 21
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Frenchman(men), Frenchwoman(women)"
+      },
+      "adjective": {
+        "text": "French"
+      }
+    },
+    "Ethnic groups": {
+      "text": "Celtic and Latin with Teutonic, Slavic, North African, Indochinese, Basque minorities",
+      "note": "note: overseas departments: black, white, mulatto, East Indian, Chinese, Amerindian"
+    },
+    "Languages": {
+      "text": "French (official) 100%, declining regional dialects and languages (Provencal, Breton, Alsatian, Corsican, Catalan, Basque, Flemish, Occitan, Picard)",
+      "note": "note: overseas departments: French, Creole patois, Mahorian (a Swahili dialect)"
+    },
+    "Religions": {
+      "text": "Christian (overwhelmingly Roman Catholic) 63-66%, Muslim 7-9%, Buddhist 0.5-0.75%, Jewish 0.5-0.75%, other 0.5-1.0%, none 23-28% (2015 est.)",
+      "note": "note: France maintains a tradition of secularism and has not officially collected data on religious affiliation since the 1872 national census, which complicates assessments of France's religious composition; an 1872 law prohibiting state authorities from collecting data on individuals' ethnicity or religious beliefs was reaffirmed by a 1978 law emphasizing the prohibition of the collection or exploitation of personal data revealing an individual's race, ethnicity, or political, philosophical, or religious opinions; a 1905 law codified France's separation of church and state"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "18.36% (male 6,368,767/female 6,085,318)"
+      },
+      "15-24 years": {
+        "text": "11.88% (male 4,122,981/female 3,938,938)"
+      },
+      "25-54 years": {
+        "text": "36.83% (male 12,619,649/female 12,366,120)"
+      },
+      "55-64 years": {
+        "text": "12.47% (male 4,085,564/female 4,376,272)"
+      },
+      "65 years and over": {
+        "text": "20.46% (male 6,029,303/female 7,855,244) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "62.4"
+      },
+      "youth dependency ratio": {
+        "text": "28.7"
+      },
+      "elderly dependency ratio": {
+        "text": "33.7"
+      },
+      "potential support ratio": {
+        "text": "3 (2020 est.)"
+      }
+    },
+    "Median age": {
+      "total": {
+        "text": "41.7 years"
+      },
+      "male": {
+        "text": "40 years"
+      },
+      "female": {
+        "text": "43.4 years (2020 est.)"
+      },
+      "country comparison to the world": 43
+    },
+    "Population growth rate": {
+      "text": "0.35% (2020 est.)",
+      "country comparison to the world": 169
+    },
+    "Birth rate": {
+      "text": "11.9 births/1,000 population (2020 est.)",
+      "country comparison to the world": 165
+    },
+    "Death rate": {
+      "text": "9.6 deaths/1,000 population (2020 est.)",
+      "country comparison to the world": 42
+    },
+    "Net migration rate": {
+      "text": "1.1 migrant(s)/1,000 population (2020 est.)",
+      "country comparison to the world": 59
+    },
+    "Population distribution": {
+      "text": "much of the population is concentrated in the north and southeast; although there are many urban agglomerations throughout the country, Paris is by far the largest city, with Lyon ranked a distant second"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "81% of total population (2020)"
+      },
+      "rate of urbanization": {
+        "text": "0.72% annual rate of change (2015-20 est.)"
+      }
+    },
+    "Major urban areas - population": {
+      "text": "11.017 million PARIS (capital), 1.719 million Lyon, 1.608 million Marseille-Aix-en-Provence, 1.063 million Lille, 1.024 million Toulouse, 969,000 Bordeaux (2020)"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.05 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.05 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "1.05 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "1.02 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "0.93 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.77 male(s)/female"
+      },
+      "total population": {
+        "text": "0.96 male(s)/female (2020 est.)"
+      }
+    },
+    "Mother's mean age at first birth": {
+      "text": "28.7 years (2018 est.)"
+    },
+    "Maternal mortality rate": {
+      "text": "8 deaths/100,000 live births (2017 est.)",
+      "country comparison to the world": 151
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "3.2 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "3.5 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "2.9 deaths/1,000 live births (2020 est.)"
+      },
+      "country comparison to the world": 211
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "82.2 years"
+      },
+      "male": {
+        "text": "79.1 years"
+      },
+      "female": {
+        "text": "85.4 years (2020 est.)"
+      },
+      "country comparison to the world": 19
+    },
+    "Total fertility rate": {
+      "text": "2.06 children born/woman (2020 est.)",
+      "country comparison to the world": 104
+    },
+    "Contraceptive prevalence rate": {
+      "text": "78.4% (2010/11)"
+    },
+    "Drinking water source": {
+      "improved": {
+        "text": "urban: 100% of population / rural: 100% of population / total: 100% of population"
+      },
+      "unimproved": {
+        "text": "urban: 0% of population / rural: 0% of population / total: 0% of population (2017 est.)"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "11.3% (2017)"
+    },
+    "Physicians density": {
+      "text": "3.26 physicians/1,000 population (2017)"
+    },
+    "Hospital bed density": {
+      "text": "6 beds/1,000 population (2017)"
+    },
+    "Sanitation facility access": {
+      "improved": {
+        "text": "urban: 100% of population / rural: 100% of population / total: 100% of population"
+      },
+      "unimproved": {
+        "text": "urban: 0% of population / rural: 0% of population / total: 0% of population (2017 est.)"
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "0.3% (2019 est.)",
+      "country comparison to the world": 86
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "190,000 (2019 est.)",
+      "country comparison to the world": 31
+    },
+    "HIV/AIDS - deaths": {
+      "text": "<500 (2019 est.)"
+    },
+    "Major infectious diseases": {
+      "note": "note: widespread ongoing transmission of a respiratory illness caused by the novel coronavirus (COVID-19) is occurring throughout France; as of 10 November 2020, France has reported a total of 1,714,361 cases of COVID-19 or 26,264 cumulative cases of COVID-19 per 1 million population with 610 cumulative deaths per 1 million population"
+    },
+    "Obesity - adult prevalence rate": {
+      "text": "21.6% (2016)",
+      "country comparison to the world": 87
+    },
+    "Education expenditures": {
+      "text": "5.4% of GDP (2016)",
+      "country comparison to the world": 42
+    },
+    "School life expectancy (primary to tertiary education)": {
+      "total": {
+        "text": "16 years"
+      },
+      "male": {
+        "text": "16 years"
+      },
+      "female": {
+        "text": "16 years (2018)"
+      }
+    },
+    "Unemployment, youth ages 15-24": {
+      "total": {
+        "text": "20.8%"
+      },
+      "male": {
+        "text": "21.4%"
+      },
+      "female": {
+        "text": "20% (2018 est.)"
+      },
+      "country comparison to the world": 61
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "French Republic"
+      },
+      "conventional short form": {
+        "text": "France"
+      },
+      "local long form": {
+        "text": "Republique francaise"
+      },
+      "local short form": {
+        "text": "France"
+      },
+      "etymology": {
+        "text": "name derives from the Latin \"Francia\" meaning \"Land of the Franks\"; the Franks were a group of Germanic tribes located along the middle and lower Rhine River in the 3rd century A.D. who merged with Gallic-Roman populations in succeeding centuries and to whom they passed on their name"
+      }
+    },
+    "Government type": {
+      "text": "semi-presidential republic"
+    },
+    "Capital": {
+      "name": {
+        "text": "Paris"
+      },
+      "geographic coordinates": {
+        "text": "48 52 N, 2 20 E"
+      },
+      "time difference": {
+        "text": "UTC+1 (6 hours ahead of Washington, DC, during Standard Time)"
+      },
+      "daylight saving time": {
+        "text": "+1hr, begins last Sunday in March; ends last Sunday in October"
+      },
+      "note": "note: applies to metropolitan France only; for its overseas regions the time difference is UTC-4 for Guadeloupe and Martinique, UTC-3 for French Guiana, UTC+3 for Mayotte, and UTC+4 for Reunion ++ etymology: name derives from the Parisii, a Celtic tribe that inhabited the area from the 3rd century B.C., but who were conquered by the Romans in the 1st century B.C.; the Celtic settlement became the Roman town of Lutetia Parisiorum (Lutetia of the Parisii); over subsequent centuries it became Parisium and then just Paris ++ ++"
+    },
+    "Administrative divisions": {
+      "text": "18 regions (regions, singular - region); Auvergne-Rhone-Alpes, Bourgogne-Franche-Comte (Burgundy-Free County), Bretagne (Brittany), Centre-Val de Loire (Center-Loire Valley), Corse (Corsica), Grand Est (Grand East), Guadeloupe, Guyane (French Guiana), Hauts-de-France (Upper France), Ile-de-France, Martinique, Mayotte, Normandie (Normandy), Nouvelle-Aquitaine (New Aquitaine), Occitanie (Occitania), Pays de la Loire (Lands of the Loire), Provence-Alpes-Cote d'Azur, Reunion",
+      "note": "note: France is divided into 13 metropolitan regions (including the \"collectivity\" of Corse or Corsica) and 5 overseas regions (French Guiana, Guadeloupe, Martinique, Mayotte, and Reunion) and is subdivided into 96 metropolitan departments and 5 overseas departments (which are the same as the overseas regions)"
+    },
+    "Dependent areas": {
+      "text": "Clipperton Island, French Polynesia, French Southern and Antarctic Lands, New Caledonia, Saint Barthelemy, Saint Martin, Saint Pierre and Miquelon, Wallis and Futuna",
+      "note": "note: the US Government does not recognize claims to Antarctica; New Caledonia has been considered a \"sui generis\" collectivity of France since 1998, a unique status falling between that of an independent country and a French overseas department"
+    },
+    "Independence": {
+      "text": "no official date of independence: 486 (Frankish tribes unified under Merovingian kingship); 10 August 843 (Western Francia established from the division of the Carolingian Empire); 14 July 1789 (French monarchy overthrown); 22 September 1792 (First French Republic founded); 4 October 1958 (Fifth French Republic established)"
+    },
+    "National holiday": {
+      "text": "Fete de la Federation, 14 July (1790); note - although often incorrectly referred to as Bastille Day, the celebration actually commemorates the holiday held on the first anniversary of the storming of the Bastille (on 14 July 1789) and the establishment of a constitutional monarchy; other names for the holiday are Fete Nationale (National Holiday) and quatorze juillet (14th of July)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "many previous; latest effective 4 October 1958"
+      },
+      "amendments": {
+        "text": "proposed by the president of the republic (upon recommendation of the prime minister and Parliament) or by Parliament; proposals submitted by Parliament members require passage by both houses followed by approval in a referendum; passage of proposals submitted by the government can bypass a referendum if submitted by the president to Parliament and passed by at least three-fifths majority vote by Parliament's National Assembly; amended many times, last in 2008; note - in May 2018, the prime minister submitted a bill to the National Assembly to amend several provisions of the constitution"
+      }
+    },
+    "Legal system": {
+      "text": "civil law; review of administrative but not legislative acts"
+    },
+    "International law organization participation": {
+      "text": "has not submitted an ICJ jurisdiction declaration; accepts ICCt jurisdiction"
+    },
+    "Citizenship": {
+      "citizenship by birth": {
+        "text": "no"
+      },
+      "citizenship by descent only": {
+        "text": "at least one parent must be a citizen of France"
+      },
+      "dual citizenship recognized": {
+        "text": "yes"
+      },
+      "residency requirement for naturalization": {
+        "text": "5 years"
+      }
+    },
+    "Suffrage": {
+      "text": "18 years of age; universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "President Emmanuel MACRON (since 14 May 2017)"
+      },
+      "head of government": {
+        "text": "Prime Minister Jean CASTEX (since 3 July 2020)"
+      },
+      "cabinet": {
+        "text": "Council of Ministers appointed by the president at the suggestion of the prime minister"
+      },
+      "elections/appointments": {
+        "text": "president directly elected by absolute majority popular vote in 2 rounds if needed for a 5-year term (eligible for a second term); election last held on 23 April with a runoff on 7 May 2017 (next to be held in April 2022); prime minister appointed by the president"
+      },
+      "election results": {
+        "text": "Emmanuel MACRON elected president in second round; percent of vote in first round - Emmanuel MACRON (EM) 24.%, Marine LE PEN (FN) 21.3%, Francois FILLON (LR) 20.%, Jean-Luc MELENCHON (FI) 19.6%, Benoit HAMON (PS) 6.4%, other 8.7%; percent of vote in second round - MACRON 66.1%, LE PEN 33.9%"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "bicameral Parliament or Parlement consists of: Senate or Senat (348 seats - 328 for metropolitan France and overseas departments and regions of Guadeloupe, Martinique, French Guiana, Reunion, and Mayotte, 2 for New Caledonia, 2 for French Polynesia, 1 for Saint-Pierre and Miquelon, 1 for Saint-Barthelemy, 1 for Saint-Martin, 1 for Wallis and Futuna, and 12 for French nationals abroad; members indirectly elected by departmental electoral colleges using absolute majority vote in 2 rounds if needed for departments with 1-3 members and proportional representation vote in departments with 4 or more members; members serve 6-year terms with one-half of the membership renewed every 3 years) ++ National Assembly or Assemblee Nationale (577 seats - 556 for metropolitan France, 10 for overseas departments, and 11 for citizens abroad; members directly elected by absolute majority vote in 2 rounds if needed to serve 5-year terms)"
+      },
+      "elections": {
+        "text": "Senate - last held on 24 September 2017 (next to be held on 24 September 2020) ++ National Assembly - last held on 11 and 18 June 2017 (next to be held in June 2022)"
+      },
+      "election results": {
+        "text": "Senate - percent of vote by party - NA; seats by political caucus (party or group of parties) - LR 144, PS 73, UC 51. LREM 23, RDSE 22, CRCE 16, RTLI 13, other 6; composition - men 246, women 102, percent of women 29.3% ++ National Assembly - percent of vote by party first round - LREM 28.2%, LR 15.8%. FN 13.2%, FI 11%, PS 7.4%, other 24.4%; percent of vote by party second round - LREM 43.1%, LR 22.2%, FN 8.8%, MoDEM 6.1%, PS 5.7%. FI 4.9%, other 9.2%; seats by political caucus (party or group of parties) - LREM 306, LR 104, MoDEM 46, UDI/Agir 29, PS 29, UDI 18, FI 17, Liberties and Territories 16, PCF 16, other 14; composition - men 349, women 228, percent of women 39.5%; note - total Parliament percent of women 35.7%"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "Court of Cassation or Cour de Cassation (consists of the court president, 6 divisional presiding judges, 120 trial judges, and 70 deputy judges organized into 6 divisions - 3 civil, 1 commercial, 1 labor, and 1 criminal); Constitutional Council (consists of 9 members)"
+      },
+      "judge selection and term of office": {
+        "text": "Court of Cassation judges appointed by the president of the republic from nominations from the High Council of the Judiciary, presided over by the Court of Cassation and 15 appointed members; judges appointed for life; Constitutional Council members - 3 appointed by the president of the republic and 3 each by the National Assembly and Senate presidents; members serve 9-year, non-renewable terms with one-third of the membership renewed every 3 years"
+      },
+      "subordinate courts": {
+        "text": "appellate courts or Cour d'Appel; regional courts or Tribunal de Grande Instance; first instance courts or Tribunal d'instance; administrative courts"
+      },
+      "note": "note: in April 2018, the French Government announced its intention to reform the country's judicial system"
+    },
+    "Political parties and leaders": {
+      "text": "Presidential majority Parties [Edouard PHILIPPE] ++ Democratic Movement or MoDem [Francois BAYROU] ++ La Republique en Marche! or LREM [Richard FERRAND] ++ Movement of Progressives or MDP Robert HUE] ++ Parliamentary right Parties [Francois BAROIN] ++ Hunting, Fishing, Nature and Tradition or CPNT [Eddie PUYJAION] ++ The Republicans or LR [Annie GENEVARD] ++ Union of Democrats and Independents or UDI [Jean-Christophe CAMBADELIS] ++ Parliamentary left Parties [Bernard CAZENEUVE] ++ Sociatlist Party or PS [Jean-Christophe CAMBADEMAND] ++ Radical Party of the Left or PRG [Sylvia PINEL] ++ Citizen and Republican Movement or MRC [Jean-Luc LAURENT] ++ Martinican Progressive Party or PPM [Aiem CESAIRE] ++ Debout la France or DLF [Nicolas DUPONT-AIGNAN] ++ Ecology Democracy Solidarity or EDS [Paula FORTEZA, Matthieu ORPHELIN ++ (splinter party formed in May 2020 by defectors of LREM) ++ Europe Ecologists - the Greens or EELV [David CORMAND] ++ French Communist Party or PCF [Pierre LAURENT] ++ La France Insoumise or FI [Jean-Luc MELENCHONLIS] ++ National Front or FN [Marine LE PEN] ++"
+    },
+    "International organization participation": {
+      "text": "ADB (nonregional member), AfDB (nonregional member), Arctic Council (observer), Australia Group, BDEAC, BIS, BSEC (observer), CBSS (observer), CE, CERN, EAPC, EBRD, ECB, EIB, EITI (implementing country), EMU, ESA, EU, FAO, FATF, FZ, G-5, G-7, G-8, G-10, G-20, IADB, IAEA, IBRD, ICAO, ICC (national committees), ICCt, ICRM, IDA, IEA, IFAD, IFC, IFRCS, IGAD (partners), IHO, ILO, IMF, IMO, IMSO, InOC, Interpol, IOC, IOM, IPU, ISO, ITSO, ITU, ITUC (NGOs), MIGA, MINURSO, MINUSMA, MINUSTAH, MONUSCO, NATO, NEA, NSG, OAS (observer), OECD, OIF, OPCW, OSCE, Pacific Alliance (observer), Paris Club, PCA, PIF (partner), Schengen Convention, SELEC (observer), SPC, UN, UNCTAD, UNESCO, UNHCR, UNIDO, UNIFIL, Union Latina, UNMIL, UNOCI, UNRWA, UN Security Council (permanent), UNTSO, UNWTO, UPU, WCO, WFTU (NGOs), WHO, WIPO, WMO, WTO, ZC"
+    },
+    "Diplomatic representation in the US": {
+      "chief of mission": {
+        "text": "Ambassador Philippe ETIENNE (since 8 July 2019)"
+      },
+      "chancery": {
+        "text": "4101 Reservoir Road NW, Washington, DC 20007"
+      },
+      "telephone": {
+        "text": "[1] (202) 944-6000"
+      },
+      "FAX": {
+        "text": "[1] (202) 944-6166"
+      },
+      "consulate(s) general": {
+        "text": "Atlanta, Boston, Chicago, Houston, Los Angeles, Miami, New Orleans, New York, San Francisco, Washington, DC"
+      }
+    },
+    "Diplomatic representation from the US": {
+      "chief of mission": {
+        "text": "Ambassador Jamie D. McCOURT (since 18 December 2017); note - also accredited to Monaco"
+      },
+      "telephone": {
+        "text": "[33] (1) 43-12-22-22"
+      },
+      "embassy": {
+        "text": "2 Avenue Gabriel, 75008 Paris"
+      },
+      "mailing address": {
+        "text": "PSC 116, APO AE 09777"
+      },
+      "FAX": {
+        "text": "[33] (1) 42 66 97 83"
+      },
+      "consulate(s) general": {
+        "text": "Marseille, Strasbourg"
+      },
+      "consulate(s)": {
+        "text": "Bordeaux, Lyon, Rennes"
+      }
+    },
+    "Flag description": {
+      "text": "three equal vertical bands of blue (hoist side), white, and red; known as the \"Le drapeau tricolore\" (French Tricolor), the origin of the flag dates to 1790 and the French Revolution when the \"ancient French color\" of white was combined with the blue and red colors of the Parisian militia; the official flag for all French dependent areas",
+      "note": "note: the design and/or colors are similar to a number of other flags, including those of Belgium, Chad, Cote d'Ivoire, Ireland, Italy, Luxembourg, and Netherlands"
+    },
+    "National symbol(s)": {
+      "text": "Gallic rooster, fleur-de-lis, Marianne (female personification); national colors: blue, white, red"
+    },
+    "National anthem": {
+      "name": {
+        "text": "\"La Marseillaise\" (The Song of Marseille)"
+      },
+      "lyrics/music": {
+        "text": "Claude-Joseph ROUGET de Lisle"
+      },
+      "note": "note: adopted 1795, restored 1870; originally known as \"Chant de Guerre pour l'Armee du Rhin\" (War Song for the Army of the Rhine), the National Guard of Marseille made the song famous by singing it while marching into Paris in 1792 during the French Revolutionary Wars"
+    }
+  },
+  "Economy": {
+    "Economy - overview": {
+      "text": "The French economy is diversified across all sectors. The government has partially or fully privatized many large companies, including Air France, France Telecom, Renault, and Thales. However, the government maintains a strong presence in some sectors, particularly power, public transport, and defense industries. France is the most visited country in the world with 89 million foreign tourists in 2017. France's leaders remain committed to a capitalism in which they maintain social equity by means of laws, tax policies, and social spending that mitigate economic inequality. ++ France's real GDP grew by 1.9% in 2017, up from 1.2% the year before. The unemployment rate (including overseas territories) increased from 7.8% in 2008 to 10.2% in 2015, before falling to 9.0% in 2017. Youth unemployment in metropolitan France decreased from 24.6% in the fourth quarter of 2014 to 20.6% in the fourth quarter of 2017. ++ France's public finances have historically been strained by high spending and low growth. In 2017, the budget deficit improved to 2.7% of GDP, bringing it in compliance with the EU-mandated 3% deficit target. Meanwhile, France's public debt rose from 89.5% of GDP in 2012 to 97% in 2017. ++ Since entering office in May 2017, President Emmanuel MACRON launched a series of economic reforms to improve competitiveness and boost economic growth. President MACRON campaigned on reforming France's labor code and in late 2017 implemented a range of reforms to increase flexibility in the labor market by making it easier for firms to hire and fire and simplifying negotiations between employers and employees. In addition to labor reforms, President MACRON's 2018 budget cuts public spending, taxes, and social security contributions to spur private investment and increase purchasing power. The government plans to gradually reduce corporate tax rate for businesses from 33.3% to 25% by 2022."
+    },
+    "GDP (purchasing power parity)": {
+      "text": "$2.856 trillion (2017 est.) / $2.791 trillion (2016 est.) / $2.761 trillion (2015 est.)",
+      "note": "note: data are in 2017 dollars",
+      "country comparison to the world": 10
+    },
+    "GDP (official exchange rate)": {
+      "text": "$2.588 trillion (2017 est.)"
+    },
+    "GDP - real growth rate": {
+      "text": "1.49% (2019 est.) / 1.81% (2018 est.) / 2.42% (2017 est.)",
+      "country comparison to the world": 155
+    },
+    "GDP - per capita (PPP)": {
+      "text": "$44,100 (2017 est.) / $43,200 (2016 est.) / $42,900 (2015 est.)",
+      "note": "note: data are in 2017 dollars",
+      "country comparison to the world": 40
+    },
+    "Gross national saving": {
+      "text": "22.9% of GDP (2017 est.) / 21.9% of GDP (2016 est.) / 22.3% of GDP (2015 est.)",
+      "country comparison to the world": 77
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "54.1% (2017 est.)"
+      },
+      "government consumption": {
+        "text": "23.6% (2017 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "22.5% (2017 est.)"
+      },
+      "investment in inventories": {
+        "text": "0.9% (2017 est.)"
+      },
+      "exports of goods and services": {
+        "text": "30.9% (2017 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-32% (2017 est.)"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "1.7% (2017 est.)"
+      },
+      "industry": {
+        "text": "19.5% (2017 est.)"
+      },
+      "services": {
+        "text": "78.8% (2017 est.)"
+      }
+    },
+    "Agriculture - products": {
+      "text": "wheat, cereals, sugar beets, potatoes, wine grapes; beef, dairy products; fish"
+    },
+    "Industries": {
+      "text": "machinery, chemicals, automobiles, metallurgy, aircraft, electronics; textiles, food processing; tourism"
+    },
+    "Industrial production growth rate": {
+      "text": "2% (2017 est.)",
+      "country comparison to the world": 130
+    },
+    "Labor force": {
+      "text": "27.742 million (2020 est.)",
+      "country comparison to the world": 18
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "2.8% (2016 est.)"
+      },
+      "industry": {
+        "text": "20% (2016 est.)"
+      },
+      "services": {
+        "text": "77.2% (2016 est.)"
+      }
+    },
+    "Unemployment rate": {
+      "text": "8.12% (2019 est.) / 8.69% (2018 est.)",
+      "note": "note: includes overseas territories",
+      "country comparison to the world": 128
+    },
+    "Population below poverty line": {
+      "text": "14.2% (2015 est.)"
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "3.6%"
+      },
+      "highest 10%": {
+        "text": "25.4% (2013)"
+      }
+    },
+    "Budget": {
+      "revenues": {
+        "text": "1.392 trillion (2017 est.)"
+      },
+      "expenditures": {
+        "text": "1.459 trillion (2017 est.)"
+      }
+    },
+    "Taxes and other revenues": {
+      "text": "53.8% (of GDP) (2017 est.)",
+      "country comparison to the world": 10
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "-2.6% (of GDP) (2017 est.)",
+      "country comparison to the world": 116
+    },
+    "Public debt": {
+      "text": "96.8% of GDP (2017 est.) / 96.6% of GDP (2016 est.)",
+      "note": "note: data cover general government debt and include debt instruments issued (or owned) by government entities other than the treasury; the data include treasury debt held by foreign entities; the data include debt issued by subnational entities, as well as intragovernmental debt; intragovernmental debt consists of treasury borrowings from surpluses in the social funds, such as for retirement, medical care, and unemployment; debt instruments for the social funds are not sold at public auctions",
+      "country comparison to the world": 20
+    },
+    "Fiscal year": {
+      "text": "calendar year"
+    },
+    "Inflation rate (consumer prices)": {
+      "text": "1.2% (2017 est.) / 0.3% (2016 est.)",
+      "country comparison to the world": 64
+    },
+    "Current account balance": {
+      "text": "-$18.102 billion (2019 est.) / -$16.02 billion (2018 est.)",
+      "country comparison to the world": 197
+    },
+    "Exports": {
+      "text": "$549.9 billion (2017 est.) / $507 billion (2016 est.)",
+      "country comparison to the world": 7
+    },
+    "Exports - partners": {
+      "text": "Germany 14.8%, Spain 7.7%, Italy 7.5%, US 7.2%, Belgium 7%, UK 6.7% (2017)"
+    },
+    "Exports - commodities": {
+      "text": "machinery and transportation equipment, aircraft, plastics, chemicals, pharmaceutical products, iron and steel, beverages"
+    },
+    "Imports": {
+      "text": "$601.7 billion (2017 est.) / $536.7 billion (2016 est.)",
+      "country comparison to the world": 7
+    },
+    "Imports - commodities": {
+      "text": "machinery and equipment, vehicles, crude oil, aircraft, plastics, chemicals"
+    },
+    "Imports - partners": {
+      "text": "Germany 18.5%, Belgium 10.2%, Netherlands 8.3%, Italy 7.9%, Spain 7.1%, UK 5.3%, US 5.2%, China 5.1% (2017)"
+    },
+    "Reserves of foreign exchange and gold": {
+      "text": "$156.4 billion (31 December 2017 est.) / $138.2 billion (31 December 2015 est.)",
+      "country comparison to the world": 15
+    },
+    "Debt - external": {
+      "text": "$5.36 trillion (31 March 2016 est.) / $5.25 trillion (31 March 2015 est.)",
+      "country comparison to the world": 3
+    },
+    "Exchange rates": {
+      "text": "euros (EUR) per US dollar - / 0.885 (2017 est.) / 0.903 (2016 est.) / 0.9214 (2015 est.) / 0.885 (2014 est.) / 0.7634 (2013 est.)"
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "100% (2020)"
+      }
+    },
+    "Electricity - production": {
+      "text": "529.1 billion kWh (2016 est.)",
+      "country comparison to the world": 9
+    },
+    "Electricity - consumption": {
+      "text": "450.8 billion kWh (2016 est.)",
+      "country comparison to the world": 10
+    },
+    "Electricity - exports": {
+      "text": "61.41 billion kWh (2016 est.)",
+      "country comparison to the world": 3
+    },
+    "Electricity - imports": {
+      "text": "19.9 billion kWh (2016 est.)",
+      "country comparison to the world": 10
+    },
+    "Electricity - installed generating capacity": {
+      "text": "130.8 million kW (2016 est.)",
+      "country comparison to the world": 9
+    },
+    "Electricity - from fossil fuels": {
+      "text": "17% of total installed capacity (2016 est.)",
+      "country comparison to the world": 198
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "50% of total installed capacity (2017 est.)",
+      "country comparison to the world": 1
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "15% of total installed capacity (2017 est.)",
+      "country comparison to the world": 102
+    },
+    "Electricity - from other renewable sources": {
+      "text": "19% of total installed capacity (2017 est.)",
+      "country comparison to the world": 42
+    },
+    "Crude oil - production": {
+      "text": "16,000 bbl/day (2018 est.)",
+      "country comparison to the world": 71
+    },
+    "Crude oil - exports": {
+      "text": "0 bbl/day (2015 est.)",
+      "country comparison to the world": 126
+    },
+    "Crude oil - imports": {
+      "text": "1.147 million bbl/day (2017 est.)",
+      "country comparison to the world": 9
+    },
+    "Crude oil - proved reserves": {
+      "text": "65.97 million bbl (1 January 2018 est.)",
+      "country comparison to the world": 75
+    },
+    "Refined petroleum products - production": {
+      "text": "1.311 million bbl/day (2017 est.)",
+      "country comparison to the world": 15
+    },
+    "Refined petroleum products - consumption": {
+      "text": "1.705 million bbl/day (2017 est.)",
+      "country comparison to the world": 13
+    },
+    "Refined petroleum products - exports": {
+      "text": "440,600 bbl/day (2017 est.)",
+      "country comparison to the world": 19
+    },
+    "Refined petroleum products - imports": {
+      "text": "886,800 bbl/day (2017 est.)",
+      "country comparison to the world": 8
+    },
+    "Natural gas - production": {
+      "text": "16.99 million cu m (2017 est.)",
+      "country comparison to the world": 90
+    },
+    "Natural gas - consumption": {
+      "text": "41.88 billion cu m (2017 est.)",
+      "country comparison to the world": 24
+    },
+    "Natural gas - exports": {
+      "text": "6.031 billion cu m (2017 est.)",
+      "country comparison to the world": 26
+    },
+    "Natural gas - imports": {
+      "text": "48.59 billion cu m (2017 est.)",
+      "country comparison to the world": 10
+    },
+    "Natural gas - proved reserves": {
+      "text": "8.41 billion cu m (1 January 2018 est.)",
+      "country comparison to the world": 81
+    },
+    "Carbon dioxide emissions from consumption of energy": {
+      "text": "341.2 million Mt (2017 est.)",
+      "country comparison to the world": 22
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "39,234,941"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "58.03 (2019 est.)"
+      },
+      "country comparison to the world": 4
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "74,791,818"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "110.62 (2019 est.)"
+      },
+      "country comparison to the world": 22
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "one of the largest mobile phone markets in Europe, worth 13 billion annually; LTE has universal coverage with extensive 5G launching any day, one of the largest broadband subscriber bases in Europe; regional govt. and telecom companies have invested in higher bandwidth w/ fiber infrastructure improvements, an investment more than 20 billion euros (2020)"
+      },
+      "domestic": {
+        "text": "58 per 100 persons for fixed-line and 111 per 100 for mobile-cellular subscriptions (2019)"
+      },
+      "international": {
+        "text": "country code - 33; landing points for Circe South, TAT-14, INGRID, FLAG Atlantic-1, Apollo, HUGO, IFC-1, ACE, SeaMeWe-3 & 4, Dunant, Africa-1, AAE-1, Atlas Offshore, Hawk, IMEWE, Med Cable, PEACE Cable, and TE North/TGN-Eurasia/SEACOM/Alexandros/Medex submarine cables providing links throughout Europe, Asia, Australia, the Middle East, Southeast Asia, Africa and US; satellite earth stations - more than 3 (2 Intelsat (with total of 5 antennas - 2 for Indian Ocean and 3 for Atlantic Ocean), NA Eutelsat, 1 Inmarsat - Atlantic Ocean region); HF radiotelephone communications with more than 20 countries (2019)"
+      },
+      "overseas departments": {
+        "text": "country codes: French Guiana - 594; landing points for Ella Link, Kanawa, Americas II to South America, Europe, Caribbean and US; Guadeloupe - 590; landing points for GCN, Southern Caribbean Fiber, and ECFS around the Caribbean and US; Martinique - 596; landing points for Americas II, ECFS, and Southern Caribbean Fiber to South America, US and around the Caribbean; Mayotte - 262; landing points for FLY-LION3 and LION2 to East Africa and East African Islands in Indian Ocean; Reunion - 262; landing points for SAFE, METISS, and LION submarine cables to Asia, South and East Africa, Southeast Asia and nearby Indian Ocean Island countries of Mauritius, and Madagascar (2019)"
+      },
+      "note": "note: the COVID-19 outbreak is negatively impacting telecommunications production and supply chains globally; consumer spending on telecom devices and services has also slowed due to the pandemic's effect on economies worldwide; overall progress towards improvements in all facets of the telecom industry - mobile, fixed-line, broadband, submarine cable and satellite - has moderated"
+    },
+    "Broadcast media": {
+      "text": "a mix of both publicly operated and privately owned TV stations; state-owned France television stations operate 4 networks, one of which is a network of regional stations, and has part-interest in several thematic cable/satellite channels and international channels; a large number of privately owned regional and local TV stations; multi-channel satellite and cable services provide a large number of channels; public broadcaster Radio France operates 7 national networks, a series of regional networks, and operates services for overseas territories and foreign audiences; Radio France Internationale, under the Ministry of Foreign Affairs, is a leading international broadcaster; a large number of commercial FM stations, with many of them consolidating into commercial networks"
+    },
+    "Internet country code": {
+      "text": "metropolitan France - .fr; French Guiana - .gf; Guadeloupe - .gp; Martinique - .mq; Mayotte - .yt; Reunion - .re"
+    },
+    "Internet users": {
+      "total": {
+        "text": "55,265,718"
+      },
+      "percent of population": {
+        "text": "82.04% (July 2018 est.)"
+      },
+      "country comparison to the world": 16
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "29.1 million"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "43 (2018 est.)"
+      },
+      "country comparison to the world": 7
+    }
+  },
+  "Transportation": {
+    "National air transport system": {
+      "number of registered air carriers": {
+        "text": "19 (2020)"
+      },
+      "inventory of registered aircraft operated by air carriers": {
+        "text": "553"
+      },
+      "annual passenger traffic on registered air carriers": {
+        "text": "70,188,028 (2018)"
+      },
+      "annual freight traffic on registered air carriers": {
+        "text": "4,443,790,000 mt-km (2018)"
+      }
+    },
+    "Civil aircraft registration country code prefix": {
+      "text": "F (2016)"
+    },
+    "Airports": {
+      "text": "464 (2013)",
+      "country comparison to the world": 15
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "294 (2017)"
+      },
+      "over 3,047 m": {
+        "text": "14 (2017)"
+      },
+      "2,438 to 3,047 m": {
+        "text": "25 (2017)"
+      },
+      "1,524 to 2,437 m": {
+        "text": "97 (2017)"
+      },
+      "914 to 1,523 m": {
+        "text": "83 (2017)"
+      },
+      "under 914 m": {
+        "text": "75 (2017)"
+      }
+    },
+    "Airports - with unpaved runways": {
+      "total": {
+        "text": "170 (2013)"
+      },
+      "1,524 to 2,437 m": {
+        "text": "1 (2013)"
+      },
+      "914 to 1,523 m": {
+        "text": "64 (2013)"
+      },
+      "under 914 m": {
+        "text": "105 (2013)"
+      }
+    },
+    "Heliports": {
+      "text": "1 (2013)"
+    },
+    "Pipelines": {
+      "text": "15322 km gas, 2939 km oil, 5084 km refined products (2013)"
+    },
+    "Railways": {
+      "total": {
+        "text": "29,640 km (2014)"
+      },
+      "standard gauge": {
+        "text": "29,473 km 1.435-m gauge (15,561 km electrified) (2014)"
+      },
+      "narrow gauge": {
+        "text": "167 km 1.000-m gauge (63 km electrified) (2014)"
+      },
+      "country comparison to the world": 10
+    },
+    "Roadways": {
+      "total": {
+        "text": "1,053,215 km (2011)"
+      },
+      "urban": {
+        "text": "654,201 km (2011)"
+      },
+      "non-urban": {
+        "text": "399,014 km (2011)"
+      },
+      "country comparison to the world": 7
+    },
+    "Waterways": {
+      "note": "metropolitan France: 8,501 km (1,621 km navigable by craft up to 3,000 metric tons) (2010)"
+    },
+    "Merchant marine": {
+      "total": {
+        "text": "552"
+      },
+      "by type": {
+        "text": "bulk carrier 25, general cargo 53, oil tanker 29, other 445 (2019)"
+      },
+      "note": "note: includes Monaco",
+      "country comparison to the world": 40
+    },
+    "Ports and terminals": {
+      "major seaport(s)": {
+        "text": "Brest, Calais, Dunkerque, Le Havre, Marseille, Nantes,"
+      },
+      "container port(s) (TEUs)": {
+        "text": "Le Havre (2,870,000) (2017)"
+      },
+      "LNG terminal(s) (import)": {
+        "text": "Fos Cavaou, Fos Tonkin, Montoir de Bretagne"
+      },
+      "river port(s)": {
+        "text": "Paris, Rouen (Seine)"
+      },
+      "cruise/ferry port(s)": {
+        "text": "Calais, Cherbourg, Le Havre"
+      },
+      "note": "Strasbourg (Rhine) Bordeaux (Garronne)"
+    },
+    "Transportation - note": {
+      "text": "begun in 1988 and completed in 1994, the Channel Tunnel (nicknamed the Chunnel) is a 50.5-km (31.4-mi) rail tunnel beneath the English Channel at the Strait of Dover that runs from Folkestone, Kent, England to Coquelles, Pas-de-Calais in northern France; it is the only fixed link between the island of Great Britain and mainland Europe"
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "Army (Armee de Terre; includes Foreign Legion), Navy (Marine Nationale), Air Force (Armee de l'Air (AdlA); includes Air Defense), National Guard (Reserves), National Gendarmerie (paramilitary police force that is a branch of the Armed Forces but under the jurisdiction of the Ministry of the Interior; also has additional duties to the Ministry of Defense and the Ministry of Justice) (2019)"
+    },
+    "Military expenditures": {
+      "text": "1.84% of GDP (2019 est.) / 1.82% of GDP (2018) / 1.78% of GDP (2017) / 1.79% of GDP (2016) / 1.78% of GDP (2015)",
+      "country comparison to the world": 58
+    },
+    "Military and security service personnel strengths": {
+      "text": "the French military has approximately 205,000 active duty troops (114,500 Army; 35,000 Navy; 40,500 Air Force; 15,000 other, such as joint staffs, medical service, etc.); approximately 100,000 National Gendarmerie (2019)"
+    },
+    "Military equipment inventories and acquisitions": {
+      "text": "the French military's inventory consists almost entirely of domestically-produced weapons systems, including some jointly-produced with other European countries; there is a limited mix of armaments from other Western countries, particularly the US; since 2010, the US is the leading foreign supplier of military hardware to France; France has a defense industry capable of manufacturing the full spectrum of air, land, and naval military weapons systems (2019 est.)"
+    },
+    "Military deployments": {
+      "text": "5,100 Burkina Faso/Chad/Mali/Niger (Operation Barkhane); 900 Cote D'Ivoire; 1,450 Djibouti; 300 Baltics (NATO); 2,000 French Guyana; 900 French Polynesia; 1,000 French West Indies; 350 Gabon; est. 500 Middle East (Iraq/Jordan/Syria); 780 Lebanon (UNIFIL); 1,400-1,500 New Caledonia; 1,700 Reunion Island; 350 Senegal; 650 United Arab Emirates; note - France has been a contributing member of the EuroCorps since 1992 (2020)"
+    },
+    "Military service age and obligation": {
+      "text": "18-25 years of age for male and female voluntary military service; no conscription; 1-year service obligation; women serve in noncombat posts (2013)"
+    }
+  },
+  "Terrorism": {
+    "Terrorist group(s)": {
+      "text": "Islamic Revolutionary Guard Corps/Qods Force; Islamic State of Iraq and ash-Sham; al-Qa'ida (2019)",
+      "note": "note: details about the history, aims, leadership, organization, areas of operation, tactics, targets, weapons, size, and sources of support of the group(s) appear(s) in Appendix-T"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "Madagascar claims the French territories of Bassas da India, Europa Island, Glorioso Islands, and Juan de Nova Island; Comoros claims Mayotte; Mauritius claims Tromelin Island; territorial dispute between Suriname and the French overseas department of French Guiana; France asserts a territorial claim in Antarctica (Adelie Land); France and Vanuatu claim Matthew and Hunter Islands, east of New Caledonia"
+    },
+    "Refugees and internally displaced persons": {
+      "refugees (country of origin)": {
+        "text": "24,293 (Afghanistan), 23,821 (Sri Lanka), 18,473 (Sudan), 18,244 (Syria), 17,512 (Democratic Republic of the Congo), 16,412 (Russia), 14,141 (Serbia and Kosovo), 11,863 (Turkey), 11,038 (Guinea), 11,021 (Cambodia), 8,829 (Iraq), 7,735 (Vietnam), 6,918 (China), 6,464 (Laos), 6,372 (Eritrea), 6,156 (Bangladesh), 5,675 (Mauritania), 5,652 (Cote d'Ivoire), 5,169 (Mali) (2019)"
+      },
+      "stateless persons": {
+        "text": "1,521 (2019)"
+      }
+    },
+    "Illicit drugs": {
+      "text": "metropolitan France: transshipment point for South American cocaine, Southwest Asian heroin, and European synthetics; ++ French Guiana: small amount of marijuana grown for local consumption; minor transshipment point to Europe; ++ Martinique: transshipment point for cocaine and marijuana bound for the US and Europe"
+    }
+  }
+}

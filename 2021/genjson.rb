@@ -17,6 +17,42 @@ def region_to_slug( text )
 end
 
 
+def convert_json( cia )
+
+  data = {}
+
+  cia['categories'].each do |cia_cat|
+     cat = data[ cia_cat['title'] ] = {}
+     cia_cat['fields'].each do |cia_field|
+       field = cat[ cia_field['name'] ] = {}
+       if cia_field['subfields']
+         cia_field['subfields'].each do |cia_subfield|
+           subfield = field[ cia_subfield['name'] ] = {}
+           subfield[ 'text' ] = cia_subfield['content']
+         end
+
+         puts "== #{cia_cat['title']} / #{cia_field['name']} - skipping field content (w/ subfields):"
+         puts "   >#{cia_field['content']}<"
+         puts "   ?? same as:"
+         cia_field['subfields'].each do |cia_subfield|
+           puts "   #{cia_subfield['name']}: >#{cia_subfield['content']}<"
+         end
+
+       else
+         field[ 'text' ] = cia_field['content']
+       end
+
+       if cia_field[ 'field_note' ]
+         field[ 'note' ] = cia_field[ 'field_note' ]
+       end
+     end
+  end
+
+  data
+end
+
+
+
 def gen_json
 =begin
   out_root =  if debug?
@@ -26,8 +62,9 @@ def gen_json
               end
 =end
 
-  ## out_root = './tmp/json'
-  out_root = '../cache.factbook.json'
+  out_root = './tmp/json'
+  ## out_root = '../cache.factbook.json'
+  ## out_root = '../factbook.json'
 
 
   ## for debugging select some codes
@@ -57,7 +94,7 @@ def gen_json
       puts "Saving #{code.code}- #{code.name} to >#{path}<..."
       ## note: (auto-)convert to unix newlines only => e.g. universal (e.g. gsub( "\r\n", "\n" ))
       File.open( path, 'w:utf-8', :newline => :universal ) do |f|
-        f.write( JSON.pretty_generate( data ) )
+        f.write( JSON.pretty_generate( convert_json( data )) )
       end
     end
 

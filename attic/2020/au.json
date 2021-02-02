@@ -1,0 +1,956 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "Once the center of power for the large Austro-Hungarian Empire, Austria was reduced to a small republic after its defeat in World War I. Following annexation by Nazi Germany in 1938 and subsequent occupation by the victorious Allies in 1945, Austria's status remained unclear for a decade. A State Treaty signed in 1955 ended the occupation, recognized Austria's independence, and forbade unification with Germany. A constitutional law that same year declared the country's \"perpetual neutrality\" as a condition for Soviet military withdrawal. The Soviet Union's collapse in 1991 and Austria's entry into the EU in 1995 have altered the meaning of this neutrality. A prosperous, democratic country, Austria entered the EU Economic and Monetary Union in 1999."
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Central Europe, north of Italy and Slovenia"
+    },
+    "Geographic coordinates": {
+      "text": "47 20 N, 13 20 E"
+    },
+    "Map references": {
+      "text": "Europe"
+    },
+    "Area": {
+      "total": {
+        "text": "83,871 sq km"
+      },
+      "land": {
+        "text": "82,445 sq km"
+      },
+      "water": {
+        "text": "1,426 sq km"
+      },
+      "country comparison to the world": 115
+    },
+    "Area - comparative": {
+      "text": "about the size of South Carolina; slightly more than two-thirds the size of Pennsylvania"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "2,524 km"
+      },
+      "border countries": {
+        "text": "Czech Republic 402 km, Germany 801 km, Hungary 321 km, Italy 404 km, Liechtenstein 34 km, Slovakia 105 km, Slovenia 299 km, Switzerland 158 km"
+      }
+    },
+    "Coastline": {
+      "text": "0 km (landlocked)"
+    },
+    "Maritime claims": {
+      "note": "none (landlocked)"
+    },
+    "Climate": {
+      "text": "temperate; continental, cloudy; cold winters with frequent rain and some snow in lowlands and snow in mountains; moderate summers with occasional showers"
+    },
+    "Terrain": {
+      "text": "mostly mountains (Alps) in the west and south; mostly flat or gently sloping along the eastern and northern margins"
+    },
+    "Elevation": {
+      "mean elevation": {
+        "text": "910 m"
+      },
+      "lowest point": {
+        "text": "Neusiedler See 115 m"
+      },
+      "highest point": {
+        "text": "Grossglockner 3,798 m"
+      }
+    },
+    "Natural resources": {
+      "text": "oil, coal, lignite, timber, iron ore, copper, zinc, antimony, magnesite, tungsten, graphite, salt, hydropower"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "38.4% (2016 est.)"
+      },
+      "arable land / permanent crops / permanent pasture": {
+        "text": "16.5% (2016 est.) / 0.8% (2016 est.) / 21.1% (2016 est.)"
+      },
+      "forest": {
+        "text": "47.2% (2016 est.)"
+      },
+      "other": {
+        "text": "14.4% (2016 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "1,170 sq km (2012)"
+    },
+    "Population distribution": {
+      "text": "the northern and eastern portions of the country are more densely populated; nearly two-thirds of the populace lives in urban areas"
+    },
+    "Natural hazards": {
+      "text": "landslides; avalanches; earthquakes"
+    },
+    "Environment - current issues": {
+      "text": "some forest degradation caused by air and soil pollution; soil pollution results from the use of agricultural chemicals; air pollution results from emissions by coal- and oil-fired power stations and industrial plants and from trucks transiting Austria between northern and southern Europe; water pollution; the Danube, as well as some of Austria's other rivers and lakes, are threatened by pollution"
+    },
+    "Environment - international agreements": {
+      "party to": {
+        "text": "Air Pollution, Air Pollution-Nitrogen Oxides, Air Pollution-Persistent Organic Pollutants, Air Pollution-Sulfur 85, Air Pollution-Sulphur 94, Air Pollution-Volatile Organic Compounds, Antarctic Treaty, Biodiversity, Climate Change, Climate Change-Kyoto Protocol, Desertification, Endangered Species, Environmental Modification, Hazardous Wastes, Law of the Sea, Ozone Layer Protection, Ship Pollution, Tropical Timber 83, Tropical Timber 94, Wetlands, Whaling"
+      },
+      "signed, but not ratified": {
+        "text": "none of the selected agreements"
+      }
+    },
+    "Geography - note": {
+      "note": "note 1: landlocked; strategic location at the crossroads of central Europe with many easily traversable Alpine passes and valleys; major river is the Danube; population is concentrated on eastern lowlands because of steep slopes, poor soils, and low temperatures elsewhere ++ note 2: the world's largest and longest ice cave system at 42 km (26 mi) is the Eisriesenwelt (Ice Giants World) inside the Hochkogel mountain near Werfen, about 40 km south of Salzburg; ice caves are bedrock caves that contain year-round ice formations; they differ from glacial caves, which are transient and are formed by melting ice and flowing water within and under glaciers"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "8,859,449 (July 2020 est.)",
+      "country comparison to the world": 97
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Austrian(s)"
+      },
+      "adjective": {
+        "text": "Austrian"
+      }
+    },
+    "Ethnic groups": {
+      "text": "Austrian 80.8%, German 2.6%, Bosnian and Herzegovinian 1.9%, Turkish 1.8%, Serbian 1.6%, Romanian 1.3%, other 10% (2018 est.)",
+      "note": "note: data represent population by country of birth"
+    },
+    "Languages": {
+      "text": "German (official nationwide) 88.6%, Turkish 2.3%, Serbian 2.2%, Croatian (official in Burgenland) 1.6%, other (includes Slovene, official in southern Carinthia, and Hungarian, official in Burgenland) 5.3% (2001 est.)"
+    },
+    "Religions": {
+      "text": "Catholic 57%, Eastern Orthodox 8.7%, Muslim 7.9%, Evangelical Christian 3.3%, other/none/unspecified 23.1% (2018 est.)",
+      "note": "note: data on Muslim is a 2016 estimate; data on other/none/unspecified are from 2012-2018 estimates"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "14.01% (male 635,803/female 605,065)"
+      },
+      "15-24 years": {
+        "text": "10.36% (male 466,921/female 451,248)"
+      },
+      "25-54 years": {
+        "text": "41.35% (male 1,831,704/female 1,831,669)"
+      },
+      "55-64 years": {
+        "text": "14.41% (male 635,342/female 641,389)"
+      },
+      "65 years and over": {
+        "text": "19.87% (male 768,687/female 991,621) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "50.6"
+      },
+      "youth dependency ratio": {
+        "text": "21.7"
+      },
+      "elderly dependency ratio": {
+        "text": "28.9"
+      },
+      "potential support ratio": {
+        "text": "3.5 (2020 est.)"
+      }
+    },
+    "Median age": {
+      "total": {
+        "text": "44.5 years"
+      },
+      "male": {
+        "text": "43.1 years"
+      },
+      "female": {
+        "text": "45.8 years (2020 est.)"
+      },
+      "country comparison to the world": 14
+    },
+    "Population growth rate": {
+      "text": "0.35% (2020 est.)",
+      "country comparison to the world": 167
+    },
+    "Birth rate": {
+      "text": "9.5 births/1,000 population (2020 est.)",
+      "country comparison to the world": 195
+    },
+    "Death rate": {
+      "text": "9.8 deaths/1,000 population (2020 est.)",
+      "country comparison to the world": 39
+    },
+    "Net migration rate": {
+      "text": "3.6 migrant(s)/1,000 population (2020 est.)",
+      "country comparison to the world": 33
+    },
+    "Population distribution": {
+      "text": "the northern and eastern portions of the country are more densely populated; nearly two-thirds of the populace lives in urban areas"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "58.7% of total population (2020)"
+      },
+      "rate of urbanization": {
+        "text": "0.59% annual rate of change (2015-20 est.)"
+      }
+    },
+    "Major urban areas - population": {
+      "text": "1.930 million VIENNA (capital) (2020)"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.05 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.05 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "1.03 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "1 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "0.99 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.78 male(s)/female"
+      },
+      "total population": {
+        "text": "0.96 male(s)/female (2020 est.)"
+      }
+    },
+    "Mother's mean age at first birth": {
+      "text": "29.3 years (2017 est.)"
+    },
+    "Maternal mortality rate": {
+      "text": "5 deaths/100,000 live births (2017 est.)",
+      "country comparison to the world": 163
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "3.3 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "3.7 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "3 deaths/1,000 live births (2020 est.)"
+      },
+      "country comparison to the world": 204
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "81.9 years"
+      },
+      "male": {
+        "text": "79.2 years"
+      },
+      "female": {
+        "text": "84.7 years (2020 est.)"
+      },
+      "country comparison to the world": 25
+    },
+    "Total fertility rate": {
+      "text": "1.49 children born/woman (2020 est.)",
+      "country comparison to the world": 203
+    },
+    "Contraceptive prevalence rate": {
+      "text": "79% (2019)",
+      "note": "note: percent of women aged 16-49"
+    },
+    "Drinking water source": {
+      "improved": {
+        "text": "urban: 100% of population / rural: 100% of population / total: 100% of population"
+      },
+      "unimproved": {
+        "text": "urban: 0% of population / rural: 0% of population / total: 0% of population (2017 est.)"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "10.4% (2017)"
+    },
+    "Physicians density": {
+      "text": "5.17 physicians/1,000 population (2017)"
+    },
+    "Hospital bed density": {
+      "text": "7.4 beds/1,000 population (2017)"
+    },
+    "Sanitation facility access": {
+      "improved": {
+        "text": "urban: 100% of population / rural: 100% of population / total: 100% of population"
+      },
+      "unimproved": {
+        "text": "urban: 0% of population / rural: 0% of population / total: 0% of population (2017 est.)"
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "0.1% (2017 est.)",
+      "country comparison to the world": 118
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "7,400 (2017 est.)",
+      "country comparison to the world": 113
+    },
+    "HIV/AIDS - deaths": {
+      "text": "<100 (2017 est.)"
+    },
+    "Obesity - adult prevalence rate": {
+      "text": "20.1% (2016)",
+      "country comparison to the world": 105
+    },
+    "Education expenditures": {
+      "text": "5.5% of GDP (2016)",
+      "country comparison to the world": 38
+    },
+    "School life expectancy (primary to tertiary education)": {
+      "total": {
+        "text": "16 years"
+      },
+      "male": {
+        "text": "16 years"
+      },
+      "female": {
+        "text": "16 years (2018)"
+      }
+    },
+    "Unemployment, youth ages 15-24": {
+      "total": {
+        "text": "9.4%"
+      },
+      "male": {
+        "text": "9.4%"
+      },
+      "female": {
+        "text": "9.4% (2018 est.)"
+      },
+      "country comparison to the world": 129
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "Republic of Austria"
+      },
+      "conventional short form": {
+        "text": "Austria"
+      },
+      "local long form": {
+        "text": "Republik Oesterreich"
+      },
+      "local short form": {
+        "text": "Oesterreich"
+      },
+      "etymology": {
+        "text": "the name Oesterreich means \"eastern realm\" or \"eastern march\" and dates to the 10th century; the designation refers to the fact that Austria was the easternmost extension of Bavaria, and, in fact, of all the Germans; the word Austria is a Latinization of the German name"
+      }
+    },
+    "Government type": {
+      "text": "federal parliamentary republic"
+    },
+    "Capital": {
+      "name": {
+        "text": "Vienna"
+      },
+      "geographic coordinates": {
+        "text": "48 12 N, 16 22 E"
+      },
+      "time difference": {
+        "text": "UTC+1 (6 hours ahead of Washington, DC, during Standard Time)"
+      },
+      "daylight saving time": {
+        "text": "+1hr, begins last Sunday in March; ends last Sunday in October"
+      },
+      "note": "etymology: the origin of the name is disputed but may derive from earlier settlements of the area; a Celtic town of Vedunia, established about 500 B.C., came under Roman dominance around 15 B.C. and became known as Vindobona; archeological remains of the latter survive at many sites in the center of Vienna"
+    },
+    "Administrative divisions": {
+      "text": "9 states (Bundeslaender, singular - Bundesland); Burgenland, Kaernten (Carinthia), Niederoesterreich (Lower Austria), Oberoesterreich (Upper Austria), Salzburg, Steiermark (Styria), Tirol (Tyrol), Vorarlberg, Wien (Vienna)"
+    },
+    "Independence": {
+      "text": "no official date of independence: 976 (Margravate of Austria established); 17 September 1156 (Duchy of Austria founded); 6 January 1453 (Archduchy of Austria acknowledged); 11 August 1804 (Austrian Empire proclaimed); 30 March 1867 (Austro-Hungarian dual monarchy established); 12 November 1918 (First Republic proclaimed); 27 April 1945 (Second Republic proclaimed)"
+    },
+    "National holiday": {
+      "text": "National Day (commemorates passage of the law on permanent neutrality), 26 October (1955)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "several previous; latest adopted 1 October 1920, revised 1929, replaced May 1934, replaced by German Weimar constitution in 1938 following German annexation, reinstated 1 May 1945"
+      },
+      "amendments": {
+        "text": "proposed through laws designated \"constitutional laws\" or through the constitutional process if the amendment is part of another law; approval required by at least a two-thirds majority vote by the National Assembly and the presence of one half of the members; a referendum is required only if requested by one third of the National Council or Federal Council membership; passage by referendum requires absolute majority vote; amended many times, last in 2018"
+      }
+    },
+    "Legal system": {
+      "text": "civil law system; judicial review of legislative acts by the Constitutional Court"
+    },
+    "International law organization participation": {
+      "text": "accepts compulsory ICJ jurisdiction; accepts ICCt jurisdiction"
+    },
+    "Citizenship": {
+      "citizenship by birth": {
+        "text": "no"
+      },
+      "citizenship by descent only": {
+        "text": "at least one parent must be a citizen of Austria"
+      },
+      "dual citizenship recognized": {
+        "text": "no"
+      },
+      "residency requirement for naturalization": {
+        "text": "10 years"
+      }
+    },
+    "Suffrage": {
+      "text": "16 years of age; universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "President Alexander VAN DER BELLEN (since 26 January 2017)"
+      },
+      "head of government": {
+        "text": "Sebastian KURZ elected chancellor (since 2 January 2020)"
+      },
+      "cabinet": {
+        "text": "Council of Ministers chosen by the president on the advice of the chancellor"
+      },
+      "elections/appointments": {
+        "text": "president directly elected by absolute majority popular vote in 2 rounds if needed for a 6-year term (eligible for a second term); elections last held on 24 April 2016 (first round), 22 May 2016 (second round, which was annulled), and 4 December 2016 (second round re-vote) (next election to be held in April 2022); chancellor appointed by the president but determined by the majority coalition parties in the Federal Assembly; vice chancellor appointed by the president on the advice of the chancellor"
+      },
+      "election results": {
+        "text": "Alexander VAN DER BELLEN elected in second round; percent of vote in first round - Norbert HOFER (FPOe) 35.1%, Alexander VAN DER BELLEN (independent, allied with the Greens) 21.3%, Irmgard GRISS (independent) 18.9%, Rudolf HUNDSTORFER (SPOe) 11.3%, Andreas KHOL (OeVP) 11.1%, Richard LUGNER (independent) 2.3%; percent of vote in second round - Alexander VAN DER BELLEN 53.8%, Norbert HOFER 46.2%"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "bicameral Federal Assembly or Bundesversammlung consists of: Federal Council or Bundesrat (61 seats; members appointed by state parliaments with each state receiving 3 to 12 seats in proportion to its population; members serve 5- or 6-year terms) ++ National Council or Nationalrat (183 seats; members directly elected in single-seat constituencies by proportional representation vote; members serve 5-year terms) (e.g. 2019)"
+      },
+      "elections": {
+        "text": "Federal Council - last appointed - NA ++ National Council - last held on 29 September 2019 (next to be held in 2024); note - election was originally scheduled for 2022, but President VAN DER BELLEN called for an early election (e.g. 2019)"
+      },
+      "election results": {
+        "text": "Federal Council - percent of vote by party - NA; seats by party - NA; composition - men 44, women 17, percent of women 27.9% ++ National Council - percent of vote by party - OeVP 37.5%, SPOe 21.2%, FPOe 16.2%, The Greens 13.9%, NEOS 8.1%, other 3.1%; seats by party - OeVP 71, SPOe 40, FPOe 31, The Greens 26, NEOS 15; composition - men 115, women 68, percent of women 37.2%; note - total Federal Assembly percent of women 34.8% (e.g. 2019)"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "Supreme Court of Justice or Oberster Gerichtshof (consists of 85 judges organized into 17 senates or panels of 5 judges each); Constitutional Court or Verfassungsgerichtshof (consists of 20 judges including 6 substitutes; Administrative Court or Verwaltungsgerichtshof - 2 judges plus other members depending on the importance of the case)"
+      },
+      "judge selection and term of office": {
+        "text": "Supreme Court judges nominated by executive branch departments and appointed by the president; judges serve for life; Constitutional Court judges nominated by several executive branch departments and approved by the president; judges serve for life; Administrative Court judges recommended by executive branch departments and appointed by the president; terms of judges and members determined by the president"
+      },
+      "subordinate courts": {
+        "text": "Courts of Appeal (4); Regional Courts (20); district courts (120); county courts"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "Austrian People's Party or OeVP [Sebastian KURZ] ++ Communist Party of Austria or KPOe [Mirko MESSNER] ++ Freedom Party of Austria or FPOe [Heinz-Christian STRACHE] ++ The Greens [Werner KOGLER] ++ NEOS - The New Austria [Beate MEINL-REISINGER] ++ NOW-Pilz List (JETZT-Liste Pilz) or PILZ [Maria STERN] ++ Social Democratic Party of Austria or SPOe [Pamela RENDI-WAGNER]"
+    },
+    "International organization participation": {
+      "text": "ADB (nonregional member), AfDB (nonregional member), Australia Group, BIS, BSEC (observer), CD, CE, CEI, CERN, EAPC, EBRD, ECB, EIB, EMU, ESA, EU, FAO, FATF, G-9, IADB, IAEA, IBRD, ICAO, ICC (national committees), ICCt, ICRM, IDA, IEA, IFAD, IFC, IFRCS, IGAD (partners), ILO, IMF, IMO, Interpol, IOC, IOM, IPU, ISO, ITSO, ITU, ITUC (NGOs), MIGA, MINURSO, NEA, NSG, OAS (observer), OECD, OIF (observer), OPCW, OSCE, Paris Club, PCA, PFP, Schengen Convention, SELEC (observer), UN, UNCTAD, UNESCO, UNFICYP, UNHCR, UNIDO, UNIFIL, UNTSO, UNWTO, UPU, WCO, WFTU (NGOs), WHO, WIPO, WMO, WTO, ZC"
+    },
+    "Diplomatic representation in the US": {
+      "chief of mission": {
+        "text": "Ambassador Martin WEISS (since 6 January 2020)"
+      },
+      "chancery": {
+        "text": "3524 International Court NW, Washington, DC 20008-3035"
+      },
+      "telephone": {
+        "text": "[1] (202) 895-6700"
+      },
+      "FAX": {
+        "text": "[1] (202) 895-6750"
+      },
+      "consulate(s) general": {
+        "text": "Los Angeles, New York"
+      },
+      "consulate(s)": {
+        "text": "Chicago"
+      }
+    },
+    "Diplomatic representation from the US": {
+      "chief of mission": {
+        "text": "Ambassador Trevor TRAINA (since 24 May 2018)"
+      },
+      "telephone": {
+        "text": "[43] (1) 31339-0"
+      },
+      "embassy": {
+        "text": "Boltzmanngasse 16, A-1090, Vienna"
+      },
+      "mailing address": {
+        "text": "Boltzmanngasse 16, 1090 Vienna, Austria"
+      },
+      "FAX": {
+        "text": "[43] (1) 3100682"
+      }
+    },
+    "Flag description": {
+      "text": "three equal horizontal bands of red (top), white, and red; the flag design is certainly one of the oldest - if not the oldest - national banners in the world; according to tradition, in 1191, following a fierce battle in the Third Crusade, Duke Leopold V of Austria's white tunic became completely blood-spattered; upon removal of his wide belt or sash, a white band was revealed; the red-white-red color combination was subsequently adopted as his banner"
+    },
+    "National symbol(s)": {
+      "text": "eagle, edelweiss, Alpine gentian; national colors: red, white"
+    },
+    "National anthem": {
+      "name": {
+        "text": "\"Bundeshymne\" (Federal Hymn)"
+      },
+      "lyrics/music": {
+        "text": "Paula von PRERADOVIC/Wolfgang Amadeus MOZART or Johann HOLZER (disputed)"
+      },
+      "note": "note: adopted 1947; the anthem is also known as \"Land der Berge, Land am Strome\" (Land of the Mountains, Land by the River); Austria adopted a new national anthem after World War II to replace the former imperial anthem composed by Franz Josef HAYDN, which had been appropriated by Germany in 1922 and was thereafter associated with the Nazi regime; a gendered version of the lyrics was adopted by the Austrian Federal Assembly in fall 2011 and became effective 1 January 2012"
+    }
+  },
+  "Economy": {
+    "Economy - overview": {
+      "text": "Austria is a well-developed market economy with skilled labor force and high standard of living. It is closely tied to other EU economies, especially Germany's, but also the US', its third-largest trade partner. Its economy features a large service sector, a sound industrial sector, and a small, but highly developed agricultural sector. ++ Austrian economic growth strengthen in 2017, with a 2.9% increase in GDP. Austrian exports, accounting for around 60% of the GDP, were up 8.2% in 2017. Austria's unemployment rate fell by 0.3% to 5.5%, which is low by European standards, but still at its second highest rate since the end of World War II, driven by an increased number of refugees and EU migrants entering the labor market. ++ Austria's fiscal position compares favorably with other euro-zone countries. The budget deficit stood at a low 0.7% of GDP in 2017 and public debt declined again to 78.4% of GDP in 2017, after reaching a post-war high 84.6% in 2015. The Austrian government has announced it plans to balance the fiscal budget in 2019. Several external risks, such as Austrian banks' exposure to Central and Eastern Europe, the refugee crisis, and continued unrest in Russia/Ukraine, eased in 2017, but are still a factor for the Austrian economy. Exposure to the Russian banking sector and a deep energy relationship with Russia present additional risks. ++ Austria elected a new pro-business government in October 2017 that campaigned on promises to reduce bureaucracy, improve public sector efficiency, reduce labor market protections, and provide positive investment incentives."
+    },
+    "GDP (purchasing power parity)": {
+      "text": "$441 billion (2017 est.) / $428.1 billion (2016 est.) / $422 billion (2015 est.)",
+      "note": "note: data are in 2017 dollars",
+      "country comparison to the world": 45
+    },
+    "GDP (official exchange rate)": {
+      "text": "$417.4 billion (2017 est.)"
+    },
+    "GDP - real growth rate": {
+      "text": "1.42% (2019 est.) / 2.58% (2018 est.) / 2.4% (2017 est.)",
+      "country comparison to the world": 156
+    },
+    "GDP - per capita (PPP)": {
+      "text": "$50,000 (2017 est.) / $49,000 (2016 est.) / $48,900 (2015 est.)",
+      "note": "note: data are in 2017 dollars",
+      "country comparison to the world": 31
+    },
+    "Gross national saving": {
+      "text": "27% of GDP (2017 est.) / 26.2% of GDP (2016 est.) / 25.5% of GDP (2015 est.)",
+      "country comparison to the world": 43
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "52.1% (2017 est.)"
+      },
+      "government consumption": {
+        "text": "19.5% (2017 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "23.5% (2017 est.)"
+      },
+      "investment in inventories": {
+        "text": "1.6% (2017 est.)"
+      },
+      "exports of goods and services": {
+        "text": "54.2% (2017 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-50.7% (2017 est.)"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "1.3% (2017 est.)"
+      },
+      "industry": {
+        "text": "28.4% (2017 est.)"
+      },
+      "services": {
+        "text": "70.3% (2017 est.)"
+      }
+    },
+    "Agriculture - products": {
+      "text": "grains, potatoes, wine, fruit; dairy products, cattle, pigs, poultry; lumber and other forestry products"
+    },
+    "Industries": {
+      "text": "construction, machinery, vehicles and parts, food, metals, chemicals, lumber and paper, electronics, tourism"
+    },
+    "Industrial production growth rate": {
+      "text": "6.5% (2017 est.)",
+      "country comparison to the world": 35
+    },
+    "Labor force": {
+      "text": "3.739 million (2020 est.)",
+      "country comparison to the world": 94
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "0.7%"
+      },
+      "industry": {
+        "text": "25.2%"
+      },
+      "services": {
+        "text": "74.1% (2017 est.)"
+      }
+    },
+    "Unemployment rate": {
+      "text": "7.35% (2019 est.) / 7.7% (2018 est.)",
+      "country comparison to the world": 116
+    },
+    "Population below poverty line": {
+      "text": "3% (2017 est.)"
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "2.8%"
+      },
+      "highest 10%": {
+        "text": "23.5% (2012 est.)"
+      }
+    },
+    "Budget": {
+      "revenues": {
+        "text": "201.7 billion (2017 est.)"
+      },
+      "expenditures": {
+        "text": "204.6 billion (2017 est.)"
+      }
+    },
+    "Taxes and other revenues": {
+      "text": "48.3% (of GDP) (2017 est.)",
+      "country comparison to the world": 18
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "-0.7% (of GDP) (2017 est.)",
+      "country comparison to the world": 67
+    },
+    "Public debt": {
+      "text": "78.6% of GDP (2017 est.) / 83.6% of GDP (2016 est.)",
+      "note": "note: this is general government gross debt, defined in the Maastricht Treaty as consolidated general government gross debt at nominal value, outstanding at the end of the year; it covers the following categories of government liabilities (as defined in ESA95): currency and deposits (AF.2), securities other than shares excluding financial derivatives (AF.3, excluding AF.34), and loans (AF.4); the general government sector comprises the sub-sectors of central government, state government, local government and social security funds; as a percentage of GDP, the GDP used as a denominator is the gross domestic product in current year prices",
+      "country comparison to the world": 37
+    },
+    "Fiscal year": {
+      "text": "calendar year"
+    },
+    "Inflation rate (consumer prices)": {
+      "text": "2.2% (2017 est.) / 1% (2016 est.)",
+      "country comparison to the world": 111
+    },
+    "Current account balance": {
+      "text": "$12.667 billion (2019 est.) / $5.989 billion (2018 est.)",
+      "country comparison to the world": 21
+    },
+    "Exports": {
+      "text": "$156.7 billion (2017 est.) / $149.5 billion (2016 est.)",
+      "country comparison to the world": 32
+    },
+    "Exports - partners": {
+      "text": "Germany 29.4%, US 6.3%, Italy 6.2%, Switzerland 5.1%, France 4.8%, Slovakia 4.8% (2017)"
+    },
+    "Exports - commodities": {
+      "text": "machinery and equipment, motor vehicles and parts, manufactured goods, chemicals, iron and steel, foodstuffs"
+    },
+    "Imports": {
+      "text": "$158.1 billion (2017 est.) / $142.3 billion (2016 est.)",
+      "country comparison to the world": 28
+    },
+    "Imports - commodities": {
+      "text": "machinery and equipment, motor vehicles, chemicals, metal goods, oil and oil products, natural gas; foodstuffs"
+    },
+    "Imports - partners": {
+      "text": "Germany 41.8%, Italy 5.8%, Switzerland 5.5%, Czech Republic 4.4%, Netherlands 4.2% (2017)"
+    },
+    "Reserves of foreign exchange and gold": {
+      "text": "$21.57 billion (31 December 2017 est.) / $23.36 billion (31 December 2016 est.)",
+      "country comparison to the world": 57
+    },
+    "Debt - external": {
+      "text": "$630.8 billion (31 December 2017 est.) / $679.3 billion (31 March 2015 est.)",
+      "country comparison to the world": 19
+    },
+    "Exchange rates": {
+      "text": "euros (EUR) per US dollar - / 0.885 (2017 est.) / 0.903 (2016 est.) / 0.9214 (2015 est.) / 0.885 (2014 est.) / 0.7634 (2013 est.)"
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "100% (2020)"
+      }
+    },
+    "Electricity - production": {
+      "text": "60.78 billion kWh (2016 est.)",
+      "country comparison to the world": 48
+    },
+    "Electricity - consumption": {
+      "text": "64.6 billion kWh (2016 est.)",
+      "country comparison to the world": 41
+    },
+    "Electricity - exports": {
+      "text": "19.21 billion kWh (2016 est.)",
+      "country comparison to the world": 9
+    },
+    "Electricity - imports": {
+      "text": "26.37 billion kWh (2016 est.)",
+      "country comparison to the world": 6
+    },
+    "Electricity - installed generating capacity": {
+      "text": "24.79 million kW (2016 est.)",
+      "country comparison to the world": 36
+    },
+    "Electricity - from fossil fuels": {
+      "text": "25% of total installed capacity (2016 est.)",
+      "country comparison to the world": 188
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "0% of total installed capacity (2017 est.)",
+      "country comparison to the world": 41
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "43% of total installed capacity (2017 est.)",
+      "country comparison to the world": 45
+    },
+    "Electricity - from other renewable sources": {
+      "text": "31% of total installed capacity (2017 est.)",
+      "country comparison to the world": 17
+    },
+    "Crude oil - production": {
+      "text": "13,000 bbl/day (2018 est.)",
+      "country comparison to the world": 75
+    },
+    "Crude oil - exports": {
+      "text": "0 bbl/day (2017 est.)",
+      "country comparison to the world": 88
+    },
+    "Crude oil - imports": {
+      "text": "146,600 bbl/day (2017 est.)",
+      "country comparison to the world": 37
+    },
+    "Crude oil - proved reserves": {
+      "text": "41.2 million bbl (1 January 2018 est.)",
+      "country comparison to the world": 78
+    },
+    "Refined petroleum products - production": {
+      "text": "186,500 bbl/day (2017 est.)",
+      "country comparison to the world": 54
+    },
+    "Refined petroleum products - consumption": {
+      "text": "268,000 bbl/day (2017 est.)",
+      "country comparison to the world": 47
+    },
+    "Refined petroleum products - exports": {
+      "text": "49,960 bbl/day (2017 est.)",
+      "country comparison to the world": 55
+    },
+    "Refined petroleum products - imports": {
+      "text": "135,500 bbl/day (2017 est.)",
+      "country comparison to the world": 42
+    },
+    "Natural gas - production": {
+      "text": "1.274 billion cu m (2017 est.)",
+      "country comparison to the world": 62
+    },
+    "Natural gas - consumption": {
+      "text": "9.486 billion cu m (2017 est.)",
+      "country comparison to the world": 50
+    },
+    "Natural gas - exports": {
+      "text": "5.437 billion cu m (2017 est.)",
+      "country comparison to the world": 29
+    },
+    "Natural gas - imports": {
+      "text": "14.02 billion cu m (2017 est.)",
+      "country comparison to the world": 22
+    },
+    "Natural gas - proved reserves": {
+      "text": "6.513 billion cu m (1 January 2018 est.)",
+      "country comparison to the world": 84
+    },
+    "Carbon dioxide emissions from consumption of energy": {
+      "text": "63.93 million Mt (2017 est.)",
+      "country comparison to the world": 53
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "3,700,006"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "41.91 (2019 est.)"
+      },
+      "country comparison to the world": 38
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "10,574,725"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "119.78 (2019 est.)"
+      },
+      "country comparison to the world": 85
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "mobile-cellular subscribership is everywhere; cable networks are very extensive; all telephone applications and Internet services are accessible; broadband is available in all large municipalities; one company is in the process of extending fiber infrastructure to an additional 300,000 premises, affecting some 500 towns, as a consequence the number of DSL lines is likely to fall as customers move to fiber; the govt. vows to spend 1 billion euros to upgrade the national broadband availability; the roll-out of 5G has begun in a test phase in 2019 and is planned to be available nation-wide in 2025 (2020)"
+      },
+      "domestic": {
+        "text": "developed and efficient; 41 per 100 fixed-line for households, 174 per 100 for companies; 120 per 100 mobile-cellular; broadband: 138 per 100 on smartphones; 62 per 100 fixed broadband, 54 per 100 mobile broadband (2019)"
+      },
+      "international": {
+        "text": "country code - 43; earth stations available in the Astra, Intelsat, Eutelsat satellite systems (2019)"
+      },
+      "note": "note: the COVID-19 outbreak is negatively impacting telecommunications production and supply chains globally; consumer spending on telecom devices and services has also slowed due to the pandemic's effect on economies worldwide; overall progress towards improvements in all facets of the telecom industry - mobile, fixed-line, broadband, submarine cable and satellite - has moderated"
+    },
+    "Broadcast media": {
+      "text": "worldwide cable and satellite TV are available; the public incumbent ORF competes with three other major, several regional domestic, and up to 400 international TV stations; TV coverage is in principle 100%, but only 90% use broadcast media; Internet streaming not only complements, but increasingly replaces regular TV stations (2019)"
+    },
+    "Internet country code": {
+      "text": ".at"
+    },
+    "Internet users": {
+      "total": {
+        "text": "7,712,665"
+      },
+      "percent of population": {
+        "text": "87.71% (July 2018 est.)"
+      },
+      "country comparison to the world": 63
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "2,521,100"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "29 (2018 est.)"
+      },
+      "country comparison to the world": 49
+    },
+    "Communications - note": {
+      "note": "note 1: the Austrian National Library contains important collections of the Imperial Library of the Holy Roman Empire and of the Austrian Empire, as well as of the Austrian Republic; among its more than 12 million items are outstanding holdings of rare books, maps, globes, papyrus, and music; its Globe Museum is the only one in the world ++ note 2: on 1 October 1869, Austria-Hungary introduced the world's first postal card - postal stationery with an imprinted stamp indicating the prepayment of postage; simple and cheap (sent for a fraction of the cost of a regular letter), postal cards became an instant success, widely produced in the millions worldwide ++ note 3: Austria followed up with the creation of the world's first commercial picture postcards - cards bearing a picture or photo to which postage is affixed - in May 1871; sent from Vienna, the image served as a souvenir of the city; together, postal cards and post cards served as the world's e-mails of the late 19th and early 20th centuries ++ note 4: Austria was also an airmail pioneer; from March to October of 1918, it conducted the world's first regular (daily) airmail service - between the imperial cities of Vienna, Krakow, and Lemberg - a combined distance of some 650 km (400 mi) (earlier airmail services had been set up in a few parts of the world, but only for short stretches and none lasted beyond a few days or weeks); an expansion of the route in June of 1918 allowed private mail to be flown to Kyiv, in newly independent Ukraine, which made the route the world's first regular international airmail service (covering a distance of some 1,200 km; 750 mi)"
+    }
+  },
+  "Transportation": {
+    "National air transport system": {
+      "number of registered air carriers": {
+        "text": "11 (2020)"
+      },
+      "inventory of registered aircraft operated by air carriers": {
+        "text": "130"
+      },
+      "annual passenger traffic on registered air carriers": {
+        "text": "12,935,505 (2018)"
+      },
+      "annual freight traffic on registered air carriers": {
+        "text": "373.51 million mt-km (2018)"
+      }
+    },
+    "Civil aircraft registration country code prefix": {
+      "text": "OE (2016)"
+    },
+    "Airports": {
+      "text": "50 (2020)",
+      "country comparison to the world": 90
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "24 (2017)"
+      },
+      "over 3,047 m": {
+        "text": "1 (2017)"
+      },
+      "2,438 to 3,047 m": {
+        "text": "5 (2017)"
+      },
+      "1,524 to 2,437 m": {
+        "text": "1 (2017)"
+      },
+      "914 to 1,523 m": {
+        "text": "4 (2017)"
+      },
+      "under 914 m": {
+        "text": "13 (2017)"
+      }
+    },
+    "Airports - with unpaved runways": {
+      "total": {
+        "text": "28 (2013)"
+      },
+      "1,524 to 2,437 m": {
+        "text": "1 (2013)"
+      },
+      "914 to 1,523 m": {
+        "text": "3 (2013)"
+      },
+      "under 914 m": {
+        "text": "24 (2013)"
+      }
+    },
+    "Heliports": {
+      "text": "1 (2013)"
+    },
+    "Pipelines": {
+      "text": "1888 km gas, 594 km oil, 157 km refined products (2017)"
+    },
+    "Railways": {
+      "total": {
+        "text": "5,800 km (2017)"
+      },
+      "standard gauge": {
+        "text": "5,300 km 1.435-m gauge (3,826 km electrified) (2016)"
+      },
+      "country comparison to the world": 33
+    },
+    "Roadways": {
+      "total": {
+        "text": "137,039 km (2018)"
+      },
+      "paved": {
+        "text": "137,039 km (includes 2,232 km of expressways) (2018)"
+      },
+      "country comparison to the world": 39
+    },
+    "Waterways": {
+      "text": "358 km (2011)",
+      "country comparison to the world": 89
+    },
+    "Ports and terminals": {
+      "river port(s)": {
+        "text": "Enns, Krems, Linz, Vienna (Danube)"
+      }
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "Austrian Armed Forces: Land Forces Command, Air Forces Command, plus a Logistics Command and Service Support & Cyber Defence Command (2019)"
+    },
+    "Military expenditures": {
+      "text": "0.7% of GDP (2019) / 0.7% of GDP (2018) / 0.8% of GDP (2017) / 0.7% of GDP (2016) / 0.7% of GDP (2015)",
+      "country comparison to the world": 132
+    },
+    "Military and security service personnel strengths": {
+      "text": "the Austrian Armed Forces have approximately 23,000 total active duty personnel (13,000 Land Forces; 2,500 Air Force; 7,500 support) (2019 est.)"
+    },
+    "Military equipment inventories and acquisitions": {
+      "text": "the Austrian military's inventory includes a mix of domestically-produced and imported weapons systems from European countries and the US; since 2010, Germany and Italy are the leading suppliers of armaments to Austria; the Austrian defense industry produces a range of armored vehicles (2019 est.)"
+    },
+    "Military deployments": {
+      "text": "300 Bosnia-Herzegovina (EUFOR stabilization force); 320 Kosovo (NATO); 170 Lebanon (UNIFIL) (2020)"
+    },
+    "Military service age and obligation": {
+      "text": "registration requirement at age 17, the legal minimum age for voluntary military service; 18 is the legal minimum age for compulsory military service (6 months), or optionally, alternative civil/community service (9 months); males 18 to 50 years old in the militia or inactive reserve are subject to compulsory service; in a January 2012 referendum, a majority of Austrians voted in favor of retaining the system of compulsory military service (with the option of alternative/non-military service) instead of switching to a professional army system (2015)"
+    }
+  },
+  "Terrorism": {
+    "Terrorist group(s)": {
+      "text": "Islamic State of Iraq and ash-Sham (ISIS) (2020)",
+      "note": "note: details about the history, aims, leadership, organization, areas of operation, tactics, targets, weapons, size, and sources of support of the group(s) appear(s) in Appendix-T"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "none"
+    },
+    "Refugees and internally displaced persons": {
+      "refugees (country of origin)": {
+        "text": "51,955 (Syria), 37,276 (Afghanistan), 8,664 (Russia), 8,568 (Iraq), 7,636 (Somalia), 6,393 (Iran) (2018)"
+      },
+      "stateless persons": {
+        "text": "1,132 (2019)"
+      }
+    },
+    "Illicit drugs": {
+      "text": "transshipment point for Southwest Asian heroin and South American cocaine destined for Western Europe; increasing consumption of European-produced synthetic drugs"
+    }
+  }
+}
