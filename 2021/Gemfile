@@ -1,0 +1,12 @@
+source "https://rubygems.org"
+
+gem "yorobot"
+
+
+gem "webget"    ## add webcache, webget, webclient, etc. support
+
+gem "logutils"
+gem "csvreader"
+
+## note: add nokogiri by hand first  (e.g. gem install nokogiri) - why? why not?
+

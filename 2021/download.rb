@@ -39,5 +39,3 @@ def download
 end
 
 
-
-download
