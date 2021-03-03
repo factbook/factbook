@@ -1,0 +1,12 @@
+CHANGELOG.md
+Manifest.txt
+README.md
+Rakefile
+data/codes.csv
+data/codesxref.csv
+lib/factbook-codes.rb
+lib/factbook-codes/codes.rb
+lib/factbook-codes/version.rb
+lib/factbook/codes.rb
+test/helper.rb
+test/test_codes.rb

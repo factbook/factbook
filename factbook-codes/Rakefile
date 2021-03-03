@@ -1,0 +1,32 @@
+require 'hoe'
+require './lib/factbook-codes/version.rb'
+
+
+Hoe.spec 'factbook-codes' do
+
+  self.version = Factbook::Module::Codes::VERSION
+
+  self.summary = 'factbook-codes -  world factbook country codes (by region, by category, etc.)'
+  self.description = summary
+
+  self.urls = { home: 'https://github.com/factbook/factbook' }
+
+  self.author = 'Gerald Bauer'
+  self.email  = 'openmundi@googlegroups.com'
+
+  # switch extension to .markdown for gihub formatting
+  self.readme_file  = 'README.md'
+  self.history_file = 'CHANGELOG.md'
+
+  self.extra_deps = [
+    ['logutils' ],
+    ['csvreader'],
+  ]
+
+  self.licenses = ['Public Domain']
+
+  self.spec_extras = {
+   required_ruby_version: '>= 2.2.2'
+  }
+
+end
