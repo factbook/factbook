@@ -15,7 +15,7 @@ class TestJson < MiniTest::Test
      codes = [ 'au',
                'ag',
                'be',
-               #'br',
+               'br',
                #'mx',
                #'ls',
                #'vt',
@@ -25,10 +25,10 @@ class TestJson < MiniTest::Test
 
      codes.each do |code|
 
-       html = File.read( "#{Factbook.root}/test/data/src/#{code}.html" )
-       page = Factbook::Page.new( code, html: html )
+       path = "#{Factbook::Module::Readers.root}/../testdata/json/#{code}.json"
+       page = Factbook::Page.read_json( path )
 
-       h = page.data
+       h = page.to_h
        pp h
 
        ### save to json

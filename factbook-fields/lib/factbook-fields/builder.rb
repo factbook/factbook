@@ -1,27 +1,34 @@
 
 module Factbook
 
-######
-# json builder -- lets us rebuild a page from "dumped" json (instead of parsing html page)
 
-class JsonBuilder
+######
+# builder -- lets us rebuild a profile from "dumped" hash
+
+class ProfileBuilder      ## change to DataBuilder or such - why? why not?
   include LogUtils::Logging
   include NormalizeHelper    ##  e.g. normalize_category
 
 
-attr_reader :info,            ## not used yet -- page info incl. country_name, region_name, last_updated etc.
-            :errors,          ## not used yet -- encoding erros etc.
-            :profile
+attr_reader :profile,
+            :errors           ## not used yet -- encoding erros etc.
 
 
-def initialize( text )
 
-  data = JSON.parse( text )
+
+
+def initialize( text_or_data )
+
+  data = if text_or_data.is_a?( String )
+           text = text_or_data
+           JSON.parse( text )
+         else  ## assume it's already a hash
+            text_or_data
+         end
+
 
   @profile = Profile.new
-  @info    = nil   ## fix/todo: sorry - for now no page info (use header in json - why? why not??)
   @errors  = []       ## fix/todo: sorry - for now no errors possible/tracked
-
 
   data.each do |k1,v1|
     category_title    = k1
@@ -54,7 +61,7 @@ def initialize( text )
   end
 end
 
-end # class JsonBuilder
+end # class ProfileBuilder
 
 
 end # module Factbook

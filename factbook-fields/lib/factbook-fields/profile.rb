@@ -8,11 +8,16 @@ class Profile
   ## attr_reader :categories   ## "structured" access e.g. categories/fields/etc.
   ##   use each for access by default for categories - why? why not?
 
-  attr_accessor :info         ##  meta info e.g. country_code, country_name, region_name, last_updated, etc.
+
+  def self.read( path )   ## convenience helper
+    text = File.open( path, 'r:utf-8' ) { |f| f.read }
+    b = ProfileBuilder.new( text )
+    b.profile
+  end
+
 
   def initialize
     @categories = {}
-    @info       = ProfileInfo.new
   end
 
   def add( category )

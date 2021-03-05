@@ -19,7 +19,7 @@ See [factbook/factbook.json »](https://github.com/factbook/factbook.json)
 
 ```ruby
 page = Factbook::Page.new( 'br' )   # br is the country code for Brazil
-pp page.data                        # pretty print hash
+pp page.to_h                        # pretty print data hash
 ```
 
 resulting in:
