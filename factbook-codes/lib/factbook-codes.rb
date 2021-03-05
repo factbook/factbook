@@ -10,7 +10,7 @@ require 'csvreader'
 require 'factbook-codes/version' # let it always go first
 
 
-module SportDb
+module Factbook
   Logging = LogUtils::Logging     ## logging machinery shortcut; use LogUtils for now
 end
 
