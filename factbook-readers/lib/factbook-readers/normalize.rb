@@ -3,7 +3,7 @@ module Factbook
   module NormalizeHelper
 
 
-def normalize_category( text )
+def normalize_title( text )
 
   ## note: fix typos/errors with double colons e.g. note::  (instead of note:)
 

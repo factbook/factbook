@@ -21,8 +21,14 @@ class Profile
   alias_method :<<, :add
 
   def [](key)  ### convenience shortcut
-    @categories[key]
+    if key.is_a?( Integer )  ## allow access by 0,1,2, etc.
+      @categories.values[ key ]
+    else
+      @categories[key]
+    end
   end
+
+  def size()   @categories.size; end
 
 
 

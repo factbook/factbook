@@ -5,23 +5,12 @@ module Factbook
 class Page
   include LogUtils::Logging
 
-  attr_reader :sects    ## "structured" access e.g. sects/subsects/etc.
-  attr_reader :info     ##  meta info e.g. country_code, country_name, region_name, last_updated, etc.
-  attr_reader :data     ## "plain" access with vanilla hash
+  attr_reader :profile    ## "structured" access e.g. sects/subsects/etc.
 
 
   ## standard version  (note: requires https)
   SITE_BASE = 'https://www.cia.gov/library/publications/the-world-factbook/geos/{code}.html'
 
-
-  def self.parse( html )   ## parse html from string
-    new( html: html )
-  end
-
-  def self.read( path )
-    html = File.open( path, 'r:utf-8' ) { |f| f.read }
-    new( html: html )
-  end
 
   def self.parse_json( json )  ## parse json from string
     new( json: json )
@@ -36,26 +25,17 @@ class Page
     new( code, cache: cache )
   end
 
-  ## some convenience alias(es)
-  class << self
-    alias_method :read_html,  :read
-    alias_method :parse_html, :parse
-  end
 
 
   def initialize( code=nil,
                   json: nil,
-                  html: nil,
                   cache: false,
                   info: nil )
     if json
        ## note: assumes json is (still) a string/text
        ##        (NOT yet parsed to structured data)
       b = JsonBuilder.new( json )
-    else  ## assume html
-      if html
-        ## for debugging and testing allow "custom" passed-in html page
-      else
+    else  ## assume "raw" json dataset
         ## allow passing in code struct too - just use/pluck two-letter code from struct !!!
         code = code.code   if code.is_a?( Codes::Code )
 
@@ -67,32 +47,16 @@ class Page
                else
                    download_page( url )
                end
-      end
       b = Builder.new( html )
     end
 
-    @sects = b.sects
-    @info  = b.info
+    @profile = b.profile
+    ## @info  = b.info
 
     ## todo/fix/quick hack:
     ##  check for info opts - lets you overwrite page info
     ##  -- use proper header to setup page info - why, why not??
-    @info = info    if info
-
-
-    @data = {}
-    @sects.each do |sect|
-      @data[ sect.title ] = sect.data
-    end
-  end
-
-
-  def to_json( minify: false )  ## convenience helper for data.to_json; note: pretty print by default!
-    if minify
-      data.to_json
-    else ## note: pretty print by default!
-      JSON.pretty_generate( data )
-    end
+    ## @info = info    if info
   end
 
 
@@ -100,12 +64,18 @@ class Page
     # lets you use
     #   page['geo']
     #   instead of
-    #   page.data['geo']
+    #   page.profile['geo']
 
     ##  fix: use delegate data, [] from forwardable lib - why?? why not??
-
-    data[key]
+    @profile[key]
   end
+
+
+  def to_json( minify: false )  ## convenience helper for data.to_json; note: pretty print by default!
+    @profile.to_json( minify: minify )
+  end
+
+
 
 
 private

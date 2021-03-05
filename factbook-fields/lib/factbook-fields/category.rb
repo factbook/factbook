@@ -22,6 +22,9 @@ class Category
     @fields[ key ]
   end
 
+  def size()   @fields.size; end
+
+
 
   def data   ## convert to hash
     ## todo/fix: how to know when to rebuild?
