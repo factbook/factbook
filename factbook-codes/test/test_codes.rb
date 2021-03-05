@@ -10,8 +10,8 @@ class TestCodes < MiniTest::Test
 
 
   def test_codes
-    assert_equal 261, Factbook.codes.size
-    assert_equal 261, Factbook.codes.to_a.size
+    assert_equal 260, Factbook.codes.size
+    assert_equal 260, Factbook.codes.to_a.size
 
 
     assert_equal 195, Factbook.codes.countries.size
@@ -19,7 +19,7 @@ class TestCodes < MiniTest::Test
     assert_equal   5, Factbook.codes.oceans.size
     assert_equal   1, Factbook.codes.world.size
     assert_equal   2, Factbook.codes.others.size
-    assert_equal   6, Factbook.codes.misc.size
+    assert_equal   5, Factbook.codes.misc.size
 
     assert_equal   8, Factbook.codes.dependencies_us.size
 
@@ -29,7 +29,7 @@ class TestCodes < MiniTest::Test
     assert_equal   6, Factbook.codes.central_asia.size
     assert_equal  22, Factbook.codes.east_n_souteast_asia.size
     assert_equal  19, Factbook.codes.middle_east.size
-    assert_equal  56, Factbook.codes.africa.size
+    assert_equal  55, Factbook.codes.africa.size
     assert_equal   7, Factbook.codes.north_america.size
     assert_equal  33, Factbook.codes.central_america_n_caribbean.size
     assert_equal  14, Factbook.codes.south_america.size
@@ -44,14 +44,14 @@ class TestCodes < MiniTest::Test
     assert_equal  Factbook.codes.category('World').size,  Factbook.codes.region('World').size
 
 
-    assert_equal 261, Factbook.codes.countries.size +
+    assert_equal 260, Factbook.codes.countries.size +
                       Factbook.codes.others.size +
                       Factbook.codes.dependencies.size +
                       Factbook.codes.misc.size +
                       Factbook.codes.oceans.size +
                       Factbook.codes.world.size
 
-    assert_equal 261, Factbook.codes.europe.size +
+    assert_equal 260, Factbook.codes.europe.size +
                       Factbook.codes.south_asia.size +
                       Factbook.codes.central_asia.size +
                       Factbook.codes.east_n_souteast_asia.size +
@@ -64,9 +64,20 @@ class TestCodes < MiniTest::Test
                       Factbook.codes.antartica.size +
                       Factbook.codes.region('Oceans').size +
                       Factbook.codes.region('World').size
-
   end
 
-end # class TestCodes
+  def test_region_slug
+    bx = Factbook.codes[24]
+    #=> bx,Brunei,Countries,East & Southeast Asia
 
+    assert_equal 'East & Southeast Asia', bx.region
+    assert_equal 'east-n-southeast-asia', bx.region_slug
+
+    ac = Factbook.codes[5]
+    #=> ac,Antigua and Barbuda,Countries,Central America and Caribbean
+
+    assert_equal 'Central America and Caribbean', ac.region
+    assert_equal 'central-america-n-caribbean',   ac.region_slug
+  end
+end # class TestCodes
 

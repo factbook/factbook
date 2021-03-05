@@ -6,13 +6,33 @@
 
 module Factbook
 
-class Codes
+##  check: move region_to_slug into a utility module / helper
+##              for (re)use - how, why? why not??
+def self.region_to_slug( text )
+  ##  change and  =>  n
+  ##  change  &   =>  n
+  ##  change all spaces to => -
+  ##   e.g. East & Southeast Asia          => east-n-southeast-asia
+  ##        Central America and Caribbean  => central-america-n-caribbean
+  text.downcase.gsub('and', 'n').gsub( '&', 'n' ).gsub( ' ', '-' )
+end
 
-  Code = Struct.new( :code,      ## todo: add notes (country affiliation) - why? why not??
-                     :name,
-                     :category,  ## e.g. Countries, Other, Oceans, World, Dependencies, etc.
-                     :region,    ## e.g. Europe, Oceans, etc.
-                    )
+class Codes
+  class Code   ## nested class
+    attr_accessor :code,      ## todo: add notes (country affiliation) - why? why not??
+                  :name,
+                  :category,  ## e.g. Countries, Other, Oceans, World, Dependencies, etc.
+                  :region    ## e.g. Europe, Oceans, etc.
+
+    ## todo/check: add aliases e.g. - why? why not?
+    ##    country_code => code
+    ##    country_name => name
+    ##    region_name  => region
+
+    def region_slug() Factbook.region_to_slug( @region ); end
+  end # (nested) class Code
+
+
 
   def self.read_csv( path )
     ###
@@ -27,20 +47,18 @@ class Codes
 
     rows = CsvHash.read( path )
 
-    pp rows
+    ## pp rows
 
     recs = []
     rows.each do |row|
-      pp row
+      ## pp row
       rec = Code.new
       rec.code     = row['Code'].strip    ## remove leading n trailing whitespaces
       rec.name     = row['Name'].strip
+      rec.category = row['Category'].strip
+      rec.region   = row['Region'].strip
 
-      ## note: for now category and region are optional
-      rec.category = row['Category'].strip   if row['Category'] && row['Category'].size > 0
-      rec.region   = row['Region'].strip     if row['Region'] && row['Region'].size > 0
-
-      pp rec
+      ## pp rec
       recs << rec
     end
 
@@ -60,6 +78,8 @@ class Codes
     Codes.new( codes )   ## return (again) new Codes obj for easy-chaining - why? why not?
   end
 
+
+  def [](key) @codes[ key ]; end
 
   def to_a
     @codes.collect {|code| code.code }   ## return array of codes
