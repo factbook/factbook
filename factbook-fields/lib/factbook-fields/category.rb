@@ -36,6 +36,18 @@ class Category
     data
   end
 
+  def to_html
+     buf = String.new('')
+     buf << "<h2>#{@title}</h2>"
+     buf << "    <!-- #{@fields.size} field(s) -->"  ## add some (stats) comments
+     buf << "\n\n"
+
+     @fields.each do |_,field|
+       buf << field.to_html
+     end
+     buf
+  end
+
 end # class Category
 
 end # module Factbook

@@ -9,7 +9,6 @@ lib/factbook-fields/builder.rb
 lib/factbook-fields/category.rb
 lib/factbook-fields/comparisons.rb
 lib/factbook-fields/field.rb
-lib/factbook-fields/normalize.rb
 lib/factbook-fields/profile.rb
 lib/factbook-fields/version.rb
 lib/factbook/fields.rb
@@ -17,4 +16,3 @@ test/helper.rb
 test/test_builder.rb
 test/test_comparisons.rb
 test/test_fields.rb
-test/test_normalize.rb

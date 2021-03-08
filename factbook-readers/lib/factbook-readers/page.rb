@@ -85,6 +85,7 @@ class Page
   ## convenience helpers - forward to profile
   def [](key)                   @profile[key]; end
   def to_h()                    @profile.to_h; end
+  def to_html()                 @profile.to_html; end
   def to_json( minify: false )  @profile.to_json( minify: minify ); end
   def size()                    @profile.size; end
 

@@ -45,6 +45,16 @@ class Profile
     data
   end
 
+  def to_html
+    buf = String.new('')
+    @categories.each do |_,category|
+      buf << category.to_html
+    end
+    buf
+  end
+
+
+
   def to_json( minify: false )  ## convenience helper for data.to_json; note: pretty print by default!
     if minify
       to_h.to_json
