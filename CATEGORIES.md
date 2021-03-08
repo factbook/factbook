@@ -1,141 +1,101 @@
 # Categories
 
-## Introduction _(261)_
+## Introduction _(260)_
 
 - **Background** _(260)_
 - **Preliminary statement** _(1 - ee)_
-- **** _(1 - ay)_
 
-## Geography _(261)_
+## Geography _(260)_
 
 - **Location** _(259)_
-     - metropolitan France _(1 - fr)_
 - **Geographic coordinates** _(258)_
-     - metropolitan France _(1 - fr)_
 - **Map references** _(260)_
-     - metropolitan France _(1 - fr)_
 - **Area** _(260)_
-     - total _(257)_
-     - land _(249)_
+     - total _(258)_
+     - land _(251)_
      - water _(248)_
-     - note _(53)_
 - **Area - comparative** _(260)_
-     - Area comparison map _(85)_
-     - top fifteen World Factbook entities ranked by size _(1 - xx)_
-     - top ten largest water bodies _(1 - xx)_
-     - top ten largest landmasses _(1 - xx)_
-     - top ten largest islands _(1 - xx)_
 - **Land boundaries** _(255)_
-     - total _(168)_
-     - border countries _(166)_
-     - note _(9 - ca cu mo od sp su us ee xx)_
-     - regional borders _(1 - ch)_
+     - total _(251)_
+     - border countries _(165)_
      - border sovereign base areas _(1 - cy)_
      - metropolitan France - total _(1 - fr)_
-     - regional border _(1 - hk)_
-     - regional border (1) _(1 - mc)_
+     - French Guiana - total _(1 - fr)_
+     - regional borders _(2 - hk mc)_
 - **Coastline** _(259)_
-     - total _(1 - fr)_
-     - metropolitan France _(1 - fr)_
-     - note _(1 - xx)_
-- **Maritime claims** _(251)_
+- **Maritime claims** _(250)_
      - territorial sea _(197)_
-     - continental shelf _(92)_
-     - exclusive fishing zone _(36)_
-     - contiguous zone _(84)_
-     - exclusive economic zone _(132)_
-     - note _(3 - kn ly gz)_
+     - continental shelf _(96)_
+     - contiguous zone _(89)_
+     - exclusive fishing zone _(33)_
+     - exclusive economic zone _(141)_
+     - Environment (Protection and Preservation) Zone _(1 - io)_
 - **Climate** _(260)_
-     - metropolitan France _(1 - fr)_
+     - Climate _(1 - xx)_
+     - Ten Driest Places on Earth (Average Annual Precipitation) _(1 - xx)_
+     - Ten Wettest Places on Earth (Average Annual Precipitation) _(1 - xx)_
+     - Ten Coldest Places on Earth (Lowest Average Monthly Temperature) _(1 - xx)_
+     - Ten Hottest Places on Earth (Highest Average Monthly Temperature) _(1 - xx)_
 - **Terrain** _(257)_
-     - metropolitan France _(1 - fr)_
-- **Elevation extremes** _(258)_
+     - Terrain _(1 - xx)_
+     - Ten Cave Superlatives _(1 - xx)_
+- **Elevation** _(258)_
+     - mean elevation _(168)_
      - lowest point _(258)_
      - highest point _(258)_
-     - note _(9 - co ec fr gt nl tx us jn xx)_
-     - top ten highest mountains (measured from sea level) _(1 - xx)_
+     - mean depth _(5 - xq zh xo zn oo)_
 - **Natural resources** _(258)_
-     - note _(8 - as ja ml wa rs us fs pc)_
-     - metropolitan France _(1 - fr)_
-- **Land use** _(244)_
-     - agricultural land _(244)_
-     - forest _(243)_
-     - other _(244)_
-     - note _(2 - da we)_
-- **Irrigated land** _(243)_
-     - total _(1 - fr)_
-     - metropolitan France _(1 - fr)_
-     - note _(1 - lg)_
-- **Total renewable water resources** _(177)_
-- **Freshwater withdrawal (domestic/industrial/agricultural)** _(168)_
-     - total _(168)_
-     - per capita _(168)_
+- **Land use** _(245)_
+     - agricultural land _(240)_
+     - agricultural land: arable land _(226)_
+     - agricultural land: permanent crops _(224)_
+     - agricultural land: permanent pasture _(224)_
+     - forest _(227)_
+     - other _(242)_
+- **Irrigated land** _(236)_
+- **Population distribution** _(230)_
 - **Natural hazards** _(254)_
-     - volcanism _(59)_
-     - metropolitan France _(1 - fr)_
-- **Environment - current issues** _(258)_
-     - note _(3 - ar mx oo)_
+- **Environment - current issues** _(260)_
 - **Environment - international agreements** _(201)_
      - party to _(200)_
      - signed, but not ratified _(194)_
-     - note _(1 - oo)_
-- **Geography - note** _(257)_
-     - note 1 _(1 - cd)_
-     - note 2 _(1 - cd)_
-     - note 3 _(1 - cd)_
-- **** _(1 - ay)_
+- **Geography - note** _(259)_
 - **Geographic overview** _(1 - xx)_
+- **Area - rankings** _(1 - xx)_
 
 ## People and Society _(256)_
 
-- **Nationality** _(233)_
-     - noun _(233)_
-     - adjective _(233)_
-     - note _(3 - kv tw sh)_
-- **Ethnic groups** _(236)_
-     - note _(30)_
-- **Languages** _(241)_
-     - note _(56)_
-     - note 1 _(1 - xx)_
-     - note 2 _(1 - xx)_
-     - note 3 _(1 - xx)_
-- **Religions** _(238)_
-     - note _(18)_
 - **Population** _(255)_
-     - note _(68)_
-     - top ten most populous countries (in millions) _(1 - xx)_
+- **Nationality** _(232)_
+     - noun _(232)_
+     - adjective _(232)_
+- **Ethnic groups** _(236)_
+- **Languages** _(240)_
+- **Religions** _(237)_
 - **Age structure** _(230)_
      - 0-14 years _(230)_
      - 15-24 years _(230)_
      - 25-54 years _(230)_
      - 55-64 years _(230)_
      - 65 years and over _(230)_
-     - population pyramid _(230)_
 - **Dependency ratios** _(198)_
      - total dependency ratio _(198)_
      - youth dependency ratio _(198)_
      - elderly dependency ratio _(198)_
      - potential support ratio _(198)_
-     - note _(4 - gk je gz we)_
-- **Median age** _(230)_
-     - total _(230)_
-     - male _(230)_
-     - female _(230)_
-- **Population growth rate** _(236)_
-     - note _(3 - ha ku xx)_
-- **Birth rate** _(228)_
-     - note _(1 - xx)_
-- **Death rate** _(227)_
-     - note _(1 - xx)_
-- **Net migration rate** _(224)_
-     - note _(9 - bc et my sl sf zi nc wf cj)_
+- **Median age** _(229)_
+     - total _(229)_
+     - male _(229)_
+     - female _(229)_
+- **Population growth rate** _(240)_
+- **Birth rate** _(231)_
+- **Death rate** _(231)_
+- **Net migration rate** _(234)_
+- **Population distribution** _(230)_
 - **Urbanization** _(230)_
      - urban population _(230)_
      - rate of urbanization _(230)_
-     - note _(3 - gk gz we)_
-     - ten largest urban agglomerations _(1 - xx)_
-- **Major urban areas - population** _(221)_
-     - note _(1 - bx)_
+- **Major urban areas - population** _(223)_
 - **Sex ratio** _(236)_
      - at birth _(229)_
      - 0-14 years _(229)_
@@ -144,659 +104,630 @@
      - 55-64 years _(229)_
      - 65 years and over _(229)_
      - total population _(230)_
-     - note _(1 - fk)_
-- **Infant mortality rate** _(233)_
-     - total _(233)_
-     - male _(233)_
-     - female _(233)_
-     - note _(1 - ha)_
-- **Life expectancy at birth** _(233)_
-     - total population _(232)_
-     - male _(232)_
-     - female _(232)_
-     - total _(1 - cc)_
-     - males _(1 - cc)_
-     - females _(1 - cc)_
-- **Total fertility rate** _(234)_
-- **Contraceptive prevalence rate** _(147)_
-     - note _(25)_
-- **Health expenditures** _(190)_
-- **Physicians density** _(175)_
-- **Hospital bed density** _(194)_
-- **Drinking water source** _(210)_
-     - improved _(209)_
-     - unimproved _(210)_
-     - 97.1improved _(1 - in)_
-     - note _(2 - gz we)_
-- **Sanitation facility access** _(210)_
-     - improved _(209)_
-     - unimproved _(210)_
-     - mproved _(1 - ic)_
-     - urban _(1 - ku)_
-     - rural _(1 - ku)_
-     - total _(1 - ku)_
-     - note _(2 - gz we)_
-- **HIV/AIDS - adult prevalence rate** _(232)_
-- **HIV/AIDS - people living with HIV/AIDS** _(234)_
+- **Mother's mean age at first birth** _(127)_
+- **Maternal mortality rate** _(185)_
+- **Infant mortality rate** _(237)_
+     - total _(237)_
+     - male _(237)_
+     - female _(237)_
+- **Life expectancy at birth** _(237)_
+     - total population _(237)_
+     - male _(237)_
+     - female _(237)_
+- **Total fertility rate** _(237)_
+- **Contraceptive prevalence rate** _(146)_
+- **Drinking water source** _(228)_
+     - improved: urban _(183)_
+     - improved: rural _(176)_
+     - improved: total _(227)_
+     - unimproved: urban _(183)_
+     - unimproved: rural _(176)_
+     - unimproved: total _(227)_
+- **Current Health Expenditure** _(192)_
+- **Physicians density** _(200)_
+- **Hospital bed density** _(180)_
+- **Sanitation facility access** _(221)_
+     - improved: urban _(182)_
+     - improved: rural _(175)_
+     - improved: total _(220)_
+     - unimproved: urban _(182)_
+     - unimproved: rural _(175)_
+     - unimproved: total _(220)_
+- **HIV/AIDS - adult prevalence rate** _(239)_
+- **HIV/AIDS - people living with HIV/AIDS** _(237)_
 - **HIV/AIDS - deaths** _(235)_
-- **Major infectious diseases** _(95)_
-     - degree of risk _(95)_
-     - food or waterborne diseases _(89)_
-     - vectorborne diseases _(91)_
-     - animal contact disease _(43)_
-     - note _(27)_
+- **Major infectious diseases** _(124)_
+     - degree of risk _(112)_
+     - food or waterborne diseases _(105)_
+     - vectorborne diseases _(107)_
      - water contact disease _(45)_
-     - respiratory disease _(17)_
-     - soil contact disease _(1 - ch)_
-     - aerosolized dust or soil contact disease _(4 - gv li ni sl)_
+     - animal contact diseases _(42)_
+     - respiratory diseases _(23)_
+     - soil contact diseases _(1 - ch)_
+     - aerosolized dust or soil contact diseases _(4 - gv li ni sl)_
 - **Obesity - adult prevalence rate** _(192)_
-- **Education expenditures** _(198)_
-- **Literacy** _(162)_
-     - definition _(162)_
-     - total population _(162)_
-     - male _(162)_
-     - female _(162)_
-     - note _(3 - gz we xx)_
-- **School life expectancy (primary to tertiary education)** _(167)_
-     - total _(167)_
-     - male _(167)_
-     - female _(167)_
-     - note _(2 - gz we)_
-- **Child labor - children ages 5-14** _(101)_
-     - total number _(101)_
-     - percentage _(101)_
-     - note _(22)_
-- **Children under the age of 5 years underweight** _(128)_
-- **Unemployment, youth ages 15-24** _(134)_
-     - total _(134)_
-     - male _(126)_
-     - female _(126)_
-     - note _(2 - gz we)_
-- **Demographic profile** _(19)_
-- **People - note** _(5 - cu cy pp rw tk)_
-- **** _(1 - ay)_
+- **Children under the age of 5 years underweight** _(131)_
+- **Education expenditures** _(233)_
+- **Literacy** _(168)_
+     - definition _(166)_
+     - total population _(168)_
+     - male _(168)_
+     - female _(168)_
+- **School life expectancy (primary to tertiary education)** _(176)_
+     - total _(176)_
+     - male _(176)_
+     - female _(176)_
+- **Unemployment, youth ages 15-24** _(182)_
+     - total _(182)_
+     - male _(181)_
+     - female _(181)_
+- **Demographic profile** _(72)_
+- **People - note** _(8 - ch cu cy do pp rp tt tk)_
 
-## Government _(256)_
+## Government _(260)_
 
-- **Country name** _(253)_
-     - conventional long form _(251)_
-     - conventional short form _(251)_
-     - local long form _(182)_
-     - local short form _(183)_
-     - former _(104)_
-     - note _(34)_
-     - abbreviation _(28)_
+- **Country name** _(259)_
+     - conventional long form _(253)_
+     - conventional short form _(253)_
+     - local long form _(185)_
+     - local short form _(186)_
+     - former _(116)_
+     - etymology _(256)_
+     - abbreviation _(32)_
      - official long form _(1 - mc)_
      - official short form _(1 - mc)_
-     - Dutch long form _(2 - cc sk)_
-     - Dutch short form _(2 - cc sk)_
-     - Papiamentu long form _(1 - cc)_
-     - Papiamentu short form _(1 - cc)_
-     - English long form _(1 - sk)_
-     - English short form _(1 - sk)_
-- **Government type** _(233)_
-     - note _(2 - cy my)_
+- **Government type** _(235)_
 - **Capital** _(236)_
-     - name _(233)_
+     - name _(234)_
      - geographic coordinates _(233)_
      - time difference _(236)_
-     - daylight saving time _(80)_
-     - note _(21)_
-- **Administrative divisions** _(234)_
-     - note _(29)_
-     - rayons _(1 - aj)_
-     - cities _(5 - aj lg ri td tw)_
-     - regions _(4 - bm gg it td)_
-     - states _(1 - bm)_
-     - union territory _(1 - bm)_
-     - provinces _(6 - cb ch kn ks rp vm)_
-     - municipalities _(8 - cb ch kn lg md ri si vm)_
-     - autonomous regions _(2 - ch it)_
-     - city _(1 - gg)_
-     - autonomous republics _(1 - gg)_
-     - note 1 _(3 - gg rs up)_
-     - note 2 _(3 - gg rs up)_
-     - counties _(2 - hu tw)_
-     - cities with county rights _(1 - hu)_
-     - capital city _(1 - hu)_
-     - metropolitan cities _(1 - ks)_
-     - special city _(1 - ks)_
-     - special self-governing city _(1 - ks)_
-     - raions _(1 - md)_
-     - autonomous territorial unit _(1 - md)_
-     - territorial unit _(1 - md)_
-     - chartered cities _(1 - rp)_
-     - oblasts _(1 - rs)_
-     - republics _(1 - rs)_
-     - autonomous okrugs _(1 - rs)_
-     - krays _(1 - rs)_
-     - federal cities _(1 - rs)_
-     - autonomous oblast _(1 - rs)_
-     - urban municipalities _(1 - si)_
-     - borough _(1 - td)_
-     - ward _(1 - td)_
-     - England _(1 - uk)_
-     - two-tier counties _(1 - uk)_
-     - London boroughs and City of London or Greater London _(1 - uk)_
-     - metropolitan districts _(1 - uk)_
-     - unitary authorities _(1 - uk)_
-     - Northern Ireland _(1 - uk)_
-     - borough councils _(1 - uk)_
-     - district councils _(1 - uk)_
-     - city councils _(1 - uk)_
-     - Scotland _(1 - uk)_
-     - council areas _(1 - uk)_
-     - Wales _(1 - uk)_
-     - special municipalities _(1 - tw)_
-- **Independence** _(234)_
-     - note _(1 - ee)_
+     - daylight saving time _(82)_
+- **Administrative divisions** _(233)_
+- **Independence** _(235)_
 - **National holiday** _(234)_
 - **Constitution** _(236)_
-- **Legal system** _(249)_
+     - history _(236)_
+     - amendments _(226)_
+- **Legal system** _(250)_
 - **International law organization participation** _(198)_
-- **Suffrage** _(235)_
+- **Citizenship** _(235)_
+     - citizenship by birth _(196)_
+     - citizenship by descent only _(196)_
+     - dual citizenship recognized _(196)_
+     - residency requirement for naturalization _(196)_
+- **Suffrage** _(234)_
 - **Executive branch** _(240)_
-     - chief of state _(237)_
+     - chief of state _(238)_
      - head of government _(237)_
      - cabinet _(233)_
-     - elections/appointments _(235)_
-     - election results _(178)_
-     - note _(23)_
-     - elections _(2 - cc sk)_
-- **Legislative branch** _(234)_
-     - description _(232)_
-     - note _(36)_
-     - elections _(229)_
-     - election results _(226)_
-     - elections (for new House of Representatives) _(1 - eg)_
-     - election results (for previous legislature) _(1 - eg)_
+     - elections/appointments _(237)_
+     - election results _(177)_
+     - state counsellor _(1 - bm)_
+     - head of state _(2 - np ug)_
+- **Legislative branch** _(236)_
+     - description _(235)_
+     - elections _(234)_
+     - election results _(234)_
 - **Judicial branch** _(235)_
-     - highest court(s) _(214)_
-     - judge selection and term of office _(228)_
+     - highest courts _(235)_
+     - judge selection and term of office _(230)_
      - subordinate courts _(230)_
-     - highest resident court(s) _(16)_
-     - note _(14)_
-     - judge selection and term offfice _(1 - iv)_
-     - shighest court(s) _(1 - ri)_
-     - highest court _(1 - tu)_
-     - .highest court(s) _(1 - nh)_
-     - judge selection and terms of office _(1 - cc)_
-     - highest reident court(s) _(1 - cw)_
-- **Political parties and leaders** _(234)_
-     - Alliance for Employment, Welfare, and Integration or APMI (coalition of 24 centrist and center-right parties) [Sali BERISHA] _(1 - al)_
-     - Alliance for a European Albania or ASHE (coalition of 38 parties from far left to right wing) [Edi RAMA] _(1 - al)_
-     - other parties _(1 - al)_
-     - note _(36)_
-     - pro-government parties _(1 - bo)_
-     - opposition parties _(1 - bo)_
-     - Flemish parties _(1 - be)_
-     - Francophone parties _(1 - be)_
-     - governing parties _(1 - by)_
-     - area under government control _(1 - cy)_
-     - area administered by Turkish Cypriots _(1 - cy)_
-     - parties in parliament _(1 - ez)_
-     - parties outside parliament _(1 - ez)_
-     - officially recognized _(1 - eg)_
-     - not officially registered parties _(1 - ek)_
-     - Coalitions and Leaders _(1 - iz)_
-     - Center-right parties _(1 - it)_
-     - Center-left parties _(1 - it)_
-     - Centrist parties _(1 - it)_
-     - other coalitions and parties _(1 - it)_
-     - major party _(1 - kn)_
-     - minor parties _(1 - kn)_
-     - 14 March Coalition _(1 - le)_
-     - 8 March Coalition _(1 - le)_
-     - Independent _(1 - le)_
-     - National Front (Barisan Nasional) or BN (ruling coalition) consists of the following parties _(1 - my)_
-     - People's Alliance (Pakatan Rakyat) or PR (opposition coalition) consists of the following parties _(1 - my)_
-     - notable independent parties _(1 - my)_
-     - represented in Parliament _(1 - md)_
-     - not represented in Parliament _(1 - md)_
-     - other _(2 - sm sy)_
-     - parties in the Parliament _(1 - lo)_
-     - selected parties outside the Parliament _(1 - lo)_
-     - legal parties _(1 - sy)_
-     - Kurdish parties (considered illegal) _(1 - sy)_
-     - Note _(1 - tz)_
-     - parties _(1 - hk)_
-     - others _(1 - hk)_
-     - one declared party _(1 - je)_
-- **Political pressure groups and leaders** _(217)_
-     - other _(71)_
-     - note _(9 - ao bm co le bp sf sy vm tw)_
-     - Thai border _(1 - bm)_
-     - inside Burma _(1 - bm)_
-     - area administered by Turkish Cypriots _(1 - cy)_
-     - labor organizations _(1 - es)_
-     - business organizations _(1 - es)_
-     - groups that generally support the Islamic Republic _(1 - ir)_
-     - active pro-reform student group _(1 - ir)_
-     - opposition groups _(1 - ir)_
-     - armed political groups repressed by the government _(1 - ir)_
-     - manufacturers and merchants associations _(1 - it)_
-     - organized farm groups _(1 - it)_
-     - major trade union confederations _(1 - it)_
-- **International organization participation** _(234)_
-- **Diplomatic representation in the US** _(241)_
-     - chief of mission _(190)_
-     - chancery _(188)_
-     - telephone _(191)_
-     - FAX _(190)_
-     - consulate(s) general _(124)_
-     - consulate(s) _(30)_
-     - note _(4 - bl cy kr sy)_
+- **Political parties and leaders** _(235)_
+- **International organization participation** _(238)_
+- **Diplomatic representation in the US** _(240)_
+     - chief of mission _(200)_
+     - chancery _(189)_
+     - telephone _(189)_
+     - FAX _(187)_
+     - consulate(s) general _(126)_
+     - consulate(s) _(26)_
+     - honorary consulate(s) _(2 - bf kg)_
      - trade office(s) _(1 - ca)_
-     - consul general(s) _(1 - ek)_
-     - consular agency(ies) _(1 - it)_
-     - consulates _(1 - qa)_
-     - embassy _(1 - sg)_
-     - consulate _(1 - vm)_
-     - representative _(1 - tw)_
-     - office _(2 - tw hk)_
+     - representative office _(1 - cg)_
      - Taipei Economic and Cultural Offices (branch offices) _(1 - tw)_
-     - commissioner _(1 - hk)_
      - HKETO offices _(1 - hk)_
 - **Diplomatic representation from the US** _(243)_
-     - chief of mission _(173)_
-     - embassy _(171)_
-     - mailing address _(172)_
-     - telephone _(175)_
+     - chief of mission _(176)_
+     - telephone _(177)_
+     - embassy _(235)_
+     - mailing address _(173)_
      - FAX _(171)_
      - consulate(s) general _(30)_
-     - note _(4 - bl ct ly ym)_
-     - branch office(s) _(2 - bk cm)_
-     - consulate general _(1 - id)_
-     - consulate _(1 - id)_
-     - consular agency _(1 - id)_
-     - consular agency(ies) _(1 - it)_
-     - consulate(s) _(4 - ja pk po tu)_
-     - Consulate(s) General _(1 - kz)_
-     - office _(1 - tw)_
+     - branch office(s) _(3 - bk cm tw)_
+     - consulate(s) _(7 - ca fr id ja ni po tu)_
      - other offices _(1 - tw)_
 - **Flag description** _(250)_
-     - note _(77)_
 - **National symbol(s)** _(230)_
 - **National anthem** _(238)_
      - name _(224)_
      - lyrics/music _(225)_
-     - note _(238)_
 - **Dependent areas** _(7 - as fr nl nz no uk us)_
-     - note _(2 - fr us)_
 - **Government - note** _(2 - so fp)_
 - **Union name** _(1 - ee)_
      - conventional long form _(1 - ee)_
      - abbreviation _(1 - ee)_
 - **Political structure** _(1 - ee)_
 - **Member states** _(1 - ee)_
-     - note _(1 - ee)_
 - **Dependency status** _(52)_
-- **** _(1 - ay)_
 
-## Economy _(261)_
+## Economy _(260)_
 
-- **Economy - overview** _(260)_
-     - Economy - overview _(1 - cy)_
-- **GDP (purchasing power parity)** _(237)_
-     - note _(205)_
-     - GDP (purchasing power parity) _(1 - cy)_
+- **Economic overview** _(260)_
+- **Real GDP growth rate** _(231)_
+     - Real GDP growth rate 2017 _(200)_
+     - Real GDP growth rate 2016 _(135)_
+     - Real GDP growth rate 2015 _(139)_
+     - Real GDP growth rate 2019 _(70)_
+     - Real GDP growth rate 2018 _(73)_
+     - Real GDP growth rate 2014 _(19)_
+     - Real GDP growth rate 2013 _(9 - an kn mn sy nn cj fk gz we)_
+     - Real GDP growth rate 2012 _(7 - ls uc nn cj gk gz we)_
+     - Real GDP growth rate 2011 _(3 - ls uc mh)_
+     - Real GDP growth rate 2007 _(1 - ls)_
+     - Real GDP growth rate 2003 _(2 - ck ne)_
+     - Real GDP growth rate 2010 _(4 - fp uc im mh)_
+     - Real GDP growth rate 2005 _(1 - cw)_
+     - Real GDP growth rate 2009 _(1 - av)_
+- **Inflation rate (consumer prices)** _(230)_
+     - Inflation rate (consumer prices) 2017 _(209)_
+     - Inflation rate (consumer prices) 2016 _(74)_
+     - Inflation rate (consumer prices) 2019 _(137)_
+     - Inflation rate (consumer prices) 2018 _(138)_
+     - Inflation rate (consumer prices) 2015 _(8 - an fo fp sb wf aq cq vq)_
+     - Inflation rate (consumer prices) 2014 _(4 - an fp fk aq)_
+     - Inflation rate (consumer prices) 2013 _(3 - ls uc gi)_
+     - Inflation rate (consumer prices) 2010 _(2 - mn sb)_
+     - Inflation rate (consumer prices) January 2017 _(1 - gl)_
+     - Inflation rate (consumer prices) January 2016 _(1 - gl)_
+     - Inflation rate (consumer prices) 2005 _(2 - wf ne)_
+     - Inflation rate (consumer prices) 2012 _(4 - uc nn gi sh)_
+     - Inflation rate (consumer prices) 2009 _(1 - nn)_
+     - Inflation rate (consumer prices) 2011 _(1 - cw)_
+     - Inflation rate (consumer prices) 2020 _(1 - tl)_
+     - Inflation rate (consumer prices) June 2006 _(1 - gk)_
+     - Inflation rate (consumer prices) 2006 _(1 - je)_
+- **Real GDP (purchasing power parity)** _(236)_
+     - Real GDP (purchasing power parity) 2019 _(187)_
+     - Real GDP (purchasing power parity) 2018 _(194)_
+     - Real GDP (purchasing power parity) 2017 _(205)_
+     - Real GDP (purchasing power parity) 2015 _(24)_
+     - Real GDP (purchasing power parity) 2014 _(19)_
+     - Real GDP (purchasing power parity) 2013 _(11)_
+     - Real GDP (purchasing power parity) 2016 _(16)_
+     - Real GDP (purchasing power parity) 2009 _(4 - ls av mh sh)_
+     - Real GDP (purchasing power parity) 2008 _(2 - ls av)_
+     - Real GDP (purchasing power parity) 2012 _(3 - fo gi we)_
+     - Real GDP (purchasing power parity) 2005 _(1 - rn)_
+     - Real GDP (purchasing power parity) 2006 _(1 - sb)_
+     - Real GDP (purchasing power parity) 2004 _(2 - wf av)_
+     - Real GDP (purchasing power parity) 2003 _(1 - ne)_
+     - Real GDP (purchasing power parity) 2011 _(1 - mh)_
+     - Real GDP (purchasing power parity) 2010 _(1 - mh)_
 - **GDP (official exchange rate)** _(231)_
-     - note _(4 - ch cu tt we)_
-- **GDP - real growth rate** _(232)_
-     - GDP - real growth rate _(1 - cy)_
-     - note _(2 - gz we)_
-- **GDP - per capita (PPP)** _(232)_
-     - note _(192)_
-- **Gross national saving** _(181)_
-- **GDP - composition, by end use** _(202)_
-     - household consumption _(199)_
-     - government consumption _(199)_
-     - investment in fixed capital _(195)_
-     - investment in inventories _(195)_
-     - exports of goods and services _(201)_
-     - imports of goods and services _(200)_
-     - investment in fixed assets _(4 - fm gq cq vq)_
-- **GDP - composition, by sector of origin** _(231)_
+- **Real GDP per capita** _(230)_
+     - Real GDP per capita 2019 _(188)_
+     - Real GDP per capita 2018 _(196)_
+     - Real GDP per capita 2017 _(203)_
+     - Real GDP per capita 2015 _(20)_
+     - Real GDP per capita 2014 _(18)_
+     - Real GDP per capita 2013 _(6 - an kn mn sy gl im)_
+     - Real GDP per capita 2016 _(13)_
+     - Real GDP per capita 2009 _(2 - ls mh)_
+     - Real GDP per capita 2008 _(3 - ls av gi)_
+     - Real GDP per capita 2007 _(2 - ls gi)_
+     - Real GDP per capita 2010 _(2 - fp mh)_
+     - Real GDP per capita 2012 _(2 - nc im)_
+     - Real GDP per capita 2005 _(3 - rn sb cw)_
+     - Real GDP per capita 2006 _(1 - sb)_
+     - Real GDP per capita 2004 _(2 - wf cj)_
+     - Real GDP per capita 2003 _(1 - ne)_
+     - Real GDP per capita 2011 _(1 - mh)_
+     - Real GDP per capita FY09/10 _(1 - sh)_
+- **Gross national saving** _(194)_
+     - Gross national saving 2017 _(192)_
+     - Gross national saving 2016 _(43)_
+     - Gross national saving 2015 _(63)_
+     - Gross national saving 2019 _(115)_
+     - Gross national saving 2018 _(154)_
+     - Gross national saving 2012 _(2 - fo we)_
+     - Gross national saving 2011 _(1 - fo)_
+     - Gross national saving 2010 _(1 - fo)_
+- **GDP - composition, by sector of origin** _(230)_
      - agriculture _(230)_
      - industry _(230)_
      - services _(230)_
-     - note _(3 - af gz we)_
-- **Agriculture - products** _(234)_
-     - Agriculture - products _(1 - cy)_
-     - note _(1 - do)_
-- **Industries** _(237)_
-     - Industries _(1 - cy)_
-     - note _(1 - mr)_
+- **GDP - composition, by end use** _(215)_
+     - household consumption _(213)_
+     - government consumption _(215)_
+     - investment in fixed capital _(214)_
+     - investment in inventories _(210)_
+     - exports of goods and services _(213)_
+     - imports of goods and services _(213)_
+- **Ease of Doing Business Index scores** _(190)_
+     - Overall Ease of Doing Business score 2020 _(190)_
+     - Starting a Business score 2020 _(1 - af)_
+     - Trading Across Borders score 2020 _(1 - af)_
+     - Enforcing Contracts score 2020 _(1 - af)_
+- **Agricultural products** _(233)_
+- **Industries** _(236)_
 - **Industrial production growth rate** _(226)_
-     - note _(2 - ar ec)_
-     - Industrial production growth rate _(1 - cy)_
 - **Labor force** _(236)_
-     - note _(34)_
-     - Labor force _(1 - cy)_
-- **Labor force - by occupation** _(223)_
-     - agriculture _(206)_
-     - industry _(185)_
-     - services _(185)_
-     - construction and public works _(1 - ag)_
-     - trade _(1 - ag)_
-     - government _(1 - ag)_
-     - other _(2 - ag ca)_
-     - industry and services _(20)_
+- **Labor force - by occupation** _(225)_
+     - agriculture _(215)_
+     - industry _(210)_
+     - services _(202)_
+     - industry and services _(12)_
      - tourism _(2 - bf im)_
-     - other services _(4 - bf mp us mc)_
-     - manufacturing _(5 - ca hk mc av im)_
-     - construction _(6 - ca fi hk mc av im)_
-     - Labor force - by occupation _(1 - cy)_
-     - agriculture and forestry _(1 - fi)_
-     - commerce _(2 - fi av)_
-     - finance, insurance, and business services _(1 - fi)_
-     - transport and communications _(3 - fi hk mc)_
-     - public services _(1 - fi)_
-     - note _(18)_
-     - agriculture and fishing _(1 - mp)_
-     - construction and industry _(1 - mp)_
-     - transportation and communication _(1 - mp)_
-     - trade, restaurants, hotels _(1 - mp)_
-     - finance _(1 - mp)_
-     - manufacturing, mining, and quarrying _(1 - td)_
-     - construction and utilities _(1 - td)_
+     - manufacturing _(6 - ca us hk mc av im)_
      - farming, forestry, and fishing _(1 - us)_
      - manufacturing, extraction, transportation, and crafts _(1 - us)_
      - managerial, professional, and technical _(1 - us)_
      - sales and office _(1 - us)_
-     - wholesale and retail trade, restaurants, and hotels _(1 - hk)_
-     - financing, insurance, and real estate _(1 - hk)_
-     - community and social services _(1 - hk)_
-     - wholesale and retail trade _(1 - mc)_
-     - restaurants and hotels _(1 - mc)_
-     - gambling _(1 - mc)_
-     - public sector _(1 - mc)_
-     - financial services _(1 - mc)_
-     - agriculture/fishing/forestry/mining _(1 - av)_
-     - transportation and utilities _(1 - av)_
+     - other services _(1 - us)_
+     - agriculture/fishing/forestry/mining _(3 - hk mc av)_
+     - construction _(3 - mc av im)_
+     - transportation and utilities _(2 - mc av)_
+     - commerce _(2 - mc av)_
+     - transport and communications _(1 - im)_
      - agriculture, forestry, and fishing _(1 - im)_
      - gas, electricity, and water _(1 - im)_
-     - transport and communication _(1 - im)_
      - wholesale and retail distribution _(1 - im)_
      - professional and scientific services _(1 - im)_
      - public administration _(1 - im)_
      - banking and finance _(1 - im)_
      - entertainment and catering _(1 - im)_
      - miscellaneous services _(1 - im)_
-- **Unemployment rate** _(231)_
-     - note _(27)_
-     - Unemployment rate _(1 - cy)_
-- **Population below poverty line** _(229)_
-     - note _(11)_
-     - Population below poverty line _(1 - cy)_
-- **Household income or consumption by percentage share** _(223)_
-     - lowest 10% _(223)_
-     - highest 10% _(223)_
-     - note _(3 - ch ec we)_
-- **Budget** _(234)_
-     - revenues _(233)_
-     - expenditures _(233)_
-     - note _(12)_
-     - Budget _(1 - cy)_
-- **Taxes and other revenues** _(222)_
-     - note _(2 - kn us)_
-- **Budget surplus (+) or deficit (-)** _(224)_
-     - note _(1 - hu)_
-- **Fiscal year** _(230)_
-     - note _(1 - nz)_
-- **Inflation rate (consumer prices)** _(231)_
-     - note _(8 - ar ir my pe so uz we xx)_
-- **Commercial bank prime lending rate** _(191)_
-     - note _(3 - am id pe)_
-- **Stock of narrow money** _(195)_
-     - note _(20)_
-- **Stock of broad money** _(195)_
-     - note _(1 - ee)_
-- **Stock of domestic credit** _(194)_
-     - note _(1 - ee)_
-- **Market value of publicly traded shares** _(187)_
-- **Current account balance** _(196)_
+- **Unemployment rate** _(230)_
+     - Unemployment rate 2017 _(77)_
+     - Unemployment rate 2016 _(81)_
+     - Unemployment rate 2019 _(68)_
+     - Unemployment rate 2018 _(72)_
+     - Unemployment rate 2015 _(12)_
+     - Unemployment rate 2014 _(24)_
+     - Unemployment rate 2013 _(11)_
+     - Unemployment rate 2009 _(3 - bc ek nc)_
+     - Unemployment rate 2004 _(4 - uv ly nr cj)_
+     - Unemployment rate 2001 _(3 - cm ke ne)_
+     - Unemployment rate 2000 _(4 - do rm za ck)_
+     - Unemployment rate 2012 _(8 - et gy iz kn mn ps fp nn)_
+     - Unemployment rate 2011 _(5 - et nr tn ck uc)_
+     - Unemployment rate 2010 _(7 - ha iz kr fm tt fp cq)_
+     - Unemployment rate 2005 _(5 - kr zi cw aq cq)_
+     - Unemployment rate 2007 _(2 - le sg)_
+     - Unemployment rate 2008 _(7 - lt vc za sb wf nn cj)_
+     - Unemployment rate 2006 _(2 - rm tn)_
+     - Unemployment rate 1997 _(2 - sc tk)_
+     - Unemployment rate 2003 _(2 - st ym)_
+     - Unemployment rate 1999 _(1 - nh)_
+     - Unemployment rate 2002 _(1 - av)_
+     - Unemployment rate April 2011 _(1 - im)_
+     - Unemployment rate 1998 _(2 - mh sh)_
+- **Population below poverty line** _(226)_
+- **Gini Index coefficient - distribution of family income** _(176)_
+     - Gini Index coefficient - distribution of family income 2008 _(13)_
+     - Gini Index coefficient - distribution of family income 2017 _(45)_
+     - Gini Index coefficient - distribution of family income 2011 _(15)_
+     - Gini Index coefficient - distribution of family income 2018 _(29)_
+     - Gini Index coefficient - distribution of family income 2009 _(5 - ar ho nu pa up)_
+     - Gini Index coefficient - distribution of family income 2013 _(19)_
+     - Gini Index coefficient - distribution of family income 2014 _(32)_
+     - Gini Index coefficient - distribution of family income 1994 _(6 - as uv ca gm gv ml)_
+     - Gini Index coefficient - distribution of family income 2001 _(4 - aj ha kg ml)_
+     - Gini Index coefficient - distribution of family income 2016 _(24)_
+     - Gini Index coefficient - distribution of family income 2005 _(7 - bg ic id lu pe sp xx)_
+     - Gini Index coefficient - distribution of family income 1998 _(5 - bo ti tx uz ve)_
+     - Gini Index coefficient - distribution of family income 1996 _(2 - be pp)_
+     - Gini Index coefficient - distribution of family income 2015 _(26)_
+     - Gini Index coefficient - distribution of family income 2007 _(6 - bt bk gy li qa we)_
+     - Gini Index coefficient - distribution of family income 1999 _(4 - bl gy mo ym)_
+     - Gini Index coefficient - distribution of family income 1993 _(3 - bc ct ja)_
+     - Gini Index coefficient - distribution of family income 2004 _(5 - br cb mi mv za)_
+     - Gini Index coefficient - distribution of family income 2003 _(6 - ct kz wa pm tu uz)_
+     - Gini Index coefficient - distribution of family income 2000 _(5 - ci et tp tz tw)_
+     - Gini Index coefficient - distribution of family income 2012 _(11)_
+     - Gini Index coefficient - distribution of family income 1995 _(7 - iv fi it ng no ce ts)_
+     - Gini Index coefficient - distribution of family income 2010 _(11)_
+     - Gini Index coefficient - distribution of family income December 2017 _(1 - ec)_
+     - Gini Index coefficient - distribution of family income 1997 _(6 - in jo my nz ni us)_
+     - Gini Index coefficient - distribution of family income 1987 _(1 - ei)_
+     - Gini Index coefficient - distribution of family income 2002 _(4 - la mz tt ug)_
+     - Gini Index coefficient - distribution of family income 2006 _(3 - mr mp zi)_
+     - Gini Index coefficient - distribution of family income FY2011 _(1 - pk)_
+     - Gini Index coefficient - distribution of family income 1989 _(1 - sl)_
+     - Gini Index coefficient - distribution of family income 1992 _(2 - sw sz)_
+- **Household income or consumption by percentage share** _(225)_
+     - lowest 10% _(225)_
+     - highest 10% _(225)_
+- **Budget** _(233)_
+     - revenues _(232)_
+     - expenditures _(232)_
+- **Taxes and other revenues** _(225)_
+- **Budget surplus (+) or deficit (-)** _(226)_
+- **Public debt** _(212)_
+     - Public debt 2017 _(195)_
+     - Public debt 2016 _(197)_
+     - Public debt 2014 _(8 - an so ee fo nc av vq we)_
+     - Public debt 2013 _(4 - an ee gq we)_
+     - Public debt 2015 _(5 - ps gl nc av fk)_
+     - Public debt FY2017 _(1 - tn)_
+     - Public debt FY2016 _(1 - tn)_
+     - Public debt 2004 _(1 - wf)_
+     - Public debt 2012 _(1 - uc)_
+     - Public debt 2011 _(1 - uc)_
+     - Public debt FY14/15 _(1 - bd)_
+     - Public debt 2008 _(1 - gi)_
+     - Public debt 2006 _(1 - gi)_
+- **Fiscal year** _(229)_
+- **Current account balance** _(207)_
+     - Current account balance 2017 _(131)_
+     - Current account balance 2016 _(131)_
+     - Current account balance 2019 _(71)_
+     - Current account balance 2018 _(71)_
+     - Current account balance 2014 _(2 - fp nc)_
+     - Current account balance 2013 _(2 - fp nc)_
+     - Current account balance 2011 _(2 - uc vi)_
+     - Current account balance 2010 _(2 - uc vi)_
+     - Current account balance 2005 _(1 - cw)_
 - **Exports** _(234)_
-     - note _(9 - af bm ls mn pm sz ee mc we)_
-     - Exports _(1 - cy)_
-- **Exports - commodities** _(232)_
-     - note _(1 - tt)_
-     - top ten - share of world trade _(1 - xx)_
-- **Exports - partners** _(189)_
+     - Exports 2017 _(196)_
+     - Exports 2016 _(95)_
+     - Exports 2015 _(15)_
+     - Exports 2014 _(8 - an ls ws so gl fp nc gi)_
+     - Exports 2019 _(83)_
+     - Exports 2018 _(105)_
+     - Exports 2013 _(6 - kr rm fm nr so fp)_
+     - Exports 2012 _(2 - kr nr)_
+     - Exports 2011 _(3 - mn sm cw)_
+     - Exports 2010 _(5 - sm tv sb uc cw)_
+     - Exports 2004 _(6 - tv wf ne fk gi sh)_
+     - Exports 2005 _(1 - sb)_
+     - Exports 2002 _(1 - tl)_
+     - Exports 2008 _(1 - tk)_
+- **Exports - partners** _(201)_
+- **Exports - commodities** _(231)_
 - **Imports** _(234)_
-     - note _(6 - bm ls mn pm ee we)_
-     - Imports _(1 - cy)_
+     - Imports 2017 _(197)_
+     - Imports 2016 _(101)_
+     - Imports 2015 _(11)_
+     - Imports 2014 _(5 - an ls gl fp nc)_
+     - Imports 2019 _(86)_
+     - Imports 2018 _(112)_
+     - Imports 2013 _(5 - kr rm fm nr fp)_
+     - Imports 2011 _(3 - mn sm cw)_
+     - Imports 2010 _(4 - sm sb cw sh)_
+     - Imports 2020 _(1 - sl)_
+     - Imports 2005 _(1 - sb)_
+     - Imports 2004 _(4 - wf ne fk gi)_
+     - Imports 2008 _(1 - tk)_
+- **Imports - partners** _(201)_
 - **Imports - commodities** _(231)_
-     - top ten - share of world trade _(1 - xx)_
-- **Imports - partners** _(188)_
-- **Reserves of foreign exchange and gold** _(171)_
-     - Reserves of foreign exchange and gold _(1 - cy)_
-     - note _(4 - tz ug ee mc)_
+- **Reserves of foreign exchange and gold** _(196)_
+     - Reserves of foreign exchange and gold 31 December 2017 _(190)_
+     - Reserves of foreign exchange and gold 31 December 2015 _(28)_
+     - Reserves of foreign exchange and gold 31 December 2016 _(164)_
+     - Reserves of foreign exchange and gold 31 December 2010 _(1 - kr)_
+     - Reserves of foreign exchange and gold 2014 _(2 - sm so)_
+     - Reserves of foreign exchange and gold 2013 _(1 - sm)_
+     - Reserves of foreign exchange and gold 31 December 2014 _(1 - ee)_
+     - Reserves of foreign exchange and gold 31 December 2013 _(1 - ee)_
 - **Debt - external** _(226)_
-     - note _(6 - bx ls no us we xx)_
-     - Debt - external _(1 - cy)_
-- **Exchange rates** _(241)_
-     - note _(6 - bb es kr zi ax dx)_
-     - Exchange rates _(1 - cy)_
-     - British pounds per US dollar _(1 - us)_
-     - Canadian dollars per US dollar _(1 - us)_
-     - Chinese yuan per US dollar _(1 - us)_
-     - euros per US dollar _(1 - us)_
-     - Japanese yen per US dollar _(1 - us)_
-- **Distribution of family income - Gini index** _(145)_
-     - note _(2 - ec we)_
-- **Public debt** _(175)_
-     - note _(59)_
-- **Central bank discount rate** _(166)_
-     - note _(29)_
-- **Stock of direct foreign investment - at home** _(143)_
-- **Stock of direct foreign investment - abroad** _(128)_
+     - Debt - external FY10/11 _(1 - af)_
+     - Debt - external 2019 _(99)_
+     - Debt - external 2018 _(100)_
+     - Debt - external 2016 _(4 - an gj kr fk)_
+     - Debt - external 31 December 2017 _(74)_
+     - Debt - external 31 December 2016 _(76)_
+     - Debt - external 31 December 2012 _(3 - ac bf mc)_
+     - Debt - external June 2010 _(1 - ac)_
+     - Debt - external 31 December 2013 _(8 - bf ps ws tt mc nc aa av)_
+     - Debt - external 2010 _(3 - bb fo gl)_
+     - Debt - external 2003 _(1 - bb)_
+     - Debt - external 2014 _(1 - bx)_
+     - Debt - external 2013 _(4 - bx kn rm fm)_
+     - Debt - external 31 December 2015 _(4 - do mv st ee)_
+     - Debt - external 2017 _(3 - gj bd fk)_
+     - Debt - external 31 December 2010 _(2 - pu rq)_
+     - Debt - external 31 December 2000 _(1 - pu)_
+     - Debt - external 2015 _(3 - kr ls bd)_
+     - Debt - external 2008 _(1 - rm)_
+     - Debt - external 2012 _(2 - fm fo)_
+     - Debt - external 2004 _(2 - nr wf)_
+     - Debt - external 31 December 2014 _(4 - ps so tt aa)_
+     - Debt - external 2009 _(1 - gl)_
+     - Debt - external 1996 _(1 - cw)_
+     - Debt - external 2002 _(1 - ne)_
+     - Debt - external 1998 _(1 - av)_
+     - Debt - external 1997 _(2 - vi mh)_
+     - Debt - external 31 December 2009 _(1 - rq)_
+     - Debt - external 31 March 2016 _(1 - we)_
+     - Debt - external 31 March 2015 _(1 - we)_
+- **Exchange rates** _(240)_
+     - currency _(223)_
+     - Exchange rates 2017 _(123)_
+     - Exchange rates 2016 _(122)_
+     - Exchange rates 2015 _(120)_
+     - Exchange rates 2014 _(214)_
+     - Exchange rates 2013 _(215)_
+     - Exchange rates 2020 _(99)_
+     - Exchange rates 2019 _(99)_
+     - Exchange rates 2018 _(99)_
+     - Exchange rates 2012 _(4 - kn nc wf je)_
+     - Exchange rates 2010 _(1 - zi)_
+     - Exchange rates 2011 _(1 - je)_
+- **Credit ratings** _(154)_
+     - Moody's rating _(142)_
+     - Standard & Poors rating _(135)_
+     - Fitch rating _(121)_
 - **Economy of the area administered by Turkish Cypriots** _(1 - cy)_
-     - Economy - overview _(1 - cy)_
-     - GDP (purchasing power parity) _(1 - cy)_
-     - GDP - real growth rate _(1 - cy)_
-     - GDP - per capita _(1 - cy)_
-     - GDP - composition by sector _(1 - cy)_
-     - Labor force _(1 - cy)_
-     - Labor force - by occupation _(1 - cy)_
-     - Unemployment rate _(1 - cy)_
-     - Population below poverty line _(1 - cy)_
-     - Inflation rate _(1 - cy)_
-     - Budget _(1 - cy)_
-     - Agriculture - products _(1 - cy)_
-     - Industries _(1 - cy)_
-     - Industrial production growth rate _(1 - cy)_
-     - Electricity production _(1 - cy)_
-     - Electricity consumption _(1 - cy)_
-     - Exports _(1 - cy)_
-     - Export - commodities _(1 - cy)_
-     - Export - partners _(1 - cy)_
-     - Imports _(1 - cy)_
-     - Import - commodities _(1 - cy)_
-     - Import - partners _(1 - cy)_
-     - Reserves of foreign exchange and gold _(1 - cy)_
-     - Debt - external _(1 - cy)_
-     - Currency (code) _(1 - cy)_
-     - Exchange rates _(1 - cy)_
-- **** _(1 - ay)_
+- **Marine fisheries** _(5 - xq zh xo zn oo)_
 
-## Energy _(223)_
+## Energy _(235)_
 
-- **Electricity - production** _(220)_
+- **Electricity access** _(222)_
+     - electrification - total population _(222)_
+     - electrification - urban areas _(90)_
+     - electrification - rural areas _(90)_
+- **Electricity - production** _(222)_
 - **Electricity - consumption** _(220)_
-- **Electricity - exports** _(219)_
+- **Electricity - exports** _(220)_
 - **Electricity - imports** _(220)_
-- **Electricity - installed generating capacity** _(215)_
-     - note _(2 - md we)_
-- **Electricity - from fossil fuels** _(213)_
-- **Electricity - from nuclear fuels** _(214)_
-- **Electricity - from hydroelectric plants** _(214)_
-- **Electricity - from other renewable sources** _(212)_
-     - note _(1 - bd)_
-- **Crude oil - production** _(214)_
-- **Crude oil - exports** _(213)_
-     - note _(1 - ly)_
-- **Crude oil - imports** _(213)_
-- **Crude oil - proved reserves** _(218)_
-- **Refined petroleum products - production** _(215)_
-- **Refined petroleum products - consumption** _(213)_
-- **Refined petroleum products - exports** _(212)_
-- **Refined petroleum products - imports** _(213)_
-- **Natural gas - production** _(216)_
-     - note _(1 - nl)_
-- **Natural gas - consumption** _(215)_
-- **Natural gas - exports** _(214)_
-- **Natural gas - imports** _(214)_
-     - note _(1 - md)_
-- **Natural gas - proved reserves** _(214)_
-- **Carbon dioxide emissions from consumption of energy** _(214)_
+- **Electricity - installed generating capacity** _(216)_
+- **Electricity - from fossil fuels** _(216)_
+- **Electricity - from nuclear fuels** _(216)_
+- **Electricity - from hydroelectric plants** _(216)_
+- **Electricity - from other renewable sources** _(215)_
+- **Crude oil - production** _(221)_
+- **Crude oil - exports** _(218)_
+- **Crude oil - imports** _(218)_
+- **Crude oil - proved reserves** _(219)_
+- **Refined petroleum products - production** _(218)_
+- **Refined petroleum products - consumption** _(216)_
+- **Refined petroleum products - exports** _(218)_
+- **Refined petroleum products - imports** _(216)_
+- **Natural gas - production** _(218)_
+- **Natural gas - consumption** _(217)_
+- **Natural gas - exports** _(217)_
+- **Natural gas - imports** _(217)_
+- **Natural gas - proved reserves** _(215)_
+- **Carbon dioxide emissions from consumption of energy** _(215)_
 
-## Communications _(250)_
+## Communications _(249)_
 
-- **Telephones - fixed lines** _(221)_
-     - total subscriptions _(214)_
-     - subscriptions per 100 inhabitants _(218)_
-     - total _(5 - kv ee mc cw sh)_
-- **Telephones - mobile cellular** _(219)_
-     - total _(218)_
-     - subscriptions per 100 inhabitants _(217)_
-- **Telephone system** _(239)_
-     - general assessment _(226)_
-     - domestic _(230)_
-     - international _(237)_
-- **Broadcast media** _(239)_
-- **Radio broadcast stations** _(240)_
-     - area under government control _(1 - cy)_
-     - area administered by Turkish Cypriots _(1 - cy)_
-- **Television broadcast stations** _(235)_
-     - area under government control _(1 - cy)_
-     - area administered by Turkish Cypriots _(1 - cy)_
-- **Internet country code** _(241)_
-- **Internet users** _(222)_
-     - total _(217)_
-     - percent of population _(216)_
-     - note _(1 - cu)_
-     - top ten countries by Internet usage (in millions) _(1 - xx)_
-- **Communications - note** _(5 - cr fs bv pc sh)_
-- **** _(1 - ay)_
+- **Telephones - fixed lines** _(227)_
+     - total subscriptions _(227)_
+     - subscriptions per 100 inhabitants _(227)_
+- **Telephones - mobile cellular** _(221)_
+     - total subscriptions _(221)_
+     - subscriptions per 100 inhabitants _(221)_
+- **Telecommunication systems** _(240)_
+     - general assessment _(238)_
+     - domestic _(238)_
+     - international _(238)_
+     - overseas departments _(1 - fr)_
+- **Broadcast media** _(238)_
+- **Internet country code** _(242)_
+- **Internet users** _(231)_
+     - total _(231)_
+     - percent of population _(231)_
+- **Broadband - fixed subscriptions** _(205)_
+     - total _(205)_
+     - subscriptions per 100 inhabitants _(205)_
+- **Communications - note** _(16)_
 
-## Transportation _(258)_
+## Transportation _(260)_
 
-- **Airports** _(238)_
-     - top ten by passengers _(1 - xx)_
-     - top ten by cargo (metric tons) _(1 - xx)_
-- **Airports - with paved runways** _(233)_
+- **National air transport system** _(193)_
+     - number of registered air carriers _(191)_
+     - inventory of registered aircraft operated by air carriers _(188)_
+     - annual passenger traffic on registered air carriers _(157)_
+     - annual freight traffic on registered air carriers _(141)_
+- **Civil aircraft registration country code prefix** _(211)_
+- **Airports** _(239)_
+     - total _(238)_
+     - Baker Island _(1 - um)_
+     - Howland Island _(1 - um)_
+     - Johnston Atoll _(1 - um)_
+     - Kingman Reef _(1 - um)_
+     - Midway Islands _(1 - um)_
+     - Palmyra Atoll _(1 - um)_
+- **Airports - with paved runways** _(235)_
      - total _(233)_
-     - over 3,047 m _(159)_
-     - 2,438 to 3,047 m _(163)_
-     - 1,524 to 2,437 m _(185)_
-     - 914 to 1,523 m _(154)_
-     - under 914 m _(124)_
-- **Airports - with unpaved runways** _(193)_
-     - total _(193)_
-     - 2,438 to 3,047 m _(45)_
-     - 1,524 to 2,437 m _(124)_
-     - 914 to 1,523 m _(164)_
-     - under 914 m _(177)_
+     - over 3,047 m _(160)_
+     - 2,438 to 3,047 m _(165)_
+     - 1,524 to 2,437 m _(184)_
+     - 914 to 1,523 m _(155)_
+     - under 914 m _(126)_
+- **Airports - with unpaved runways** _(191)_
+     - total _(190)_
+     - 2,438 to 3,047 m _(46)_
+     - 1,524 to 2,437 m _(122)_
+     - 914 to 1,523 m _(163)_
+     - under 914 m _(176)_
      - over 3,047 m _(26)_
-     - 2,437 to 3,047 m _(1 - ee)_
-- **Heliports** _(116)_
-- **Pipelines** _(124)_
-- **Roadways** _(229)_
-     - total _(225)_
-     - paved _(185)_
-     - unpaved _(154)_
-     - note _(24)_
+- **Heliports** _(115)_
+- **Pipelines** _(130)_
+- **Roadways** _(232)_
+     - total _(226)_
+     - paved _(169)_
+     - unpaved _(142)_
+     - urban _(10)_
+     - non-urban _(6 - am as cg fr mt sl)_
      - government control _(1 - cy)_
      - Turkish Cypriot control _(1 - cy)_
      - highways _(1 - fi)_
-     - urban roads _(1 - fi)_
      - private and forest roads _(1 - fi)_
      - paved/oiled gravel _(1 - ic)_
-     - paved roads _(1 - mv)_
 - **Waterways** _(124)_
-     - metropolitan France _(1 - fr)_
-     - top ten longest rivers _(1 - xx)_
-     - note _(1 - xx)_
-     - top ten largest natural lakes (by surface area) _(1 - xx)_
 - **Ports and terminals** _(236)_
-     - river port(s) _(42)_
-     - major seaport(s) _(196)_
-     - LNG terminal(s) (export) _(16)_
-     - container port(s) (TEUs) _(40)_
-     - LNG terminal(s) (import) _(33)_
+     - river port(s) _(41)_
+     - major seaport(s) _(195)_
+     - LNG terminal(s) (export) _(18)_
+     - container port(s) (TEUs) _(52)_
+     - LNG terminal(s) (import) _(36)_
      - dry bulk cargo port(s) _(5 - as br ca co da)_
-     - cruise port(s) _(4 - bf da mx aa)_
-     - container port(s) _(4 - bg ca fr gm)_
-     - note _(2 - bl oo)_
-     - container ports (TEUs) _(1 - br)_
-     - oil terminal(s) _(18)_
-     - LNG terminal (export) _(2 - bx ly)_
+     - cruise port(s) _(5 - bf da ei mx aa)_
+     - oil terminal(s) _(27)_
      - lake port(s) _(5 - by kg mi rw ug)_
      - river and lake port(s) _(1 - ca)_
      - river or lake port(s) _(1 - cg)_
      - cruise/ferry port(s) _(1 - fr)_
-     - container port(s) TEUs) _(2 - is th)_
-     - oil terminals _(9 - it lh mx pe td uk us ve sk)_
-     - LNG terminal (import) _(3 - po tu tw)_
-     - cargo ports (tonnage) _(1 - us)_
+     - cargo ports _(1 - us)_
      - cruise departure ports (passengers) _(1 - us)_
      - major port(s) _(1 - ee)_
-     - bulk cargo port(s) _(1 - cc)_
-     - top ten container ports as measured by Twenty-Foot Equivalent Units (TEUs) throughput _(1 - xx)_
-- **Railways** _(138)_
+     - bulk cargo port(s) _(1 - uc)_
+     - Saint Helena _(1 - sh)_
+     - Ascension Island _(1 - sh)_
+     - Tristan da Cunha _(1 - sh)_
+     - Baker, Howland, and Jarvis Islands, and Kingman Reef _(1 - um)_
+     - Johnston Atoll _(1 - um)_
+     - Midway Islands _(1 - um)_
+     - Palmyra Atoll _(1 - um)_
+- **Railways** _(139)_
      - total _(138)_
-     - standard gauge _(72)_
-     - narrow gauge _(84)_
-     - broad gauge _(35)_
-     - note _(22)_
+     - standard gauge _(76)_
+     - narrow gauge _(81)_
+     - broad gauge _(34)_
      - dual gauge _(3 - br ja ts)_
      - other _(2 - po sf)_
-- **Merchant marine** _(156)_
-     - total _(145)_
-     - by type _(145)_
-     - foreign-owned _(111)_
-     - registered in other countries _(104)_
-- **Transportation - note** _(22)_
-- **** _(1 - ay)_
+- **Merchant marine** _(186)_
+     - total _(186)_
+     - by type _(186)_
+- **Transportation - note** _(11)_
 
-## Military _(256)_
+## Military and Security _(258)_
 
-- **Military branches** _(216)_
-     - note _(1 - gg)_
-- **Military service age and obligation** _(177)_
-     - note _(1 - rs)_
-- **Manpower available for military service** _(204)_
-     - males age 16-49 _(204)_
-     - females age 16-49 _(161)_
-     - Cypriot National Guard (CNG) _(1 - cy)_
-- **Manpower fit for military service** _(225)_
-     - males age 16-49 _(225)_
-     - females age 16-49 _(225)_
-     - Cypriot National Guard (CNG) _(1 - cy)_
-- **Manpower reaching militarily significant age annually** _(224)_
-     - male _(224)_
-     - female _(224)_
-- **Military expenditures** _(142)_
-- **Military - note** _(78)_
-- **** _(1 - ay)_
+- **Military and security forces** _(217)_
+- **Military expenditures** _(159)_
+     - Military Expenditures 2019 _(143)_
+     - Military Expenditures 2018 _(153)_
+     - Military Expenditures 2017 _(153)_
+     - Military Expenditures 2016 _(154)_
+     - Military Expenditures 2015 _(123)_
+     - Military Expenditures 2020 _(30)_
+     - Military Expenditures 2014 _(14)_
+     - Military Expenditures 2013 _(6 - ga pu la ae ve ym)_
+     - Military Expenditures 2012 _(4 - la ti ae ym)_
+     - Military Expenditures 2011 _(4 - la ti ae ym)_
+     - Military Expenditures 2010 _(1 - uz)_
+- **Military and security service personnel strengths** _(179)_
+- **Military equipment inventories and acquisitions** _(180)_
+- **Military service age and obligation** _(175)_
+- **Military - note** _(117)_
+- **Military deployments** _(94)_
+- **Maritime threats** _(23)_
 
-## Transnational Issues _(255)_
+## Terrorism _(77)_
+
+- **Terrorist group(s)** _(73)_
+
+## Transnational Issues _(254)_
 
 - **Disputes - international** _(254)_
-- **Refugees and internally displaced persons** _(134)_
-     - refugees (country of origin) _(81)_
-     - IDPs _(61)_
-     - stateless persons _(73)_
-     - note _(1 - sy)_
+- **Refugees and internally displaced persons** _(143)_
+     - refugees (country of origin) _(95)_
+     - IDPs _(55)_
+     - stateless persons _(82)_
 - **Illicit drugs** _(138)_
-     - metropolitan France _(1 - fr)_
-     - cocaine _(1 - xx)_
-     - opiates _(1 - xx)_
 - **Trafficking in persons** _(68)_
-     - current situation _(67)_
-     - tier rating _(67)_
-     - currrent situation _(1 - bc)_
-     - Tier 2 Watch List _(1 - xx)_
-     - Tier 3 _(1 - xx)_
-- **** _(1 - ay)_
+     - current situation _(68)_
+     - tier rating _(68)_
