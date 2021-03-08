@@ -25,7 +25,7 @@ class TestJson < MiniTest::Test
 
      codes.each do |code|
 
-       path = "#{Factbook::Module::Readers.root}/../testdata/json/#{code}.json"
+       path = "#{Factbook::Test.data_dir}/json/#{code}.json"
        page = Factbook::Page.read_json( path )
 
        h = page.to_h

@@ -8,7 +8,7 @@ require 'helper'
 class TestCounter < MiniTest::Test
 
   def read_test_page( code )
-    path = "#{Factbook::Module::Readers.root}/../testdata/json/#{code}.json"
+    path = "#{Factbook::Test.data_dir}/json/#{code}.json"
     page = Factbook::Page.read_json( path )
     page
   end

@@ -25,7 +25,7 @@ class TestPage < MiniTest::Test
         code       = rec[0]
         size       = rec[1]
 
-        path = "#{Factbook::Module::Readers.root}/../testdata/json/#{code}.json"
+        path = "#{Factbook::Test.data_dir}/json/#{code}.json"
         page = Factbook::Page.read_json( path )
 
         assert_equal size, page.size

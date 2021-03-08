@@ -10,7 +10,7 @@ class TestBuilder < MiniTest::Test
 
   def test_read
     code = 'au'
-    path = "#{Factbook::Module::Fields.root}/../testdata/json/#{code}.json"
+    path = "#{Factbook::Test.data_dir}/json/#{code}.json"
     profile = Factbook::Profile.read( path )
 
     assert_equal 11, profile.size

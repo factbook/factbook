@@ -41,7 +41,7 @@ class TestFields < MiniTest::Test
   def test_fields_au
     # note: use builtin test page (do NOT fetch via internet)
     code = 'au'
-    path = "#{Factbook::Module::Fields.root}/../testdata/json/#{code}.json"
+    path = "#{Factbook::Test.data_dir}/json/#{code}.json"
     profile  = Factbook::Profile.read( path )
 
     assert_equal '-0.7% (of GDP) (2017 est.)',
