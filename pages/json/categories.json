@@ -1,0 +1,2381 @@
+{
+  "Introduction": {
+    "count": 260,
+    "Background": {
+      "count": 260
+    },
+    "Preliminary statement": {
+      "count": 1,
+      "codes": "ee"
+    }
+  },
+  "Geography": {
+    "count": 260,
+    "Location": {
+      "count": 259
+    },
+    "Geographic coordinates": {
+      "count": 258
+    },
+    "Map references": {
+      "count": 260
+    },
+    "Area": {
+      "count": 260,
+      "total": {
+        "count": 258
+      },
+      "land": {
+        "count": 251
+      },
+      "water": {
+        "count": 248
+      }
+    },
+    "Area - comparative": {
+      "count": 260
+    },
+    "Land boundaries": {
+      "count": 255,
+      "total": {
+        "count": 251
+      },
+      "border countries": {
+        "count": 165
+      },
+      "border sovereign base areas": {
+        "count": 1,
+        "codes": "cy"
+      },
+      "metropolitan France - total": {
+        "count": 1,
+        "codes": "fr"
+      },
+      "French Guiana - total": {
+        "count": 1,
+        "codes": "fr"
+      },
+      "regional borders": {
+        "count": 2,
+        "codes": "hk mc"
+      }
+    },
+    "Coastline": {
+      "count": 259
+    },
+    "Maritime claims": {
+      "count": 250,
+      "territorial sea": {
+        "count": 197
+      },
+      "continental shelf": {
+        "count": 96
+      },
+      "contiguous zone": {
+        "count": 89
+      },
+      "exclusive fishing zone": {
+        "count": 33
+      },
+      "exclusive economic zone": {
+        "count": 141
+      },
+      "Environment (Protection and Preservation) Zone": {
+        "count": 1,
+        "codes": "io"
+      }
+    },
+    "Climate": {
+      "count": 260,
+      "Climate": {
+        "count": 1,
+        "codes": "xx"
+      },
+      "Ten Driest Places on Earth (Average Annual Precipitation)": {
+        "count": 1,
+        "codes": "xx"
+      },
+      "Ten Wettest Places on Earth (Average Annual Precipitation)": {
+        "count": 1,
+        "codes": "xx"
+      },
+      "Ten Coldest Places on Earth (Lowest Average Monthly Temperature)": {
+        "count": 1,
+        "codes": "xx"
+      },
+      "Ten Hottest Places on Earth (Highest Average Monthly Temperature)": {
+        "count": 1,
+        "codes": "xx"
+      }
+    },
+    "Terrain": {
+      "count": 257,
+      "Terrain": {
+        "count": 1,
+        "codes": "xx"
+      },
+      "Ten Cave Superlatives": {
+        "count": 1,
+        "codes": "xx"
+      }
+    },
+    "Elevation": {
+      "count": 258,
+      "mean elevation": {
+        "count": 168
+      },
+      "lowest point": {
+        "count": 258
+      },
+      "highest point": {
+        "count": 258
+      },
+      "mean depth": {
+        "count": 5,
+        "codes": "xq zh xo zn oo"
+      }
+    },
+    "Natural resources": {
+      "count": 258
+    },
+    "Land use": {
+      "count": 245,
+      "agricultural land": {
+        "count": 240
+      },
+      "agricultural land: arable land": {
+        "count": 226
+      },
+      "agricultural land: permanent crops": {
+        "count": 224
+      },
+      "agricultural land: permanent pasture": {
+        "count": 224
+      },
+      "forest": {
+        "count": 227
+      },
+      "other": {
+        "count": 242
+      }
+    },
+    "Irrigated land": {
+      "count": 236
+    },
+    "Population distribution": {
+      "count": 230
+    },
+    "Natural hazards": {
+      "count": 254
+    },
+    "Environment - current issues": {
+      "count": 260
+    },
+    "Environment - international agreements": {
+      "count": 201,
+      "party to": {
+        "count": 200
+      },
+      "signed, but not ratified": {
+        "count": 194
+      }
+    },
+    "Geography - note": {
+      "count": 259
+    },
+    "Geographic overview": {
+      "count": 1,
+      "codes": "xx"
+    },
+    "Area - rankings": {
+      "count": 1,
+      "codes": "xx"
+    }
+  },
+  "People and Society": {
+    "count": 256,
+    "Population": {
+      "count": 255
+    },
+    "Nationality": {
+      "count": 232,
+      "noun": {
+        "count": 232
+      },
+      "adjective": {
+        "count": 232
+      }
+    },
+    "Ethnic groups": {
+      "count": 236
+    },
+    "Languages": {
+      "count": 240
+    },
+    "Religions": {
+      "count": 237
+    },
+    "Age structure": {
+      "count": 230,
+      "0-14 years": {
+        "count": 230
+      },
+      "15-24 years": {
+        "count": 230
+      },
+      "25-54 years": {
+        "count": 230
+      },
+      "55-64 years": {
+        "count": 230
+      },
+      "65 years and over": {
+        "count": 230
+      }
+    },
+    "Dependency ratios": {
+      "count": 198,
+      "total dependency ratio": {
+        "count": 198
+      },
+      "youth dependency ratio": {
+        "count": 198
+      },
+      "elderly dependency ratio": {
+        "count": 198
+      },
+      "potential support ratio": {
+        "count": 198
+      }
+    },
+    "Median age": {
+      "count": 229,
+      "total": {
+        "count": 229
+      },
+      "male": {
+        "count": 229
+      },
+      "female": {
+        "count": 229
+      }
+    },
+    "Population growth rate": {
+      "count": 240
+    },
+    "Birth rate": {
+      "count": 231
+    },
+    "Death rate": {
+      "count": 231
+    },
+    "Net migration rate": {
+      "count": 234
+    },
+    "Population distribution": {
+      "count": 230
+    },
+    "Urbanization": {
+      "count": 230,
+      "urban population": {
+        "count": 230
+      },
+      "rate of urbanization": {
+        "count": 230
+      }
+    },
+    "Major urban areas - population": {
+      "count": 223
+    },
+    "Sex ratio": {
+      "count": 236,
+      "at birth": {
+        "count": 229
+      },
+      "0-14 years": {
+        "count": 229
+      },
+      "15-24 years": {
+        "count": 229
+      },
+      "25-54 years": {
+        "count": 229
+      },
+      "55-64 years": {
+        "count": 229
+      },
+      "65 years and over": {
+        "count": 229
+      },
+      "total population": {
+        "count": 230
+      }
+    },
+    "Mother's mean age at first birth": {
+      "count": 127
+    },
+    "Maternal mortality rate": {
+      "count": 185
+    },
+    "Infant mortality rate": {
+      "count": 237,
+      "total": {
+        "count": 237
+      },
+      "male": {
+        "count": 237
+      },
+      "female": {
+        "count": 237
+      }
+    },
+    "Life expectancy at birth": {
+      "count": 237,
+      "total population": {
+        "count": 237
+      },
+      "male": {
+        "count": 237
+      },
+      "female": {
+        "count": 237
+      }
+    },
+    "Total fertility rate": {
+      "count": 237
+    },
+    "Contraceptive prevalence rate": {
+      "count": 146
+    },
+    "Drinking water source": {
+      "count": 228,
+      "improved: urban": {
+        "count": 183
+      },
+      "improved: rural": {
+        "count": 176
+      },
+      "improved: total": {
+        "count": 227
+      },
+      "unimproved: urban": {
+        "count": 183
+      },
+      "unimproved: rural": {
+        "count": 176
+      },
+      "unimproved: total": {
+        "count": 227
+      }
+    },
+    "Current Health Expenditure": {
+      "count": 192
+    },
+    "Physicians density": {
+      "count": 200
+    },
+    "Hospital bed density": {
+      "count": 180
+    },
+    "Sanitation facility access": {
+      "count": 221,
+      "improved: urban": {
+        "count": 182
+      },
+      "improved: rural": {
+        "count": 175
+      },
+      "improved: total": {
+        "count": 220
+      },
+      "unimproved: urban": {
+        "count": 182
+      },
+      "unimproved: rural": {
+        "count": 175
+      },
+      "unimproved: total": {
+        "count": 220
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "count": 239
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "count": 237
+    },
+    "HIV/AIDS - deaths": {
+      "count": 235
+    },
+    "Major infectious diseases": {
+      "count": 124,
+      "degree of risk": {
+        "count": 112
+      },
+      "food or waterborne diseases": {
+        "count": 105
+      },
+      "vectorborne diseases": {
+        "count": 107
+      },
+      "water contact disease": {
+        "count": 45
+      },
+      "animal contact diseases": {
+        "count": 42
+      },
+      "respiratory diseases": {
+        "count": 23
+      },
+      "soil contact diseases": {
+        "count": 1,
+        "codes": "ch"
+      },
+      "aerosolized dust or soil contact diseases": {
+        "count": 4,
+        "codes": "gv li ni sl"
+      }
+    },
+    "Obesity - adult prevalence rate": {
+      "count": 192
+    },
+    "Children under the age of 5 years underweight": {
+      "count": 131
+    },
+    "Education expenditures": {
+      "count": 233
+    },
+    "Literacy": {
+      "count": 168,
+      "definition": {
+        "count": 166
+      },
+      "total population": {
+        "count": 168
+      },
+      "male": {
+        "count": 168
+      },
+      "female": {
+        "count": 168
+      }
+    },
+    "School life expectancy (primary to tertiary education)": {
+      "count": 176,
+      "total": {
+        "count": 176
+      },
+      "male": {
+        "count": 176
+      },
+      "female": {
+        "count": 176
+      }
+    },
+    "Unemployment, youth ages 15-24": {
+      "count": 182,
+      "total": {
+        "count": 182
+      },
+      "male": {
+        "count": 181
+      },
+      "female": {
+        "count": 181
+      }
+    },
+    "Demographic profile": {
+      "count": 72
+    },
+    "People - note": {
+      "count": 8,
+      "codes": "ch cu cy do pp rp tt tk"
+    }
+  },
+  "Government": {
+    "count": 260,
+    "Country name": {
+      "count": 259,
+      "conventional long form": {
+        "count": 253
+      },
+      "conventional short form": {
+        "count": 253
+      },
+      "local long form": {
+        "count": 185
+      },
+      "local short form": {
+        "count": 186
+      },
+      "former": {
+        "count": 116
+      },
+      "etymology": {
+        "count": 256
+      },
+      "abbreviation": {
+        "count": 32
+      },
+      "official long form": {
+        "count": 1,
+        "codes": "mc"
+      },
+      "official short form": {
+        "count": 1,
+        "codes": "mc"
+      }
+    },
+    "Government type": {
+      "count": 235
+    },
+    "Capital": {
+      "count": 236,
+      "name": {
+        "count": 234
+      },
+      "geographic coordinates": {
+        "count": 233
+      },
+      "time difference": {
+        "count": 236
+      },
+      "daylight saving time": {
+        "count": 82
+      }
+    },
+    "Administrative divisions": {
+      "count": 233
+    },
+    "Independence": {
+      "count": 235
+    },
+    "National holiday": {
+      "count": 234
+    },
+    "Constitution": {
+      "count": 236,
+      "history": {
+        "count": 236
+      },
+      "amendments": {
+        "count": 226
+      }
+    },
+    "Legal system": {
+      "count": 250
+    },
+    "International law organization participation": {
+      "count": 198
+    },
+    "Citizenship": {
+      "count": 235,
+      "citizenship by birth": {
+        "count": 196
+      },
+      "citizenship by descent only": {
+        "count": 196
+      },
+      "dual citizenship recognized": {
+        "count": 196
+      },
+      "residency requirement for naturalization": {
+        "count": 196
+      }
+    },
+    "Suffrage": {
+      "count": 234
+    },
+    "Executive branch": {
+      "count": 240,
+      "chief of state": {
+        "count": 238
+      },
+      "head of government": {
+        "count": 237
+      },
+      "cabinet": {
+        "count": 233
+      },
+      "elections/appointments": {
+        "count": 237
+      },
+      "election results": {
+        "count": 177
+      },
+      "state counsellor": {
+        "count": 1,
+        "codes": "bm"
+      },
+      "head of state": {
+        "count": 2,
+        "codes": "np ug"
+      }
+    },
+    "Legislative branch": {
+      "count": 236,
+      "description": {
+        "count": 235
+      },
+      "elections": {
+        "count": 234
+      },
+      "election results": {
+        "count": 234
+      }
+    },
+    "Judicial branch": {
+      "count": 235,
+      "highest courts": {
+        "count": 235
+      },
+      "judge selection and term of office": {
+        "count": 230
+      },
+      "subordinate courts": {
+        "count": 230
+      }
+    },
+    "Political parties and leaders": {
+      "count": 235
+    },
+    "International organization participation": {
+      "count": 238
+    },
+    "Diplomatic representation in the US": {
+      "count": 240,
+      "chief of mission": {
+        "count": 200
+      },
+      "chancery": {
+        "count": 189
+      },
+      "telephone": {
+        "count": 189
+      },
+      "FAX": {
+        "count": 187
+      },
+      "consulate(s) general": {
+        "count": 126
+      },
+      "consulate(s)": {
+        "count": 26
+      },
+      "honorary consulate(s)": {
+        "count": 2,
+        "codes": "bf kg"
+      },
+      "trade office(s)": {
+        "count": 1,
+        "codes": "ca"
+      },
+      "representative office": {
+        "count": 1,
+        "codes": "cg"
+      },
+      "Taipei Economic and Cultural Offices (branch offices)": {
+        "count": 1,
+        "codes": "tw"
+      },
+      "HKETO offices": {
+        "count": 1,
+        "codes": "hk"
+      }
+    },
+    "Diplomatic representation from the US": {
+      "count": 243,
+      "chief of mission": {
+        "count": 176
+      },
+      "telephone": {
+        "count": 177
+      },
+      "embassy": {
+        "count": 235
+      },
+      "mailing address": {
+        "count": 173
+      },
+      "FAX": {
+        "count": 171
+      },
+      "consulate(s) general": {
+        "count": 30
+      },
+      "branch office(s)": {
+        "count": 3,
+        "codes": "bk cm tw"
+      },
+      "consulate(s)": {
+        "count": 7,
+        "codes": "ca fr id ja ni po tu"
+      },
+      "other offices": {
+        "count": 1,
+        "codes": "tw"
+      }
+    },
+    "Flag description": {
+      "count": 250
+    },
+    "National symbol(s)": {
+      "count": 230
+    },
+    "National anthem": {
+      "count": 238,
+      "name": {
+        "count": 224
+      },
+      "lyrics/music": {
+        "count": 225
+      }
+    },
+    "Dependent areas": {
+      "count": 7,
+      "codes": "as fr nl nz no uk us"
+    },
+    "Government - note": {
+      "count": 2,
+      "codes": "so fp"
+    },
+    "Union name": {
+      "count": 1,
+      "codes": "ee",
+      "conventional long form": {
+        "count": 1,
+        "codes": "ee"
+      },
+      "abbreviation": {
+        "count": 1,
+        "codes": "ee"
+      }
+    },
+    "Political structure": {
+      "count": 1,
+      "codes": "ee"
+    },
+    "Member states": {
+      "count": 1,
+      "codes": "ee"
+    },
+    "Dependency status": {
+      "count": 52
+    }
+  },
+  "Economy": {
+    "count": 260,
+    "Economic overview": {
+      "count": 260
+    },
+    "Real GDP growth rate": {
+      "count": 231,
+      "Real GDP growth rate 2017": {
+        "count": 200
+      },
+      "Real GDP growth rate 2016": {
+        "count": 135
+      },
+      "Real GDP growth rate 2015": {
+        "count": 139
+      },
+      "Real GDP growth rate 2019": {
+        "count": 70
+      },
+      "Real GDP growth rate 2018": {
+        "count": 73
+      },
+      "Real GDP growth rate 2014": {
+        "count": 19
+      },
+      "Real GDP growth rate 2013": {
+        "count": 9,
+        "codes": "an kn mn sy nn cj fk gz we"
+      },
+      "Real GDP growth rate 2012": {
+        "count": 7,
+        "codes": "ls uc nn cj gk gz we"
+      },
+      "Real GDP growth rate 2011": {
+        "count": 3,
+        "codes": "ls uc mh"
+      },
+      "Real GDP growth rate 2007": {
+        "count": 1,
+        "codes": "ls"
+      },
+      "Real GDP growth rate 2003": {
+        "count": 2,
+        "codes": "ck ne"
+      },
+      "Real GDP growth rate 2010": {
+        "count": 4,
+        "codes": "fp uc im mh"
+      },
+      "Real GDP growth rate 2005": {
+        "count": 1,
+        "codes": "cw"
+      },
+      "Real GDP growth rate 2009": {
+        "count": 1,
+        "codes": "av"
+      }
+    },
+    "Inflation rate (consumer prices)": {
+      "count": 230,
+      "Inflation rate (consumer prices) 2017": {
+        "count": 209
+      },
+      "Inflation rate (consumer prices) 2016": {
+        "count": 74
+      },
+      "Inflation rate (consumer prices) 2019": {
+        "count": 137
+      },
+      "Inflation rate (consumer prices) 2018": {
+        "count": 138
+      },
+      "Inflation rate (consumer prices) 2015": {
+        "count": 8,
+        "codes": "an fo fp sb wf aq cq vq"
+      },
+      "Inflation rate (consumer prices) 2014": {
+        "count": 4,
+        "codes": "an fp fk aq"
+      },
+      "Inflation rate (consumer prices) 2013": {
+        "count": 3,
+        "codes": "ls uc gi"
+      },
+      "Inflation rate (consumer prices) 2010": {
+        "count": 2,
+        "codes": "mn sb"
+      },
+      "Inflation rate (consumer prices) January 2017": {
+        "count": 1,
+        "codes": "gl"
+      },
+      "Inflation rate (consumer prices) January 2016": {
+        "count": 1,
+        "codes": "gl"
+      },
+      "Inflation rate (consumer prices) 2005": {
+        "count": 2,
+        "codes": "wf ne"
+      },
+      "Inflation rate (consumer prices) 2012": {
+        "count": 4,
+        "codes": "uc nn gi sh"
+      },
+      "Inflation rate (consumer prices) 2009": {
+        "count": 1,
+        "codes": "nn"
+      },
+      "Inflation rate (consumer prices) 2011": {
+        "count": 1,
+        "codes": "cw"
+      },
+      "Inflation rate (consumer prices) 2020": {
+        "count": 1,
+        "codes": "tl"
+      },
+      "Inflation rate (consumer prices) June 2006": {
+        "count": 1,
+        "codes": "gk"
+      },
+      "Inflation rate (consumer prices) 2006": {
+        "count": 1,
+        "codes": "je"
+      }
+    },
+    "Real GDP (purchasing power parity)": {
+      "count": 236,
+      "Real GDP (purchasing power parity) 2019": {
+        "count": 187
+      },
+      "Real GDP (purchasing power parity) 2018": {
+        "count": 194
+      },
+      "Real GDP (purchasing power parity) 2017": {
+        "count": 205
+      },
+      "Real GDP (purchasing power parity) 2015": {
+        "count": 24
+      },
+      "Real GDP (purchasing power parity) 2014": {
+        "count": 19
+      },
+      "Real GDP (purchasing power parity) 2013": {
+        "count": 11
+      },
+      "Real GDP (purchasing power parity) 2016": {
+        "count": 16
+      },
+      "Real GDP (purchasing power parity) 2009": {
+        "count": 4,
+        "codes": "ls av mh sh"
+      },
+      "Real GDP (purchasing power parity) 2008": {
+        "count": 2,
+        "codes": "ls av"
+      },
+      "Real GDP (purchasing power parity) 2012": {
+        "count": 3,
+        "codes": "fo gi we"
+      },
+      "Real GDP (purchasing power parity) 2005": {
+        "count": 1,
+        "codes": "rn"
+      },
+      "Real GDP (purchasing power parity) 2006": {
+        "count": 1,
+        "codes": "sb"
+      },
+      "Real GDP (purchasing power parity) 2004": {
+        "count": 2,
+        "codes": "wf av"
+      },
+      "Real GDP (purchasing power parity) 2003": {
+        "count": 1,
+        "codes": "ne"
+      },
+      "Real GDP (purchasing power parity) 2011": {
+        "count": 1,
+        "codes": "mh"
+      },
+      "Real GDP (purchasing power parity) 2010": {
+        "count": 1,
+        "codes": "mh"
+      }
+    },
+    "GDP (official exchange rate)": {
+      "count": 231
+    },
+    "Real GDP per capita": {
+      "count": 230,
+      "Real GDP per capita 2019": {
+        "count": 188
+      },
+      "Real GDP per capita 2018": {
+        "count": 196
+      },
+      "Real GDP per capita 2017": {
+        "count": 203
+      },
+      "Real GDP per capita 2015": {
+        "count": 20
+      },
+      "Real GDP per capita 2014": {
+        "count": 18
+      },
+      "Real GDP per capita 2013": {
+        "count": 6,
+        "codes": "an kn mn sy gl im"
+      },
+      "Real GDP per capita 2016": {
+        "count": 13
+      },
+      "Real GDP per capita 2009": {
+        "count": 2,
+        "codes": "ls mh"
+      },
+      "Real GDP per capita 2008": {
+        "count": 3,
+        "codes": "ls av gi"
+      },
+      "Real GDP per capita 2007": {
+        "count": 2,
+        "codes": "ls gi"
+      },
+      "Real GDP per capita 2010": {
+        "count": 2,
+        "codes": "fp mh"
+      },
+      "Real GDP per capita 2012": {
+        "count": 2,
+        "codes": "nc im"
+      },
+      "Real GDP per capita 2005": {
+        "count": 3,
+        "codes": "rn sb cw"
+      },
+      "Real GDP per capita 2006": {
+        "count": 1,
+        "codes": "sb"
+      },
+      "Real GDP per capita 2004": {
+        "count": 2,
+        "codes": "wf cj"
+      },
+      "Real GDP per capita 2003": {
+        "count": 1,
+        "codes": "ne"
+      },
+      "Real GDP per capita 2011": {
+        "count": 1,
+        "codes": "mh"
+      },
+      "Real GDP per capita FY09/10": {
+        "count": 1,
+        "codes": "sh"
+      }
+    },
+    "Gross national saving": {
+      "count": 194,
+      "Gross national saving 2017": {
+        "count": 192
+      },
+      "Gross national saving 2016": {
+        "count": 43
+      },
+      "Gross national saving 2015": {
+        "count": 63
+      },
+      "Gross national saving 2019": {
+        "count": 115
+      },
+      "Gross national saving 2018": {
+        "count": 154
+      },
+      "Gross national saving 2012": {
+        "count": 2,
+        "codes": "fo we"
+      },
+      "Gross national saving 2011": {
+        "count": 1,
+        "codes": "fo"
+      },
+      "Gross national saving 2010": {
+        "count": 1,
+        "codes": "fo"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "count": 230,
+      "agriculture": {
+        "count": 230
+      },
+      "industry": {
+        "count": 230
+      },
+      "services": {
+        "count": 230
+      }
+    },
+    "GDP - composition, by end use": {
+      "count": 215,
+      "household consumption": {
+        "count": 213
+      },
+      "government consumption": {
+        "count": 215
+      },
+      "investment in fixed capital": {
+        "count": 214
+      },
+      "investment in inventories": {
+        "count": 210
+      },
+      "exports of goods and services": {
+        "count": 213
+      },
+      "imports of goods and services": {
+        "count": 213
+      }
+    },
+    "Ease of Doing Business Index scores": {
+      "count": 190,
+      "Overall Ease of Doing Business score 2020": {
+        "count": 190
+      },
+      "Starting a Business score 2020": {
+        "count": 1,
+        "codes": "af"
+      },
+      "Trading Across Borders score 2020": {
+        "count": 1,
+        "codes": "af"
+      },
+      "Enforcing Contracts score 2020": {
+        "count": 1,
+        "codes": "af"
+      }
+    },
+    "Agricultural products": {
+      "count": 233
+    },
+    "Industries": {
+      "count": 236
+    },
+    "Industrial production growth rate": {
+      "count": 226
+    },
+    "Labor force": {
+      "count": 236
+    },
+    "Labor force - by occupation": {
+      "count": 225,
+      "agriculture": {
+        "count": 215
+      },
+      "industry": {
+        "count": 210
+      },
+      "services": {
+        "count": 202
+      },
+      "industry and services": {
+        "count": 12
+      },
+      "tourism": {
+        "count": 2,
+        "codes": "bf im"
+      },
+      "manufacturing": {
+        "count": 6,
+        "codes": "ca us hk mc av im"
+      },
+      "farming, forestry, and fishing": {
+        "count": 1,
+        "codes": "us"
+      },
+      "manufacturing, extraction, transportation, and crafts": {
+        "count": 1,
+        "codes": "us"
+      },
+      "managerial, professional, and technical": {
+        "count": 1,
+        "codes": "us"
+      },
+      "sales and office": {
+        "count": 1,
+        "codes": "us"
+      },
+      "other services": {
+        "count": 1,
+        "codes": "us"
+      },
+      "agriculture/fishing/forestry/mining": {
+        "count": 3,
+        "codes": "hk mc av"
+      },
+      "construction": {
+        "count": 3,
+        "codes": "mc av im"
+      },
+      "transportation and utilities": {
+        "count": 2,
+        "codes": "mc av"
+      },
+      "commerce": {
+        "count": 2,
+        "codes": "mc av"
+      },
+      "transport and communications": {
+        "count": 1,
+        "codes": "im"
+      },
+      "agriculture, forestry, and fishing": {
+        "count": 1,
+        "codes": "im"
+      },
+      "gas, electricity, and water": {
+        "count": 1,
+        "codes": "im"
+      },
+      "wholesale and retail distribution": {
+        "count": 1,
+        "codes": "im"
+      },
+      "professional and scientific services": {
+        "count": 1,
+        "codes": "im"
+      },
+      "public administration": {
+        "count": 1,
+        "codes": "im"
+      },
+      "banking and finance": {
+        "count": 1,
+        "codes": "im"
+      },
+      "entertainment and catering": {
+        "count": 1,
+        "codes": "im"
+      },
+      "miscellaneous services": {
+        "count": 1,
+        "codes": "im"
+      }
+    },
+    "Unemployment rate": {
+      "count": 230,
+      "Unemployment rate 2017": {
+        "count": 77
+      },
+      "Unemployment rate 2016": {
+        "count": 81
+      },
+      "Unemployment rate 2019": {
+        "count": 68
+      },
+      "Unemployment rate 2018": {
+        "count": 72
+      },
+      "Unemployment rate 2015": {
+        "count": 12
+      },
+      "Unemployment rate 2014": {
+        "count": 24
+      },
+      "Unemployment rate 2013": {
+        "count": 11
+      },
+      "Unemployment rate 2009": {
+        "count": 3,
+        "codes": "bc ek nc"
+      },
+      "Unemployment rate 2004": {
+        "count": 4,
+        "codes": "uv ly nr cj"
+      },
+      "Unemployment rate 2001": {
+        "count": 3,
+        "codes": "cm ke ne"
+      },
+      "Unemployment rate 2000": {
+        "count": 4,
+        "codes": "do rm za ck"
+      },
+      "Unemployment rate 2012": {
+        "count": 8,
+        "codes": "et gy iz kn mn ps fp nn"
+      },
+      "Unemployment rate 2011": {
+        "count": 5,
+        "codes": "et nr tn ck uc"
+      },
+      "Unemployment rate 2010": {
+        "count": 7,
+        "codes": "ha iz kr fm tt fp cq"
+      },
+      "Unemployment rate 2005": {
+        "count": 5,
+        "codes": "kr zi cw aq cq"
+      },
+      "Unemployment rate 2007": {
+        "count": 2,
+        "codes": "le sg"
+      },
+      "Unemployment rate 2008": {
+        "count": 7,
+        "codes": "lt vc za sb wf nn cj"
+      },
+      "Unemployment rate 2006": {
+        "count": 2,
+        "codes": "rm tn"
+      },
+      "Unemployment rate 1997": {
+        "count": 2,
+        "codes": "sc tk"
+      },
+      "Unemployment rate 2003": {
+        "count": 2,
+        "codes": "st ym"
+      },
+      "Unemployment rate 1999": {
+        "count": 1,
+        "codes": "nh"
+      },
+      "Unemployment rate 2002": {
+        "count": 1,
+        "codes": "av"
+      },
+      "Unemployment rate April 2011": {
+        "count": 1,
+        "codes": "im"
+      },
+      "Unemployment rate 1998": {
+        "count": 2,
+        "codes": "mh sh"
+      }
+    },
+    "Population below poverty line": {
+      "count": 226
+    },
+    "Gini Index coefficient - distribution of family income": {
+      "count": 176,
+      "Gini Index coefficient - distribution of family income 2008": {
+        "count": 13
+      },
+      "Gini Index coefficient - distribution of family income 2017": {
+        "count": 45
+      },
+      "Gini Index coefficient - distribution of family income 2011": {
+        "count": 15
+      },
+      "Gini Index coefficient - distribution of family income 2018": {
+        "count": 29
+      },
+      "Gini Index coefficient - distribution of family income 2009": {
+        "count": 5,
+        "codes": "ar ho nu pa up"
+      },
+      "Gini Index coefficient - distribution of family income 2013": {
+        "count": 19
+      },
+      "Gini Index coefficient - distribution of family income 2014": {
+        "count": 32
+      },
+      "Gini Index coefficient - distribution of family income 1994": {
+        "count": 6,
+        "codes": "as uv ca gm gv ml"
+      },
+      "Gini Index coefficient - distribution of family income 2001": {
+        "count": 4,
+        "codes": "aj ha kg ml"
+      },
+      "Gini Index coefficient - distribution of family income 2016": {
+        "count": 24
+      },
+      "Gini Index coefficient - distribution of family income 2005": {
+        "count": 7,
+        "codes": "bg ic id lu pe sp xx"
+      },
+      "Gini Index coefficient - distribution of family income 1998": {
+        "count": 5,
+        "codes": "bo ti tx uz ve"
+      },
+      "Gini Index coefficient - distribution of family income 1996": {
+        "count": 2,
+        "codes": "be pp"
+      },
+      "Gini Index coefficient - distribution of family income 2015": {
+        "count": 26
+      },
+      "Gini Index coefficient - distribution of family income 2007": {
+        "count": 6,
+        "codes": "bt bk gy li qa we"
+      },
+      "Gini Index coefficient - distribution of family income 1999": {
+        "count": 4,
+        "codes": "bl gy mo ym"
+      },
+      "Gini Index coefficient - distribution of family income 1993": {
+        "count": 3,
+        "codes": "bc ct ja"
+      },
+      "Gini Index coefficient - distribution of family income 2004": {
+        "count": 5,
+        "codes": "br cb mi mv za"
+      },
+      "Gini Index coefficient - distribution of family income 2003": {
+        "count": 6,
+        "codes": "ct kz wa pm tu uz"
+      },
+      "Gini Index coefficient - distribution of family income 2000": {
+        "count": 5,
+        "codes": "ci et tp tz tw"
+      },
+      "Gini Index coefficient - distribution of family income 2012": {
+        "count": 11
+      },
+      "Gini Index coefficient - distribution of family income 1995": {
+        "count": 7,
+        "codes": "iv fi it ng no ce ts"
+      },
+      "Gini Index coefficient - distribution of family income 2010": {
+        "count": 11
+      },
+      "Gini Index coefficient - distribution of family income December 2017": {
+        "count": 1,
+        "codes": "ec"
+      },
+      "Gini Index coefficient - distribution of family income 1997": {
+        "count": 6,
+        "codes": "in jo my nz ni us"
+      },
+      "Gini Index coefficient - distribution of family income 1987": {
+        "count": 1,
+        "codes": "ei"
+      },
+      "Gini Index coefficient - distribution of family income 2002": {
+        "count": 4,
+        "codes": "la mz tt ug"
+      },
+      "Gini Index coefficient - distribution of family income 2006": {
+        "count": 3,
+        "codes": "mr mp zi"
+      },
+      "Gini Index coefficient - distribution of family income FY2011": {
+        "count": 1,
+        "codes": "pk"
+      },
+      "Gini Index coefficient - distribution of family income 1989": {
+        "count": 1,
+        "codes": "sl"
+      },
+      "Gini Index coefficient - distribution of family income 1992": {
+        "count": 2,
+        "codes": "sw sz"
+      }
+    },
+    "Household income or consumption by percentage share": {
+      "count": 225,
+      "lowest 10%": {
+        "count": 225
+      },
+      "highest 10%": {
+        "count": 225
+      }
+    },
+    "Budget": {
+      "count": 233,
+      "revenues": {
+        "count": 232
+      },
+      "expenditures": {
+        "count": 232
+      }
+    },
+    "Taxes and other revenues": {
+      "count": 225
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "count": 226
+    },
+    "Public debt": {
+      "count": 212,
+      "Public debt 2017": {
+        "count": 195
+      },
+      "Public debt 2016": {
+        "count": 197
+      },
+      "Public debt 2014": {
+        "count": 8,
+        "codes": "an so ee fo nc av vq we"
+      },
+      "Public debt 2013": {
+        "count": 4,
+        "codes": "an ee gq we"
+      },
+      "Public debt 2015": {
+        "count": 5,
+        "codes": "ps gl nc av fk"
+      },
+      "Public debt FY2017": {
+        "count": 1,
+        "codes": "tn"
+      },
+      "Public debt FY2016": {
+        "count": 1,
+        "codes": "tn"
+      },
+      "Public debt 2004": {
+        "count": 1,
+        "codes": "wf"
+      },
+      "Public debt 2012": {
+        "count": 1,
+        "codes": "uc"
+      },
+      "Public debt 2011": {
+        "count": 1,
+        "codes": "uc"
+      },
+      "Public debt FY14/15": {
+        "count": 1,
+        "codes": "bd"
+      },
+      "Public debt 2008": {
+        "count": 1,
+        "codes": "gi"
+      },
+      "Public debt 2006": {
+        "count": 1,
+        "codes": "gi"
+      }
+    },
+    "Fiscal year": {
+      "count": 229
+    },
+    "Current account balance": {
+      "count": 207,
+      "Current account balance 2017": {
+        "count": 131
+      },
+      "Current account balance 2016": {
+        "count": 131
+      },
+      "Current account balance 2019": {
+        "count": 71
+      },
+      "Current account balance 2018": {
+        "count": 71
+      },
+      "Current account balance 2014": {
+        "count": 2,
+        "codes": "fp nc"
+      },
+      "Current account balance 2013": {
+        "count": 2,
+        "codes": "fp nc"
+      },
+      "Current account balance 2011": {
+        "count": 2,
+        "codes": "uc vi"
+      },
+      "Current account balance 2010": {
+        "count": 2,
+        "codes": "uc vi"
+      },
+      "Current account balance 2005": {
+        "count": 1,
+        "codes": "cw"
+      }
+    },
+    "Exports": {
+      "count": 234,
+      "Exports 2017": {
+        "count": 196
+      },
+      "Exports 2016": {
+        "count": 95
+      },
+      "Exports 2015": {
+        "count": 15
+      },
+      "Exports 2014": {
+        "count": 8,
+        "codes": "an ls ws so gl fp nc gi"
+      },
+      "Exports 2019": {
+        "count": 83
+      },
+      "Exports 2018": {
+        "count": 105
+      },
+      "Exports 2013": {
+        "count": 6,
+        "codes": "kr rm fm nr so fp"
+      },
+      "Exports 2012": {
+        "count": 2,
+        "codes": "kr nr"
+      },
+      "Exports 2011": {
+        "count": 3,
+        "codes": "mn sm cw"
+      },
+      "Exports 2010": {
+        "count": 5,
+        "codes": "sm tv sb uc cw"
+      },
+      "Exports 2004": {
+        "count": 6,
+        "codes": "tv wf ne fk gi sh"
+      },
+      "Exports 2005": {
+        "count": 1,
+        "codes": "sb"
+      },
+      "Exports 2002": {
+        "count": 1,
+        "codes": "tl"
+      },
+      "Exports 2008": {
+        "count": 1,
+        "codes": "tk"
+      }
+    },
+    "Exports - partners": {
+      "count": 201
+    },
+    "Exports - commodities": {
+      "count": 231
+    },
+    "Imports": {
+      "count": 234,
+      "Imports 2017": {
+        "count": 197
+      },
+      "Imports 2016": {
+        "count": 101
+      },
+      "Imports 2015": {
+        "count": 11
+      },
+      "Imports 2014": {
+        "count": 5,
+        "codes": "an ls gl fp nc"
+      },
+      "Imports 2019": {
+        "count": 86
+      },
+      "Imports 2018": {
+        "count": 112
+      },
+      "Imports 2013": {
+        "count": 5,
+        "codes": "kr rm fm nr fp"
+      },
+      "Imports 2011": {
+        "count": 3,
+        "codes": "mn sm cw"
+      },
+      "Imports 2010": {
+        "count": 4,
+        "codes": "sm sb cw sh"
+      },
+      "Imports 2020": {
+        "count": 1,
+        "codes": "sl"
+      },
+      "Imports 2005": {
+        "count": 1,
+        "codes": "sb"
+      },
+      "Imports 2004": {
+        "count": 4,
+        "codes": "wf ne fk gi"
+      },
+      "Imports 2008": {
+        "count": 1,
+        "codes": "tk"
+      }
+    },
+    "Imports - partners": {
+      "count": 201
+    },
+    "Imports - commodities": {
+      "count": 231
+    },
+    "Reserves of foreign exchange and gold": {
+      "count": 196,
+      "Reserves of foreign exchange and gold 31 December 2017": {
+        "count": 190
+      },
+      "Reserves of foreign exchange and gold 31 December 2015": {
+        "count": 28
+      },
+      "Reserves of foreign exchange and gold 31 December 2016": {
+        "count": 164
+      },
+      "Reserves of foreign exchange and gold 31 December 2010": {
+        "count": 1,
+        "codes": "kr"
+      },
+      "Reserves of foreign exchange and gold 2014": {
+        "count": 2,
+        "codes": "sm so"
+      },
+      "Reserves of foreign exchange and gold 2013": {
+        "count": 1,
+        "codes": "sm"
+      },
+      "Reserves of foreign exchange and gold 31 December 2014": {
+        "count": 1,
+        "codes": "ee"
+      },
+      "Reserves of foreign exchange and gold 31 December 2013": {
+        "count": 1,
+        "codes": "ee"
+      }
+    },
+    "Debt - external": {
+      "count": 226,
+      "Debt - external FY10/11": {
+        "count": 1,
+        "codes": "af"
+      },
+      "Debt - external 2019": {
+        "count": 99
+      },
+      "Debt - external 2018": {
+        "count": 100
+      },
+      "Debt - external 2016": {
+        "count": 4,
+        "codes": "an gj kr fk"
+      },
+      "Debt - external 31 December 2017": {
+        "count": 74
+      },
+      "Debt - external 31 December 2016": {
+        "count": 76
+      },
+      "Debt - external 31 December 2012": {
+        "count": 3,
+        "codes": "ac bf mc"
+      },
+      "Debt - external June 2010": {
+        "count": 1,
+        "codes": "ac"
+      },
+      "Debt - external 31 December 2013": {
+        "count": 8,
+        "codes": "bf ps ws tt mc nc aa av"
+      },
+      "Debt - external 2010": {
+        "count": 3,
+        "codes": "bb fo gl"
+      },
+      "Debt - external 2003": {
+        "count": 1,
+        "codes": "bb"
+      },
+      "Debt - external 2014": {
+        "count": 1,
+        "codes": "bx"
+      },
+      "Debt - external 2013": {
+        "count": 4,
+        "codes": "bx kn rm fm"
+      },
+      "Debt - external 31 December 2015": {
+        "count": 4,
+        "codes": "do mv st ee"
+      },
+      "Debt - external 2017": {
+        "count": 3,
+        "codes": "gj bd fk"
+      },
+      "Debt - external 31 December 2010": {
+        "count": 2,
+        "codes": "pu rq"
+      },
+      "Debt - external 31 December 2000": {
+        "count": 1,
+        "codes": "pu"
+      },
+      "Debt - external 2015": {
+        "count": 3,
+        "codes": "kr ls bd"
+      },
+      "Debt - external 2008": {
+        "count": 1,
+        "codes": "rm"
+      },
+      "Debt - external 2012": {
+        "count": 2,
+        "codes": "fm fo"
+      },
+      "Debt - external 2004": {
+        "count": 2,
+        "codes": "nr wf"
+      },
+      "Debt - external 31 December 2014": {
+        "count": 4,
+        "codes": "ps so tt aa"
+      },
+      "Debt - external 2009": {
+        "count": 1,
+        "codes": "gl"
+      },
+      "Debt - external 1996": {
+        "count": 1,
+        "codes": "cw"
+      },
+      "Debt - external 2002": {
+        "count": 1,
+        "codes": "ne"
+      },
+      "Debt - external 1998": {
+        "count": 1,
+        "codes": "av"
+      },
+      "Debt - external 1997": {
+        "count": 2,
+        "codes": "vi mh"
+      },
+      "Debt - external 31 December 2009": {
+        "count": 1,
+        "codes": "rq"
+      },
+      "Debt - external 31 March 2016": {
+        "count": 1,
+        "codes": "we"
+      },
+      "Debt - external 31 March 2015": {
+        "count": 1,
+        "codes": "we"
+      }
+    },
+    "Exchange rates": {
+      "count": 240,
+      "currency": {
+        "count": 223
+      },
+      "Exchange rates 2017": {
+        "count": 123
+      },
+      "Exchange rates 2016": {
+        "count": 122
+      },
+      "Exchange rates 2015": {
+        "count": 120
+      },
+      "Exchange rates 2014": {
+        "count": 214
+      },
+      "Exchange rates 2013": {
+        "count": 215
+      },
+      "Exchange rates 2020": {
+        "count": 99
+      },
+      "Exchange rates 2019": {
+        "count": 99
+      },
+      "Exchange rates 2018": {
+        "count": 99
+      },
+      "Exchange rates 2012": {
+        "count": 4,
+        "codes": "kn nc wf je"
+      },
+      "Exchange rates 2010": {
+        "count": 1,
+        "codes": "zi"
+      },
+      "Exchange rates 2011": {
+        "count": 1,
+        "codes": "je"
+      }
+    },
+    "Credit ratings": {
+      "count": 154,
+      "Moody's rating": {
+        "count": 142
+      },
+      "Standard & Poors rating": {
+        "count": 135
+      },
+      "Fitch rating": {
+        "count": 121
+      }
+    },
+    "Economy of the area administered by Turkish Cypriots": {
+      "count": 1,
+      "codes": "cy"
+    },
+    "Marine fisheries": {
+      "count": 5,
+      "codes": "xq zh xo zn oo"
+    }
+  },
+  "Energy": {
+    "count": 235,
+    "Electricity access": {
+      "count": 222,
+      "electrification - total population": {
+        "count": 222
+      },
+      "electrification - urban areas": {
+        "count": 90
+      },
+      "electrification - rural areas": {
+        "count": 90
+      }
+    },
+    "Electricity - production": {
+      "count": 222
+    },
+    "Electricity - consumption": {
+      "count": 220
+    },
+    "Electricity - exports": {
+      "count": 220
+    },
+    "Electricity - imports": {
+      "count": 220
+    },
+    "Electricity - installed generating capacity": {
+      "count": 216
+    },
+    "Electricity - from fossil fuels": {
+      "count": 216
+    },
+    "Electricity - from nuclear fuels": {
+      "count": 216
+    },
+    "Electricity - from hydroelectric plants": {
+      "count": 216
+    },
+    "Electricity - from other renewable sources": {
+      "count": 215
+    },
+    "Crude oil - production": {
+      "count": 221
+    },
+    "Crude oil - exports": {
+      "count": 218
+    },
+    "Crude oil - imports": {
+      "count": 218
+    },
+    "Crude oil - proved reserves": {
+      "count": 219
+    },
+    "Refined petroleum products - production": {
+      "count": 218
+    },
+    "Refined petroleum products - consumption": {
+      "count": 216
+    },
+    "Refined petroleum products - exports": {
+      "count": 218
+    },
+    "Refined petroleum products - imports": {
+      "count": 216
+    },
+    "Natural gas - production": {
+      "count": 218
+    },
+    "Natural gas - consumption": {
+      "count": 217
+    },
+    "Natural gas - exports": {
+      "count": 217
+    },
+    "Natural gas - imports": {
+      "count": 217
+    },
+    "Natural gas - proved reserves": {
+      "count": 215
+    },
+    "Carbon dioxide emissions from consumption of energy": {
+      "count": 215
+    }
+  },
+  "Communications": {
+    "count": 249,
+    "Telephones - fixed lines": {
+      "count": 227,
+      "total subscriptions": {
+        "count": 227
+      },
+      "subscriptions per 100 inhabitants": {
+        "count": 227
+      }
+    },
+    "Telephones - mobile cellular": {
+      "count": 221,
+      "total subscriptions": {
+        "count": 221
+      },
+      "subscriptions per 100 inhabitants": {
+        "count": 221
+      }
+    },
+    "Telecommunication systems": {
+      "count": 240,
+      "general assessment": {
+        "count": 238
+      },
+      "domestic": {
+        "count": 238
+      },
+      "international": {
+        "count": 238
+      },
+      "overseas departments": {
+        "count": 1,
+        "codes": "fr"
+      }
+    },
+    "Broadcast media": {
+      "count": 238
+    },
+    "Internet country code": {
+      "count": 242
+    },
+    "Internet users": {
+      "count": 231,
+      "total": {
+        "count": 231
+      },
+      "percent of population": {
+        "count": 231
+      }
+    },
+    "Broadband - fixed subscriptions": {
+      "count": 205,
+      "total": {
+        "count": 205
+      },
+      "subscriptions per 100 inhabitants": {
+        "count": 205
+      }
+    },
+    "Communications - note": {
+      "count": 16
+    }
+  },
+  "Transportation": {
+    "count": 260,
+    "National air transport system": {
+      "count": 193,
+      "number of registered air carriers": {
+        "count": 191
+      },
+      "inventory of registered aircraft operated by air carriers": {
+        "count": 188
+      },
+      "annual passenger traffic on registered air carriers": {
+        "count": 157
+      },
+      "annual freight traffic on registered air carriers": {
+        "count": 141
+      }
+    },
+    "Civil aircraft registration country code prefix": {
+      "count": 211
+    },
+    "Airports": {
+      "count": 239,
+      "total": {
+        "count": 238
+      },
+      "Baker Island": {
+        "count": 1,
+        "codes": "um"
+      },
+      "Howland Island": {
+        "count": 1,
+        "codes": "um"
+      },
+      "Johnston Atoll": {
+        "count": 1,
+        "codes": "um"
+      },
+      "Kingman Reef": {
+        "count": 1,
+        "codes": "um"
+      },
+      "Midway Islands": {
+        "count": 1,
+        "codes": "um"
+      },
+      "Palmyra Atoll": {
+        "count": 1,
+        "codes": "um"
+      }
+    },
+    "Airports - with paved runways": {
+      "count": 235,
+      "total": {
+        "count": 233
+      },
+      "over 3,047 m": {
+        "count": 160
+      },
+      "2,438 to 3,047 m": {
+        "count": 165
+      },
+      "1,524 to 2,437 m": {
+        "count": 184
+      },
+      "914 to 1,523 m": {
+        "count": 155
+      },
+      "under 914 m": {
+        "count": 126
+      }
+    },
+    "Airports - with unpaved runways": {
+      "count": 191,
+      "total": {
+        "count": 190
+      },
+      "2,438 to 3,047 m": {
+        "count": 46
+      },
+      "1,524 to 2,437 m": {
+        "count": 122
+      },
+      "914 to 1,523 m": {
+        "count": 163
+      },
+      "under 914 m": {
+        "count": 176
+      },
+      "over 3,047 m": {
+        "count": 26
+      }
+    },
+    "Heliports": {
+      "count": 115
+    },
+    "Pipelines": {
+      "count": 130
+    },
+    "Roadways": {
+      "count": 232,
+      "total": {
+        "count": 226
+      },
+      "paved": {
+        "count": 169
+      },
+      "unpaved": {
+        "count": 142
+      },
+      "urban": {
+        "count": 10
+      },
+      "non-urban": {
+        "count": 6,
+        "codes": "am as cg fr mt sl"
+      },
+      "government control": {
+        "count": 1,
+        "codes": "cy"
+      },
+      "Turkish Cypriot control": {
+        "count": 1,
+        "codes": "cy"
+      },
+      "highways": {
+        "count": 1,
+        "codes": "fi"
+      },
+      "private and forest roads": {
+        "count": 1,
+        "codes": "fi"
+      },
+      "paved/oiled gravel": {
+        "count": 1,
+        "codes": "ic"
+      }
+    },
+    "Waterways": {
+      "count": 124
+    },
+    "Ports and terminals": {
+      "count": 236,
+      "river port(s)": {
+        "count": 41
+      },
+      "major seaport(s)": {
+        "count": 195
+      },
+      "LNG terminal(s) (export)": {
+        "count": 18
+      },
+      "container port(s) (TEUs)": {
+        "count": 52
+      },
+      "LNG terminal(s) (import)": {
+        "count": 36
+      },
+      "dry bulk cargo port(s)": {
+        "count": 5,
+        "codes": "as br ca co da"
+      },
+      "cruise port(s)": {
+        "count": 5,
+        "codes": "bf da ei mx aa"
+      },
+      "oil terminal(s)": {
+        "count": 27
+      },
+      "lake port(s)": {
+        "count": 5,
+        "codes": "by kg mi rw ug"
+      },
+      "river and lake port(s)": {
+        "count": 1,
+        "codes": "ca"
+      },
+      "river or lake port(s)": {
+        "count": 1,
+        "codes": "cg"
+      },
+      "cruise/ferry port(s)": {
+        "count": 1,
+        "codes": "fr"
+      },
+      "cargo ports": {
+        "count": 1,
+        "codes": "us"
+      },
+      "cruise departure ports (passengers)": {
+        "count": 1,
+        "codes": "us"
+      },
+      "major port(s)": {
+        "count": 1,
+        "codes": "ee"
+      },
+      "bulk cargo port(s)": {
+        "count": 1,
+        "codes": "uc"
+      },
+      "Saint Helena": {
+        "count": 1,
+        "codes": "sh"
+      },
+      "Ascension Island": {
+        "count": 1,
+        "codes": "sh"
+      },
+      "Tristan da Cunha": {
+        "count": 1,
+        "codes": "sh"
+      },
+      "Baker, Howland, and Jarvis Islands, and Kingman Reef": {
+        "count": 1,
+        "codes": "um"
+      },
+      "Johnston Atoll": {
+        "count": 1,
+        "codes": "um"
+      },
+      "Midway Islands": {
+        "count": 1,
+        "codes": "um"
+      },
+      "Palmyra Atoll": {
+        "count": 1,
+        "codes": "um"
+      }
+    },
+    "Railways": {
+      "count": 139,
+      "total": {
+        "count": 138
+      },
+      "standard gauge": {
+        "count": 76
+      },
+      "narrow gauge": {
+        "count": 81
+      },
+      "broad gauge": {
+        "count": 34
+      },
+      "dual gauge": {
+        "count": 3,
+        "codes": "br ja ts"
+      },
+      "other": {
+        "count": 2,
+        "codes": "po sf"
+      }
+    },
+    "Merchant marine": {
+      "count": 186,
+      "total": {
+        "count": 186
+      },
+      "by type": {
+        "count": 186
+      }
+    },
+    "Transportation - note": {
+      "count": 11
+    }
+  },
+  "Military and Security": {
+    "count": 258,
+    "Military and security forces": {
+      "count": 217
+    },
+    "Military expenditures": {
+      "count": 159,
+      "Military Expenditures 2019": {
+        "count": 143
+      },
+      "Military Expenditures 2018": {
+        "count": 153
+      },
+      "Military Expenditures 2017": {
+        "count": 153
+      },
+      "Military Expenditures 2016": {
+        "count": 154
+      },
+      "Military Expenditures 2015": {
+        "count": 123
+      },
+      "Military Expenditures 2020": {
+        "count": 30
+      },
+      "Military Expenditures 2014": {
+        "count": 14
+      },
+      "Military Expenditures 2013": {
+        "count": 6,
+        "codes": "ga pu la ae ve ym"
+      },
+      "Military Expenditures 2012": {
+        "count": 4,
+        "codes": "la ti ae ym"
+      },
+      "Military Expenditures 2011": {
+        "count": 4,
+        "codes": "la ti ae ym"
+      },
+      "Military Expenditures 2010": {
+        "count": 1,
+        "codes": "uz"
+      }
+    },
+    "Military and security service personnel strengths": {
+      "count": 179
+    },
+    "Military equipment inventories and acquisitions": {
+      "count": 180
+    },
+    "Military service age and obligation": {
+      "count": 175
+    },
+    "Military - note": {
+      "count": 117
+    },
+    "Military deployments": {
+      "count": 94
+    },
+    "Maritime threats": {
+      "count": 23
+    }
+  },
+  "Terrorism": {
+    "count": 77,
+    "Terrorist group(s)": {
+      "count": 73
+    }
+  },
+  "Transnational Issues": {
+    "count": 254,
+    "Disputes - international": {
+      "count": 254
+    },
+    "Refugees and internally displaced persons": {
+      "count": 143,
+      "refugees (country of origin)": {
+        "count": 95
+      },
+      "IDPs": {
+        "count": 55
+      },
+      "stateless persons": {
+        "count": 82
+      }
+    },
+    "Illicit drugs": {
+      "count": 138
+    },
+    "Trafficking in persons": {
+      "count": 68,
+      "current situation": {
+        "count": 68
+      },
+      "tier rating": {
+        "count": 68
+      }
+    }
+  }
+}

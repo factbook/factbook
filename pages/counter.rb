@@ -27,7 +27,7 @@ pp h
 
 ### save to json
 puts "saving a copy to categories.json for debugging"
-File.open( "tmp/categories.json", 'w:utf-8' ) do |f|
+File.open( "pages/json/categories.json", 'w:utf-8' ) do |f|
   f.write JSON.pretty_generate( h )
 end
 
