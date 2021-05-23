@@ -6,7 +6,7 @@
 require_relative 'boot'
 
 
-Webget.config.sleep = 1
+Webget.config.sleep = 0.5
 
 def download
 
