@@ -6,7 +6,7 @@ module Factbook
 # builder -- lets us rebuild a profile from "dumped" hash
 
 class ProfileBuilder      ## change to DataBuilder or such - why? why not?
-  include LogUtils::Logging
+  include Logging
 
 
 attr_reader :profile,

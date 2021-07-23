@@ -1,0 +1,195 @@
+Num, Category, Name
+324, Introduction, Preliminary statement
+325, Introduction, Background
+275, Geography, Geographic overview
+276, Geography, Location
+277, Geography, Geographic coordinates
+278, Geography, Map references
+279, Geography, Area
+280, Geography, Area - comparative
+281, Geography, Land boundaries
+282, Geography, Coastline
+283, Geography, Maritime claims
+284, Geography, Climate
+285, Geography, Terrain
+287, Geography, Natural resources
+288, Geography, Land use
+289, Geography, Irrigated land
+292, Geography, Natural hazards
+295, Geography, Geography - note
+348, Geography, Population distribution
+406, Geography, Area - rankings
+407, Geography, Elevation
+335, People and Society, Population
+336, People and Society, Nationality
+340, People and Society, Demographic profile
+341, People and Society, Age structure
+342, People and Society, Dependency ratios
+343, People and Society, Median age
+344, People and Society, Population growth rate
+345, People and Society, Birth rate
+346, People and Society, Death rate
+347, People and Society, Net migration rate
+348, People and Society, Population distribution
+349, People and Society, Urbanization
+350, People and Society, Major urban areas - population
+351, People and Society, Sex ratio
+352, People and Society, Mother's mean age at first birth
+353, People and Society, Maternal mortality ratio
+354, People and Society, Infant mortality rate
+355, People and Society, Life expectancy at birth
+356, People and Society, Total fertility rate
+357, People and Society, Contraceptive prevalence rate
+359, People and Society, Physicians density
+360, People and Society, Hospital bed density
+361, People and Society, Drinking water source
+363, People and Society, HIV/AIDS - adult prevalence rate
+364, People and Society, HIV/AIDS - people living with HIV/AIDS
+365, People and Society, HIV/AIDS - deaths
+366, People and Society, Major infectious diseases
+367, People and Society, Obesity - adult prevalence rate
+368, People and Society, Children under the age of 5 years underweight
+369, People and Society, Education expenditures
+370, People and Society, Literacy
+371, People and Society, School life expectancy (primary to tertiary education)
+373, People and Society, "Unemployment, youth ages 15-24"
+374, People and Society, People - note
+398, People and Society, Sanitation facility access
+400, People and Society, Ethnic groups
+401, People and Society, Religions
+402, People and Society, Languages
+409, People and Society, Current Health Expenditure
+284, Environment, Climate
+288, Environment, Land use
+290, Environment, Total renewable water resources
+293, Environment, Environment - current issues
+294, Environment, Environment - international agreements
+349, Environment, Urbanization
+366, Environment, Major infectious diseases
+408, Environment, Marine fisheries
+416, Environment, Air pollutants
+417, Environment, Total water withdrawal
+418, Environment, Food insecurity
+420, Environment, Revenue from forest resources
+421, Environment, Revenue from coal
+422, Environment, Waste and recycling
+296, Government, Country name
+297, Government, Union name
+298, Government, Dependency status
+299, Government, Government type
+300, Government, Political structure
+301, Government, Capital
+302, Government, Administrative divisions
+303, Government, Member states
+304, Government, Dependent areas
+305, Government, Independence
+306, Government, National holiday
+307, Government, Constitution
+308, Government, Legal system
+309, Government, International law organization participation
+310, Government, Citizenship
+311, Government, Suffrage
+312, Government, Executive branch
+313, Government, Legislative branch
+314, Government, Judicial branch
+315, Government, Political parties and leaders
+317, Government, International organization participation
+318, Government, Diplomatic representation in the US
+319, Government, Diplomatic representation from the US
+320, Government, Flag description
+321, Government, National symbol(s)
+322, Government, National anthem
+323, Government, Government - note
+207, Economy, Economic overview
+208, Economy, Real GDP (purchasing power parity)
+209, Economy, GDP (official exchange rate)
+210, Economy, Real GDP growth rate
+211, Economy, Real GDP per capita
+212, Economy, Gross national saving
+213, Economy, "GDP - composition, by end use"
+214, Economy, "GDP - composition, by sector of origin"
+215, Economy, Agricultural products
+216, Economy, Industries
+217, Economy, Industrial production growth rate
+218, Economy, Labor force
+219, Economy, Labor force - by occupation
+220, Economy, Unemployment rate
+221, Economy, Population below poverty line
+222, Economy, Household income or consumption by percentage share
+223, Economy, Gini Index coefficient - distribution of family income
+224, Economy, Budget
+225, Economy, Taxes and other revenues
+226, Economy, Budget surplus (+) or deficit (-)
+227, Economy, Public debt
+228, Economy, Fiscal year
+229, Economy, Inflation rate (consumer prices)
+237, Economy, Credit ratings
+238, Economy, Current account balance
+239, Economy, Exports
+240, Economy, Exports - commodities
+241, Economy, Exports - partners
+242, Economy, Imports
+243, Economy, Imports - commodities
+245, Economy, Reserves of foreign exchange and gold
+246, Economy, Debt - external
+249, Economy, Exchange rates
+250, Economy, Economy of the area administered by Turkish Cypriots
+403, Economy, Imports - partners
+405, Economy, Ease of Doing Business Index scores
+251, Energy, Electricity access
+252, Energy, Electricity - production
+253, Energy, Electricity - consumption
+254, Energy, Electricity - exports
+255, Energy, Electricity - imports
+256, Energy, Electricity - installed generating capacity
+257, Energy, Electricity - from fossil fuels
+258, Energy, Electricity - from nuclear fuels
+259, Energy, Electricity - from hydroelectric plants
+260, Energy, Electricity - from other renewable sources
+261, Energy, Crude oil - production
+262, Energy, Crude oil - exports
+263, Energy, Crude oil - imports
+264, Energy, Crude oil - proved reserves
+265, Energy, Refined petroleum products - production
+266, Energy, Refined petroleum products - consumption
+267, Energy, Refined petroleum products - exports
+268, Energy, Refined petroleum products - imports
+269, Energy, Natural gas - production
+270, Energy, Natural gas - consumption
+271, Energy, Natural gas - exports
+272, Energy, Natural gas - imports
+273, Energy, Natural gas - proved reserves
+196, Communications, Telephones - fixed lines
+197, Communications, Telephones - mobile cellular
+198, Communications, Telecommunication systems
+199, Communications, Broadcast media
+202, Communications, Internet country code
+204, Communications, Internet users
+205, Communications, Communications - note
+206, Communications, Broadband - fixed subscriptions
+377, Transportation, National air transport system
+378, Transportation, Civil aircraft registration country code prefix
+379, Transportation, Airports
+380, Transportation, Airports - with paved runways
+381, Transportation, Airports - with unpaved runways
+382, Transportation, Heliports
+383, Transportation, Pipelines
+384, Transportation, Railways
+385, Transportation, Roadways
+386, Transportation, Waterways
+387, Transportation, Merchant marine
+388, Transportation, Ports and terminals
+389, Transportation, Transportation - note
+330, Military and Security, Military expenditures
+331, Military and Security, Military and security forces
+332, Military and Security, Military - note
+333, Military and Security, Military service age and obligation
+334, Military and Security, Maritime threats
+410, Military and Security, Military and security service personnel strengths
+411, Military and Security, Military equipment inventories and acquisitions
+412, Military and Security, Military deployments
+413, Terrorism, Terrorist group(s)
+326, Transnational Issues, Disputes - international
+327, Transnational Issues, Refugees and internally displaced persons
+328, Transnational Issues, Trafficking in persons
+329, Transnational Issues, Illicit drugs

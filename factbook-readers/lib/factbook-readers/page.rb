@@ -3,7 +3,7 @@ module Factbook
 
 
 class Page
-  include LogUtils::Logging
+  include Logging
 
   attr_reader :info       ##  meta info e.g. country_code, country_name, region_name, updated, etc.
 

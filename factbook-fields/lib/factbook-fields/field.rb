@@ -3,7 +3,7 @@ module Factbook
 
 
 class Field
-  include LogUtils::Logging
+  include Logging
 
   attr_reader   :title        ## use name instead of title - why? why not?
 

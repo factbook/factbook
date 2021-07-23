@@ -3,7 +3,7 @@ module Factbook
 
 
 class Profile
-  include LogUtils::Logging
+  include Logging
 
   ## attr_reader :categories   ## "structured" access e.g. categories/fields/etc.
   ##   use each for access by default for categories - why? why not?
