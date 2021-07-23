@@ -9,21 +9,18 @@ and region?
 
 
 
+
 ## Todos
 
-- [ ] add a `codes.categories` and `codes.regions` method
+- [x] add a `codes.categories` and `codes.regions` method
   to tally up all categories and regions - return just names (array)
   or names/count pairs (hash)?
 
-- [ ] add lookup by code via `[]` eg. `codes[ :bx]` or `codes[ 'bx' ]` or `codes [ 'BX' ]`
+- [x] add lookup by code via `[]` eg. `codes[ :bx]` or `codes[ 'bx' ]` or `codes [ 'BX' ]`
+
+- [x] double check country names and region names from downloaded profile if match
 
 - [ ] change region Australia-Oceania to Australia and Oceania - why? why not?
 
-- [ ] double check country names and region names from downloaded profile if match
-
-
-
-
-
-
+- [ ] change `Factbook.codes` to `Factbook.countries` - why? why not?
 

@@ -110,7 +110,22 @@ class Codes
   end
 
 
-  def [](key) @codes[ key ]; end
+  def by_code   ## (on demand) cache for lookup by code
+    @codes_by_code ||= @codes.reduce( {} ) { |h,code| h[code.code]=code; h }
+  end
+
+  def []( q )
+    if q.is_a?( Integer )
+      idx = q
+      @codes[ idx ]
+    else ## assume string/symbol
+      code = q.to_s.downcase
+      by_code[ code ]
+    end
+  end
+
+
+
 
   def to_a
     @codes.collect {|code| code.code }   ## return array of codes

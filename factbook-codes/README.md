@@ -84,7 +84,7 @@ iv  Cote d'Ivoire                     Countries                     Africa
 hr  Croatia                           Countries                     Europe
 cu  Cuba                              Countries                     Central America and Caribbean
 cy  Cyprus                            Countries                     Europe
-ez  Czech Republic                    Countries                     Europe
+ez  Czechia                           Countries                     Europe
 da  Denmark                           Countries                     Europe
 dj  Djibouti                          Countries                     Africa
 do  Dominica                          Countries                     Central America and Caribbean
@@ -141,7 +141,7 @@ ly  Libya                             Countries                     Africa
 ls  Liechtenstein                     Countries                     Europe
 lh  Lithuania                         Countries                     Europe
 lu  Luxembourg                        Countries                     Europe
-mk  Macedonia                         Countries                     Europe
+mk  North Macedonia                   Countries                     Europe
 ma  Madagascar                        Countries                     Africa
 mi  Malawi                            Countries                     Africa
 my  Malaysia                          Countries                     East & Southeast Asia
@@ -204,7 +204,7 @@ sp  Spain                             Countries                     Europe
 ce  Sri Lanka                         Countries                     South Asia
 su  Sudan                             Countries                     Africa
 ns  Suriname                          Countries                     South America
-wz  Swaziland                         Countries                     Africa
+wz  Eswatini                          Countries                     Africa
 sw  Sweden                            Countries                     Europe
 sz  Switzerland                       Countries                     Europe
 sy  Syria                             Countries                     Middle East
@@ -262,23 +262,23 @@ tl  Tokelau                           Dependencies (New Zealand)    Australia-Oc
 bv  Bouvet Island                     Dependencies (Norway)         Antarctica
 jn  Jan Mayen                         Dependencies (Norway)         Europe
 sv  Svalbard                          Dependencies (Norway)         Europe
-ax  Akrotiri                          Dependencies (Great Britain)  Europe
-av  Anguilla                          Dependencies (Great Britain)  Central America and Caribbean
-bd  Bermuda                           Dependencies (Great Britain)  North America
-io  British Indian Ocean Territory    Dependencies (Great Britain)  South Asia
-vi  British Virgin Islands            Dependencies (Great Britain)  Central America and Caribbean
-cj  Cayman Islands                    Dependencies (Great Britain)  Central America and Caribbean
-dx  Dhekelia                          Dependencies (Great Britain)  Europe
-fk  Falkland Islands (Islas Malvinas)  Dependencies (Great Britain)  South America
-gi  Gibraltar                         Dependencies (Great Britain)  Europe
-gk  Guernsey                          Dependencies (Great Britain)  Europe
-je  Jersey                            Dependencies (Great Britain)  Europe
-im  Isle of Man                       Dependencies (Great Britain)  Europe
-mh  Montserrat                        Dependencies (Great Britain)  Central America and Caribbean
-pc  Pitcairn Islands                  Dependencies (Great Britain)  Australia-Oceania
-sh  Saint Helena, Ascension, and Tristan da Cunha  Dependencies (Great Britain)  Africa
-sx  South Georgia and South Sandwich Islands  Dependencies (Great Britain)  South America
-tk  Turks and Caicos Islands          Dependencies (Great Britain)  Central America and Caribbean
+ax  Akrotiri                          Dependencies (United Kingdom)  Europe
+av  Anguilla                          Dependencies (United Kingdom)  Central America and Caribbean
+bd  Bermuda                           Dependencies (United Kingdom)  North America
+io  British Indian Ocean Territory    Dependencies (United Kingdom)  South Asia
+vi  British Virgin Islands            Dependencies (United Kingdom)  Central America and Caribbean
+cj  Cayman Islands                    Dependencies (United Kingdom)  Central America and Caribbean
+dx  Dhekelia                          Dependencies (United Kingdom)  Europe
+fk  Falkland Islands (Islas Malvinas)  Dependencies (United Kingdom)  South America
+gi  Gibraltar                         Dependencies (United Kingdom)  Europe
+gk  Guernsey                          Dependencies (United Kingdom)  Europe
+je  Jersey                            Dependencies (United Kingdom)  Europe
+im  Isle of Man                       Dependencies (United Kingdom)  Europe
+mh  Montserrat                        Dependencies (United Kingdom)  Central America and Caribbean
+pc  Pitcairn Islands                  Dependencies (United Kingdom)  Australia-Oceania
+sh  Saint Helena, Ascension, and Tristan da Cunha  Dependencies (United Kingdom)  Africa
+sx  South Georgia and South Sandwich Islands  Dependencies (United Kingdom)  South America
+tk  Turks and Caicos Islands          Dependencies (United Kingdom)  Central America and Caribbean
 aq  American Samoa                    Dependencies (United States)  Australia-Oceania
 gq  Guam                              Dependencies (United States)  Australia-Oceania
 bq  Navassa Island                    Dependencies (United States)  Central America and Caribbean
@@ -326,7 +326,7 @@ resulting in:
 
 ```ruby
 {"Countries"                   => 195,
- "Dependencies (Great Britain)"=> 17,
+ "Dependencies (United Kingdom)"=> 17,
  "Dependencies (France)"       => 8,
  "Dependencies (United States)"=> 8,
  "Dependencies (Australia)"    => 6,
