@@ -18,7 +18,12 @@ See [factbook/factbook.json »](https://github.com/factbook/factbook.json)
 ### List all codes
 
 ```ruby
-Factbook.codes.each do |code|
+require 'factbook/codes'
+
+codes = Factbook.codes
+codes.size #=> 260
+
+codes.each do |code|
   print code.code
   print "  "
   print "%-32s" % code.name
@@ -301,20 +306,20 @@ and/or by region e.g. Africa, Europe, South Asia, Central America and Caribbean,
 
 
 ```ruby
-assert_equal 260, Factbook.codes.size
+assert_equal 260, codes.size
 
 ## filter by categories
-assert_equal 195, Factbook.codes.countries.size
-assert_equal  52, Factbook.codes.dependencies.size
-assert_equal   5, Factbook.codes.misc.size
-assert_equal   2, Factbook.codes.others.size
-assert_equal   5, Factbook.codes.oceans.size
-assert_equal   1, Factbook.codes.world.size
+assert_equal 195, codes.countries.size
+assert_equal  52, codes.dependencies.size
+assert_equal   5, codes.misc.size
+assert_equal   2, codes.others.size
+assert_equal   5, codes.oceans.size
+assert_equal   1, codes.world.size
 
-assert_equal  14, Factbook.codes.categories.size
+assert_equal  14, codes.categories.size
 
-## print all categories (with count)
-Factbook.codes.categories
+## print all categories (with usage count)
+codes.categories
 ```
 
 resulting in:
@@ -341,24 +346,24 @@ and
 ```ruby
 
 ## filter by regions
-assert_equal  55, Factbook.codes.europe.size
-assert_equal   9, Factbook.codes.south_asia.size
-assert_equal   6, Factbook.codes.central_asia.size
-assert_equal  22, Factbook.codes.east_n_souteast_asia.size
-assert_equal  19, Factbook.codes.middle_east.size
-assert_equal  55, Factbook.codes.africa.size
-assert_equal   7, Factbook.codes.north_america.size
-assert_equal  33, Factbook.codes.central_america_n_caribbean.size
-assert_equal  14, Factbook.codes.south_america.size
-assert_equal  30, Factbook.codes.australia_oceania.size
-assert_equal   4, Factbook.codes.antartica.size
-assert_equal   5, Factbook.codes.region('Oceans').size
-assert_equal   1, Factbook.codes.region('World').size
+assert_equal  55, codes.europe.size
+assert_equal   9, codes.south_asia.size
+assert_equal   6, codes.central_asia.size
+assert_equal  22, codes.east_n_souteast_asia.size
+assert_equal  19, codes.middle_east.size
+assert_equal  55, codes.africa.size
+assert_equal   7, codes.north_america.size
+assert_equal  33, codes.central_america_n_caribbean.size
+assert_equal  14, codes.south_america.size
+assert_equal  30, codes.australia_oceania.size
+assert_equal   4, codes.antartica.size
+assert_equal   5, codes.region('Oceans').size
+assert_equal   1, codes.region('World').size
 
-## print all regions (with count)
-assert_equal  13, Factbook.codes.regions.size
+## print all regions (with usage count)
+assert_equal  13, codes.regions.size
 
-Factbook.codes.regions
+codes.regions
 ```
 
 resulting in:
@@ -383,7 +388,7 @@ and
 
 ```ruby
 ## filter by categories + regions
-assert_equal  45, Factbook.codes.countries.europe.size
+assert_equal  45, codes.countries.europe.size
 ...
 ```
 
