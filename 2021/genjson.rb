@@ -5,16 +5,6 @@
 require_relative 'boot'
 
 
-##
-##  todo: mae region_to_slug into a utility method for (re)use - how, why? why not??
-def region_to_slug( text )
-  ##  change and  =>  n
-  ##  change  &   =>  n
-  ##  change all spaces to => -
-  ##   e.g. East & Southeast Asia          => east-n-southeast-asia
-  ##        Central America and Caribbean  => central-america-n-caribbean
-  text.downcase.gsub('and', 'n').gsub( '&', 'n' ).gsub( ' ', '-' )
-end
 
 
 def convert_cia( cia )
@@ -64,16 +54,12 @@ def _gen_json( out_root:, converter: nil )
     puts "[#{i+1}/#{codes.size}]:"
     pp code
 
-    if code.code == 'wi'  ## 404 Not found --   Western Sahara no longer available??
-      ## skip -- do nothing
-    else
       url = "https://www.cia.gov/the-world-factbook/geos/#{code.code}.json"
 
       json = Webcache.read( url )
       data = JSON.parse( json )
 
-      region_slug = region_to_slug( code.region )
-      path = "#{out_root}/#{region_slug}/#{code.code}.json"
+      path = "#{out_root}/#{code.region_slug}/#{code.code}.json"
 
       FileUtils.mkdir_p( File.dirname( path ) )    ## make sure path exist
 
@@ -84,7 +70,6 @@ def _gen_json( out_root:, converter: nil )
       File.open( path, 'w:utf-8', :newline => :universal ) do |f|
         f.write( JSON.pretty_generate( data ) )
       end
-    end
 
     i += 1
   end

@@ -17,12 +17,24 @@ def self.region_to_slug( text )
   text.downcase.gsub('and', 'n').gsub( '&', 'n' ).gsub( ' ', '-' )
 end
 
+
+
 class Codes
   class Code   ## nested class
-    attr_accessor :code,      ## todo: add notes (country affiliation) - why? why not??
-                  :name,
-                  :category,  ## e.g. Countries, Other, Oceans, World, Dependencies, etc.
-                  :region    ## e.g. Europe, Oceans, etc.
+    ## todo/check: make class "top-level" / not-nested - why? why not?
+
+    ## note: make "value object" read-only for now
+    attr_reader :code,      ## todo: add notes (country affiliation) - why? why not??
+                :name,
+                :category,  ## e.g. Countries, Other, Oceans, World, Dependencies, etc.
+                :region    ## e.g. Europe, Oceans, etc.
+
+    def initialize( code:, name:, category:, region: )
+      @code     = code
+      @name     = name
+      @category = category
+      @region   = region
+    end
 
     ## todo/check: add aliases e.g. - why? why not?
     ##    country_code => code
@@ -30,7 +42,25 @@ class Codes
     ##    region_name  => region
 
     def region_slug() Factbook.region_to_slug( @region ); end
+
+
+    #################
+    ## more helpers
+
+    def data_url  ## add json_url alias or such - why? why not?
+      "https://www.cia.gov/the-world-factbook/geos/#{@code}.json"
+    end
+
+    def url( format=:json )  ## make html the default - why? why not?
+      ## todo/check: use code.json_url or url( :json) or such - why? why not?
+       case format
+       when :json then data_url
+       else  raise ArgumentError, "unknown url format #{format}; expected :json"
+       end
+    end
   end # (nested) class Code
+
+
 
 
 
@@ -52,11 +82,12 @@ class Codes
     recs = []
     rows.each do |row|
       ## pp row
-      rec = Code.new
-      rec.code     = row['Code'].strip    ## remove leading n trailing whitespaces
-      rec.name     = row['Name'].strip
-      rec.category = row['Category'].strip
-      rec.region   = row['Region'].strip
+      rec = Code.new(
+        code:     row['Code'].strip,    ## remove leading n trailing whitespaces
+        name:     row['Name'].strip,
+        category: row['Category'].strip,
+        region:   row['Region'].strip
+      )
 
       ## pp rec
       recs << rec
@@ -87,7 +118,17 @@ class Codes
 
   ##  def all()  self.to_a; end    ## note: alias for to_a - use - why? why not??
 
-  ## "pre-defined" convenience shortcuts
+
+  def categories   ## tally up all categories and return category name/count pairs (hash)
+     @@categories ||= begin
+                         @codes.reduce( Hash.new(0) ) do |categories,code|
+                           categories[ code.category ] += 1
+                           categories
+                         end
+                      end
+  end
+
+  ## "pre-defined" convenience shortcuts by category
   def countries()       category 'Countries';     end
   def world()           category 'World';         end
   def oceans()          category 'Oceans';        end
@@ -96,6 +137,17 @@ class Codes
   def dependencies()    category 'Dependencies';  end
   def dependencies_us() category 'Dependencies (United States)'; end
 ## fix/todo: add all dependencies  uk (or gb?), fr,cn,au,nz,no,dk,etc.
+
+
+
+  def regions  ## tally up all regions and return region name/count pairs (hash)
+    @@regions ||= begin
+                    @codes.reduce( Hash.new(0) ) do |regions,code|
+                      regions[ code.region ] += 1
+                      regions
+                    end
+                  end
+  end
 
   def europe()               region 'Europe';            end
   def south_asia()           region 'South Asia';        end
