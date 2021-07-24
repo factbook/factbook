@@ -17,6 +17,15 @@ def self.region_to_slug( text )
   text.downcase.gsub('and', 'n').gsub( '&', 'n' ).gsub( ' ', '-' )
 end
 
+def self.country_to_slug( text )
+  ## follow cia rules e.g.:
+  ##    Holy See (Vatican City)            =>  holy-see-vatican-city
+  ##    Congo, Democratic Republic of the  => congo-democratic-republic-of-the
+  ##    Cote d'Ivoire                      => cote-divoire
+  ##  1) remove   (),'
+  ##  2) replace  space to => -
+  text.downcase.gsub( /[(),']/, '' ).gsub( ' ', '-' )
+end
 
 
 class Codes
@@ -42,7 +51,7 @@ class Codes
     ##    region_name  => region
 
     def region_slug() Factbook.region_to_slug( @region ); end
-
+    def name_slug()   Factbook.country_to_slug( @name ); end
 
     #################
     ## more helpers
