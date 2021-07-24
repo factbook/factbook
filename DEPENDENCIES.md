@@ -36,7 +36,7 @@
 **FP  French Polynesia / Australia - Oceania**   -- Dependencies (France), 4,167 sq km (118 islands and atolls; 67 are inhabited):
 <br>overseas country of France; note - overseas territory of France from 1946-2003; overseas collectivity of France since 2003, though it is often referred to as an overseas country due to its degree of autonomy
 
-**FS  French Southern and Antarctic Lands / Antarctica**   -- Dependencies (France), ?:
+**FS  French Southern and Antarctic Lands / Antarctica**   -- Dependencies (France), ??:
 <br>overseas territory of France since 1955
 
 **NC  New Caledonia / Australia - Oceania**   -- Dependencies (France), 18,575 sq km:
@@ -153,7 +153,7 @@
 **WQ  Wake Island / Australia - Oceania**   -- Dependencies (United States), 7 sq km:
 <br>unincorporated unorganized territory of the US; administered from Washington, DC, by the Department of the Interior; activities in the atoll are currently conducted by the 11th US Air Force and managed from Pacific Air Force Support Center
 
-**UM  United States Pacific Island Wildlife Refuges / Australia - Oceania**   -- Dependencies (United States), ?:
+**UM  United States Pacific Island Wildlife Refuges / Australia - Oceania**   -- Dependencies (United States), ??:
 <br>with the exception of Palmyra Atoll, the constituent islands are unincorporated, unorganized territories of the US; administered from Washington, DC, by the Fish and Wildlife Service of the US Department of the Interior as part of the National Wildlife Refuge System<br><br><strong>note:</strong>&nbsp;Palmyra Atoll&nbsp;is partly privately owned and partly federally owned;&nbsp;the federally owned portion is administered from Washington, DC, by the Fish and Wildlife Service of the US Department of the Interior as an incorporated, unorganized territory of the US; the Office of Insular Affairs of the US Department of the Interior continues to administer nine excluded areas comprising certain tidal and submerged lands within the 12 nm territorial sea or within the lagoon
 
 

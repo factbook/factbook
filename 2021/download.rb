@@ -17,8 +17,7 @@ def download
 
   i = 0
   codes.each do |code|
-    puts "[#{i+1}/#{codes.size}]:"
-    pp code
+    puts "==> [#{i+1}/#{codes.size}] #{code.format}:"
 
     res = Webget.call( code.data_url )  ## get json dataset / page
     if res.status.nok?
@@ -38,6 +37,7 @@ end
 ## for testing use:
 ##   ruby 2021/download.rb
 
-download    if __FILE__ == $0
-
+if __FILE__ == $0
+  download
+end
 

@@ -58,6 +58,12 @@ class Codes
        else  raise ArgumentError, "unknown url format #{format}; expected :json"
        end
     end
+
+    #################
+    ## pretty print (format) helpers
+    def format( format=:std )   ## add more formats - for now only one - why? why not?
+       "#{@code} #{@name} / #{@region} -- #{@category}"
+    end
   end # (nested) class Code
 
 

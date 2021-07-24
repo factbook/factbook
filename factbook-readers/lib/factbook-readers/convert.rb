@@ -10,6 +10,9 @@ def convert_cia( cia )
      cat = data[ cia_cat['title'] ] = {}
      cia_cat['fields'].each do |cia_field|
        field = cat[ cia_field['name'] ] = {}
+
+       ## case 1 - field has subfields? yes, use content of subfields as text
+       ##  - drop redundant (?) field content - assume same as aggregate of all subfield content
        if cia_field['subfields']
          cia_field['subfields'].each do |cia_subfield|
            subfield = field[ cia_subfield['name'] ] = {}
@@ -23,10 +26,14 @@ def convert_cia( cia )
            puts "   #{cia_subfield['name']}: >#{cia_subfield['content']}<"
          end
 
+         ## todo/check/fix:  check if subfield_note exits?
+
+       ## case 2 - no subfields - use field content as text
        else
          field[ 'text' ] = cia_field['content']
        end
 
+       ## bonus - check for field note
        if cia_field[ 'field_note' ]
          field[ 'note' ] = cia_field[ 'field_note' ]
        end

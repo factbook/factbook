@@ -58,7 +58,7 @@ codes.each do |cty|   ## note: use country/cty instead of code - why? why not?
             "  -- " +
             cty.category +
             ", " +
-            (area_total ? area_total['content'] : "?") +
+            (area_total ? area_total['content'] : "??") +
             ":\n<br>"
     buf << dependency['content']
     buf << "\n\n"
