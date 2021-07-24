@@ -397,56 +397,6 @@ See [`data/codes.csv`](data/codes.csv) for the built-in listing of all codes wit
 
 
 
-
-
-
-
-## Frequently Asked Questions (F.A.Q.s) & Answers
-
-Q: The World Factbook front-page
-says "for 266 world entities" - but
-the `Factbook.codes.size` is only 260 (thus, 6 entities short)?
-What's the story?
-
-> The World Factbook provides basic intelligence on the history,
-> people, government, economy, energy, geography, communications,
-> transportation, military, terrorism, and transnational issues
-> for 266 world entities.
->
-> (Source: [`cia.gov/the-world-factbook`](https://www.cia.gov/the-world-factbook/))
-
-
-A: Since March 2006
-the United States Pacific Island Wildlife Refuges (`um`)
-country profile consolidates
-seven profiles into a single new one
-(but keeps entities count as before):
-
-- Baker Island  (`fq`)
-- Howland Island (`hq`)
-- Jarvis Island (`dq`)
-- Johnston Atoll (`jq`)
-- Kingman Reef (`kq`)
-- Midway Islands (`mq`)
-- Palmyra Atoll (`lq`)
-
-
-
-Q: What happened to the Western Sahara (`wi`) country profile?
-
-In December 2020 the World Factbook dropped coverage of the Western Sahara (`wi`). Why?
-In a deal with Morocco the United States recognizes the claim
-of Marocco over the Western Sahara and in return
-Morocco starts official diplomatic relations with Israel.
-
-```
-Code, Name,           Category,      Region
-wi,   Western Sahara, Miscellaneous, Africa
-```
-
-
-
-
 ## Install
 
 Use
