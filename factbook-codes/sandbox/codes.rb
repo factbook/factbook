@@ -2,8 +2,9 @@
 #  (double) check country and region names of codes via the datasets
 #
 #  to run use
-#     ruby -I ./lib sandbox/codes.rb
+#     ruby sandbox/codes.rb
 
+$LOAD_PATH.unshift( './lib' )
 require 'factbook/codes'
 
 
@@ -35,12 +36,16 @@ codes.each do |cty|   ## note: use country/cty instead of code - why? why not?
   name    = data['name']
   region  = regions[ data['region']] || data['region']
 
+
   print code
   print " - "
   print name
   print " / "
   print region
+  print "  -- "
+  print cty.category
   print "\n"
+
 
   if code.downcase != cty.code
     puts "!! code mismatch - #{cty.code}  <=> #{code.downcase}"
