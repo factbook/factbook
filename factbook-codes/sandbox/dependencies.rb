@@ -35,7 +35,19 @@ codes.each do |cty|   ## note: use country/cty instead of code - why? why not?
                    :
                  nil
 
+
   if dependency
+    geo = data['categories'].find { |category| category['title'] == 'Geography' }
+    area = geo['fields'].find { |field| field['name'] == 'Area'}
+    area_total = area['subfields'] ?
+                   area['subfields'].find { |field| field['name'] == 'total'}
+                     :
+                    nil
+
+    puts "==> #{code} #{name} / #{region}:"
+    pp area
+    pp area_total
+
     buf <<  "**" +
             code +
             "  " +
@@ -45,7 +57,9 @@ codes.each do |cty|   ## note: use country/cty instead of code - why? why not?
             "** " +
             "  -- " +
             cty.category +
-            ":\n"
+            ", " +
+            (area_total ? area_total['content'] : "?") +
+            ":\n<br>"
     buf << dependency['content']
     buf << "\n\n"
   end
