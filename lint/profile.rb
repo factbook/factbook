@@ -6,6 +6,21 @@
 require_relative 'helper'
 
 
+CATEGORY_RE = /^=[ ]*
+                (?<name>[^ ].*)$/x    # e.g.  = Geography
+                                      #   or  = People and Society
+
+SUBFIELD_RE = /^-[ ]*
+                 (?<name>[^ ].*)$/x   # e.g.   - total
+                                      #   or   - border countries
+                                      #        etc.
+
+
+## check: change/rename to profile_tree or profile_hierarchy or _schema or ???? - why? why not?
+
+
+## todo: add Factbook::ProfileGuideReader or such!!!
+##   move to factbook-fields - why? why not?
 
 def parse_profile_guide( txt )
   data = {}
@@ -15,17 +30,22 @@ def parse_profile_guide( txt )
 
   txt.each_line do |line|
     ## note: line includes newline
-    line = line.rstrip   # remove all trainling spaces incl. newline
 
-    next if line.empty? || line =~ /^[ ]*#/   # skip empty lines and comment lines
+    ## strip (optional) inline comments
+    ##   todo/check: use index or such such and cut-off substring instead of regex - why? why not?
+    line = line.sub( /#.*$/, '' )
+
+    line = line.strip   # remove all leading & trainling spaces incl. newline
+
+    next if line.empty? || line.start_with?('#')   # skip empty lines and comment lines
 
 
-    if line =~ /^[ ]*=[ ]*([^ ].*)/  ## check for category e.g.  = Geography
-      puts "category >#{$1}<"
-      category = data[ $1 ] = {}
-    elsif line =~ /^[ ]+/    ## subfield - must start with indended space
-      puts "    subfield >#{line.lstrip}<"
-      field << line.lstrip
+    if m=CATEGORY_RE.match( line )
+      puts "category >#{m[:name]}<"
+      category = data[ m[:name] ] = {}
+    elsif m=SUBFIELD_RE.match( line )
+      puts "    subfield >#{m[:name]}<"
+      field << m[:name]
     else   ## assume field
       puts "  field >#{line}<"
       field = category[ line ] = []
@@ -38,11 +58,7 @@ end
 
 
 
-def read_profile( code )
-  codes = Factbook.codes
-
-  cty= codes[ code ]
-
+def read_profile( cty )
   json = Webcache.read( cty.data_url )
   data = JSON.parse( json )
 
@@ -51,8 +67,16 @@ def read_profile( code )
 end
 
 
+## known alternate field names
+FIELD_ALT = {
+  'Maternal mortality ratio' => 'Maternal mortality rate'
+}
+
+
 
 def lint_profile( guide, data )
+
+  buf = String.new('')
 
   ## good category/field/subfield counts
   category_count = 0
@@ -69,17 +93,20 @@ def lint_profile( guide, data )
     category_def = guide[ category_name ]
     if category_def.nil?
       category_undef_count += 1
-      puts "!! category >#{category_name}< undefined"
+      line =  "!! category >#{category_name}< undefined\n"
+      print line; buf << line
     else
       category_count += 1
     end
 
       ## check fields
       category_data.each do |field_name,field_data|
-         field_def = category_def ? category_def[ field_name ] : nil
+         ## note: check for alternate field name mapping
+         field_def = category_def ? category_def[ FIELD_ALT[ field_name ] || field_name ] : nil
          if field_def.nil?
            field_undef_count += 1
-           puts "!!   field >#{field_name}< in >#{category_name}< undefined"
+           line =  "!!   field >#{field_name}< in >#{category_name}< undefined\n"
+           print line; buf << line
          else
            field_count += 1
          end
@@ -88,7 +115,15 @@ def lint_profile( guide, data )
            field_data.each do |subfield_name,subfield_data|
               next if ['text', 'note'].include?( subfield_name )
 
-              ## hack??
+              ## hack 1)
+              ##   check if subfield name same as field name
+              ##      Languages  => Languages
+              if subfield_name == field_name
+                ## puts "  skipping >#{subfield_name}< in >#{field_name}<"
+                next
+              end
+
+              ## hack 2)
               ##   check for subfield series  (ending in years) e.g.
               ##     Exchange rates 2020
               ##     Exchange rates 2019
@@ -97,11 +132,31 @@ def lint_profile( guide, data )
               ##   note: allow optional 31 December 2017 too!!!!
               ##     Reserves of foreign exchange and gold 31 December 2017
               ##     Reserves of foreign exchange and gold 31 December 2016 ...
+              ##
+              ##  note: make case insensitive e.g.
+              ##    Military Expenditures 2020  => Military expenditures
+              ##
+              ##   more special dates:
+              ##     Debt - external 31 March 2016
+              ##     Debt - external June 2010
+              ##     Debt - external FY10/11
+              ##     Gini Index coefficient - distribution of family income FY2011
+              ##     Gini Index coefficient - distribution of family income December 2017
+              ##     Inflation rate (consumer prices) January 2017
+              ##     Unemployment rate April 2011
 
-              if subfield_name =~ /^(.+?)
-                                     ([ ]31[ ]December)?
-                                     [ ]
-                                     \d{4}$/x  && field_name == $1
+              if subfield_name =~ %r{^
+                                      (.+?)[ ]
+                                        ((
+                                           (31[ ])?
+                                           (December | June | January | April | March)
+                                           [ ]
+                                         )?
+                                         \d{4}
+                                          |
+                                         FY(\d{4}|\d{2}/\d{2})
+                                        )
+                                     $}x  && field_name.downcase == $1.downcase
                 ## puts "  skipping >#{subfield_name}< in >#{field_name}< series"
                 next
               end
@@ -110,15 +165,33 @@ def lint_profile( guide, data )
                  subfield_count += 1
               else
                   subfield_undef_count += 1
-                  puts "!!       subfield >#{subfield_name}< in >#{field_name} / #{category_name}< undefined"
+                  line = "!!       subfield >#{subfield_name}< in >#{category_name} / #{field_name}< undefined\n"
+                  print line; buf << line
               end
           end
       end
   end
 
-   print "  #{category_count} categories, #{field_count} fields, #{subfield_count} subfields OK"
-   print " -- #{category_undef_count} categories, #{field_undef_count} fields, #{subfield_undef_count} subfields UNDEFINED"
-   print "\n"
+   undef_count = category_undef_count + field_undef_count + subfield_undef_count
+
+   lines = String.new('')
+
+   if undef_count == 0
+      lines << "  OK "
+   else
+      lines << "     "
+   end
+   lines << "  #{category_count} categories, #{field_count} fields, #{subfield_count} subfields"
+   lines << "\n"
+
+   if undef_count > 0
+     lines << "   !! UNDEFINED -- #{category_undef_count} categories, #{field_undef_count} fields, #{subfield_undef_count} subfields"
+     lines << "\n"
+    end
+
+   print lines; buf << lines
+
+   buf
 end
 
 
@@ -130,10 +203,30 @@ pp guide
 
 
 
-data = read_profile( 'au')
-pp data
 
-lint_profile( guide, data )
+
+
+
+## cc = [ 'au', 'be', 'mx']
+
+buf = String.new('')
+
+codes = Factbook.codes
+codes.each do |cty|
+  data = read_profile( cty )
+  ## pp data
+
+  puts
+  puts "==> linting #{cty.code} #{cty.name} / #{cty.region} -- #{cty.category}..."
+
+  buf << "\n"
+  buf << "==> linting #{cty.code} #{cty.name} / #{cty.region} -- #{cty.category}:\n"
+  buf << lint_profile( guide, data )
+end
+
+
+## write out report
+File.open( './tmp/lint.txt', 'w:utf-8') { |f| f.write( buf ) }
 
 
 puts "bye"
