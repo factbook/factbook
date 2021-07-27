@@ -1,0 +1,349 @@
+####
+#  country profile
+#    https://www.cia.gov/the-world-factbook/references/guide-to-country-profiles/
+#
+#  These are the Categories, Fields, and subfields of information generally recorded
+#   for each country. Links are to the definition of the entry, as well as the field listing
+#    for the selected field.
+
+
+= Introduction
+
+Background
+
+
+= Geography
+
+Location
+Geographic coordinates
+Map references
+Area
+  total
+  land
+  water
+Area - comparative
+Land boundaries
+  total
+  border countries
+  regional borders
+Coastline
+Maritime claims
+  territorial sea
+  contiguous zone
+  exclusive economic zone
+  continental shelf
+  exclusive fishing zone
+Climate
+Terrain
+Elevation
+  highest point
+  lowest point
+  mean elevation
+Natural resources
+Land use
+  agricultural land
+  agricultural land: arable land
+  agricultural land: permanent crops
+  agricultural land: permanent pasture
+  forest
+  other
+Irrigated land
+Population distribution
+Natural hazards
+Geography - note
+
+
+= People and Society
+
+Population
+Nationality
+  noun
+  adjective
+Ethnic groups
+Languages
+Religions
+Demographic profile
+Age structure
+  0-14 years
+  15-24 years
+  25-54 years
+  55-64 years
+  65 years and over
+Dependency ratios
+  total dependency ratio
+  youth dependency ratio
+  elderly dependency ratio
+  potential support ratio
+Median age
+  total
+  male
+  female
+Population growth rate
+Birth rate
+Death rate
+Net migration rate
+Population distribution
+Urbanization
+  urban population
+  rate of urbanization
+Major urban areas - population
+Sex ratio
+  at birth
+  0-14 years
+  15-24 years
+  25-54 years
+  55-64 years
+  65 years and over
+  total population
+Mother's mean age at first birth
+Maternal mortality rate
+Infant mortality rate
+  total
+  male
+  female
+Life expectancy at birth
+  total population
+  male
+  female
+Total fertility rate
+Contraceptive prevalence rate
+Drinking water source
+  improved: urban
+  improved: rural
+  improved: total
+  unimproved: urban
+  unimproved: rural
+  unimproved: total
+Current Health Expenditure
+Physicians density
+Hospital bed density
+Sanitation facility access
+  improved: urban
+  improved: rural
+  improved: total
+  unimproved: urban
+  unimproved: rural
+  unimproved: total
+HIV/AIDS - adult prevalence rate
+HIV/AIDS - people living with HIV/AIDS
+HIV/AIDS - deaths
+Major infectious diseases
+  degree of risk
+  food or waterborne diseases
+  vectorborne diseases
+  water contact diseases
+  animal contact diseases
+  respiratory diseases
+  soil contact diseases
+  aerosolized dust or soil contact diseases
+Obesity - adult prevalence rate
+Children under the age of 5 years underweight
+Education expenditures
+Literacy
+  definition
+  total population
+  male
+  female
+School life expectancy (primary to tertiary education)
+  total
+  male
+  female
+Unemployment, youth ages 15-24
+  total
+  male
+  female
+People - note
+
+
+= Environment
+
+Environment - current issues
+Environment - international agreements
+  party to
+  signed
+  but not ratified
+Air pollutants
+  particulate matter emissions
+  carbon dioxide emissions
+  methane emissions
+Total water withdrawal
+  municipal
+  industrial
+  agricultural
+Total renewable water resources
+Marine fisheries
+Climate
+Land use
+  agricultural land
+  agricultural land: arable land
+  agricultural land: permanent crops
+  agricultural land: permanent pasture
+  forest
+  other
+Revenue from forest resources
+  forest revenues
+Revenue from coal
+  coal revenues
+Urbanization
+  urban population
+  rate of urbanization
+Major infectious diseases
+  degree of risk
+  food or waterborne diseases
+  vectorborne diseases
+  water contact diseases
+  animal contact diseases
+  respiratory diseases
+  soil contact diseases
+  aerosolized dust or soil contact diseases
+Food insecurity
+  exceptional shortfall in aggregate food production/supplies
+  widespread lack of access
+  severe localized food insecurity
+Waste and recycling
+  municipal solid waste generated annually
+  municipal solid waste recycled annually
+  percent of municipal solid waste recycled
+
+
+= Government
+
+Country name
+  conventional long form
+  conventional short form
+  local long form
+  local short form
+  former
+  abbreviation
+  etymology
+Dependency status
+Government type
+Capital
+  name
+  geographic coordinates
+  time difference
+  daylight saving time
+  capital
+Administrative divisions
+Dependent areas
+Independence
+National holiday
+Constitution
+  history
+  amendments
+Legal system
+International law organization participation
+Citizenship
+  citizenship by birth
+  citizenship by descent only
+  dual citizenship recognized
+  residency requirement for naturalization
+Suffrage
+Executive branch
+  chief of state
+  head of government
+  cabinet
+  elections/appointments
+  election results
+  head of state
+Legislative branch
+  description
+  elections
+  election results
+Judicial branch
+  highest courts
+  judge selection and term of office
+  subordinate courts
+Political parties and leaders
+International organization participation
+Diplomatic representation in the US
+  chief of mission
+  chancery
+  telephone
+  FAX
+  consulate(s) general
+  consulate(s)
+  embassy
+  honorary consulate(s)
+Diplomatic representation from the US
+  chief of mission
+  telephone
+  embassy
+  mailing address
+  FAX
+  consulate(s) general
+  branch office(s)
+  consulate(s)
+Flag description
+National symbol(s)
+National anthem
+  name
+  lyrics/music
+Government - note
+
+
+= Economy
+
+Economic overview
+Real GDP growth rate
+Inflation rate (consumer prices)
+Credit ratings
+  Fitch rating
+  Moody's rating
+  Standard & Poors rating
+Real GDP (purchasing power parity)
+GDP (official exchange rate)
+Real GDP per capita
+Gross national saving
+GDP - composition, by sector of origin
+  agriculture
+  industry
+  services
+GDP - composition, by end use
+  household consumption
+  government consumption
+  investment in fixed capital
+  investment in inventories
+  exports of goods and services
+  imports of goods and services
+Ease of Doing Business Index scores
+  Overall score
+  Starting a Business score
+  Trading score
+  Enforcement score
+Agricultural products
+Industries
+Industrial production growth rate
+Labor force
+Labor force - by occupation
+  agriculture
+  industry
+  services
+  industry and services
+  manufacturing
+  construction
+  commerce
+  other services
+Unemployment rate
+Population below poverty line
+Gini Index coefficient - distribution of family income
+Household income or consumption by percentage share
+  lowest 10%
+  highest 10%
+Budget
+  revenues
+  expenditures
+Taxes and other revenues
+Budget surplus (+) or deficit (-)
+Public debt
+Fiscal year
+Current account balance
+Exports
+Exports - partners
+Exports - commodities
+Imports
+Imports - partners
+Imports - commodities
+Reserves of foreign exchange and gold
+Debt - external
+Exchange rates
