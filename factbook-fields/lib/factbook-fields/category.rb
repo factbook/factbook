@@ -51,12 +51,12 @@ class Category
   def to_markdown
     buf = String.new('')
     buf << "## #{@title}\n\n"
-    buf << "    <-- #{@fields.size} field(s) -->"  ## add some (stats) comments
-    buf << "\n\n"
+    ## buf << "<!-- #{@fields.size} field(s) -->\n\n"  ## add some (stats) comments
 
-    # @fields.each do |_,field|
-    #  buf << field.to_html
-    #end
+    @fields.each do |_,field|
+      buf << field.to_markdown
+      buf << "\n"
+    end
     buf
  end
 
