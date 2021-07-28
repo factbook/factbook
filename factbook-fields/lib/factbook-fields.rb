@@ -11,9 +11,13 @@ require 'factbook-fields/category'
 require 'factbook-fields/field'
 require 'factbook-fields/profile'
 
+require 'factbook-fields/guide'
+
 require 'factbook-fields/builder'
 
 require 'factbook-fields/comparisons'
+
+
 
 ## note: make codes, comparisons available
 module Factbook
@@ -22,6 +26,12 @@ module Factbook
   def self.comparisons
     @@comparisons ||= Comparisons.read_csv( "#{Factbook::Module::Fields.root}/data/comparisons.csv" )
   end
+
+  def self.guide
+    @@guide ||= ProfileGuideReader.read( "#{Factbook::Module::Fields.root}/data/guide.txt" )
+  end
+
+  def self.categories()  guide.keys; end   ## note: (re)use categories from guide to country profiles
 end # module Factbook
 
 

@@ -1,9 +1,5 @@
 ####
-#
-#  todo/check: rename to guide.txt - why? why not?
-#     better matches with Factbook.guide  method? yes/no?
-#
-#  country profile
+#  guide to country profiles
 #    https://www.cia.gov/the-world-factbook/references/guide-to-country-profiles/
 #
 #  These are the Categories, Fields, and subfields of information generally recorded

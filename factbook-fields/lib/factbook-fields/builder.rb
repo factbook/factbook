@@ -14,8 +14,6 @@ attr_reader :profile,
 
 
 
-
-
 def initialize( text_or_data )
 
   data = if text_or_data.is_a?( String )
@@ -29,17 +27,11 @@ def initialize( text_or_data )
   @profile = Profile.new
   @errors  = []       ## fix/todo: sorry - for now no errors possible/tracked
 
-  data.each do |k1,v1|
-    category_title    = k1
-    category_data     = v1
-
+  data.each do |category_title,category_data|
     category = Category.new( category_title )
 
-    ## get fields
-    category_data.each do |k2,v2|
-      field_title = k2
-      field_data  = v2
-
+    ## add fields
+    category_data.each do |field_title,field_data|
       field = Field.new( field_title )
       field.data  = field_data
 

@@ -6,56 +6,6 @@
 require_relative 'helper'
 
 
-CATEGORY_RE = /^=[ ]*
-                (?<name>[^ ].*)$/x    # e.g.  = Geography
-                                      #   or  = People and Society
-
-SUBFIELD_RE = /^-[ ]*
-                 (?<name>[^ ].*)$/x   # e.g.   - total
-                                      #   or   - border countries
-                                      #        etc.
-
-
-## check: change/rename to profile_tree or profile_hierarchy or _schema or ???? - why? why not?
-
-
-## todo: add Factbook::ProfileGuideReader or such!!!
-##   move to factbook-fields - why? why not?
-
-def parse_profile_guide( txt )
-  data = {}
-
-  category = nil
-  field    = nil
-
-  txt.each_line do |line|
-    ## note: line includes newline
-
-    ## strip (optional) inline comments
-    ##   todo/check: use index or such such and cut-off substring instead of regex - why? why not?
-    line = line.sub( /#.*$/, '' )
-
-    line = line.strip   # remove all leading & trainling spaces incl. newline
-
-    next if line.empty? || line.start_with?('#')   # skip empty lines and comment lines
-
-
-    if m=CATEGORY_RE.match( line )
-      puts "category >#{m[:name]}<"
-      category = data[ m[:name] ] = {}
-    elsif m=SUBFIELD_RE.match( line )
-      puts "    subfield >#{m[:name]}<"
-      field << m[:name]
-    else   ## assume field
-      puts "  field >#{line}<"
-      field = category[ line ] = []
-    end
-  end
-
-  data
-end
-
-
 
 
 def read_profile( cty )
@@ -195,14 +145,14 @@ def lint_profile( guide, data )
 end
 
 
-
-txt = File.open( './lint/profile.txt', 'r:utf-8' ) { |f| f.read }
-guide = parse_profile_guide( txt )
+# guide = Factbook::ProfileGuideReader.read( './lint/profile.txt' )
+guide = Factbook.guide
 puts "guide:"
 pp guide
 
-
-
+categories = Factbook.categories
+puts "#{categories.size} categories:"
+pp categories
 
 
 

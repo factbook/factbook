@@ -10,10 +10,16 @@ class Profile
 
 
   def self.read( path )   ## convenience helper
-    text = File.open( path, 'r:utf-8' ) { |f| f.read }
-    b = ProfileBuilder.new( text )
+    txt = File.open( path, 'r:utf-8' ) { |f| f.read }
+    parse( txt )
+  end
+
+  def self.parse( txt_or_data )   ## check: use build for build from data hash - why? why not?
+    b = ProfileBuilder.new( txt_or_data )
     b.profile
   end
+
+
 
 
   def initialize
@@ -40,7 +46,7 @@ class Profile
   def to_h
     data = {}
     @categories.each do |_,category|
-       data[ category.title ] = category.data
+       data[ category.title ] = category.data    ## todo/check: why not use category.to_h (instead of data) - why? why not?
     end
     data
   end
@@ -49,6 +55,14 @@ class Profile
     buf = String.new('')
     @categories.each do |_,category|
       buf << category.to_html
+    end
+    buf
+  end
+
+  def to_markdown
+    buf = String.new('')
+    @categories.each do |_,category|
+      buf << category.to_markdown
     end
     buf
   end

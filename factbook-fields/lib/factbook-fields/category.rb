@@ -48,6 +48,19 @@ class Category
      buf
   end
 
+  def to_markdown
+    buf = String.new('')
+    buf << "## #{@title}\n\n"
+    buf << "    <-- #{@fields.size} field(s) -->"  ## add some (stats) comments
+    buf << "\n\n"
+
+    # @fields.each do |_,field|
+    #  buf << field.to_html
+    #end
+    buf
+ end
+
+
 end # class Category
 
 end # module Factbook
