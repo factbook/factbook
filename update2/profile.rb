@@ -19,17 +19,17 @@ def read_profile( cty )
 end
 
 
-outdir = '../country-profiles'
-# outdir = './tmp'
+# outdir = '../country-profiles'
+outdir = './tmp'
 
 
 codes = Factbook.codes
 
+# ['au', 'be', 'mx', 'us'].each do |code|
+#
+#   cty = codes[ code ]
 
-['au', 'be', 'mx', 'us'].each do |code|
-
-   cty = codes[ code ]
-
+codes.each do |cty|
   profile = read_profile( cty )
   ## pp profile
 
@@ -38,8 +38,8 @@ codes = Factbook.codes
   # puts profile[0].size                ## e.g. Introduction/Background
   # puts
   # puts profile['Introduction']['Background']['text']
-  puts profile['Geography']['Location']['text']
-  puts profile['Geography']['Area']['total']['text']
+  # puts profile['Geography']['Location']['text']
+  # puts profile['Geography']['Area']['total']['text']
 
 
   puts "profile:"
