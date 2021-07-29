@@ -46,5 +46,8 @@ jobs:
     - name: Run generate json v2
       run:  yo -r ./2021/genjson.rb -f ./2021/Flowfile.rb json2
 
+    - name: Run generate profiles
+      run:  yo -r ./2021/genprofiles.rb -f ./2021/Flowfile.rb profiles
+
     - name: Run ssh_push
       run:  yo -f ./2021/Flowfile.rb push

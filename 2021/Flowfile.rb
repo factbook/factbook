@@ -4,6 +4,7 @@ step [:sync, :clone, :setup, :up] do
   [
     'cache.factbook.json@factbook',
     'factbook.json@factbook',
+    'country-profiles@factbook'
   ].each do |repo|
     Mono.sync( repo )
   end
@@ -21,6 +22,7 @@ step [:publish, :pub, :push] do
   [
     'cache.factbook.json@factbook',
     'factbook.json@factbook',
+    'country-profiles@factbook'
   ].each do |repo|
     Mono.open( repo ) do |proj|
       puts "check for changes (to commit & push) in >#{Dir.pwd}<:"
@@ -34,6 +36,8 @@ step [:publish, :pub, :push] do
     end
   end
 end
+
+
 
 #################
 #  more
@@ -49,3 +53,8 @@ end
 step [:gen_json2, :json2] do   ## "simplified" classic format
   gen_json2
 end
+
+step [:gen_profiles, :profiles] do
+  gen_profiles
+end
+
