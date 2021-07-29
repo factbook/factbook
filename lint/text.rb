@@ -22,7 +22,7 @@ end
 
 HTML_OPEN_TAG_RE = %r{
                         <[ ]*
-                           (?<name>[a-z]+)
+                           (?<name>[a-z][a-z0-9]*)
                              ([ ]*
                                |
                               [ ]+[^>]+
@@ -63,8 +63,7 @@ def lint_text( data, exclude: [] )
                 tag_count = tags.reduce(0) { |sum,(_,count)| sum+=count; sum }
                 if tag_count > 0
                    lines = String.new('')
-                   lines << "  ==>#{category_name} / #{field_name} - #{subfield_name}:\n"
-                   lines << "  !! #{tag_count} tag(s): #{tags.inspect}\n"
+                   lines << "  !! #{tag_count} tag(s) found #{tags.inspect} in #{category_name} / #{field_name} - #{subfield_name}:\n"
                    lines << text
                    lines << "\n"
                    puts lines; buf << lines
@@ -75,8 +74,7 @@ def lint_text( data, exclude: [] )
                 tag_count = tags.reduce(0) { |sum,(_,count)| sum+=count; sum }
                 if tag_count > 0
                   lines = String.new('')
-                  lines << "  ==>#{category_name} / #{field_name} / #{subfield_name} - text:\n"
-                  lines << "  !! #{tag_count} tag(s): #{tags.inspect}\n"
+                  lines << "  !! #{tag_count} tag(s) found #{tags.inspect} in #{category_name} / #{field_name} / #{subfield_name} - text:\n"
                   lines << text
                   lines << "\n"
                   puts lines; buf << lines

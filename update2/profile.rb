@@ -19,17 +19,16 @@ def read_profile( cty )
 end
 
 
-# outdir = '../country-profiles'
-outdir = './tmp'
+outdir = '../country-profiles'
+# outdir = './tmp/profiles'
 
 
 codes = Factbook.codes
 
 # ['au', 'be', 'mx', 'us'].each do |code|
-#
-#   cty = codes[ code ]
+#  cty = codes[ code ]
 
-codes.each do |cty|
+ codes.each do |cty|
   profile = read_profile( cty )
   ## pp profile
 
@@ -59,7 +58,9 @@ codes.each do |cty|
   ## make sure path exits
   FileUtils.mkdir_p( File.dirname( outpath ) )  unless File.exist?( File.dirname( outpath ) )
 
-  File.open( outpath, 'w:utf-8' ) { |f| f.write( buf ) }
+
+  ## note: (auto-)convert to unix newlines only => e.g. universal (e.g. gsub( "\r\n", "\n" ))
+  File.open( outpath, 'w:utf-8', :newline => :universal ) { |f| f.write( buf ) }
 end
 
 puts "bye"

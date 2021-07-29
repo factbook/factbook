@@ -21,7 +21,7 @@ Hoe.spec 'factbook-readers' do
     ['factbook-codes' ],
     ['factbook-fields' ],
     ['webget'],
-    ## ['nokogiri'],
+    ['nokogiri'],
     ## ['activerecord']  # note: will include activesupport,etc.
   ]
 

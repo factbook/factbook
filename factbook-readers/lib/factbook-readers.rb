@@ -4,6 +4,9 @@ require 'factbook-fields'
 ## require 'props'
 require 'webget'
 
+require 'nokogiri'    ## note: needed for clean-up / sanitize of "raw" json
+                      ##   see convert script
+
 
 
 # our own code
