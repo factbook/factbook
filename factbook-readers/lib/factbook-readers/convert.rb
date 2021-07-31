@@ -47,12 +47,20 @@ def convert( cia, sanitize: true )
          text = cia_field[ 'field_note' ]
          text = sanitize( text )  if sanitize
          field[ 'note' ] = text
+
+         ## hack: check for duplicate content
+         ##     remove note text from main text if present
+         ##  note: add <br><br> - make optional? why? why not?
+         if field[ 'text' ]
+            field[ 'text' ] = field[ 'text' ].sub( "<br><br>#{text}", '' )
+         end
        end
      end
   end
 
   data
 end  # method convert
+
 
 
 HTML_OPEN_TAG_RE = %r{<[^>]+?>     # note: use non-greedy (minimal/first) match e.g. +?

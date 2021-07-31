@@ -19,8 +19,8 @@ def read_profile( cty )
 end
 
 
-outdir = '../country-profiles'
-# outdir = './tmp/profiles'
+# outdir = '../country-profiles'
+outdir = './tmp/profiles'
 
 
 codes = Factbook.codes
