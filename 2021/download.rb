@@ -11,9 +11,9 @@ Webget.config.sleep = 0.5     ## sleep 500 ms (that is, 0.5 secs)
 
 def download
   ## for debugging select some codes
-  codes = Factbook.codes.select {|code| ['us', 'au'].include?( code.code ) }
+  ##codes = Factbook.codes.select {|code| ['us', 'au'].include?( code.code ) }
 
-  ##codes = Factbook.codes
+  codes = Factbook.codes
 
   i = 0
   codes.each do |code|
