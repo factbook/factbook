@@ -25,7 +25,7 @@ jobs:
 
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7' # Version range or exact version of a Ruby version to use, using semvers version range syntax.
+        ruby-version: '3.2' # Version range or exact version of a Ruby version to use, using semvers version range syntax.
 
     - name: Run install / adduser
       env:
