@@ -7,7 +7,9 @@ on:
     #    ->  https://crontab.guru/examples.html
     # - cron:  '0 22 1,15 * *'       #  every 1 & 15 of the month at 22:00 (utc?)
     #  note: change to weekly every thursday
-    - cron:  '0 22 * * THU'       #  every thursday at 22:00 (utc?)
+    #
+    #  note - Feb 2026 the cia nuked the world factbook! no more updates or pages available
+    # - cron:  '0 22 * * THU'       #  every thursday at 22:00 (utc?)
   workflow_dispatch:
     ### for testing / debugging allow "manual" start
 
