@@ -1,14 +1,13 @@
 name:  Update Factbook v2021 (Download & Generate JSON)
 
 on:
-  schedule:
+  #  note - Feb 2026 the cia nuked the world factbook! no more updates or pages available
+  # schedule:
     # note: * is a special character in YAML so you have to quote this string
     #  see cron guru for more examples / help on syntax
     #    ->  https://crontab.guru/examples.html
     # - cron:  '0 22 1,15 * *'       #  every 1 & 15 of the month at 22:00 (utc?)
     #  note: change to weekly every thursday
-    #
-    #  note - Feb 2026 the cia nuked the world factbook! no more updates or pages available
     # - cron:  '0 22 * * THU'       #  every thursday at 22:00 (utc?)
   workflow_dispatch:
     ### for testing / debugging allow "manual" start
